@@ -1,6 +1,5 @@
 
 import React from 'react'
-import Image from 'next/image'
 import { ArrowRight, Check } from 'lucide-react'
 import { useLanguage } from '../components/language-provider'
 
