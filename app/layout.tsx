@@ -1,21 +1,15 @@
+
 import type React from "react"
-import { Inter } from "next/font/google"
-import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
-
+// This is just a placeholder - the actual layout is in [locale]/layout.tsx
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html>
-      <body className={inter.className}>{children}</body>
-    </html>
-  )
+  return children
 }
 
 export const metadata = {
-      generator: 'v0.dev'
-    };
+  generator: 'BEARS Patient Transport Services'
+}

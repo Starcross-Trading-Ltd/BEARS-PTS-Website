@@ -1,9 +1,10 @@
+
 import type React from "react"
 import { Inter } from "next/font/google"
 import "../globals.css"
 import { NextIntlClientProvider } from "next-intl"
 import { getMessages } from "next-intl/server"
-import { locales } from "@/i18n.config"
+import { locales, languageConfig } from "@/i18n.config"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import PartnerLogos from "@/components/partner-logos"
@@ -33,12 +34,13 @@ export default async function LocaleLayout({
 }) {
   const messages = await getMessages({ locale })
 
-  // Set the direction based on language (RTL for Arabic)
-  const dir = locale === "ar" ? "rtl" : "ltr"
+  // Get language configuration
+  const langConfig = languageConfig[locale as keyof typeof languageConfig]
+  const dir = langConfig?.dir || "ltr"
 
   return (
     <html lang={locale} dir={dir}>
-      <body className={inter.className}>
+      <body className={`${inter.className} ${dir === "rtl" ? "rtl" : "ltr"}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <div className="min-h-screen">{children}</div>
