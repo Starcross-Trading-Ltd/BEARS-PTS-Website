@@ -1,0 +1,54 @@
+
+{
+  "meta": {
+    "title": "BEARS Patient Transport Services",
+    "description": "Professional patient transport services in the UK"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Our Services",
+    "contact": "Contact Us"
+  },
+  "home": {
+    "title": "Welcome to BEARS Patient Transport Services",
+    "description": "We provide professional patient transport services across the UK.",
+    "heroTitle": "Providing Safety, Comfort and Care",
+    "heroDescription": "We provide a high quality ambulance service taking great care and pride in our work with the highest priority on transporting patients with SAFETY, COMFORT and CARE.",
+    "getInTouch": "Get in touch",
+    "learnMore": "Learn more",
+    "coreValuesTitle": "Our Core Values",
+    "coreValuesDescription": "BEARS core values are safety, comfort, and care, we ensure:",
+    "serviceQuality": "We get our service quality right the first time",
+    "efficientCare": "We are efficient with passion for patient care",
+    "bestValue": "We ensure best value for money",
+    "moreAboutValues": "More about our core values"
+  },
+  "aboutPage": {
+    "aboutBearsTitle": "About BEARS",
+    "aboutBearsDescription": "BEARS Patient Transport Service was established to provide high-quality ambulance services with a focus on patient care, comfort, and safety.",
+    "ourStoryTitle": "Our Story",
+    "ourStoryContent1": "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service.",
+    "ourStoryContent2": "Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.",
+    "ourStoryContent3": "At every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care."
+  },
+  "contact": {
+    "contactUsTitle": "Contact Us",
+    "getInTouchTitle": "Get in Touch",
+    "getInTouchDescription": "We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.",
+    "phoneTitle": "Phone",
+    "emailTitle": "Email",
+    "addressTitle": "Address",
+    "bearsAddress": "BEARS Patient Transport Service",
+    "sendMessageTitle": "Send us a Message",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "messageLabel": "Message",
+    "sendMessage": "Send Message"
+  },
+  "languageSelector": {
+    "label": "Change language",
+    "selectLanguage": "Select Language"
+  }
+}
