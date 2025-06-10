@@ -15,7 +15,8 @@ export default function Header() {
   }
 
   const services = [
-    { title: "NEPTS", link: "/services" },
+    { title: "NEPTS", link: "/services/nepts" },
+    { title: "Paramedic Service", link: "/services/paramedic" },
     { title: "Bariatric Service", link: "/services/bariatric" },
     { title: "Critical Care Retrieval", link: "/services/critical-retrieval" },
     { title: "ECMO Service", link: "/services/ecmo" },

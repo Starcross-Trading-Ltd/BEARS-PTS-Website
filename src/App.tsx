@@ -9,6 +9,8 @@ import HomePage from './pages/home'
 import AboutPage from './pages/about'
 import ContactPage from './pages/contact'
 import ServicesPage from './pages/services'
+import NEPTSServicePage from './pages/services/nepts'
+import ParamedicServicePage from './pages/services/paramedic'
 import BariatricServicePage from './pages/services/bariatric'
 import CriticalRetrievalPage from './pages/services/critical-retrieval'
 import ECMOServicePage from './pages/services/ecmo'
@@ -31,6 +33,8 @@ function App() {
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/services" element={<ServicesPage />} />
+              <Route path="/services/nepts" element={<NEPTSServicePage />} />
+              <Route path="/services/paramedic" element={<ParamedicServicePage />} />
               <Route path="/services/bariatric" element={<BariatricServicePage />} />
               <Route path="/services/critical-retrieval" element={<CriticalRetrievalPage />} />
               <Route path="/services/ecmo" element={<ECMOServicePage />} />
