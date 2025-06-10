@@ -33,16 +33,22 @@ export default function ServicesPage() {
       image: "/images/ecmo-service.jpg"
     },
     {
-      title: "Neonatal Transport",
-      description: "Specialist neonatal and paediatric transport",
-      link: "/services/neonatal",
-      image: "/images/neonatal.jpg"
+      title: "High Dependance",
+      description: "High dependency care transport service",
+      link: "/services/high-dependance",
+      image: "/images/high-dependance.jpg"
     },
     {
       title: "Mental Health Transport",
       description: "Secure mental health patient transport",
       link: "/services/mental-health",
       image: "/images/mental-health.jpg"
+    },
+    {
+      title: "Neonatal Transport",
+      description: "Specialist neonatal and paediatric transport",
+      link: "/services/neonatal",
+      image: "/images/neonatal.jpg"
     }
   ]
 

@@ -18,7 +18,10 @@ export default function Header() {
     { title: "NEPTS", link: "/services" },
     { title: "Bariatric Service", link: "/services/bariatric" },
     { title: "Critical Care Retrieval", link: "/services/critical-retrieval" },
-    { title: "ECMO Service", link: "/services/ecmo" }
+    { title: "ECMO Service", link: "/services/ecmo" },
+    { title: "High Dependance", link: "/services/high-dependance" },
+    { title: "Mental Health Service", link: "/services/mental-health" },
+    { title: "Neonatal Transport", link: "/services/neonatal" }
   ]
 
   return (
