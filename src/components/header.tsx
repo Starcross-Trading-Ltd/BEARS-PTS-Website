@@ -1,17 +1,25 @@
 
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { useLanguage } from './language-provider'
 import LanguageSelector from './language-selector'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
   const { t } = useLanguage()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  const services = [
+    { title: "NEPTS", link: "/services" },
+    { title: "Bariatric Service", link: "/services/bariatric" },
+    { title: "Critical Care Retrieval", link: "/services/critical-retrieval" },
+    { title: "ECMO Service", link: "/services/ecmo" }
+  ]
 
   return (
     <header className="bg-white shadow-md">
@@ -26,11 +34,52 @@ export default function Header() {
             <Link to="/" className="text-gray-700 hover:text-[#0a2240] font-medium">
               {t("navigation.home", "Home")}
             </Link>
+            
+            {/* Services Dropdown */}
+            <div className="relative group">
+              <button 
+                className="flex items-center text-gray-700 hover:text-[#0a2240] font-medium"
+                onMouseEnter={() => setIsServicesOpen(true)}
+                onMouseLeave={() => setIsServicesOpen(false)}
+              >
+                Our Services <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              {isServicesOpen && (
+                <div 
+                  className="absolute top-full left-0 mt-1 w-64 bg-white shadow-lg rounded-md z-50"
+                  onMouseEnter={() => setIsServicesOpen(true)}
+                  onMouseLeave={() => setIsServicesOpen(false)}
+                >
+                  <div className="py-2">
+                    <Link to="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">All Services</Link>
+                    {services.map((service, index) => (
+                      <Link 
+                        key={index}
+                        to={service.link} 
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                      >
+                        {service.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            <Link to="/careers" className="text-gray-700 hover:text-[#0a2240] font-medium">
+              Join Us
+            </Link>
             <Link to="/about" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              {t("navigation.about", "About")}
+              {t("navigation.about", "About Us")}
+            </Link>
+            <Link to="/compliments" className="text-gray-700 hover:text-[#0a2240] font-medium">
+              Compliments
+            </Link>
+            <Link to="/news" className="text-gray-700 hover:text-[#0a2240] font-medium">
+              News
             </Link>
             <Link to="/contact" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              {t("navigation.contact", "Contact")}
+              {t("navigation.contact", "Contact Us")}
             </Link>
           </nav>
 
@@ -60,11 +109,39 @@ export default function Header() {
                 {t("navigation.home", "Home")}
               </Link>
               <Link
+                to="/services"
+                className="text-gray-700 hover:text-[#0a2240] font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Our Services
+              </Link>
+              <Link
+                to="/careers"
+                className="text-gray-700 hover:text-[#0a2240] font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Join Us
+              </Link>
+              <Link
                 to="/about"
                 className="text-gray-700 hover:text-[#0a2240] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t("navigation.about", "About")}
+              </Link>
+              <Link
+                to="/compliments"
+                className="text-gray-700 hover:text-[#0a2240] font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Compliments
+              </Link>
+              <Link
+                to="/news"
+                className="text-gray-700 hover:text-[#0a2240] font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                News
               </Link>
               <Link
                 to="/contact"
