@@ -8,6 +8,7 @@ import LanguageSelector from './language-selector'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const [isAboutOpen, setIsAboutOpen] = useState(false)
   const { t } = useLanguage()
 
   const toggleMenu = () => {
@@ -23,6 +24,13 @@ export default function Header() {
     { title: "High Dependance", link: "/services/high-dependance" },
     { title: "Mental Health Service", link: "/services/mental-health" },
     { title: "Neonatal Transport", link: "/services/neonatal" }
+  ]
+
+  const aboutPages = [
+    { title: "About Us", link: "/about" },
+    { title: "Meet the Team", link: "/team" },
+    { title: "Meet the Cubs", link: "/cubs" },
+    { title: "Our Fleet", link: "/fleet" }
   ]
 
   return (
@@ -73,9 +81,37 @@ export default function Header() {
             <Link to="/careers" className="text-gray-700 hover:text-[#0a2240] font-medium">
               Join Us
             </Link>
-            <Link to="/about" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              {t("navigation.about", "About Us")}
-            </Link>
+            
+            {/* About Us Dropdown */}
+            <div className="relative group">
+              <button 
+                className="flex items-center text-gray-700 hover:text-[#0a2240] font-medium"
+                onMouseEnter={() => setIsAboutOpen(true)}
+                onMouseLeave={() => setIsAboutOpen(false)}
+              >
+                About Us <ChevronDown className="ml-1 h-4 w-4" />
+              </button>
+              {isAboutOpen && (
+                <div 
+                  className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md z-50"
+                  onMouseEnter={() => setIsAboutOpen(true)}
+                  onMouseLeave={() => setIsAboutOpen(false)}
+                >
+                  <div className="py-2">
+                    {aboutPages.map((page, index) => (
+                      <Link 
+                        key={index}
+                        to={page.link} 
+                        className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                      >
+                        {page.title}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
             <Link to="/compliments" className="text-gray-700 hover:text-[#0a2240] font-medium">
               Compliments
             </Link>
@@ -132,6 +168,27 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t("navigation.about", "About")}
+              </Link>
+              <Link
+                to="/team"
+                className="text-gray-700 hover:text-[#0a2240] font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Meet the Team
+              </Link>
+              <Link
+                to="/cubs"
+                className="text-gray-700 hover:text-[#0a2240] font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Meet the Cubs
+              </Link>
+              <Link
+                to="/fleet"
+                className="text-gray-700 hover:text-[#0a2240] font-medium"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Our Fleet
               </Link>
               <Link
                 to="/compliments"

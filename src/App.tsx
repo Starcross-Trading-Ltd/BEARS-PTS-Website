@@ -7,6 +7,9 @@ import Footer from './components/footer'
 import PartnerLogos from './components/partner-logos'
 import HomePage from './pages/home'
 import AboutPage from './pages/about'
+import TeamPage from './pages/team'
+import CubsPage from './pages/cubs'
+import FleetPage from './pages/fleet'
 import ContactPage from './pages/contact'
 import ServicesPage from './pages/services'
 import NEPTSServicePage from './pages/services/nepts'
@@ -31,6 +34,9 @@ function App() {
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
+              <Route path="/team" element={<TeamPage />} />
+              <Route path="/cubs" element={<CubsPage />} />
+              <Route path="/fleet" element={<FleetPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/services/nepts" element={<NEPTSServicePage />} />
