@@ -12,7 +12,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">BEARS Patient Transport</h3>
             <p className="text-gray-300">
-              {t("footer.description", "Providing Safety, Comfort and Care in patient transport services.")}
+              {t("home.heroTitle", "Providing Safety, Comfort and Care in patient transport services.")}
             </p>
           </div>
           
@@ -26,15 +26,15 @@ export default function Footer() {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">{t("footer.contact", "Contact Info")}</h3>
-            <p className="text-gray-300">Phone: +44 123 456 7890</p>
-            <p className="text-gray-300">Email: info@bearsambulance.com</p>
+            <h3 className="text-lg font-semibold mb-4">{t("footer.contactInfo", "Contact Info")}</h3>
+            <p className="text-gray-300">{t("footer.phone", "Phone")}: +44 123 456 7890</p>
+            <p className="text-gray-300">{t("footer.email", "Email")}: info@bearsambulance.com</p>
           </div>
         </div>
         
         <div className="border-t border-gray-600 mt-8 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 BEARS Patient Transport Service. {t("footer.rights", "All rights reserved.")}
+            © 2024 BEARS Patient Transport Service. {t("footer.allRightsReserved", "All rights reserved.")}
           </p>
         </div>
       </div>

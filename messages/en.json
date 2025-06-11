@@ -8,7 +8,14 @@
     "home": "Home",
     "about": "About Us",
     "services": "Our Services",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+    "joinUs": "Join Us",
+    "aboutUs": "About Us",
+    "compliments": "Compliments",
+    "news": "News",
+    "contactUs": "Contact Us",
+    "allServices": "All Services",
+    "criticalRetrieval": "Critical Care Retrieval"
   },
   "serviceNames": {
     "highDependance": "High Dependance",
@@ -40,7 +47,11 @@
     "modernSlaveryPolicy": "Modern Slavery Policy",
     "enquiries": "Enquiries",
     "contactForm": "Contact Form",
-    "allRightsReserved": "All rights reserved."
+    "allRightsReserved": "All rights reserved.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "phone": "Phone",
+    "email": "Email"
   },
   "home": {
     "title": "Welcome to BEARS Patient Transport Services",
@@ -106,7 +117,18 @@
     "complimentsDescription": "At BEARS, we take pride in the positive feedback we receive from our patients and healthcare partners. Here's what people are saying about our service.",
     "shareExperienceTitle": "Share Your Experience",
     "shareExperienceDescription": "We value your feedback. If you've recently used our services and would like to share your experience, we'd love to hear from you.",
-    "submitFeedback": "Submit Feedback"
+    "submitFeedback": "Submit Feedback",
+    "testimonial3": "Professional, caring and efficient service. The team made what could have been a stressful journey very comfortable.",
+    "testimonial3Source": "Royal London Hospital",
+    "testimonial4": "Outstanding care and attention to detail. The crew went above and beyond to ensure patient comfort and safety.",
+    "testimonial4Source": "King's College Hospital",
+    "testimonial5": "Excellent communication throughout the transport. Family felt well-informed and supported during a difficult time.",
+    "testimonial5Source": "Great Ormond Street Hospital",
+    "testimonial6": "The BEARS team showed incredible professionalism and compassion. Highly recommend their services.",
+    "testimonial6Source": "Imperial College Healthcare",
+    "experienceServiceTitle": "Experience Our Service",
+    "experienceServiceDescription": "Join the many healthcare providers and patients who trust BEARS for their transport needs.",
+    "contactUsToday": "Contact Us Today"
   },
   "vacancies": {
     "vacanciesTitle": "Vacancies",

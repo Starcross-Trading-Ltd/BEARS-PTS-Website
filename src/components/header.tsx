@@ -16,21 +16,21 @@ export default function Header() {
   }
 
   const services = [
-    { title: "NEPTS", link: "/services/nepts" },
-    { title: "Paramedic Service", link: "/services/paramedic" },
-    { title: "Bariatric Service", link: "/services/bariatric" },
-    { title: "Critical Care Retrieval", link: "/services/critical-retrieval" },
-    { title: "ECMO Service", link: "/services/ecmo" },
-    { title: "High Dependance", link: "/services/high-dependance" },
-    { title: "Mental Health Service", link: "/services/mental-health" },
-    { title: "Neonatal Transport", link: "/services/neonatal" }
+    { title: t("serviceNames.nepts", "NEPTS"), link: "/services/nepts" },
+    { title: t("serviceNames.paramedic", "Paramedic Service"), link: "/services/paramedic" },
+    { title: t("serviceNames.bariatric", "Bariatric Service"), link: "/services/bariatric" },
+    { title: t("navigation.criticalRetrieval", "Critical Care Retrieval"), link: "/services/critical-retrieval" },
+    { title: t("serviceNames.ecmo", "ECMO Service"), link: "/services/ecmo" },
+    { title: t("serviceNames.highDependance", "High Dependance"), link: "/services/high-dependance" },
+    { title: t("serviceNames.mentalHealth", "Mental Health Service"), link: "/services/mental-health" },
+    { title: t("serviceNames.neonatal", "Neonatal Transport"), link: "/services/neonatal" }
   ]
 
   const aboutPages = [
-    { title: "About Us", link: "/about" },
-    { title: "Meet the Team", link: "/team" },
-    { title: "Meet the Cubs", link: "/cubs" },
-    { title: "Our Fleet", link: "/fleet" }
+    { title: t("navigation.aboutUs", "About Us"), link: "/about" },
+    { title: t("about.meetTeam", "Meet the Team"), link: "/team" },
+    { title: t("about.meetCubs", "Meet the Cubs"), link: "/cubs" },
+    { title: t("about.ourFleet", "Our Fleet"), link: "/fleet" }
   ]
 
   return (
@@ -54,7 +54,7 @@ export default function Header() {
                 onMouseEnter={() => setIsServicesOpen(true)}
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
-                Our Services <ChevronDown className="ml-1 h-4 w-4" />
+                {t("navigation.services", "Our Services")} <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               {isServicesOpen && (
                 <div 
@@ -63,7 +63,7 @@ export default function Header() {
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   <div className="py-2">
-                    <Link to="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">All Services</Link>
+                    <Link to="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">{t("navigation.allServices", "All Services")}</Link>
                     {services.map((service, index) => (
                       <Link 
                         key={index}
@@ -79,7 +79,7 @@ export default function Header() {
             </div>
 
             <Link to="/careers" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              Join Us
+              {t("navigation.joinUs", "Join Us")}
             </Link>
             
             {/* About Us Dropdown */}
@@ -89,7 +89,7 @@ export default function Header() {
                 onMouseEnter={() => setIsAboutOpen(true)}
                 onMouseLeave={() => setIsAboutOpen(false)}
               >
-                About Us <ChevronDown className="ml-1 h-4 w-4" />
+                {t("navigation.aboutUs", "About Us")} <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               {isAboutOpen && (
                 <div 
@@ -113,10 +113,10 @@ export default function Header() {
             </div>
 
             <Link to="/compliments" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              Compliments
+              {t("navigation.compliments", "Compliments")}
             </Link>
             <Link to="/news" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              News
+              {t("navigation.news", "News")}
             </Link>
             <Link to="/contact" className="text-gray-700 hover:text-[#0a2240] font-medium">
               {t("navigation.contact", "Contact Us")}
@@ -153,14 +153,14 @@ export default function Header() {
                 className="text-gray-700 hover:text-[#0a2240] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Our Services
+                {t("navigation.services", "Our Services")}
               </Link>
               <Link
                 to="/careers"
                 className="text-gray-700 hover:text-[#0a2240] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Join Us
+                {t("navigation.joinUs", "Join Us")}
               </Link>
               <Link
                 to="/about"
@@ -174,35 +174,35 @@ export default function Header() {
                 className="text-gray-700 hover:text-[#0a2240] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Meet the Team
+                {t("about.meetTeam", "Meet the Team")}
               </Link>
               <Link
                 to="/cubs"
                 className="text-gray-700 hover:text-[#0a2240] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Meet the Cubs
+                {t("about.meetCubs", "Meet the Cubs")}
               </Link>
               <Link
                 to="/fleet"
                 className="text-gray-700 hover:text-[#0a2240] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Our Fleet
+                {t("about.ourFleet", "Our Fleet")}
               </Link>
               <Link
                 to="/compliments"
                 className="text-gray-700 hover:text-[#0a2240] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Compliments
+                {t("navigation.compliments", "Compliments")}
               </Link>
               <Link
                 to="/news"
                 className="text-gray-700 hover:text-[#0a2240] font-medium"
                 onClick={() => setIsMenuOpen(false)}
               >
-                News
+                {t("navigation.news", "News")}
               </Link>
               <Link
                 to="/contact"
