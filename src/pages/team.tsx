@@ -7,40 +7,40 @@ export default function TeamPage() {
 
   const seniorTeam = [
     {
-      name: "Mohammed Ali Hashim",
-      title: "Chief Executive Officer",
+      name: t('team.mohammedAliHashim.name'),
+      title: t('team.mohammedAliHashim.title'),
       image: "/images/team/mohamed-ali-hashim.jpg",
-      description: "Mohammed has over 20 years of experience in healthcare management and emergency medical services. He founded BEARS with a vision to provide exceptional patient transport services across the UK."
+      description: t('team.mohammedAliHashim.description')
     },
     {
-      name: "Shabnam Undre",
-      title: "Clinical Director",
+      name: t('team.shabnamUndre.name'),
+      title: t('team.shabnamUndre.title'),
       image: "/images/team/shabnam-undre.jpg",
-      description: "Shabnam brings extensive clinical expertise and ensures all our services meet the highest medical standards. She oversees clinical governance and staff training programs."
+      description: t('team.shabnamUndre.description')
     },
     {
-      name: "Nosa Idahosa",
-      title: "Operations Director",
+      name: t('team.nosaIdahosa.name'),
+      title: t('team.nosaIdahosa.title'),
       image: "/images/team/nosa-idahosa.jpg",
-      description: "Nosa manages our day-to-day operations ensuring efficient service delivery. With a background in logistics and emergency services, he optimizes our operational processes."
+      description: t('team.nosaIdahosa.description')
     },
     {
-      name: "Winston Flemming",
-      title: "Fleet Manager",
+      name: t('team.winstonFlemming.name'),
+      title: t('team.winstonFlemming.title'),
       image: "/images/team/winston-flemming.jpg",
-      description: "Winston oversees our vehicle fleet, ensuring all ambulances are maintained to the highest standards and equipped with the latest medical technology."
+      description: t('team.winstonFlemming.description')
     },
     {
-      name: "Amechi Okaoye",
-      title: "Quality Assurance Manager",
+      name: t('team.amechiOkaoye.name'),
+      title: t('team.amechiOkaoye.title'),
       image: "/images/team/amechi-okaonye.jpg",
-      description: "Amechi leads our quality assurance programs, monitoring service delivery and implementing continuous improvement initiatives across all our services."
+      description: t('team.amechiOkaoye.description')
     },
     {
-      name: "Osman Sadiq",
-      title: "Training Director",
+      name: t('team.osmanSadiq.name'),
+      title: t('team.osmanSadiq.title'),
       image: "/images/team/osman-sadiq.jpg",
-      description: "Osman develops and delivers comprehensive training programs for our staff, ensuring they are equipped with the latest skills and knowledge in patient care."
+      description: t('team.osmanSadiq.description')
     }
   ]
 
@@ -51,7 +51,7 @@ export default function TeamPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl font-bold mb-6">Meet the BEARS</h1>
+              <h1 className="text-4xl font-bold mb-6">{t('team.meetTheBearsTitle')}</h1>
             </div>
             <div>
               <img 
@@ -67,7 +67,7 @@ export default function TeamPage() {
       {/* Senior Management Team */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#0a2240] mb-8">Senior Management Team</h2>
+          <h2 className="text-3xl font-bold text-[#0a2240] mb-8">{t('team.seniorManagementTitle')}</h2>
           
           <div className="space-y-8">
             {seniorTeam.map((member, index) => (

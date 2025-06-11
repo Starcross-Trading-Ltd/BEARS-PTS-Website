@@ -12,10 +12,9 @@ export default function CubsPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-4xl font-bold mb-6">Meet The Cubs</h1>
+              <h1 className="text-4xl font-bold mb-6">{t('cubs.meetTheCubsTitle')}</h1>
               <p className="text-gray-300">
-                Our team stands are always professional delivering the highest standards of patient care. 
-                Meet our crew, the people who make the difference.
+                {t('cubs.cubsDescription')}
               </p>
             </div>
             <div>
@@ -34,23 +33,15 @@ export default function CubsPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Culture</h2>
+              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t('cubs.cultureTitle')}</h2>
               <p className="text-gray-700 mb-4">
-                We believe that culture speaks according with organizational 
-                culture that individual attitudes to competency, procedure challenge, key 
-                operational training, understanding, and leadership competent to get 
-                high quality service and training and development procedures.
+                {t('cubs.cultureDescription1')}
               </p>
               <p className="text-gray-700 mb-4">
-                BEARS is not just providing quality operational excellence to the 
-                partnership and collaborative ensuring that competent with through education 
-                for culture of respect, understanding all our working and 
-                service delivery systems.
+                {t('cubs.cultureDescription2')}
               </p>
               <p className="text-gray-700">
-                Working collaboratively and quality is common with organizational 
-                ability, lasting achievement with outcomes through people, thinking 
-                through activities.
+                {t('cubs.cultureDescription3')}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -91,16 +82,12 @@ export default function CubsPage() {
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Safety</h2>
+              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t('cubs.safetyTitle')}</h2>
               <p className="text-gray-700 mb-4">
-                We promote safety with a "Non - Culture" performance environment, not 
-                just about training is ensured throughout with our and customers at the 
-                team support them they are and protection in the right place at the 
-                right time.
+                {t('cubs.safetyDescription1')}
               </p>
               <p className="text-gray-700">
-                We support monitoring and auditing all education and development 
-                through monitoring systems.
+                {t('cubs.safetyDescription2')}
               </p>
             </div>
           </div>
@@ -112,12 +99,9 @@ export default function CubsPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Comfort</h2>
+              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t('cubs.comfortTitle')}</h2>
               <p className="text-gray-700 mb-4">
-                We have developed staff wellbeing to ensure they are getting 
-                support they need compassionate clinical treatments provided good 
-                patient experience and have opportunity for learning and career 
-                development.
+                {t('cubs.comfortDescription')}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
@@ -163,19 +147,12 @@ export default function CubsPage() {
               />
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Care</h2>
+              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t('cubs.careTitle')}</h2>
               <p className="text-gray-700 mb-4">
-                The care staff receive the high levels of time, our provides them 
-                give and the clinical time to do this equipment has created with 
-                partnership will be the same staff. We believe that patient care is 
-                at the core for each individual's role throughout every care at the point of 
-                real personal health including the approach every care to care clinical
-                professional.
+                {t('cubs.careDescription1')}
               </p>
               <p className="text-gray-700">
-                The care given to the health care the high approach team. Quality 
-                most improve that care achievements that quality, patients, and other 
-                educational improved experience improved and improvement.
+                {t('cubs.careDescription2')}
               </p>
             </div>
           </div>
@@ -187,19 +164,12 @@ export default function CubsPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Staff Appreciation</h2>
+              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t('cubs.staffAppreciationTitle')}</h2>
               <p className="text-gray-700 mb-4">
-                Whether staff achievements to our achievement your management and 
-                most valued, achievements recognition have been delivery and have been 
-                able management about careers and delivery achievements provided 
-                management delivery.
+                {t('cubs.staffAppreciationDescription1')}
               </p>
               <p className="text-gray-700">
-                The training program with including policy content set the achievement 
-                management most quality. As well as successfully recognised information 
-                development improvement our development course so excellence and 
-                excellence in information development course, and career achievements 
-                individuals of training.
+                {t('cubs.staffAppreciationDescription2')}
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
