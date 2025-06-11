@@ -23,7 +23,9 @@
     "ecmo": "ECMO Service",
     "highDependance": "High Dependance",
     "mentalHealth": "Mental Health Service",
-    "neonatal": "Neonatal Transport"
+    "neonatal": "Neonatal Transport",
+    "specialistCritical": "Specialist Critical Retrieval Response Service",
+    "clinicalHelpline": "BEARS Clinical Helpline"
   },
   "home": {
     "title": "Welcome to BEARS Patient Transport Services",
@@ -45,6 +47,54 @@
     "professionalCare": "Professional and compassionate care",
     "safeTransportation": "Safe and comfortable transportation",
     "excellenceInServices": "Excellence in emergency medical services"
+  },
+  "neonatal": {
+    "title": "Neonatal and Paediatric intensive care transfer service",
+    "intro": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and paediatric patients requiring urgent care and specialised support.",
+    "description": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and paediatric patients requiring urgent care and specialised support. Our Neonatal Transport Service is committed to ensuring the safe transfer of critically ill newborns, infants, and young children to specialised paediatric and neonatal intensive care units, where they can receive the expert care they require.",
+    "availability": {
+      "title": "24/7 Availability",
+      "description": "Medical emergencies for newborns and paediatric patients can arise at any time. Our team of highly trained medical professionals is available 24 hours a day, seven days a week, ensuring that critical emergencies are responded to promptly with our experienced medical staff available to provide assistance during critical times."
+    },
+    "equipment": {
+      "title": "Advanced Critical Care Support Equipment",
+      "description": "Equipment and technology are crucial to the safe and effective transportation of critically ill newborns and children. Our neonatal and paediatric intensive care ambulances are designed to function as mobile intensive care units, equipped with state-of-the-art medical monitoring, life support systems and specialized paediatric and neonatal equipment."
+    },
+    "guidance": {
+      "title": "Experienced Clinical Guidance",
+      "description": "Our team consists of dedicated neonatal and paediatric healthcare professionals, including neonatal nurses, paediatric nurses, and medical specialists. From neonatal resuscitation to complex cardiac support, our experienced and qualified team is trained to provide comprehensive care."
+    },
+    "compassionate": {
+      "title": "Personalised and Compassionate Care",
+      "description": "We understand the emotional and physical challenges that families face during these critical moments. Our team is committed to providing not only expert medical care but also emotional support and clear communication throughout the transportation process, providing caring, professional service to families."
+    },
+    "reliable": {
+      "title": "Reliable and Trustworthy Service",
+      "description": "In critical situations, every moment counts. Our commitment to reliability means that families can trust us to provide rapid response times and safe, efficient transportation. We understand the urgency of neonatal and paediatric emergencies and are committed to providing transportation solutions that families can rely on during the most challenging times."
+    },
+    "whyChoose": {
+      "title": "Why Choose Us?",
+      "expertise": {
+        "title": "Expertise:",
+        "description": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe and capable hands."
+      },
+      "equipment": {
+        "title": "Advanced Equipment:",
+        "description": "State-of-the-art medical technology and specialised neonatal transport equipment ensure the highest standards of care during transport."
+      },
+      "compassion": {
+        "title": "Compassion:",
+        "description": "We understand the emotional challenges families face and provide compassionate support throughout the journey."
+      },
+      "reliability": {
+        "title": "Reliability:",
+        "description": "Our round-the-clock availability and rapid response times ensure that critical care is delivered when it's needed most."
+      }
+    },
+    "teamImageAlt": "Neonatal Transport Team",
+    "vehicleImageAlt": "Neonatal Transport Vehicle",
+    "sideImageAlt": "Neonatal Transport",
+    "contactDescription": "For more information about our Neonatal and Paediatric Intensive Care Transfer service or to arrange a transfer, please contact our operations team. Our expert advisors are here to assist you with all your emergency transport needs."
   },
   "aboutPage": {
     "aboutBearsTitle": "About BEARS",
@@ -128,6 +178,7 @@
   },
   "services": {
     "ourServicesTitle": "Our Services",
+    "servicesDescription": "We provide comprehensive patient transport services across the UK, specializing in critical care, emergency response, and specialized medical transport.",
     "highDependance": {
       "title": "High Dependance",
       "description": "We provide specialised high-dependency care services designed for adult patients requiring complex care during transport."

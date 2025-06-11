@@ -8,139 +8,88 @@ export default function AboutPage() {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section with Our Values */}
+      {/* Hero Section */}
       <section className="relative bg-[#0a2240] text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl font-bold mb-6">Our Values</h1>
-              <p className="text-gray-300">
-                BEARS values underpin everything we do, guiding our decisions and 
-                ensuring we provide exceptional care and service to all our patients 
-                and healthcare partners throughout their journey with us.
-              </p>
-            </div>
-            <div>
-              <img 
-                src="/images/values-logo.png" 
-                alt="BEARS Values Logo"
-                className="w-64 h-auto mx-auto"
-              />
-            </div>
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("aboutPage.aboutBearsTitle", "About BEARS")}</h1>
+          <p className="text-xl text-gray-300 max-w-3xl">
+            {t("aboutPage.aboutBearsDescription", "BEARS Patient Transport Service was established to provide high-quality ambulance services with a focus on patient care, comfort, and safety.")}
+          </p>
         </div>
       </section>
 
-      {/* Values Content */}
+      {/* Our Story Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto space-y-12">
-            {/* Safety */}
-            <div className="border-l-4 border-red-500 pl-6">
-              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Safety</h2>
-              <p className="text-gray-700 mb-4">
-                We always put safety first in everything we do, designed and built 
-                service levels with robust oversight at all key registered locations.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Our vehicles maintain robust and healthy levels of monitoring including 
-                systems, our safety systems are designed to be 100% safe, and the emergency 
-                services. Backed by stringent planning information and built for 
-                safety. In the eyes of our parents who believe in the safety of 
-                their children.
-              </p>
-              <p className="text-gray-700">
-                Our safety drivers adopt comprehensive approach to administering safety in 
-                monitoring and auditing covering that experience and through education. 
-                and planning are a top priority including skills training delivered and 
-                further monitoring.
-              </p>
-            </div>
+          <h2 className="text-3xl font-bold text-[#0a2240] mb-8">{t("aboutPage.ourStoryTitle", "Our Story")}</h2>
+          <div className="space-y-6 text-lg text-gray-700">
+            <p>{t("aboutPage.ourStoryContent1", "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service.")}</p>
+            <p>{t("aboutPage.ourStoryContent2", "Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.")}</p>
+            <p>{t("aboutPage.ourStoryContent3", "At every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care.")}</p>
+          </div>
+        </div>
+      </section>
 
-            {/* Comfort */}
-            <div className="border-l-4 border-orange-500 pl-6">
-              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Comfort</h2>
-              <p className="text-gray-700 mb-4">
-                Consistent comfort and guidance through understanding and state of the 
-                art equipment drivers efficient clinical treatment and improvement 
-                opportunities to support local healthcare.
-              </p>
-              <p className="text-gray-700">
-                Enabling patients at family can take to make properly individualized plans with 
-                us by following appropriate emergency or direct support ensuring our service 
-                offering is right for them and supports their health.
-              </p>
+      {/* Values Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-[#0a2240] mb-8 text-center">{t("about.ourValues", "Our Values")}</h2>
+          <p className="text-lg text-gray-600 mb-12 text-center max-w-3xl mx-auto">
+            {t("about.valuesDescription", "BEARS values underpin everything we do, guiding our decisions and ensuring we provide exceptional care and service to all our patients and healthcare partners throughout their journey with us.")}
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#4285f4] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">S</span>
+              </div>
+              <h3 className="text-xl font-bold text-[#0a2240] mb-3">{t("about.safety", "Safety")}</h3>
+              <div className="text-gray-700 space-y-3">
+                <p>{t("about.safetyDescription1", "We always put safety first in everything we do, designed and built service levels with robust oversight at all key registered locations.")}</p>
+                <p>{t("about.safetyDescription2", "Our vehicles maintain robust and healthy levels of monitoring including systems, our safety systems are designed to be 100% safe, and the emergency services.")}</p>
+                <p>{t("about.safetyDescription3", "Our safety drivers adopt comprehensive approach to administering safety in monitoring and auditing covering that experience and through education.")}</p>
+              </div>
             </div>
-
-            {/* Care */}
-            <div className="border-l-4 border-purple-500 pl-6">
-              <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Care</h2>
-              <p className="text-gray-700 mb-4">
-                BEARS Improvement project which enables us to understand what each 
-                person will understand in considering improvement and making work programmes 
-                to a higher standards where there is opportunity to improvement for 
-                long-term and improvement to include all communities and continue to achieve 
-                the greatest.
-              </p>
-              <p className="text-gray-700 mb-4">
-                Our patients have taken and professionals guidance whilst providing timely 
-                and prompt access to these additional supports for clinical quality for the 
-                appropriate clinical.
-              </p>
-              <p className="text-gray-700">
-                We believe that our leadership strategy that could live precondition that we promote 
-                the clinical tool advice over medical care through direct and guidance medical 
-                improvement. We support quality management and continuous quality 
-                improvement or patient service care and quality in a clinical role.
-              </p>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#4285f4] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">C</span>
+              </div>
+              <h3 className="text-xl font-bold text-[#0a2240] mb-3">{t("about.comfort", "Comfort")}</h3>
+              <div className="text-gray-700 space-y-3">
+                <p>{t("about.comfortDescription1", "Consistent comfort and guidance through understanding and state of the art equipment drivers efficient clinical treatment and improvement opportunities to support local healthcare.")}</p>
+                <p>{t("about.comfortDescription2", "Enabling patients at family can take to make properly individualized plans with us by following appropriate emergency or direct support ensuring our service offering is right for them and supports their health.")}</p>
+              </div>
+            </div>
+            
+            <div className="text-center">
+              <div className="w-16 h-16 bg-[#4285f4] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white font-bold text-xl">C</span>
+              </div>
+              <h3 className="text-xl font-bold text-[#0a2240] mb-3">{t("about.care", "Care")}</h3>
+              <div className="text-gray-700 space-y-3">
+                <p>{t("about.careDescription1", "BEARS Improvement project which enables us to understand what each person will understand in considering improvement and making work programmes to a higher standards where there is opportunity to improvement for long-term and improvement to include all communities and continue to achieve the greatest.")}</p>
+                <p>{t("about.careDescription2", "Our patients have taken and professionals guidance whilst providing timely and prompt access to these additional supports for clinical quality for the appropriate clinical.")}</p>
+                <p>{t("about.careDescription3", "We believe that our leadership strategy that could live precondition that we promote the clinical tool advice over medical care through direct and guidance medical improvement.")}</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* BEARS in Numbers Section */}
-      <section className="py-16 bg-gray-50">
+      {/* Call to Action */}
+      <section className="py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-[#0a2240] mb-8">BEARS in Numbers</h2>
-          
-          <div className="relative max-w-4xl mx-auto">
-            <img 
-              src="/images/world-map-dots.png" 
-              alt="World map showing BEARS reach"
-              className="w-full h-auto opacity-20"
-            />
-            
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-6xl font-bold text-[#0a2240] mb-2">5,058,454</div>
-                <div className="text-gray-600">MILES TRAVELLED</div>
-              </div>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-              <div className="text-center p-4 bg-white rounded-lg shadow">
-                <div className="text-2xl font-bold text-[#0a2240]">22,770</div>
-                <div className="text-sm text-gray-600">ADULT PATIENTS</div>
-              </div>
-              <div className="text-center p-4 bg-white rounded-lg shadow">
-                <div className="text-2xl font-bold text-[#0a2240]">258,875</div>
-                <div className="text-sm text-gray-600">NEPTS MILES</div>
-              </div>
-              <div className="text-center p-4 bg-white rounded-lg shadow">
-                <div className="text-2xl font-bold text-[#0a2240]">33,591</div>
-                <div className="text-sm text-gray-600">CRITICAL CARE</div>
-              </div>
-              <div className="text-center p-4 bg-white rounded-lg shadow">
-                <div className="text-2xl font-bold text-[#0a2240]">464,159</div>
-                <div className="text-sm text-gray-600">PAEDIATRIC MILES</div>
-              </div>
-            </div>
-            
-            <div className="mt-6 text-center">
-              <div className="text-4xl font-bold text-[#0a2240]">203</div>
-              <div className="text-gray-600">times around the world</div>
-            </div>
-          </div>
+          <h2 className="text-3xl font-bold text-[#0a2240] mb-8">{t("aboutPage.meetOurTeam", "Meet our team")}</h2>
+          <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+            {t("aboutPage.learnMoreAboutBears", "Learn More About BEARS")}
+          </p>
+          <Link 
+            to="/contact"
+            className="inline-block px-8 py-3 bg-[#4285f4] text-white font-medium rounded hover:bg-blue-600 transition-colors"
+          >
+            {t("home.getInTouch", "Get in touch")}
+          </Link>
         </div>
       </section>
     </div>
