@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../../components/language-provider'
@@ -11,7 +10,7 @@ export default function ParamedicServicePage() {
       {/* Header */}
       <section className="bg-[#0a2240] text-white py-12">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold">Paramedic Service</h1>
+          <h1 className="text-4xl font-bold">{t("services.paramedic.title", "Paramedic Service")}</h1>
         </div>
       </section>
 
@@ -21,8 +20,7 @@ export default function ParamedicServicePage() {
           <div className="lg:col-span-2">
             <div className="bg-red-50 p-6 rounded-lg mb-8">
               <p className="text-gray-700">
-                At BEARS, we understand that some patients require specialised care and support 
-                during transportation.
+                {t("services.paramedic.description", "At BEARS, we understand that some patients require specialised care and support during transportation.")}
               </p>
             </div>
 
@@ -98,22 +96,22 @@ export default function ParamedicServicePage() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Why Choose Us?</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("serviceDetails.whyChooseUs", "Why Choose Us?")}</h2>
                 <div className="space-y-3">
                   <div>
-                    <h3 className="font-semibold text-[#0a2240]">Expertise:</h3>
-                    <p className="text-gray-700">Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish.</p>
+                    <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.expertise", "Expertise:")}</h3>
+                    <p className="text-gray-700">{t("serviceDetails.expertiseDescription", "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish.")}</p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#0a2240]">Reliability:</h3>
+                    <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.reliability", "Reliability:")}</h3>
                     <p className="text-gray-700">We pride ourselves on punctuality and reliability, ensuring timely and efficient transportation for all our patients.</p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#0a2240]">Comfort:</h3>
+                    <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.comfort", "Comfort:")}</h3>
                     <p className="text-gray-700">We understand the importance of comfort during medical transport. Our vehicles are designed to provide a comfortable and stress-free environment for patients and their families.</p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-[#0a2240]">Personalised Service:</h3>
+                    <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.personalisedService", "Personalised Service:")}</h3>
                     <p className="text-gray-700">We work closely with healthcare providers and their families to create personalised care plans that meet the unique needs of each individual.</p>
                   </div>
                 </div>
@@ -124,29 +122,29 @@ export default function ParamedicServicePage() {
           {/* Sidebar */}
           <div className="lg:col-span-1">
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h3 className="text-lg font-bold text-[#0a2240] mb-4">Contact Us</h3>
+              <h3 className="text-lg font-bold text-[#0a2240] mb-4">{t("serviceDetails.contactUs", "Contact Us")}</h3>
               <p className="text-sm text-gray-600 mb-4">
-                For more information about our paramedic service or to make a booking, please contact our team.
+                {t("serviceDetails.contactDescription", "For more information about our services or to make a booking, please contact our team.")}
               </p>
               <div className="space-y-2 text-sm">
-                <p><strong>Phone:</strong> +44 123 456 7890</p>
-                <p><strong>Email:</strong> info@bearsambulance.com</p>
+                <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> +44 123 456 7890</p>
+                <p><strong>{t("serviceDetails.email", "Email:")}</strong> info@bearsambulance.com</p>
               </div>
               <button className="w-full mt-4 px-4 py-2 bg-[#00855a] text-white rounded hover:bg-[#006e4a] transition-colors">
-                Get in touch
+                {t("serviceDetails.getInTouch", "Get in touch")}
               </button>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-bold text-[#0a2240] mb-4">Our Services</h3>
+              <h3 className="text-lg font-bold text-[#0a2240] mb-4">{t("serviceDetails.ourServices", "Our Services")}</h3>
               <ul className="space-y-2 text-sm">
-                <li><Link to="/services/nepts" className="text-[#4285f4] hover:underline">NEPTS</Link></li>
-                <li><Link to="/services/bariatric" className="text-[#4285f4] hover:underline">Bariatric Service</Link></li>
-                <li><Link to="/services/critical-retrieval" className="text-[#4285f4] hover:underline">Critical Care Retrieval</Link></li>
-                <li><Link to="/services/ecmo" className="text-[#4285f4] hover:underline">ECMO Service</Link></li>
-                <li><Link to="/services/high-dependance" className="text-[#4285f4] hover:underline">High Dependance</Link></li>
-                <li><Link to="/services/mental-health" className="text-[#4285f4] hover:underline">Mental Health Transport</Link></li>
-                <li><Link to="/services/neonatal" className="text-[#4285f4] hover:underline">Neonatal Transport</Link></li>
+                <li><Link to="/services/nepts" className="text-[#4285f4] hover:underline">{t("services.nepts.title", "NEPTS")}</Link></li>
+                <li><Link to="/services/bariatric" className="text-[#4285f4] hover:underline">{t("services.bariatric.title", "Bariatric Service")}</Link></li>
+                <li><Link to="/services/critical-retrieval" className="text-[#4285f4] hover:underline">{t("services.criticalRetrieval.title", "Critical Care Retrieval")}</Link></li>
+                <li><Link to="/services/ecmo" className="text-[#4285f4] hover:underline">{t("services.ecmo.title", "ECMO Service")}</Link></li>
+                <li><Link to="/services/high-dependance" className="text-[#4285f4] hover:underline">{t("services.highDependance.title", "High Dependance")}</Link></li>
+                <li><Link to="/services/mental-health" className="text-[#4285f4] hover:underline">{t("services.mentalHealth.title", "Mental Health Transport")}</Link></li>
+                <li><Link to="/services/neonatal" className="text-[#4285f4] hover:underline">{t("services.neonatal.title", "Neonatal Transport")}</Link></li>
               </ul>
             </div>
           </div>

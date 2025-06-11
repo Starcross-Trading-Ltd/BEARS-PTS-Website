@@ -14,23 +14,23 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold text-[#0a2240] mb-6">
-                Providing Safety, Comfort and Care
+                {t("home.heroTitle", "Providing Safety, Comfort and Care")}
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                We provide a high quality ambulance service taking great care and pride in our work with the highest priority on transporting patients with SAFETY, COMFORT and CARE.
+                {t("home.heroDescription", "We provide a high quality ambulance service taking great care and pride in our work with the highest priority on transporting patients with SAFETY, COMFORT and CARE.")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link 
                   to="/contact"
                   className="inline-block px-8 py-3 bg-[#00855a] text-white font-medium rounded hover:bg-[#006e4a] transition-colors text-center"
                 >
-                  Get in touch
+                  {t("home.getInTouch", "Get in touch")}
                 </Link>
                 <Link 
                   to="/about"
                   className="inline-block px-8 py-3 border border-[#4285f4] text-[#4285f4] font-medium rounded hover:bg-[#4285f4] hover:text-white transition-colors text-center"
                 >
-                  Learn more
+                  {t("home.learnMore", "Learn more")}
                 </Link>
               </div>
             </div>
@@ -57,26 +57,26 @@ export default function HomePage() {
               />
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-[#0a2240] mb-6">Our Core Values</h2>
+              <h2 className="text-3xl font-bold text-[#0a2240] mb-6">{t("home.coreValuesTitle", "Our Core Values")}</h2>
               <p className="text-lg text-gray-600 mb-6">
-                BEARS core values are <strong>safety</strong>, <strong>comfort</strong>, and <strong>care</strong>, we ensure:
+                {t("home.coreValuesDescription", "BEARS core values are safety, comfort, and care, we ensure:")}
               </p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
                   <span className="text-[#00855a] font-bold mr-2">•</span>
-                  High-quality patient transport services
+                  {t("home.highQualityService", "High-quality patient transport services")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#00855a] font-bold mr-2">•</span>
-                  Professional and compassionate care
+                  {t("home.professionalCare", "Professional and compassionate care")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#00855a] font-bold mr-2">•</span>
-                  Safe and comfortable transportation
+                  {t("home.safeTransportation", "Safe and comfortable transportation")}
                 </li>
                 <li className="flex items-start">
                   <span className="text-[#00855a] font-bold mr-2">•</span>
-                  Excellence in emergency medical services
+                  {t("home.excellenceInServices", "Excellence in emergency medical services")}
                 </li>
               </ul>
             </div>
@@ -87,16 +87,15 @@ export default function HomePage() {
       {/* Services Preview Section */}
       <section className="py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-[#0a2240] mb-8">Our Services</h2>
+          <h2 className="text-3xl font-bold text-[#0a2240] mb-8">{t("home.ourServicesTitle", "Our Services")}</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-            We provide comprehensive patient transport services across the UK, specializing in critical care, 
-            NEPTS, bariatric, mental health, and neonatal transport.
+            {t("home.servicesDescription", "We provide comprehensive patient transport services across the UK, specializing in critical care, NEPTS, bariatric, mental health, and neonatal transport.")}
           </p>
           <Link 
             to="/services"
             className="inline-block px-8 py-3 bg-[#4285f4] text-white font-medium rounded hover:bg-blue-600 transition-colors"
           >
-            View All Services
+            {t("home.viewAllServices", "View All Services")}
           </Link>
         </div>
       </section>

@@ -7,8 +7,23 @@
   "navigation": {
     "home": "Home",
     "about": "About Us",
+    "aboutUs": "About Us",
     "services": "Our Services",
-    "contact": "Contact Us"
+    "allServices": "All Services",
+    "contact": "Contact Us",
+    "joinUs": "Join Us",
+    "compliments": "Compliments",
+    "news": "News",
+    "criticalRetrieval": "Critical Care Retrieval"
+  },
+  "serviceNames": {
+    "nepts": "NEPTS",
+    "paramedic": "Paramedic Service",
+    "bariatric": "Bariatric Service",
+    "ecmo": "ECMO Service",
+    "highDependance": "High Dependance",
+    "mentalHealth": "Mental Health Service",
+    "neonatal": "Neonatal Transport"
   },
   "home": {
     "title": "Welcome to BEARS Patient Transport Services",
@@ -22,7 +37,14 @@
     "serviceQuality": "We get our service quality right the first time",
     "efficientCare": "We are efficient with passion for patient care",
     "bestValue": "We ensure best value for money",
-    "moreAboutValues": "More about our core values"
+    "moreAboutValues": "More about our core values",
+    "ourServicesTitle": "Our Services",
+    "servicesDescription": "We provide comprehensive patient transport services across the UK, specializing in critical care, NEPTS, bariatric, mental health, and neonatal transport.",
+    "viewAllServices": "View All Services",
+    "highQualityService": "High-quality patient transport services",
+    "professionalCare": "Professional and compassionate care",
+    "safeTransportation": "Safe and comfortable transportation",
+    "excellenceInServices": "Excellence in emergency medical services"
   },
   "aboutPage": {
     "aboutBearsTitle": "About BEARS",
@@ -31,6 +53,31 @@
     "ourStoryContent1": "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service.",
     "ourStoryContent2": "Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.",
     "ourStoryContent3": "At every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care."
+  },
+  "about": {
+    "ourValues": "Our Values",
+    "valuesDescription": "BEARS values underpin everything we do, guiding our decisions and ensuring we provide exceptional care and service to all our patients and healthcare partners throughout their journey with us.",
+    "safety": "Safety",
+    "safetyDescription1": "We always put safety first in everything we do, designed and built service levels with robust oversight at all key registered locations.",
+    "safetyDescription2": "Our vehicles maintain robust and healthy levels of monitoring including systems, our safety systems are designed to be 100% safe, and the emergency services. Backed by stringent planning information and built for safety. In the eyes of our parents who believe in the safety of their children.",
+    "safetyDescription3": "Our safety drivers adopt comprehensive approach to administering safety in monitoring and auditing covering that experience and through education. and planning are a top priority including skills training delivered and further monitoring.",
+    "comfort": "Comfort",
+    "comfortDescription1": "Consistent comfort and guidance through understanding and state of the art equipment drivers efficient clinical treatment and improvement opportunities to support local healthcare.",
+    "comfortDescription2": "Enabling patients at family can take to make properly individualized plans with us by following appropriate emergency or direct support ensuring our service offering is right for them and supports their health.",
+    "care": "Care",
+    "careDescription1": "BEARS Improvement project which enables us to understand what each person will understand in considering improvement and making work programmes to a higher standards where there is opportunity to improvement for long-term and improvement to include all communities and continue to achieve the greatest.",
+    "careDescription2": "Our patients have taken and professionals guidance whilst providing timely and prompt access to these additional supports for clinical quality for the appropriate clinical.",
+    "careDescription3": "We believe that our leadership strategy that could live precondition that we promote the clinical tool advice over medical care through direct and guidance medical improvement. We support quality management and continuous quality improvement or patient service care and quality in a clinical role.",
+    "bearsInNumbers": "BEARS in Numbers",
+    "milesTravelled": "MILES TRAVELLED",
+    "adultPatients": "ADULT PATIENTS",
+    "neptsMiles": "NEPTS MILES",
+    "criticalCare": "CRITICAL CARE",
+    "paediatricMiles": "PAEDIATRIC MILES",
+    "timesAroundWorld": "times around the world",
+    "meetTeam": "Meet the Team",
+    "meetCubs": "Meet the Cubs",
+    "ourFleet": "Our Fleet"
   },
   "contact": {
     "contactUsTitle": "Contact Us",
@@ -50,5 +97,152 @@
   "languageSelector": {
     "label": "Change language",
     "selectLanguage": "Select Language"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "phone": "Phone",
+    "email": "Email",
+    "allRightsReserved": "All rights reserved."
+  },
+  "compliments": {
+    "complimentsTitle": "Compliments",
+    "complimentsDescription": "Read what our patients and healthcare partners say about our services.",
+    "experienceServiceTitle": "Experience Our Service",
+    "experienceServiceDescription": "Join the many healthcare providers and patients who trust BEARS for their transport needs.",
+    "contactUsToday": "Contact Us Today",
+    "testimonial3": "Professional, caring and efficient service. The team made what could have been a stressful journey very comfortable.",
+    "testimonial3Source": "Royal London Hospital",
+    "testimonial4": "Outstanding care and attention to detail. The crew went above and beyond to ensure patient comfort and safety.",
+    "testimonial4Source": "King's College Hospital",
+    "testimonial5": "Excellent communication throughout the transport. Family felt well-informed and supported during a difficult time.",
+    "testimonial5Source": "Great Ormond Street Hospital",
+    "testimonial6": "The BEARS team showed incredible professionalism and compassion. Highly recommend their services.",
+    "testimonial6Source": "Imperial College Healthcare"
+  },
+  "testimonials": {
+    "testimonial1": "The ambulance crew arrived on time, were very polite and friendly. The journey was comfortable. While in the ambulance, they checked and observed everything. Thank you so much!",
+    "testimonial1Source": "Guy's and St Thomas' NHS Foundation Trust",
+    "testimonial2": "Crew were brilliant, came on time. Driver was very good and the journey was comfortable. The staff member that stayed in the back, kept me entertained and chatted with me all the way home, putting me at ease. Excellent service, 10/10!",
+    "testimonial2Source": "St Bartholomew's Hospital"
+  },
+  "services": {
+    "ourServicesTitle": "Our Services",
+    "highDependance": {
+      "title": "High Dependance",
+      "description": "We provide specialised high-dependency care services designed for adult patients requiring complex care during transport."
+    },
+    "criticalRetrieval": {
+      "title": "Specialist Critical Retrieval Response Service",
+      "description": "24/7 availability providing critical care services all of whom are received with high standards in response care units."
+    },
+    "ecmo": {
+      "title": "ECMO - Extracorporeal Membrane Oxygenation",
+      "description": "At BEARS we are proud to offer a specialist ECMO (Extracorporeal Membrane Oxygenation) Service, delivering advanced life support throughout transportation."
+    },
+    "mentalHealth": {
+      "title": "Mental Health Service",
+      "description": "We understand that mental health conditions require specialised care and support for individuals, ensuring they receive mental and non-emergency transport."
+    },
+    "nepts": {
+      "title": "Non Emergency Patient Transport Service (NEPTS)",
+      "description": "At BEARS, we specialise in providing reliable and compassionate non-emergency Patient Transport (NEPT) services across the UK."
+    },
+    "bariatric": {
+      "title": "Bariatric Service",
+      "description": "We understand the unique challenges and specialised care required for the transportation of bariatric patients."
+    },
+    "paramedic": {
+      "title": "Paramedic Service",
+      "description": "At BEARS, we understand that some patients require specialised care and support during transportation."
+    },
+    "neonatal": {
+      "title": "Neonatal and Paediatric Intensive care transfer service",
+      "description": "At BEARS we recognize the critical nature of neonatal transportation for newborn and neonate patients requiring urgent care and specialist support."
+    },
+    "clinicalHelpline": {
+      "title": "BEARS Clinical Helpline",
+      "description": "At BEARS, we strive to support our staff and provide 24/7 access to clinical support through our on-call clinical and specialist staff."
+    },
+    "learnMore": "Learn more"
+  },
+  "careers": {
+    "vacanciesTitle": "Vacancies",
+    "currentOpenings": "Current openings",
+    "bearsEstablished": "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service. Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.",
+    "qualityFocus": "At every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care. The return for this strategy is easily demonstrated by our Key Performance Indicators (KPI's) and the level of retention on our contracts from existing NHS customers.",
+    "noCurrentVacancies": "No Current Vacancies",
+    "noVacanciesDescription": "We currently don't have any open positions, but we're always interested in hearing from qualified healthcare professionals who share our commitment to safety, comfort, and care.",
+    "emailCV": "Email us your CV:",
+    "phone": "Phone:",
+    "whyWorkWithBears": "Why Work With BEARS?",
+    "safetyBenefit": "We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment.",
+    "comfortBenefit": "We provide a supportive work environment that values work-life balance and professional development.",
+    "careBenefit": "Join a team that genuinely cares about making a difference in patients' lives every day."
+  },
+  "news": {
+    "latestNewsTitle": "Latest News",
+    "newsDescription": "Stay updated with the latest news, updates, and stories from BEARS Patient Transport Service.",
+    "whatPeopleSay": "What people say about us",
+    "readMoreCompliments": "Read more compliments →",
+    "latestNews": "Latest News",
+    "christmasTitle": "Christmas @ BEARS Ambulance",
+    "christmasDescription": "'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took...",
+    "pulseNewsletter4Title": "The Pulse Clinical Newsletter #4",
+    "pulseNewsletter4Description": "ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is a narrow tube that is...",
+    "pulseNewsletter3Title": "The Pulse Clinical Newsletter #3",
+    "pulseNewsletter3Description": "ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked...",
+    "readMore": "Read more"
+  },
+  "fleet": {
+    "ourFleetTitle": "Our Fleet",
+    "fleetDescription": "Our modern fleet of specialized vehicles and dedicated team ensure safe, comfortable transport for all patients.",
+    "fleetDetails1": "Our fleet comprises modern, well-maintained vehicles equipped with the latest medical technology.",
+    "fleetDetails2": "Each vehicle is regularly serviced and maintained to the highest standards to ensure reliability and safety.",
+    "fleetDetails3": "Our experienced drivers and medical staff work together to provide exceptional patient care during transport.",
+    "companyDetailsTitle": "Company Details",
+    "companyTradingNumber": "Trading Number:",
+    "tradingNumber": "12345678",
+    "address": "Address:",
+    "companyAddress": "London, United Kingdom",
+    "contactForMoreInfo": "Contact us for more information"
+  },
+  "cubs": {
+    "meetTheCubsTitle": "Meet the Cubs",
+    "cubsDescription": "Our dedicated team members who embody our values of Safety, Comfort, and Care.",
+    "cultureTitle": "Culture",
+    "cultureDescription1": "At BEARS, we foster a culture of excellence and teamwork.",
+    "cultureDescription2": "Our team members are trained to the highest standards.",
+    "cultureDescription3": "We believe in continuous improvement and professional development.",
+    "safetyTitle": "Safety",
+    "safetyDescription1": "Safety is our top priority in everything we do.",
+    "safetyDescription2": "Our team undergoes regular safety training and assessment.",
+    "comfortTitle": "Comfort",
+    "comfortDescription": "We ensure both patient and staff comfort throughout our services.",
+    "careTitle": "Care",
+    "careDescription1": "Compassionate care is at the heart of our service.",
+    "careDescription2": "Our team goes above and beyond for every patient.",
+    "staffAppreciationTitle": "Staff Appreciation",
+    "staffAppreciationDescription1": "We value and appreciate our dedicated team members.",
+    "staffAppreciationDescription2": "Regular recognition and support programs keep our team motivated."
+  },
+  "serviceDetails": {
+    "contactUs": "Contact Us",
+    "contactDescription": "For more information about our services or to make a booking, please contact our team.",
+    "phone": "Phone:",
+    "email": "Email:",
+    "getInTouch": "Get in touch",
+    "ourServices": "Our Services",
+    "whyChooseUs": "Why Choose Us?",
+    "safety": "Safety:",
+    "safetyDescription": "Our team of experienced professionals are trained in high dependency care, ensuring your loved ones are in safe, fully capable hands.",
+    "reliability": "Reliability:",
+    "reliabilityDescription": "All service provision is punctual and reliable, ensuring seamless patient experience during their time with us.",
+    "comfort": "Comfort:",
+    "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to prevent discomfort and maintain patient care during transport.",
+    "personalisedService": "Personalised Service:",
+    "personalisedServiceDescription": "Our clinical teams are healthcare professionals, working collaboratively with patients and their families to ensure personalised care plans that meet your individual care needs throughout the journey.",
+    "expertise": "Expertise:",
+    "expertiseDescription": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish."
   }
 }

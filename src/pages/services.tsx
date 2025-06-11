@@ -9,56 +9,56 @@ export default function ServicesPage() {
 
   const services = [
     {
-      title: "High Dependance",
-      description: "We provide specialised high-dependency care services designed for adult patients requiring complex care during transport.",
+      title: t("services.highDependance.title", "High Dependance"),
+      description: t("services.highDependance.description", "We provide specialised high-dependency care services designed for adult patients requiring complex care during transport."),
       link: "/services/high-dependance",
       color: "blue"
     },
     {
-      title: "Specialist Critical Retrieval Response Service",
-      description: "24/7 availability providing critical care services all of whom are received with high standards in response care units.",
+      title: t("services.criticalRetrieval.title", "Specialist Critical Retrieval Response Service"),
+      description: t("services.criticalRetrieval.description", "24/7 availability providing critical care services all of whom are received with high standards in response care units."),
       link: "/services/critical-retrieval", 
       color: "blue"
     },
     {
-      title: "ECMO - Extracorporeal Membrane Oxygenation",
-      description: "At BEARS we are proud to offer a specialist ECMO (Extracorporeal Membrane Oxygenation) Service, delivering advanced life support throughout transportation.",
+      title: t("services.ecmo.title", "ECMO - Extracorporeal Membrane Oxygenation"),
+      description: t("services.ecmo.description", "At BEARS we are proud to offer a specialist ECMO (Extracorporeal Membrane Oxygenation) Service, delivering advanced life support throughout transportation."),
       link: "/services/ecmo",
       color: "purple"
     },
     {
-      title: "Mental Health Service",
-      description: "We understand that mental health conditions require specialised care and support for individuals, ensuring they receive mental and non-emergency transport.",
+      title: t("services.mentalHealth.title", "Mental Health Service"),
+      description: t("services.mentalHealth.description", "We understand that mental health conditions require specialised care and support for individuals, ensuring they receive mental and non-emergency transport."),
       link: "/services/mental-health",
       color: "green"
     },
     {
-      title: "Non Emergency Patient Transport Service (NEPTS)",
-      description: "At BEARS, we specialise in providing reliable and compassionate non-emergency Patient Transport (NEPT) services across the UK.",
+      title: t("services.nepts.title", "Non Emergency Patient Transport Service (NEPTS)"),
+      description: t("services.nepts.description", "At BEARS, we specialise in providing reliable and compassionate non-emergency Patient Transport (NEPT) services across the UK."),
       link: "/services/nepts",
       color: "green"
     },
     {
-      title: "Bariatric Service",
-      description: "We understand the unique challenges and specialised care required for the transportation of bariatric patients.",
+      title: t("services.bariatric.title", "Bariatric Service"),
+      description: t("services.bariatric.description", "We understand the unique challenges and specialised care required for the transportation of bariatric patients."),
       link: "/services/bariatric",
       color: "orange"
     },
     {
-      title: "Paramedic Service",
-      description: "At BEARS, we understand that some patients require specialised care and support during transportation.",
+      title: t("services.paramedic.title", "Paramedic Service"),
+      description: t("services.paramedic.description", "At BEARS, we understand that some patients require specialised care and support during transportation."),
       link: "/services/paramedic",
       color: "red"
     },
     {
-      title: "Neonatal and Paediatric Intensive care transfer service",
-      description: "At BEARS we recognize the critical nature of neonatal transportation for newborn and neonate patients requiring urgent care and specialist support.",
+      title: t("services.neonatal.title", "Neonatal and Paediatric Intensive care transfer service"),
+      description: t("services.neonatal.description", "At BEARS we recognize the critical nature of neonatal transportation for newborn and neonate patients requiring urgent care and specialist support."),
       link: "/services/neonatal",
       color: "pink"
     },
     {
-      title: "BEARS Clinical Helpline",
-      description: "At BEARS, we strive to support our staff and provide 24/7 access to clinical support through our on-call clinical and specialist staff.",
+      title: t("services.clinicalHelpline.title", "BEARS Clinical Helpline"),
+      description: t("services.clinicalHelpline.description", "At BEARS, we strive to support our staff and provide 24/7 access to clinical support through our on-call clinical and specialist staff."),
       link: "/services/clinical-helpline",
       color: "gray"
     }
@@ -90,7 +90,7 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative bg-[#0a2240] text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("services.ourServicesTitle", "Our Services")}</h1>
           <div className="mb-8">
             <img 
               src="/images/patient-transport.jpg" 
@@ -113,7 +113,7 @@ export default function ServicesPage() {
                   to={service.link}
                   className="inline-flex items-center text-[#4285f4] hover:underline text-sm"
                 >
-                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                  {t("services.learnMore", "Learn more")} <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               </div>
             ))}
