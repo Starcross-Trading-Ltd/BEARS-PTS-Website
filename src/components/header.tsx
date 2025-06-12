@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Menu, X, ChevronDown } from 'lucide-react'
 import { useLanguage } from './language-provider'
@@ -10,10 +10,47 @@ export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isAboutOpen, setIsAboutOpen] = useState(false)
   const { t } = useLanguage()
+  
+  const servicesRef = useRef<HTMLDivElement>(null)
+  const aboutRef = useRef<HTMLDivElement>(null)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  const toggleServicesDropdown = () => {
+    setIsServicesOpen(!isServicesOpen)
+    setIsAboutOpen(false)
+  }
+
+  const toggleAboutDropdown = () => {
+    setIsAboutOpen(!isAboutOpen)
+    setIsServicesOpen(false)
+  }
+
+  const closeDropdowns = () => {
+    setIsServicesOpen(false)
+    setIsAboutOpen(false)
+  }
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        servicesRef.current && 
+        !servicesRef.current.contains(event.target as Node) &&
+        aboutRef.current && 
+        !aboutRef.current.contains(event.target as Node)
+      ) {
+        closeDropdowns()
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   const services = [
     { title: t("serviceNames.nepts", "NEPTS"), link: "/services/nepts" },
@@ -48,27 +85,31 @@ export default function Header() {
             </Link>
             
             {/* Services Dropdown */}
-            <div className="relative group">
+            <div className="relative" ref={servicesRef}>
               <button 
-                className="flex items-center text-gray-700 hover:text-[#0a2240] font-medium"
-                onMouseEnter={() => setIsServicesOpen(true)}
-                onMouseLeave={() => setIsServicesOpen(false)}
+                className="flex items-center text-gray-700 hover:text-[#0a2240] font-medium focus:outline-none"
+                onClick={toggleServicesDropdown}
+                aria-expanded={isServicesOpen}
+                aria-haspopup="true"
               >
                 {t("navigation.services", "Our Services")} <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               {isServicesOpen && (
-                <div 
-                  className="absolute top-full left-0 mt-1 w-64 bg-white shadow-lg rounded-md z-50"
-                  onMouseEnter={() => setIsServicesOpen(true)}
-                  onMouseLeave={() => setIsServicesOpen(false)}
-                >
+                <div className="absolute top-full left-0 mt-1 w-64 bg-white shadow-lg rounded-md z-50 border">
                   <div className="py-2">
-                    <Link to="/services" className="block px-4 py-2 text-gray-700 hover:bg-gray-50">{t("navigation.allServices", "All Services")}</Link>
+                    <Link 
+                      to="/services" 
+                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                      onClick={closeDropdowns}
+                    >
+                      {t("navigation.allServices", "All Services")}
+                    </Link>
                     {services.map((service, index) => (
                       <Link 
                         key={index}
                         to={service.link} 
                         className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                        onClick={closeDropdowns}
                       >
                         {service.title}
                       </Link>
@@ -83,26 +124,24 @@ export default function Header() {
             </Link>
             
             {/* About Us Dropdown */}
-            <div className="relative group">
+            <div className="relative" ref={aboutRef}>
               <button 
-                className="flex items-center text-gray-700 hover:text-[#0a2240] font-medium"
-                onMouseEnter={() => setIsAboutOpen(true)}
-                onMouseLeave={() => setIsAboutOpen(false)}
+                className="flex items-center text-gray-700 hover:text-[#0a2240] font-medium focus:outline-none"
+                onClick={toggleAboutDropdown}
+                aria-expanded={isAboutOpen}
+                aria-haspopup="true"
               >
                 {t("navigation.aboutUs", "About Us")} <ChevronDown className="ml-1 h-4 w-4" />
               </button>
               {isAboutOpen && (
-                <div 
-                  className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md z-50"
-                  onMouseEnter={() => setIsAboutOpen(true)}
-                  onMouseLeave={() => setIsAboutOpen(false)}
-                >
+                <div className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md z-50 border">
                   <div className="py-2">
                     {aboutPages.map((page, index) => (
                       <Link 
                         key={index}
                         to={page.link} 
                         className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                        onClick={closeDropdowns}
                       >
                         {page.title}
                       </Link>
