@@ -12,6 +12,9 @@ import ContactPage from './pages/contact'
 import ComplimentsPage from './pages/compliments'
 import NewsPage from './pages/news'
 import CareersPage from './pages/careers'
+import TeamPage from './pages/team'
+import CubsPage from './pages/cubs'
+import FleetPage from './pages/fleet'
 import NeptsPage from './pages/services/nepts'
 import ParamedicPage from './pages/services/paramedic'
 import BariatricPage from './pages/services/bariatric'
@@ -46,6 +49,9 @@ function App() {
                   <Route path="/compliments" element={<ComplimentsPage />} />
                   <Route path="/news" element={<NewsPage />} />
                   <Route path="/careers" element={<CareersPage />} />
+                  <Route path="/team" element={<TeamPage />} />
+                  <Route path="/cubs" element={<CubsPage />} />
+                  <Route path="/fleet" element={<FleetPage />} />
                 </Routes>
               </ErrorBoundary>
             </main>
