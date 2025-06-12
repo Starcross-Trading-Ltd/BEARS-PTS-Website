@@ -48,53 +48,25 @@
     "safeTransportation": "Safe and comfortable transportation",
     "excellenceInServices": "Excellence in emergency medical services"
   },
-  "neonatal": {
-    "title": "Neonatal and Paediatric intensive care transfer service",
-    "intro": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and paediatric patients requiring urgent care and specialised support.",
-    "description": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and paediatric patients requiring urgent care and specialised support. Our Neonatal Transport Service is committed to ensuring the safe transfer of critically ill newborns, infants, and young children to specialised paediatric and neonatal intensive care units, where they can receive the expert care they require.",
-    "availability": {
-      "title": "24/7 Availability",
-      "description": "Medical emergencies for newborns and paediatric patients can arise at any time. Our team of highly trained medical professionals is available 24 hours a day, seven days a week, ensuring that critical emergencies are responded to promptly with our experienced medical staff available to provide assistance during critical times."
-    },
-    "equipment": {
-      "title": "Advanced Critical Care Support Equipment",
-      "description": "Equipment and technology are crucial to the safe and effective transportation of critically ill newborns and children. Our neonatal and paediatric intensive care ambulances are designed to function as mobile intensive care units, equipped with state-of-the-art medical monitoring, life support systems and specialized paediatric and neonatal equipment."
-    },
-    "guidance": {
-      "title": "Experienced Clinical Guidance",
-      "description": "Our team consists of dedicated neonatal and paediatric healthcare professionals, including neonatal nurses, paediatric nurses, and medical specialists. From neonatal resuscitation to complex cardiac support, our experienced and qualified team is trained to provide comprehensive care."
-    },
-    "compassionate": {
-      "title": "Personalised and Compassionate Care",
-      "description": "We understand the emotional and physical challenges that families face during these critical moments. Our team is committed to providing not only expert medical care but also emotional support and clear communication throughout the transportation process, providing caring, professional service to families."
-    },
-    "reliable": {
-      "title": "Reliable and Trustworthy Service",
-      "description": "In critical situations, every moment counts. Our commitment to reliability means that families can trust us to provide rapid response times and safe, efficient transportation. We understand the urgency of neonatal and paediatric emergencies and are committed to providing transportation solutions that families can rely on during the most challenging times."
-    },
-    "whyChoose": {
-      "title": "Why Choose Us?",
-      "expertise": {
-        "title": "Expertise:",
-        "description": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe and capable hands."
-      },
-      "equipment": {
-        "title": "Advanced Equipment:",
-        "description": "State-of-the-art medical technology and specialised neonatal transport equipment ensure the highest standards of care during transport."
-      },
-      "compassion": {
-        "title": "Compassion:",
-        "description": "We understand the emotional challenges families face and provide compassionate support throughout the journey."
-      },
-      "reliability": {
-        "title": "Reliability:",
-        "description": "Our round-the-clock availability and rapid response times ensure that critical care is delivered when it's needed most."
-      }
-    },
-    "teamImageAlt": "Neonatal Transport Team",
-    "vehicleImageAlt": "Neonatal Transport Vehicle",
-    "sideImageAlt": "Neonatal Transport",
-    "contactDescription": "For more information about our Neonatal and Paediatric Intensive Care Transfer service or to arrange a transfer, please contact our operations team. Our expert advisors are here to assist you with all your emergency transport needs."
+  "news": {
+    "latestNewsTitle": "Latest News",
+    "newsDescription": "Stay updated with the latest news, updates, and stories from BEARS Patient Transport Service.",
+    "whatPeopleSay": "What people say about us",
+    "readMoreCompliments": "Read more compliments →",
+    "latestNews": "Latest News",
+    "christmasTitle": "Christmas @ BEARS Ambulance",
+    "christmasDescription": "'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took...",
+    "pulseNewsletter4Title": "The Pulse Clinical Newsletter #4",
+    "pulseNewsletter4Description": "ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is a narrow tube that is...",
+    "pulseNewsletter3Title": "The Pulse Clinical Newsletter #3",
+    "pulseNewsletter3Description": "ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked...",
+    "readMore": "Read more"
+  },
+  "testimonials": {
+    "testimonial1": "The ambulance crew arrived on time, were very polite and friendly. The journey was comfortable. While in the ambulance, they checked and observed everything. Thank you so much!",
+    "testimonial1Source": "Guy's and St Thomas' NHS Foundation Trust",
+    "testimonial2": "Crew were brilliant, came on time. Driver was very good and the journey was comfortable. The staff member that stayed in the back, kept me entertained and chatted with me all the way home, putting me at ease. Excellent service, 10/10!",
+    "testimonial2Source": "St Bartholomew's Hospital"
   },
   "aboutPage": {
     "aboutBearsTitle": "About BEARS",
@@ -144,17 +116,6 @@
     "messageLabel": "Message",
     "sendMessage": "Send Message"
   },
-  "languageSelector": {
-    "label": "Change language",
-    "selectLanguage": "Select Language"
-  },
-  "footer": {
-    "quickLinks": "Quick Links",
-    "contactInfo": "Contact Info",
-    "phone": "Phone",
-    "email": "Email",
-    "allRightsReserved": "All rights reserved."
-  },
   "compliments": {
     "complimentsTitle": "Compliments",
     "complimentsDescription": "Read what our patients and healthcare partners say about our services.",
@@ -169,12 +130,6 @@
     "testimonial5Source": "Great Ormond Street Hospital",
     "testimonial6": "The BEARS team showed incredible professionalism and compassion. Highly recommend their services.",
     "testimonial6Source": "Imperial College Healthcare"
-  },
-  "testimonials": {
-    "testimonial1": "The ambulance crew arrived on time, were very polite and friendly. The journey was comfortable. While in the ambulance, they checked and observed everything. Thank you so much!",
-    "testimonial1Source": "Guy's and St Thomas' NHS Foundation Trust",
-    "testimonial2": "Crew were brilliant, came on time. Driver was very good and the journey was comfortable. The staff member that stayed in the back, kept me entertained and chatted with me all the way home, putting me at ease. Excellent service, 10/10!",
-    "testimonial2Source": "St Bartholomew's Hospital"
   },
   "services": {
     "ourServicesTitle": "Our Services",
@@ -231,20 +186,6 @@
     "comfortBenefit": "We provide a supportive work environment that values work-life balance and professional development.",
     "careBenefit": "Join a team that genuinely cares about making a difference in patients' lives every day."
   },
-  "news": {
-    "latestNewsTitle": "Latest News",
-    "newsDescription": "Stay updated with the latest news, updates, and stories from BEARS Patient Transport Service.",
-    "whatPeopleSay": "What people say about us",
-    "readMoreCompliments": "Read more compliments →",
-    "latestNews": "Latest News",
-    "christmasTitle": "Christmas @ BEARS Ambulance",
-    "christmasDescription": "'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took...",
-    "pulseNewsletter4Title": "The Pulse Clinical Newsletter #4",
-    "pulseNewsletter4Description": "ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is a narrow tube that is...",
-    "pulseNewsletter3Title": "The Pulse Clinical Newsletter #3",
-    "pulseNewsletter3Description": "ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked...",
-    "readMore": "Read more"
-  },
   "fleet": {
     "ourFleetTitle": "Our Fleet",
     "fleetDescription": "Our modern fleet of specialized vehicles and dedicated team ensure safe, comfortable transport for all patients.",
@@ -277,6 +218,40 @@
     "staffAppreciationDescription1": "We value and appreciate our dedicated team members.",
     "staffAppreciationDescription2": "Regular recognition and support programs keep our team motivated."
   },
+  "team": {
+    "meetTheBearsTitle": "Meet the BEARS",
+    "seniorManagementTitle": "Senior Management Team",
+    "mohammedAliHashim": {
+      "name": "Mohammed Ali Hashim",
+      "title": "Chief Executive Officer",
+      "description": "Mohammed has over 20 years of experience in healthcare management and emergency medical services. He founded BEARS with a vision to provide exceptional patient transport services across the UK."
+    },
+    "shabnamUndre": {
+      "name": "Shabnam Undre",
+      "title": "Clinical Director",
+      "description": "Shabnam brings extensive clinical expertise and ensures all our services meet the highest medical standards. She oversees clinical governance and staff training programs."
+    },
+    "nosaIdahosa": {
+      "name": "Nosa Idahosa",
+      "title": "Operations Director",
+      "description": "Nosa manages our day-to-day operations ensuring efficient service delivery. With a background in logistics and emergency services, he optimizes our operational processes."
+    },
+    "winstonFlemming": {
+      "name": "Winston Flemming",
+      "title": "Fleet Manager",
+      "description": "Winston oversees our vehicle fleet, ensuring all ambulances are maintained to the highest standards and equipped with the latest medical technology."
+    },
+    "amechiOkaoye": {
+      "name": "Amechi Okaoye",
+      "title": "Quality Assurance Manager",
+      "description": "Amechi leads our quality assurance programs, monitoring service delivery and implementing continuous improvement initiatives across all our services."
+    },
+    "osmanSadiq": {
+      "name": "Osman Sadiq",
+      "title": "Training Director",
+      "description": "Osman develops and delivers comprehensive training programs for our staff, ensuring they are equipped with the latest skills and knowledge in patient care."
+    }
+  },
   "serviceDetails": {
     "contactUs": "Contact Us",
     "contactDescription": "For more information about our services or to make a booking, please contact our team.",
@@ -295,5 +270,19 @@
     "personalisedServiceDescription": "Our clinical teams are healthcare professionals, working collaboratively with patients and their families to ensure personalised care plans that meet your individual care needs throughout the journey.",
     "expertise": "Expertise:",
     "expertiseDescription": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish."
+  },
+  "languageSelector": {
+    "label": "Change language",
+    "selectLanguage": "Select Language"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "phone": "Phone",
+    "email": "Email",
+    "allRightsReserved": "All rights reserved."
+  },
+  "partners": {
+    "title": "Our Partners"
   }
 }
