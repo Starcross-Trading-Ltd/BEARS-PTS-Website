@@ -173,50 +173,35 @@
     "learnMore": "Learn more"
   },
   "careers": {
-    "vacanciesTitle": "Vacancies",
-    "currentOpenings": "Current openings",
-    "bearsEstablished": "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service. Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.",
-    "qualityFocus": "At every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care. The return for this strategy is easily demonstrated by our Key Performance Indicators (KPI's) and the level of retention on our contracts from existing NHS customers.",
-    "noCurrentVacancies": "No Current Vacancies",
-    "noVacanciesDescription": "We currently don't have any open positions, but we're always interested in hearing from qualified healthcare professionals who share our commitment to safety, comfort, and care.",
-    "emailCV": "Email us your CV:",
-    "phone": "Phone:",
-    "whyWorkWithBears": "Why Work With BEARS?",
-    "safetyBenefit": "We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment.",
-    "comfortBenefit": "We provide a supportive work environment that values work-life balance and professional development.",
-    "careBenefit": "Join a team that genuinely cares about making a difference in patients' lives every day."
-  },
-  "fleet": {
-    "ourFleetTitle": "Our Fleet",
-    "fleetDescription": "Our modern fleet of specialized vehicles and dedicated team ensure safe, comfortable transport for all patients.",
-    "fleetDetails1": "Our fleet comprises modern, well-maintained vehicles equipped with the latest medical technology.",
-    "fleetDetails2": "Each vehicle is regularly serviced and maintained to the highest standards to ensure reliability and safety.",
-    "fleetDetails3": "Our experienced drivers and medical staff work together to provide exceptional patient care during transport.",
-    "companyDetailsTitle": "Company Details",
-    "companyTradingNumber": "Trading Number:",
-    "tradingNumber": "12345678",
-    "address": "Address:",
-    "companyAddress": "London, United Kingdom",
-    "contactForMoreInfo": "Contact us for more information"
-  },
-  "cubs": {
-    "meetTheCubsTitle": "Meet the Cubs",
-    "cubsDescription": "Our dedicated team members who embody our values of Safety, Comfort, and Care.",
-    "cultureTitle": "Culture",
-    "cultureDescription1": "At BEARS, we foster a culture of excellence and teamwork.",
-    "cultureDescription2": "Our team members are trained to the highest standards.",
-    "cultureDescription3": "We believe in continuous improvement and professional development.",
+    "pageTitle": "Vacancies",
+    "sectionTitle": "Current openings",
+    "companyDescription": "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service. Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.",
+    "qualityStatement": "At every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care. The return for this strategy is easily demonstrated by our Key Performance Indicators (KPI's) and the level of retention on our contracts from existing NHS customers.",
+    "noVacanciesTitle": "No Current Vacancies",
+    "noVacanciesMessage": "We currently don't have any open positions, but we're always interested in hearing from qualified healthcare professionals who share our commitment to safety, comfort, and care.",
+    "emailLabel": "Email us your CV:",
+    "phoneLabel": "Phone:",
+    "benefitsTitle": "Why Work With BEARS?",
     "safetyTitle": "Safety",
-    "safetyDescription1": "Safety is our top priority in everything we do.",
-    "safetyDescription2": "Our team undergoes regular safety training and assessment.",
-    "comfortTitle": "Comfort",
-    "comfortDescription": "We ensure both patient and staff comfort throughout our services.",
+    "safetyDescription": "We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment.",
+    "comfortTitle": "Comfort", 
+    "comfortDescription": "We provide a supportive work environment that values work-life balance and professional development.",
     "careTitle": "Care",
-    "careDescription1": "Compassionate care is at the heart of our service.",
-    "careDescription2": "Our team goes above and beyond for every patient.",
-    "staffAppreciationTitle": "Staff Appreciation",
-    "staffAppreciationDescription1": "We value and appreciate our dedicated team members.",
-    "staffAppreciationDescription2": "Regular recognition and support programs keep our team motivated."
+    "careDescription": "Join a team that genuinely cares about making a difference in patients' lives every day."
+  },
+  "languageSelector": {
+    "label": "Change language",
+    "selectLanguage": "Select Language"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "phone": "Phone",
+    "email": "Email",
+    "allRightsReserved": "All rights reserved."
+  },
+  "partners": {
+    "title": "Our Partners"
   },
   "team": {
     "meetTheBearsTitle": "Meet the BEARS",
@@ -271,18 +256,36 @@
     "expertise": "Expertise:",
     "expertiseDescription": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish."
   },
-  "languageSelector": {
-    "label": "Change language",
-    "selectLanguage": "Select Language"
+  "cubs": {
+    "meetTheCubsTitle": "Meet the Cubs",
+    "cubsDescription": "Our dedicated team members who embody our values of Safety, Comfort, and Care.",
+    "cultureTitle": "Culture",
+    "cultureDescription1": "At BEARS, we foster a culture of excellence and teamwork.",
+    "cultureDescription2": "Our team members are trained to the highest standards.",
+    "cultureDescription3": "We believe in continuous improvement and professional development.",
+    "safetyTitle": "Safety",
+    "safetyDescription1": "Safety is our top priority in everything we do.",
+    "safetyDescription2": "Our team undergoes regular safety training and assessment.",
+    "comfortTitle": "Comfort",
+    "comfortDescription": "We ensure both patient and staff comfort throughout our services.",
+    "careTitle": "Care",
+    "careDescription1": "Compassionate care is at the heart of our service.",
+    "careDescription2": "Our team goes above and beyond for every patient.",
+    "staffAppreciationTitle": "Staff Appreciation",
+    "staffAppreciationDescription1": "We value and appreciate our dedicated team members.",
+    "staffAppreciationDescription2": "Regular recognition and support programs keep our team motivated."
   },
-  "footer": {
-    "quickLinks": "Quick Links",
-    "contactInfo": "Contact Info",
-    "phone": "Phone",
-    "email": "Email",
-    "allRightsReserved": "All rights reserved."
-  },
-  "partners": {
-    "title": "Our Partners"
+  "fleet": {
+    "ourFleetTitle": "Our Fleet",
+    "fleetDescription": "Our modern fleet of specialized vehicles and dedicated team ensure safe, comfortable transport for all patients.",
+    "fleetDetails1": "Our fleet comprises modern, well-maintained vehicles equipped with the latest medical technology.",
+    "fleetDetails2": "Each vehicle is regularly serviced and maintained to the highest standards to ensure reliability and safety.",
+    "fleetDetails3": "Our experienced drivers and medical staff work together to provide exceptional patient care during transport.",
+    "companyDetailsTitle": "Company Details",
+    "companyTradingNumber": "Trading Number:",
+    "tradingNumber": "12345678",
+    "address": "Address:",
+    "companyAddress": "London, United Kingdom",
+    "contactForMoreInfo": "Contact us for more information"
   }
 }
