@@ -5,6 +5,22 @@ import { useLanguage } from '../components/language-provider'
 export default function CareersPage() {
   const { t } = useLanguage()
 
+  // Define benefits directly since they need complex structure
+  const benefits = [
+    {
+      title: t("careers.benefits.safety.title"),
+      description: t("careers.benefits.safety.description")
+    },
+    {
+      title: t("careers.benefits.comfort.title"),
+      description: t("careers.benefits.comfort.description")
+    },
+    {
+      title: t("careers.benefits.care.title"),
+      description: t("careers.benefits.care.description")
+    }
+  ]
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -60,7 +76,7 @@ export default function CareersPage() {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {t("careers.benefits.items", []).map((benefit: any, index: number) => (
+            {benefits.map((benefit, index: number) => (
               <div key={index} className="text-center">
                 <div className="w-16 h-16 bg-[#4285f4] rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-white font-bold text-xl">

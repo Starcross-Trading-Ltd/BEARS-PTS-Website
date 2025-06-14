@@ -6,6 +6,28 @@ import { useLanguage } from '../language-provider'
 export default function NewsGrid() {
   const { t } = useLanguage()
 
+  // Define articles directly since they need complex structure
+  const articles = [
+    {
+      title: t("news.articles.article1.title"),
+      description: t("news.articles.article1.description"),
+      image: "/images/christmas.jpg",
+      link: "/news/christmas-2024"
+    },
+    {
+      title: t("news.articles.article2.title"),
+      description: t("news.articles.article2.description"),
+      image: "/images/neonatal.jpg",
+      link: "/news/pulse-newsletter-4"
+    },
+    {
+      title: t("news.articles.article3.title"),
+      description: t("news.articles.article3.description"),
+      image: "/images/neonatal.jpg",
+      link: "/news/pulse-newsletter-3"
+    }
+  ]
+
   return (
     <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
@@ -14,7 +36,7 @@ export default function NewsGrid() {
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {t("news.articles.items", []).map((item: any, index: number) => (
+          {articles.map((item, index: number) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img 
                 src={item.image} 

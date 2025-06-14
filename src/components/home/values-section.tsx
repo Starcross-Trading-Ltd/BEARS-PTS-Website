@@ -5,6 +5,9 @@ import { useLanguage } from '../language-provider'
 export default function ValuesSection() {
   const { t } = useLanguage()
 
+  // Get the values items as an array
+  const valuesItems = t("home.values.items", "").split(',').filter(item => item.trim())
+
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -24,10 +27,10 @@ export default function ValuesSection() {
               {t("home.values.description")}
             </p>
             <ul className="space-y-3 text-gray-600">
-              {t("home.values.items", []).map((item: string, index: number) => (
+              {valuesItems.map((item: string, index: number) => (
                 <li key={index} className="flex items-start">
                   <span className="text-[#00855a] font-bold mr-2">•</span>
-                  {item}
+                  {item.trim()}
                 </li>
               ))}
             </ul>

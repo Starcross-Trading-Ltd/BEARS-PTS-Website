@@ -6,6 +6,18 @@ import { useLanguage } from '../language-provider'
 export default function TestimonialsSection() {
   const { t } = useLanguage()
 
+  // Define testimonials directly since they need complex structure
+  const testimonials = [
+    {
+      text: t("news.testimonials.testimonial1.text"),
+      source: t("news.testimonials.testimonial1.source")
+    },
+    {
+      text: t("news.testimonials.testimonial2.text"),
+      source: t("news.testimonials.testimonial2.source")
+    }
+  ]
+
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
@@ -17,7 +29,7 @@ export default function TestimonialsSection() {
         </Link>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          {t("news.testimonials.items", []).map((testimonial: any, index: number) => (
+          {testimonials.map((testimonial, index: number) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-lg border">
               <p className="text-gray-700 mb-4 italic">"{testimonial.text}"</p>
               <div className="border-t pt-4">
