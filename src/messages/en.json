@@ -1,4 +1,3 @@
-
 {
   "meta": {
     "title": "BEARS Patient Transport Services",
@@ -41,7 +40,7 @@
       "title": "Our Core Values",
       "description": "BEARS core values are safety, comfort, and care, we ensure:",
       "imageAlt": "BEARS ambulance in London",
-      "items": "High-quality patient transport services, Professional and compassionate care, Safe and comfortable transportation, Excellence in emergency medical services"
+      "items": "High-quality patient transport services,Professional and compassionate care,Safe and comfortable transportation,Excellence in emergency medical services"
     },
     "services": {
       "title": "Our Services",
@@ -57,30 +56,12 @@
     "testimonials": {
       "title": "What people say about us",
       "cta": "Read more compliments →",
-      "testimonial1": {
-        "text": "The ambulance crew arrived on time, were very polite and friendly. The journey was comfortable. While in the ambulance, they checked and observed everything. Thank you so much!",
-        "source": "Guy's and St Thomas' NHS Foundation Trust"
-      },
-      "testimonial2": {
-        "text": "Crew were brilliant, came on time. Driver was very good and the journey was comfortable. The staff member that stayed in the back, kept me entertained and chatted with me all the way home, putting me at ease. Excellent service, 10/10!",
-        "source": "St Bartholomew's Hospital"
-      }
+      "items": "The ambulance crew arrived on time, were very polite and friendly. The journey was comfortable. While in the ambulance, they checked and observed everything. Thank you so much!|Guy's and St Thomas' NHS Foundation Trust,Crew were brilliant, came on time. Driver was very good and the journey was comfortable. The staff member that stayed in the back, kept me entertained and chatted with me all the way home, putting me at ease. Excellent service, 10/10!|St Bartholomew's Hospital"
     },
     "articles": {
       "title": "Latest News",
       "readMore": "Read more",
-      "article1": {
-        "title": "Christmas @ BEARS Ambulance",
-        "description": "'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took..."
-      },
-      "article2": {
-        "title": "The Pulse Clinical Newsletter #4",
-        "description": "ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is a narrow tube that is..."
-      },
-      "article3": {
-        "title": "The Pulse Clinical Newsletter #3",
-        "description": "ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked..."
-      }
+      "items": "Christmas @ BEARS Ambulance|'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took...,The Pulse Clinical Newsletter #4|ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is a narrow tube that is...,The Pulse Clinical Newsletter #3|ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked..."
     }
   },
   "careers": {
@@ -102,18 +83,7 @@
     },
     "benefits": {
       "title": "Why Work With BEARS?",
-      "safety": {
-        "title": "Safety",
-        "description": "We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment."
-      },
-      "comfort": {
-        "title": "Comfort",
-        "description": "We provide a supportive work environment that values work-life balance and professional development."
-      },
-      "care": {
-        "title": "Care",
-        "description": "Join a team that genuinely cares about making a difference in patients' lives every day."
-      }
+      "items": "Safety|We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment.,Comfort|We provide a supportive work environment that values work-life balance and professional development.,Care|Join a team that genuinely cares about making a difference in patients' lives every day."
     }
   },
   "aboutPage": {
@@ -173,7 +143,6 @@
     "testimonial3": "Professional, caring and efficient service. The team made what could have been a stressful journey very comfortable.",
     "testimonial3Source": "Royal London Hospital",
     "testimonial4": "Outstanding care and attention to detail. The crew went above and beyond to ensure patient comfort and safety.",
-    "testimonial4Source": "King's College Hospital",
     "testimonial5": "Excellent communication throughout the transport. Family felt well-informed and supported during a difficult time.",
     "testimonial5Source": "Great Ormond Street Hospital",
     "testimonial6": "The BEARS team showed incredible professionalism and compassion. Highly recommend their services.",
@@ -267,25 +236,6 @@
       "title": "Training Director",
       "description": "Osman develops and delivers comprehensive training programs for our staff, ensuring they are equipped with the latest skills and knowledge in patient care."
     }
-  },
-  "serviceDetails": {
-    "contactUs": "Contact Us",
-    "contactDescription": "For more information about our services or to make a booking, please contact our team.",
-    "phone": "Phone:",
-    "email": "Email:",
-    "getInTouch": "Get in touch",
-    "ourServices": "Our Services",
-    "whyChooseUs": "Why Choose Us?",
-    "safety": "Safety:",
-    "safetyDescription": "Our team of experienced professionals are trained in high dependency care, ensuring your loved ones are in safe, fully capable hands.",
-    "reliability": "Reliability:",
-    "reliabilityDescription": "All service provision is punctual and reliable, ensuring seamless patient experience during their time with us.",
-    "comfort": "Comfort:",
-    "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to prevent discomfort and maintain patient care during transport.",
-    "personalisedService": "Personalised Service:",
-    "personalisedServiceDescription": "Our clinical teams are healthcare professionals, working collaboratively with patients and their families to ensure personalised care plans that meet your individual care needs throughout the journey.",
-    "expertise": "Expertise:",
-    "expertiseDescription": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish."
   },
   "cubs": {
     "meetTheCubsTitle": "Meet the Cubs",
