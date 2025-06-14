@@ -28,45 +28,110 @@
     "clinicalHelpline": "BEARS Clinical Helpline"
   },
   "home": {
-    "title": "Welcome to BEARS Patient Transport Services",
-    "description": "We provide professional patient transport services across the UK.",
-    "heroTitle": "Providing Safety, Comfort and Care",
-    "heroDescription": "We provide a high quality ambulance service taking great care and pride in our work with the highest priority on transporting patients with SAFETY, COMFORT and CARE.",
-    "getInTouch": "Get in touch",
-    "learnMore": "Learn more",
-    "coreValuesTitle": "Our Core Values",
-    "coreValuesDescription": "BEARS core values are safety, comfort, and care, we ensure:",
-    "serviceQuality": "We get our service quality right the first time",
-    "efficientCare": "We are efficient with passion for patient care",
-    "bestValue": "We ensure best value for money",
-    "moreAboutValues": "More about our core values",
-    "ourServicesTitle": "Our Services",
-    "servicesDescription": "We provide comprehensive patient transport services across the UK, specializing in critical care, NEPTS, bariatric, mental health, and neonatal transport.",
-    "viewAllServices": "View All Services",
-    "highQualityService": "High-quality patient transport services",
-    "professionalCare": "Professional and compassionate care",
-    "safeTransportation": "Safe and comfortable transportation",
-    "excellenceInServices": "Excellence in emergency medical services"
+    "hero": {
+      "title": "Providing Safety, Comfort and Care",
+      "description": "We provide a high quality ambulance service taking great care and pride in our work with the highest priority on transporting patients with SAFETY, COMFORT and CARE.",
+      "imageAlt": "BEARS team member smiling",
+      "cta": {
+        "primary": "Get in touch",
+        "secondary": "Learn more"
+      }
+    },
+    "values": {
+      "title": "Our Core Values",
+      "description": "BEARS core values are safety, comfort, and care, we ensure:",
+      "imageAlt": "BEARS ambulance in London",
+      "items": [
+        "High-quality patient transport services",
+        "Professional and compassionate care",
+        "Safe and comfortable transportation",
+        "Excellence in emergency medical services"
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We provide comprehensive patient transport services across the UK, specializing in critical care, NEPTS, bariatric, mental health, and neonatal transport.",
+      "cta": "View All Services"
+    }
   },
   "news": {
-    "latestNewsTitle": "Latest News",
-    "newsDescription": "Stay updated with the latest news, updates, and stories from BEARS Patient Transport Service.",
-    "whatPeopleSay": "What people say about us",
-    "readMoreCompliments": "Read more compliments →",
-    "latestNews": "Latest News",
-    "christmasTitle": "Christmas @ BEARS Ambulance",
-    "christmasDescription": "'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took...",
-    "pulseNewsletter4Title": "The Pulse Clinical Newsletter #4",
-    "pulseNewsletter4Description": "ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is a narrow tube that is...",
-    "pulseNewsletter3Title": "The Pulse Clinical Newsletter #3",
-    "pulseNewsletter3Description": "ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked...",
-    "readMore": "Read more"
+    "hero": {
+      "title": "Latest News",
+      "description": "Stay updated with the latest news, updates, and stories from BEARS Patient Transport Service."
+    },
+    "testimonials": {
+      "title": "What people say about us",
+      "cta": "Read more compliments →",
+      "items": [
+        {
+          "text": "The ambulance crew arrived on time, were very polite and friendly. The journey was comfortable. While in the ambulance, they checked and observed everything. Thank you so much!",
+          "source": "Guy's and St Thomas' NHS Foundation Trust"
+        },
+        {
+          "text": "Crew were brilliant, came on time. Driver was very good and the journey was comfortable. The staff member that stayed in the back, kept me entertained and chatted with me all the way home, putting me at ease. Excellent service, 10/10!",
+          "source": "St Bartholomew's Hospital"
+        }
+      ]
+    },
+    "articles": {
+      "title": "Latest News",
+      "readMore": "Read more",
+      "items": [
+        {
+          "title": "Christmas @ BEARS Ambulance",
+          "description": "'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took...",
+          "image": "/images/christmas.jpg",
+          "link": "/news/christmas-2024"
+        },
+        {
+          "title": "The Pulse Clinical Newsletter #4",
+          "description": "ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is a narrow tube that is...",
+          "image": "/images/neonatal.jpg",
+          "link": "/news/pulse-newsletter-4"
+        },
+        {
+          "title": "The Pulse Clinical Newsletter #3",
+          "description": "ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked...",
+          "image": "/images/neonatal.jpg",
+          "link": "/news/pulse-newsletter-3"
+        }
+      ]
+    }
   },
-  "testimonials": {
-    "testimonial1": "The ambulance crew arrived on time, were very polite and friendly. The journey was comfortable. While in the ambulance, they checked and observed everything. Thank you so much!",
-    "testimonial1Source": "Guy's and St Thomas' NHS Foundation Trust",
-    "testimonial2": "Crew were brilliant, came on time. Driver was very good and the journey was comfortable. The staff member that stayed in the back, kept me entertained and chatted with me all the way home, putting me at ease. Excellent service, 10/10!",
-    "testimonial2Source": "St Bartholomew's Hospital"
+  "careers": {
+    "hero": {
+      "title": "Vacancies",
+      "description": "Join our team of dedicated healthcare professionals committed to providing exceptional patient transport services."
+    },
+    "openings": {
+      "title": "Current openings",
+      "description": "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service. Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.\n\nAt every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care. The return for this strategy is easily demonstrated by our Key Performance Indicators (KPI's) and the level of retention on our contracts from existing NHS customers.",
+      "noVacancies": {
+        "title": "No Current Vacancies",
+        "message": "We currently don't have any open positions, but we're always interested in hearing from qualified healthcare professionals who share our commitment to safety, comfort, and care.",
+        "contact": {
+          "email": "careers@bearsambulance.com",
+          "phone": "+44 123 456 7890"
+        }
+      }
+    },
+    "benefits": {
+      "title": "Why Work With BEARS?",
+      "items": [
+        {
+          "title": "Safety",
+          "description": "We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment."
+        },
+        {
+          "title": "Comfort",
+          "description": "We provide a supportive work environment that values work-life balance and professional development."
+        },
+        {
+          "title": "Care",
+          "description": "Join a team that genuinely cares about making a difference in patients' lives every day."
+        }
+      ]
+    }
   },
   "aboutPage": {
     "aboutBearsTitle": "About BEARS",
@@ -171,23 +236,6 @@
       "description": "At BEARS, we strive to support our staff and provide 24/7 access to clinical support through our on-call clinical and specialist staff."
     },
     "learnMore": "Learn more"
-  },
-  "careers": {
-    "pageTitle": "Vacancies",
-    "sectionTitle": "Current openings",
-    "companyDescription": "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service. Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.",
-    "qualityStatement": "At every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care. The return for this strategy is easily demonstrated by our Key Performance Indicators (KPI's) and the level of retention on our contracts from existing NHS customers.",
-    "noVacanciesTitle": "No Current Vacancies",
-    "noVacanciesMessage": "We currently don't have any open positions, but we're always interested in hearing from qualified healthcare professionals who share our commitment to safety, comfort, and care.",
-    "emailLabel": "Email us your CV:",
-    "phoneLabel": "Phone:",
-    "benefitsTitle": "Why Work With BEARS?",
-    "safetyTitle": "Safety",
-    "safetyDescription": "We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment.",
-    "comfortTitle": "Comfort", 
-    "comfortDescription": "We provide a supportive work environment that values work-life balance and professional development.",
-    "careTitle": "Care",
-    "careDescription": "Join a team that genuinely cares about making a difference in patients' lives every day."
   },
   "languageSelector": {
     "label": "Change language",
