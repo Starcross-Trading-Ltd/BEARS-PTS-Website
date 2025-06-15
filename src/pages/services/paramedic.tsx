@@ -1,7 +1,7 @@
-
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { useLanguage } from '../../components/language-provider'
+import ContactInfo from '../../components/contact-info'
+import ServicesList from '../../components/common/services-list'
 
 export default function ParamedicServicePage() {
   const { t } = useLanguage()
@@ -101,34 +101,16 @@ export default function ParamedicServicePage() {
           </div>
 
           {/* Sidebar */}
-          <div className="lg:col-span-1">
-            <div className="bg-gray-50 p-6 rounded-lg mb-6">
-              <h3 className="text-lg font-bold text-[#0a2240] mb-4">{t("serviceDetails.contactUs", "Contact Us")}</h3>
-              <p className="text-sm text-gray-600 mb-4">
-                {t("serviceDetails.contactDescription", "For more information about our services or to make a booking, please contact our team.")}
-              </p>
-              <div className="space-y-2 text-sm">
-                <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> {t("contact.phoneNumber", "+44 123 456 7890")}</p>
-                <p><strong>{t("serviceDetails.email", "Email:")}</strong> {t("contact.emailAddress", "info@bearsambulance.com")}</p>
-              </div>
-              <button className="w-full mt-4 px-4 py-2 bg-[#00855a] text-white rounded hover:bg-[#006e4a] transition-colors">
-                {t("serviceDetails.getInTouch", "Get in touch")}
-              </button>
+          <aside className="lg:col-span-1">
+            <ContactInfo showGetInTouchButton={true} className="mb-8" />
+            
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <ServicesList 
+                title={t("serviceDetails.ourServices", "Our Services")}
+                excludeService="paramedic"
+              />
             </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-bold text-[#0a2240] mb-4">{t("serviceDetails.ourServices", "Our Services")}</h3>
-              <ul className="space-y-2 text-sm">
-                <li><Link to="/services/nepts" className="text-[#4285f4] hover:underline">{t("services.nepts.title", "NEPTS")}</Link></li>
-                <li><Link to="/services/bariatric" className="text-[#4285f4] hover:underline">{t("services.bariatric.title", "Bariatric Service")}</Link></li>
-                <li><Link to="/services/critical-retrieval" className="text-[#4285f4] hover:underline">{t("services.criticalRetrieval.title", "Critical Care Retrieval")}</Link></li>
-                <li><Link to="/services/ecmo" className="text-[#4285f4] hover:underline">{t("services.ecmo.title", "ECMO Service")}</Link></li>
-                <li><Link to="/services/high-dependance" className="text-[#4285f4] hover:underline">{t("services.highDependance.title", "High Dependance")}</Link></li>
-                <li><Link to="/services/mental-health" className="text-[#4285f4] hover:underline">{t("services.mentalHealth.title", "Mental Health Transport")}</Link></li>
-                <li><Link to="/services/neonatal" className="text-[#4285f4] hover:underline">{t("services.neonatal.title", "Neonatal Transport")}</Link></li>
-              </ul>
-            </div>
-          </div>
+          </aside>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
-
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { useLanguage } from '../../components/language-provider'
+import ContactInfo from '../../components/contact-info'
+import ServicesList from '../../components/common/services-list'
 
 export default function NeonatalPage() {
   const { t } = useLanguage()
@@ -102,7 +102,7 @@ export default function NeonatalPage() {
               </div>
             </div>
 
-            <div className="lg:col-span-1">
+            <aside className="lg:col-span-1">
               <div className="bg-white p-6 rounded-lg shadow-lg mb-8">
                 <img 
                   src="/images/neonatal.jpg" 
@@ -110,44 +110,23 @@ export default function NeonatalPage() {
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold text-[#0a2240] mb-3">{t("contact.contactUsTitle", "Contact Us")}</h3>
-                  <p className="text-gray-700 mb-4">
-                    {t("neonatal.contactDescription", "For more information about our Neonatal and Paediatric Intensive Care Transfer service or to arrange a transfer, please contact our operations team. Our expert advisors are here to assist you with all your emergency transport needs.")}
-                  </p>
-                  <Link 
-                    to="/contact"
-                    className="inline-block px-6 py-3 bg-[#00855a] text-white font-medium rounded hover:bg-[#006e4a] transition-colors"
-                  >
-                    {t("home.getInTouch", "Get In Touch")}
-                  </Link>
-                </div>
-
-                <div className="border-t pt-6">
-                  <h3 className="text-lg font-bold text-[#0a2240] mb-3">{t("home.ourServicesTitle", "Our Services")}</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li><Link to="/services/high-dependance" className="text-[#4285f4] hover:underline">{t("serviceNames.highDependance", "High Dependance")}</Link></li>
-                    <li><Link to="/services/critical-retrieval" className="text-[#4285f4] hover:underline">{t("serviceNames.specialistCritical", "Critical Care Retrieval Response Service")}</Link></li>
-                    <li><Link to="/services/ecmo" className="text-[#4285f4] hover:underline">{t("serviceNames.ecmo", "ECMO - Extracorporeal Membrane Oxygenation")}</Link></li>
-                    <li><Link to="/services/mental-health" className="text-[#4285f4] hover:underline">{t("serviceNames.mentalHealth", "Mental Health Service")}</Link></li>
-                    <li><Link to="/services/nepts" className="text-[#4285f4] hover:underline">{t("serviceNames.nepts", "Non-Emergency Patient Transport Service (NEPTS)")}</Link></li>
-                    <li><Link to="/services/bariatric" className="text-[#4285f4] hover:underline">{t("serviceNames.bariatric", "Bariatric Service")}</Link></li>
-                    <li><Link to="/services/paramedic" className="text-[#4285f4] hover:underline">{t("serviceNames.paramedic", "Paramedic Service")}</Link></li>
-                    <li><Link to="/services/neonatal" className="text-[#4285f4] hover:underline">{t("serviceNames.neonatal", "Neonatal and Paediatric intensive care transfer service")}</Link></li>
-                  </ul>
-                </div>
-
-                <div className="border-t pt-6 mt-6">
-                  <h3 className="text-lg font-bold text-[#0a2240] mb-3">{t("fleet.companyDetailsTitle", "Company Details")}</h3>
-                  <p className="text-sm text-gray-600 mb-2">BEARS Patient Transport Service Ltd</p>
-                  <p className="text-sm text-gray-600 mb-2">Ambulance Service - Company No: 4269 3936</p>
-                  <p className="text-sm text-gray-600 mb-2">London, United Kingdom</p>
-                  <Link to="/contact" className="text-[#4285f4] hover:underline text-sm">
-                    {t("fleet.contactForMoreInfo", "Contact us for more information")}
-                  </Link>
-                </div>
+                <ContactInfo showGetInTouchButton={true} />
               </div>
-            </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg mb-8">
+                <ServicesList 
+                  title={t("home.ourServicesTitle", "Our Services")}
+                  excludeService="neonatal"
+                />
+              </div>
+
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <h3 className="text-lg font-bold text-[#0a2240] mb-3">{t("fleet.companyDetailsTitle", "Company Details")}</h3>
+                <p className="text-sm text-gray-600 mb-2">BEARS Patient Transport Service Ltd</p>
+                <p className="text-sm text-gray-600 mb-2">Ambulance Service - Company No: 4269 3936</p>
+                <p className="text-sm text-gray-600 mb-2">London, United Kingdom</p>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
