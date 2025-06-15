@@ -6,15 +6,15 @@ import { useLanguage } from '../language-provider'
 export default function TestimonialsSection() {
   const { t } = useLanguage()
 
-  // Define testimonials directly since they need complex structure
+  // Define testimonials using the correct translation keys
   const testimonials = [
     {
-      text: t("news.testimonials.testimonial1.text"),
-      source: t("news.testimonials.testimonial1.source")
+      text: t("testimonials.testimonial1"),
+      source: t("testimonials.testimonial1Source")
     },
     {
-      text: t("news.testimonials.testimonial2.text"),
-      source: t("news.testimonials.testimonial2.source")
+      text: t("testimonials.testimonial2"),
+      source: t("testimonials.testimonial2Source")
     }
   ]
 
@@ -22,10 +22,10 @@ export default function TestimonialsSection() {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-[#0a2240] mb-8">
-          {t("news.testimonials.title")}
+          {t("testimonials.whatPeopleSay")}
         </h2>
         <Link to="/compliments" className="text-[#4285f4] hover:underline mb-8 inline-block">
-          {t("news.testimonials.cta")}
+          {t("testimonials.readMoreCompliments")}
         </Link>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">

@@ -13,10 +13,10 @@ export default function NewsPage() {
       <section className="relative bg-[#0a2240] text-white py-16">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            {t("news.hero.title")}
+            {t("navigation.news")}
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl">
-            {t("news.hero.description")}
+            {t("testimonials.whatPeopleSay")}
           </p>
         </div>
       </section>

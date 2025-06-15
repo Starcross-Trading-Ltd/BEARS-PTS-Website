@@ -6,23 +6,23 @@ import { useLanguage } from '../language-provider'
 export default function NewsGrid() {
   const { t } = useLanguage()
 
-  // Define articles directly since they need complex structure
+  // Define articles using the correct translation keys
   const articles = [
     {
-      title: t("news.articles.article1.title"),
-      description: t("news.articles.article1.description"),
+      title: t("news.christmasTitle"),
+      description: t("news.christmasExcerpt"),
       image: "/images/christmas.jpg",
       link: "/news/christmas-2024"
     },
     {
-      title: t("news.articles.article2.title"),
-      description: t("news.articles.article2.description"),
+      title: t("news.pulseTitle"),
+      description: t("news.pulse4Excerpt"),
       image: "/images/neonatal.jpg",
       link: "/news/pulse-newsletter-4"
     },
     {
-      title: t("news.articles.article3.title"),
-      description: t("news.articles.article3.description"),
+      title: t("news.pulseTitle"),
+      description: t("news.pulse3Excerpt"),
       image: "/images/neonatal.jpg",
       link: "/news/pulse-newsletter-3"
     }
@@ -32,7 +32,7 @@ export default function NewsGrid() {
     <section className="bg-gray-50 py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-[#0a2240] mb-8">
-          {t("news.articles.title")}
+          {t("news.latestNews")}
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -50,7 +50,7 @@ export default function NewsGrid() {
                   to={item.link}
                   className="text-[#4285f4] hover:underline"
                 >
-                  {t("news.articles.readMore")}
+                  {t("news.readMore")}
                 </Link>
               </div>
             </div>
