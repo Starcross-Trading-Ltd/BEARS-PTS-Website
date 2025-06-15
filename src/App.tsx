@@ -15,6 +15,8 @@ import CareersPage from './pages/careers'
 import TeamPage from './pages/team'
 import CubsPage from './pages/cubs'
 import FleetPage from './pages/fleet'
+import OurValuesPage from './pages/our-values'
+import BearsInNumbersPage from './pages/bears-in-numbers'
 import NeptsPage from './pages/services/nepts'
 import ParamedicPage from './pages/services/paramedic'
 import BariatricPage from './pages/services/bariatric'
@@ -44,7 +46,7 @@ function App() {
                   <Route path="/services/ecmo" element={<EcmoPage />} />
                   <Route path="/services/high-dependance" element={<HighDependancePage />} />
                   <Route path="/services/mental-health" element={<MentalHealthPage />} />
-                  <Route path="/services/neonatal" element={<NeonatalPage />} />
+                  <Route path="/services/neonatal" element={<NeontalPage />} />
                   <Route path="/contact" element={<ContactPage />} />
                   <Route path="/compliments" element={<ComplimentsPage />} />
                   <Route path="/news" element={<NewsPage />} />
@@ -52,6 +54,8 @@ function App() {
                   <Route path="/team" element={<TeamPage />} />
                   <Route path="/cubs" element={<CubsPage />} />
                   <Route path="/fleet" element={<FleetPage />} />
+                  <Route path="/our-values" element={<OurValuesPage />} />
+                  <Route path="/bears-in-numbers" element={<BearsInNumbersPage />} />
                 </Routes>
               </ErrorBoundary>
             </main>
