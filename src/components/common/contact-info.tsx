@@ -1,9 +1,8 @@
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../language-provider'
 import { CONTACT_INFO } from '../../config/constants'
-import { Button } from '../ui/button'
+import { Button } from '../../../components/ui/button'
 
 interface ContactInfoProps {
   showGetInTouchButton?: boolean
