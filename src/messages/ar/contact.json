@@ -1,0 +1,15 @@
+
+{
+  "contactUsTitle": "اتصل بنا",
+  "getInTouchTitle": "تواصل معنا",
+  "getInTouchDescription": "نحن هنا للإجابة على أي أسئلة حول خدماتنا. تواصل معنا وسنرد عليك في أقرب وقت ممكن.",
+  "phoneTitle": "الهاتف",
+  "emailTitle": "البريد الإلكتروني",
+  "addressTitle": "العنوان",
+  "sendMessageTitle": "أرسل لنا رسالة",
+  "nameLabel": "الاسم",
+  "emailLabel": "البريد الإلكتروني",
+  "phoneLabel": "الهاتف",
+  "messageLabel": "الرسالة",
+  "sendMessage": "أرسل الرسالة"
+}
