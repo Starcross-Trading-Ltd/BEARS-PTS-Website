@@ -56,7 +56,7 @@ export default function Header() {
     { title: t("serviceNames.nepts", "NEPTS"), link: "/services/nepts" },
     { title: t("serviceNames.paramedic", "Paramedic Service"), link: "/services/paramedic" },
     { title: t("serviceNames.bariatric", "Bariatric Service"), link: "/services/bariatric" },
-    { title: t("navigation.criticalRetrieval", "Critical Care Retrieval"), link: "/services/critical-retrieval" },
+    { title: t("serviceNames.specialistCritical", "Specialist Critical Retrieval Response Service"), link: "/services/critical-retrieval" },
     { title: t("serviceNames.ecmo", "ECMO Service"), link: "/services/ecmo" },
     { title: t("serviceNames.highDependance", "High Dependance"), link: "/services/high-dependance" },
     { title: t("serviceNames.mentalHealth", "Mental Health Service"), link: "/services/mental-health" },
