@@ -83,7 +83,18 @@
     },
     "benefits": {
       "title": "Why Work With BEARS?",
-      "items": "Safety|We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment.,Comfort|We provide a supportive work environment that values work-life balance and professional development.,Care|Join a team that genuinely cares about making a difference in patients' lives every day."
+      "safety": {
+        "title": "Safety",
+        "description": "We prioritise the safety of our patients and staff with comprehensive training and state-of-the-art equipment."
+      },
+      "comfort": {
+        "title": "Comfort", 
+        "description": "We provide a supportive work environment that values work-life balance and professional development."
+      },
+      "care": {
+        "title": "Care",
+        "description": "Join a team that genuinely cares about making a difference in patients' lives every day."
+      }
     }
   },
   "aboutPage": {
