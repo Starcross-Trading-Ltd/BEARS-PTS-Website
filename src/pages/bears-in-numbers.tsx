@@ -6,12 +6,36 @@ export default function BearsInNumbersPage() {
   const { t } = useLanguage()
 
   const stats = [
-    { number: "15+", label: "Years of Service", description: "Providing patient transport since 2009" },
-    { number: "50+", label: "Qualified Staff", description: "Experienced healthcare professionals" },
-    { number: "24/7", label: "Service Availability", description: "Round-the-clock patient care" },
-    { number: "1000+", label: "Patients Transported", description: "Monthly patient transfers" },
-    { number: "99%", label: "Customer Satisfaction", description: "High-quality service delivery" },
-    { number: "8", label: "Service Categories", description: "Specialized transport services" }
+    { 
+      number: "15+", 
+      label: "Years of Service", 
+      description: "Providing patient transport since 2009" 
+    },
+    { 
+      number: "50+", 
+      label: "Qualified Staff", 
+      description: "Experienced healthcare professionals" 
+    },
+    { 
+      number: "24/7", 
+      label: "Service Availability", 
+      description: "Round-the-clock patient care" 
+    },
+    { 
+      number: "1000+", 
+      label: "Patients Transported", 
+      description: "Monthly patient transfers" 
+    },
+    { 
+      number: "99%", 
+      label: "Customer Satisfaction", 
+      description: "High-quality service delivery" 
+    },
+    { 
+      number: "8", 
+      label: "Service Categories", 
+      description: "Specialized transport services" 
+    }
   ]
 
   return (
@@ -19,7 +43,7 @@ export default function BearsInNumbersPage() {
       {/* Hero Section */}
       <section className="relative bg-[#0a2240] text-white py-16">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-6">BEARS in Numbers</h1>
+          <h1 className="text-4xl font-bold mb-6">{t("about.bearsInNumbers")}</h1>
           <p className="text-xl text-gray-300 max-w-3xl">
             Our commitment to excellence is reflected in our track record of successful patient transports and healthcare partnerships.
           </p>
