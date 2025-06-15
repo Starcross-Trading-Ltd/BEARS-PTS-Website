@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom'
 import { useLanguage } from './language-provider'
 
 const SERVICES = [
-  { key: "nepts", path: "/services/nepts" },
-  { key: "paramedic", path: "/services/paramedic" },
-  { key: "bariatric", path: "/services/bariatric" },
-  { key: "criticalRetrieval", path: "/services/critical-retrieval" },
-  { key: "ecmo", path: "/services/ecmo" },
   { key: "highDependance", path: "/services/high-dependance" },
+  { key: "specialistCritical", path: "/services/critical-retrieval" },
+  { key: "ecmo", path: "/services/ecmo" },
   { key: "mentalHealth", path: "/services/mental-health" },
+  { key: "nepts", path: "/services/nepts" },
+  { key: "bariatric", path: "/services/bariatric" },
+  { key: "paramedic", path: "/services/paramedic" },
   { key: "neonatal", path: "/services/neonatal" }
 ] as const
 

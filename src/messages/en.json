@@ -1,4 +1,3 @@
-
 {
   "meta": {
     "title": "BEARS Patient Transport Services",
@@ -13,19 +12,27 @@
     "aboutUs": "About Us",
     "compliments": "Compliments",
     "news": "News",
+    "contactUs": "Contact Us",
     "allServices": "All Services",
     "criticalRetrieval": "Critical Care Retrieval"
   },
   "serviceNames": {
-    "nepts": "NEPTS",
-    "paramedic": "Paramedic Service",
-    "bariatric": "Bariatric Service",
-    "ecmo": "ECMO Service",
     "highDependance": "High Dependance",
-    "mentalHealth": "Mental Health Service",
-    "neonatal": "Neonatal Transport",
     "specialistCritical": "Specialist Critical Retrieval Response Service",
+    "ecmo": "ECMO - Extracorporeal Membrane Oxygenation",
+    "mentalHealth": "Mental Health Service",
+    "nepts": "Non Emergency Patient Transport Service",
+    "bariatric": "Bariatric Service",
+    "paramedic": "Paramedic Service",
+    "neonatal": "Neonatal and Paediatric intensive care transfer service",
     "clinicalHelpline": "BEARS Clinical Helpline"
+  },
+  "serviceDetails": {
+    "contactUs": "Contact Us",
+    "contactDescription": "For more information about our services or to make a booking, please contact our team.",
+    "phone": "Phone:",
+    "email": "Email:",
+    "getInTouch": "Get in touch"
   },
   "home": {
     "hero": {
@@ -374,8 +381,8 @@
   },
   "neonatal": {
     "title": "Neonatal and Paediatric intensive care transfer service",
-    "intro": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and paediatric patients requiring urgent care and specialised support.",
-    "description": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and paediatric patients requiring urgent care and specialised support. Our Neonatal Transport Service is committed to ensuring the safe transfer of critically ill newborns, infants, and young children to specialised paediatric and neonatal intensive care units, where they can receive the expert care they require.",
+    "intro": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and neonate patients requiring urgent care and specialised support.",
+    "description": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and neonate patients requiring urgent care and specialised support. Our Neonatal Transport Service is committed to ensuring the safe transfer of critically ill newborns, infants, and young children to specialised paediatric and neonatal intensive care units, where they can receive the expert care they require.",
     "availability": {
       "title": "24/7 Availability",
       "description": "Medical emergencies for newborns and paediatric patients can arise at any time. Our team of highly trained medical professionals is available 24 hours a day, seven days a week, ensuring that critical emergencies are responded to promptly with our experienced medical staff available to provide assistance during critical times."
