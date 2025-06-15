@@ -16,7 +16,7 @@ const MentalHealthPage: React.FC = () => {
             <div className="lg:col-span-2">
               <header>
                 <h1 className="text-4xl md:text-5xl font-bold text-[#0a2240] mb-6">
-                  {t("serviceNames.mentalHealth", "Mental Health Service")}
+                  {t("services.mentalHealth.title", "Mental Health Service")}
                 </h1>
                 <p className="text-lg text-gray-700 mb-8">
                   {t("services.mentalHealth.description", "We understand that mental health conditions require specialised care and support for individuals, ensuring they receive mental and non-emergency transport.")}

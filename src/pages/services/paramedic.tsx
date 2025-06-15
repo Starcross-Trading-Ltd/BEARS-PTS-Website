@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../../components/language-provider'
@@ -27,7 +28,7 @@ export default function ParamedicServicePage() {
             <div className="mb-8">
               <img 
                 src="/images/paramedic-service.jpg" 
-                alt="Paramedic Service Team"
+                alt={t("services.paramedic.imageAlt", "Paramedic Service Team")}
                 className="w-full h-64 object-cover rounded-lg mb-4"
               />
             </div>
@@ -35,63 +36,43 @@ export default function ParamedicServicePage() {
             <div className="space-y-8">
               <div>
                 <p className="text-gray-700 mb-4">
-                  At BEARS, we understand that some patients require specialised care and 
-                  support during transportation. Our experienced and professional team is 
-                  dedicated to identifying individual needs and catering for medical and 
-                  care requirements whilst also ensuring a safe and comfortable journey.
+                  {t("services.paramedic.intro", "At BEARS, we understand that some patients require specialised care and support during transportation. Our experienced and professional team is dedicated to identifying individual needs and catering for medical and care requirements whilst also ensuring a safe and comfortable journey.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">What is Paramedic Transport?</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.paramedic.whatIsTitle", "What is Paramedic Transport?")}</h2>
                 <p className="text-gray-700 mb-4">
-                  Paramedic transport involves the safe movement of patients and clinical 
-                  intervention by qualified Paramedics. Our experienced crew provide advanced 
-                  care and life support to critically ill patients. Our paramedics provide 
-                  emergency care and advanced procedures, delivering interventions and 
-                  monitoring throughout transport, ensuring continued care is provided.
+                  {t("services.paramedic.whatIsDescription", "Paramedic transport involves the safe movement of patients and clinical intervention by qualified Paramedics. Our experienced crew provide advanced care and life support to critically ill patients. Our paramedics provide emergency care and advanced procedures, delivering interventions and monitoring throughout transport, ensuring continued care is provided.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Our Commitment to Safety and Care</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.paramedic.commitmentTitle", "Our Commitment to Safety and Care")}</h2>
                 <p className="text-gray-700 mb-4">
-                  We take pride in ensuring the safety and comfort of patients during their 
-                  transport. Our qualified paramedics are experienced with advanced 
-                  life support care, critical care medicine, and emergency interventions. 
-                  We are equipped to provide continuous care, monitoring vital signs 
-                  and providing medication or equipment as needed.
+                  {t("services.paramedic.commitmentDescription", "We take pride in ensuring the safety and comfort of patients during their transport. Our qualified paramedics are experienced with advanced life support care, critical care medicine, and emergency interventions. We are equipped to provide continuous care, monitoring vital signs and providing medication or equipment as needed.")}
                 </p>
               </div>
 
               <div className="mb-8">
                 <img 
                   src="/images/paramedic-care.jpg" 
-                  alt="Paramedic providing care"
+                  alt={t("services.paramedic.careImageAlt", "Paramedic providing care")}
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Specialised Vehicles and Equipment</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.paramedic.equipmentTitle", "Specialised Vehicles and Equipment")}</h2>
                 <p className="text-gray-700 mb-4">
-                  We utilise specialist emergency equipped with advanced medical 
-                  equipment and facilities to ensure the highest standards of care during 
-                  transport. Our equipment is contemporary and represents the highest 
-                  standard of medical technology and our paramedics have advanced level 
-                  training with continuous professional development to provide the most 
-                  complex interventions.
+                  {t("services.paramedic.equipmentDescription", "We utilise specialist emergency equipped with advanced medical equipment and facilities to ensure the highest standards of care during transport. Our equipment is contemporary and represents the highest standard of medical technology and our paramedics have advanced level training with continuous professional development to provide the most complex interventions.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Personalised Care Plans</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.paramedic.carePlansTitle", "Personalised Care Plans")}</h2>
                 <p className="text-gray-700 mb-4">
-                  Each transport begins with comprehensive care planning and collaboration 
-                  with the patient and their healthcare team including family members. Our 
-                  qualified paramedics work with patients and families to identify individual 
-                  health care needs to provide personalised care during transport and 
-                  improve patients' overall experience during their journey.
+                  {t("services.paramedic.carePlansDescription", "Each transport begins with comprehensive care planning and collaboration with the patient and their healthcare team including family members. Our qualified paramedics work with patients and families to identify individual health care needs to provide personalised care during transport and improve patients' overall experience during their journey.")}
                 </p>
               </div>
 
@@ -104,15 +85,15 @@ export default function ParamedicServicePage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.reliability", "Reliability:")}</h3>
-                    <p className="text-gray-700">We pride ourselves on punctuality and reliability, ensuring timely and efficient transportation for all our patients.</p>
+                    <p className="text-gray-700">{t("services.paramedic.reliabilityDescription", "We pride ourselves on punctuality and reliability, ensuring timely and efficient transportation for all our patients.")}</p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.comfort", "Comfort:")}</h3>
-                    <p className="text-gray-700">We understand the importance of comfort during medical transport. Our vehicles are designed to provide a comfortable and stress-free environment for patients and their families.</p>
+                    <p className="text-gray-700">{t("services.paramedic.comfortDescription", "We understand the importance of comfort during medical transport. Our vehicles are designed to provide a comfortable and stress-free environment for patients and their families.")}</p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.personalisedService", "Personalised Service:")}</h3>
-                    <p className="text-gray-700">We work closely with healthcare providers and their families to create personalised care plans that meet the unique needs of each individual.</p>
+                    <p className="text-gray-700">{t("services.paramedic.personalisedServiceDescription", "We work closely with healthcare providers and their families to create personalised care plans that meet the unique needs of each individual.")}</p>
                   </div>
                 </div>
               </div>
@@ -127,8 +108,8 @@ export default function ParamedicServicePage() {
                 {t("serviceDetails.contactDescription", "For more information about our services or to make a booking, please contact our team.")}
               </p>
               <div className="space-y-2 text-sm">
-                <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> +44 123 456 7890</p>
-                <p><strong>{t("serviceDetails.email", "Email:")}</strong> info@bearsambulance.com</p>
+                <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> {t("contact.phoneNumber", "+44 123 456 7890")}</p>
+                <p><strong>{t("serviceDetails.email", "Email:")}</strong> {t("contact.emailAddress", "info@bearsambulance.com")}</p>
               </div>
               <button className="w-full mt-4 px-4 py-2 bg-[#00855a] text-white rounded hover:bg-[#006e4a] transition-colors">
                 {t("serviceDetails.getInTouch", "Get in touch")}

@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { useLanguage } from '../../components/language-provider'
 
@@ -26,72 +27,52 @@ export default function CriticalRetrievalPage() {
             <div className="mb-8">
               <img 
                 src="/images/critical-retrieval.jpg" 
-                alt="Critical Retrieval Vehicle"
+                alt={t("services.criticalRetrieval.imageAlt", "Critical Retrieval Vehicle")}
                 className="w-full h-64 object-cover rounded-lg mb-4"
               />
             </div>
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">24/7 Availability</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.criticalRetrieval.availabilityTitle", "24/7 Availability")}</h2>
                 <p className="text-gray-700 mb-4">
-                  Understanding that critical care cannot wait, our specialist critical care retrieval 
-                  service is available around the clock. The coordination that marks all of the points in our rapid 
-                  mobilisation sequence, and related medical teams and logistics, work together 
-                  to provide immediate response when critical interventions are required.
+                  {t("services.criticalRetrieval.availabilityDescription", "Understanding that critical care cannot wait, our specialist critical care retrieval service is available around the clock. The coordination that marks all of the points in our rapid mobilisation sequence, and related medical teams and logistics, work together to provide immediate response when critical interventions are required.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Advanced Critical Care Support Equipment</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.criticalRetrieval.equipmentTitle", "Advanced Critical Care Support Equipment")}</h2>
                 <p className="text-gray-700 mb-4">
-                  Equipment we utilise will be current and state of the art including but not limited to 
-                  our specialised vehicles like integrated comprehensive critical care systems, 
-                  including advanced vital sign monitoring and respiratory equipment, as these 
-                  sophisticated and complex machines are administered by our experienced, 
-                  dedicated health care teams with highly specialist knowledge to enable us to 
-                  guarantee reliability and performance.
+                  {t("services.criticalRetrieval.equipmentDescription", "Equipment we utilise will be current and state of the art including but not limited to our specialised vehicles like integrated comprehensive critical care systems, including advanced vital sign monitoring and respiratory equipment, as these sophisticated and complex machines are administered by our experienced, dedicated health care teams with highly specialist knowledge to enable us to guarantee reliability and performance.")}
                 </p>
               </div>
 
               <div className="mb-8">
                 <img 
                   src="/images/critical-vehicles.jpg" 
-                  alt="Critical Care Vehicles"
+                  alt={t("services.criticalRetrieval.vehiclesImageAlt", "Critical Care Vehicles")}
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Experienced Clinical Guidance</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.criticalRetrieval.guidanceTitle", "Experienced Clinical Guidance")}</h2>
                 <p className="text-gray-700 mb-4">
-                  Using only qualified, HCPC registered paramedics on our team who support 
-                  advanced clinical teams we deliver expert care and monitoring throughout the retrieval 
-                  mission. Our teams work seamlessly together transitioning between clinical centre, 
-                  creating clinically appropriate and comprehensive patient management planning 
-                  and adapting in real time during transport.
+                  {t("services.criticalRetrieval.guidanceDescription", "Using only qualified, HCPC registered paramedics on our team who support advanced clinical teams we deliver expert care and monitoring throughout the retrieval mission. Our teams work seamlessly together transitioning between clinical centre, creating clinically appropriate and comprehensive patient management planning and adapting in real time during transport.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Personalised and Compassionate Care</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.criticalRetrieval.compassionateTitle", "Personalised and Compassionate Care")}</h2>
                 <p className="text-gray-700 mb-4">
-                  At BEARS we understand every retrieval is an extreme life or death situation 
-                  where families are involved and our holistic approach includes providing 
-                  emotional and psychological support to families throughout this difficult journey 
-                  experienced at each individual providing consistent support and 
-                  information to patients and families during these challenging times.
+                  {t("services.criticalRetrieval.compassionateDescription", "At BEARS we understand every retrieval is an extreme life or death situation where families are involved and our holistic approach includes providing emotional and psychological support to families throughout this difficult journey experienced at each individual providing consistent support and information to patients and families during these challenging times.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Reliable and Trustworthy Service</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.criticalRetrieval.reliableTitle", "Reliable and Trustworthy Service")}</h2>
                 <p className="text-gray-700 mb-4">
-                  We are confident about our profession-style specialists, technical excellence in 
-                  service management and to stay committed to the highest quality of care 
-                  provided to our patients and their families. Service confidence is important to us 
-                  providing choice for healthcare providers, healthcare, and choice in respect of 
-                  information management trusted improvement.
+                  {t("services.criticalRetrieval.reliableDescription", "We are confident about our profession-style specialists, technical excellence in service management and to stay committed to the highest quality of care provided to our patients and their families. Service confidence is important to us providing choice for healthcare providers, healthcare, and choice in respect of information management trusted improvement.")}
                 </p>
               </div>
 
@@ -112,7 +93,7 @@ export default function CriticalRetrievalPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.personalisedService", "Personalised Service:")}</h3>
-                    <p className="text-gray-700">Our clinical teams are healthcare professionals, administering each patient personal care plans that meet individuated personalised care plans that meet your individual care needs that are most responsive during challenging times.</p>
+                    <p className="text-gray-700">{t("services.criticalRetrieval.personalisedServiceDescription", "Our clinical teams are healthcare professionals, administering each patient personal care plans that meet individuated personalised care plans that meet your individual care needs that are most responsive during challenging times.")}</p>
                   </div>
                 </div>
               </div>
@@ -124,11 +105,11 @@ export default function CriticalRetrievalPage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h3 className="text-lg font-bold text-[#0a2240] mb-4">{t("serviceDetails.contactUs", "Contact Us")}</h3>
               <p className="text-sm text-gray-600 mb-4">
-                For more information about our critical retrieval service or to make a booking, please contact our team.
+                {t("services.criticalRetrieval.contactDescription", "For more information about our critical retrieval service or to make a booking, please contact our team.")}
               </p>
               <div className="space-y-2 text-sm">
-                <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> +44 123 456 7890</p>
-                <p><strong>{t("serviceDetails.email", "Email:")}</strong> info@bearsambulance.com</p>
+                <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> {t("contact.phoneNumber", "+44 123 456 7890")}</p>
+                <p><strong>{t("serviceDetails.email", "Email:")}</strong> {t("contact.emailAddress", "info@bearsambulance.com")}</p>
               </div>
               <button className="w-full mt-4 px-4 py-2 bg-[#00855a] text-white rounded hover:bg-[#006e4a] transition-colors">
                 {t("serviceDetails.getInTouch", "Get in touch")}

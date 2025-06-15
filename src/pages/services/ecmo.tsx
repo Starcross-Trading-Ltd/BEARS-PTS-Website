@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { useLanguage } from '../../components/language-provider'
 
@@ -26,69 +27,52 @@ export default function ECMOServicePage() {
             <div className="mb-8">
               <img 
                 src="/images/ecmo-service.jpg" 
-                alt="ECMO Service Vehicle"
+                alt={t("services.ecmo.imageAlt", "ECMO Service Vehicle")}
                 className="w-full h-64 object-cover rounded-lg mb-4"
               />
             </div>
 
             <div className="space-y-8">
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">What is ECMO?</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.ecmo.whatIsTitle", "What is ECMO?")}</h2>
                 <p className="text-gray-700 mb-4">
-                  ECMO (Extracorporeal Membrane Oxygenation) is a life-saving technique that 
-                  provides heart and lung support by diverting blood from the patient's 
-                  body through an external circuit where oxygen is added and carbon dioxide is removed, 
-                  before returning the blood to the patient's circulation.
+                  {t("services.ecmo.whatIsDescription", "ECMO (Extracorporeal Membrane Oxygenation) is a life-saving technique that provides heart and lung support by diverting blood from the patient's body through an external circuit where oxygen is added and carbon dioxide is removed, before returning the blood to the patient's circulation.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Our Specialised ECMO Service</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.ecmo.ourServiceTitle", "Our Specialised ECMO Service")}</h2>
                 <p className="text-gray-700 mb-4">
-                  Our ECMO Service is delivered by a team of experienced ECMO-trained medical 
-                  professionals, including ECMO specialists, intensive care nurses, and medical 
-                  technicians. Our specialised vehicles are equipped with state-of-the-art ECMO 
-                  machines, monitoring equipment and all the equipment necessary to provide 
-                  life-sustaining treatment during transport.
+                  {t("services.ecmo.ourServiceDescription", "Our ECMO Service is delivered by a team of experienced ECMO-trained medical professionals, including ECMO specialists, intensive care nurses, and medical technicians. Our specialised vehicles are equipped with state-of-the-art ECMO machines, monitoring equipment and all the equipment necessary to provide life-sustaining treatment during transport.")}
                 </p>
               </div>
 
               <div className="mb-8">
                 <img 
                   src="/images/ecmo-team.jpg" 
-                  alt="ECMO Team"
+                  alt={t("services.ecmo.teamImageAlt", "ECMO Team")}
                   className="w-full h-64 object-cover rounded-lg"
                 />
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Advanced Equipment and Vehicles</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.ecmo.equipmentTitle", "Advanced Equipment and Vehicles")}</h2>
                 <p className="text-gray-700 mb-4">
-                  Our specialised ECMO vehicles are equipped with advanced life support equipment 
-                  including ECMO machines, ventilators, infusion pumps, and specialised monitoring 
-                  devices. Our vehicles are climate controlled and shock-protected to ensure 
-                  stable transport conditions during inter-hospital transfers. The specialist 
-                  equipment also includes backup power supplies to ensure continuous care during transport.
+                  {t("services.ecmo.equipmentDescription", "Our specialised ECMO vehicles are equipped with advanced life support equipment including ECMO machines, ventilators, infusion pumps, and specialised monitoring devices. Our vehicles are climate controlled and shock-protected to ensure stable transport conditions during inter-hospital transfers. The specialist equipment also includes backup power supplies to ensure continuous care during transport.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">24/7 Availability</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.ecmo.availabilityTitle", "24/7 Availability")}</h2>
                 <p className="text-gray-700 mb-4">
-                  Understanding that critical care emergencies can occur at any time, our ECMO service is available 
-                  24/7 providing rapid response and clinical intervention across the UK. Our specialised 
-                  team is always ready to respond to urgent requests to provide ECMO transportation 
-                  services where the receiving hospital is unable to support ECMO therapy.
+                  {t("services.ecmo.availabilityDescription", "Understanding that critical care emergencies can occur at any time, our ECMO service is available 24/7 providing rapid response and clinical intervention across the UK. Our specialised team is always ready to respond to urgent requests to provide ECMO transportation services where the receiving hospital is unable to support ECMO therapy.")}
                 </p>
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Personalised Care and Support</h2>
+                <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.ecmo.personalisedCareTitle", "Personalised Care and Support")}</h2>
                 <p className="text-gray-700 mb-4">
-                  At BEARS we understand how overwhelming ECMO treatment can be for patients and families. 
-                  ECMO clinical teams are available with compassion, professionalism, and understanding, 
-                  providing clinical and emotional support to families during these difficult times and 
-                  working collaboratively with existing care teams providing seamless clinical continuity.
+                  {t("services.ecmo.personalisedCareDescription", "At BEARS we understand how overwhelming ECMO treatment can be for patients and families. ECMO clinical teams are available with compassion, professionalism, and understanding, providing clinical and emotional support to families during these difficult times and working collaboratively with existing care teams providing seamless clinical continuity.")}
                 </p>
               </div>
 
@@ -105,11 +89,11 @@ export default function ECMOServicePage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.comfort", "Comfort:")}</h3>
-                    <p className="text-gray-700">We understand the importance of comfort during medical transport. Our vehicles are designed to prevent discomfort and maintain ECMO therapy during transport.</p>
+                    <p className="text-gray-700">{t("services.ecmo.comfortDescription", "We understand the importance of comfort during medical transport. Our vehicles are designed to prevent discomfort and maintain ECMO therapy during transport.")}</p>
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#0a2240]">{t("serviceDetails.personalisedService", "Personalised Service:")}</h3>
-                    <p className="text-gray-700">Our clinical teams are healthcare professionals, providing comprehensive patient care plans personalised and comprehensive support tailored during these challenging times.</p>
+                    <p className="text-gray-700">{t("services.ecmo.personalisedServiceDescription", "Our clinical teams are healthcare professionals, providing comprehensive patient care plans personalised and comprehensive support tailored during these challenging times.")}</p>
                   </div>
                 </div>
               </div>
@@ -121,11 +105,11 @@ export default function ECMOServicePage() {
             <div className="bg-gray-50 p-6 rounded-lg mb-6">
               <h3 className="text-lg font-bold text-[#0a2240] mb-4">{t("serviceDetails.contactUs", "Contact Us")}</h3>
               <p className="text-sm text-gray-600 mb-4">
-                For more information about our ECMO service or to make a booking, please contact our team.
+                {t("services.ecmo.contactDescription", "For more information about our ECMO service or to make a booking, please contact our team.")}
               </p>
               <div className="space-y-2 text-sm">
-                <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> +44 123 456 7890</p>
-                <p><strong>{t("serviceDetails.email", "Email:")}</strong> info@bearsambulance.com</p>
+                <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> {t("contact.phoneNumber", "+44 123 456 7890")}</p>
+                <p><strong>{t("serviceDetails.email", "Email:")}</strong> {t("contact.emailAddress", "info@bearsambulance.com")}</p>
               </div>
               <button className="w-full mt-4 px-4 py-2 bg-[#00855a] text-white rounded hover:bg-[#006e4a] transition-colors">
                 {t("serviceDetails.getInTouch", "Get in touch")}

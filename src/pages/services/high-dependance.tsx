@@ -20,9 +20,9 @@ export default function HighDependancePage() {
 
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">Our High Dependency Service</h2>
+                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.highDependance.ourServiceTitle", "Our High Dependency Service")}</h2>
                   <p className="text-gray-700 mb-4">
-                    Our High Dependency Service provides specialised care for patients requiring complex medical support during transport.
+                    {t("services.highDependance.ourServiceDescription", "Our High Dependency Service provides specialised care for patients requiring complex medical support during transport.")}
                   </p>
                 </div>
 
@@ -58,8 +58,8 @@ export default function HighDependancePage() {
                   {t("serviceDetails.contactDescription", "For more information about our services or to make a booking, please contact our team.")}
                 </p>
                 <div className="space-y-2 text-sm">
-                  <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> +44 123 456 7890</p>
-                  <p><strong>{t("serviceDetails.email", "Email:")}</strong> info@bearsambulance.com</p>
+                  <p><strong>{t("serviceDetails.phone", "Phone:")}</strong> {t("contact.phoneNumber", "+44 123 456 7890")}</p>
+                  <p><strong>{t("serviceDetails.email", "Email:")}</strong> {t("contact.emailAddress", "info@bearsambulance.com")}</p>
                 </div>
                 <button className="w-full mt-4 px-4 py-2 bg-[#00855a] text-white rounded hover:bg-[#006e4a] transition-colors">
                   {t("serviceDetails.getInTouch", "Get in touch")}

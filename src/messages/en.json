@@ -47,7 +47,10 @@
       "title": "Our Services",
       "description": "We provide comprehensive patient transport services across the UK, specializing in critical care, NEPTS, bariatric, mental health, and neonatal transport.",
       "cta": "View All Services"
-    }
+    },
+    "getInTouch": "Get In Touch",
+    "learnMore": "Learn More",
+    "ourServicesTitle": "Our Services"
   },
   "news": {
     "hero": {
@@ -144,7 +147,9 @@
     "emailLabel": "Email",
     "phoneLabel": "Phone",
     "messageLabel": "Message",
-    "sendMessage": "Send Message"
+    "sendMessage": "Send Message",
+    "phoneNumber": "+44 123 456 7890",
+    "emailAddress": "info@bearsambulance.com"
   },
   "compliments": {
     "complimentsTitle": "Compliments",
@@ -163,17 +168,49 @@
   "services": {
     "ourServicesTitle": "Our Services",
     "servicesDescription": "We provide comprehensive patient transport services across the UK, specializing in critical care, emergency response, and specialized medical transport.",
+    "learnMore": "Learn more",
     "highDependance": {
       "title": "High Dependance",
-      "description": "We provide specialised high-dependency care services designed for adult patients requiring complex care during transport."
+      "description": "We provide specialised high-dependency care services designed for adult patients requiring complex care during transport.",
+      "ourServiceTitle": "Our High Dependency Service",
+      "ourServiceDescription": "Our High Dependency Service provides specialised care for patients requiring complex medical support during transport."
     },
     "criticalRetrieval": {
       "title": "Specialist Critical Retrieval Response Service",
-      "description": "24/7 availability providing critical care services all of whom are received with high standards in response care units."
+      "description": "24/7 availability providing critical care services all of whom are received with high standards in response care units.",
+      "imageAlt": "Critical Retrieval Vehicle",
+      "availabilityTitle": "24/7 Availability",
+      "availabilityDescription": "Understanding that critical care cannot wait, our specialist critical care retrieval service is available around the clock. The coordination that marks all of the points in our rapid mobilisation sequence, and related medical teams and logistics, work together to provide immediate response when critical interventions are required.",
+      "equipmentTitle": "Advanced Critical Care Support Equipment",
+      "equipmentDescription": "Equipment we utilise will be current and state of the art including but not limited to our specialised vehicles like integrated comprehensive critical care systems, including advanced vital sign monitoring and respiratory equipment, as these sophisticated and complex machines are administered by our experienced, dedicated health care teams with highly specialist knowledge to enable us to guarantee reliability and performance.",
+      "vehiclesImageAlt": "Critical Care Vehicles",
+      "guidanceTitle": "Experienced Clinical Guidance",
+      "guidanceDescription": "Using only qualified, HCPC registered paramedics on our team who support advanced clinical teams we deliver expert care and monitoring throughout the retrieval mission. Our teams work seamlessly together transitioning between clinical centre, creating clinically appropriate and comprehensive patient management planning and adapting in real time during transport.",
+      "compassionateTitle": "Personalised and Compassionate Care",
+      "compassionateDescription": "At BEARS we understand every retrieval is an extreme life or death situation where families are involved and our holistic approach includes providing emotional and psychological support to families throughout this difficult journey experienced at each individual providing consistent support and information to patients and families during these challenging times.",
+      "reliableTitle": "Reliable and Trustworthy Service",
+      "reliableDescription": "We are confident about our profession-style specialists, technical excellence in service management and to stay committed to the highest quality of care provided to our patients and their families. Service confidence is important to us providing choice for healthcare providers, healthcare, and choice in respect of information management trusted improvement.",
+      "contactDescription": "For more information about our critical retrieval service or to make a booking, please contact our team.",
+      "personalisedServiceDescription": "Our clinical teams are healthcare professionals, administering each patient personal care plans that meet individuated personalised care plans that meet your individual care needs that are most responsive during challenging times."
     },
     "ecmo": {
       "title": "ECMO - Extracorporeal Membrane Oxygenation",
-      "description": "At BEARS we are proud to offer a specialist ECMO (Extracorporeal Membrane Oxygenation) Service, delivering advanced life support throughout transportation."
+      "description": "At BEARS we are proud to offer a specialist ECMO (Extracorporeal Membrane Oxygenation) Service, delivering advanced life support throughout transportation.",
+      "imageAlt": "ECMO Service Vehicle",
+      "whatIsTitle": "What is ECMO?",
+      "whatIsDescription": "ECMO (Extracorporeal Membrane Oxygenation) is a life-saving technique that provides heart and lung support by diverting blood from the patient's body through an external circuit where oxygen is added and carbon dioxide is removed, before returning the blood to the patient's circulation.",
+      "ourServiceTitle": "Our Specialised ECMO Service",
+      "ourServiceDescription": "Our ECMO Service is delivered by a team of experienced ECMO-trained medical professionals, including ECMO specialists, intensive care nurses, and medical technicians. Our specialised vehicles are equipped with state-of-the-art ECMO machines, monitoring equipment and all the equipment necessary to provide life-sustaining treatment during transport.",
+      "teamImageAlt": "ECMO Team",
+      "equipmentTitle": "Advanced Equipment and Vehicles",
+      "equipmentDescription": "Our specialised ECMO vehicles are equipped with advanced life support equipment including ECMO machines, ventilators, infusion pumps, and specialised monitoring devices. Our vehicles are climate controlled and shock-protected to ensure stable transport conditions during inter-hospital transfers. The specialist equipment also includes backup power supplies to ensure continuous care during transport.",
+      "availabilityTitle": "24/7 Availability",
+      "availabilityDescription": "Understanding that critical care emergencies can occur at any time, our ECMO service is available 24/7 providing rapid response and clinical intervention across the UK. Our specialised team is always ready to respond to urgent requests to provide ECMO transportation services where the receiving hospital is unable to support ECMO therapy.",
+      "personalisedCareTitle": "Personalised Care and Support",
+      "personalisedCareDescription": "At BEARS we understand how overwhelming ECMO treatment can be for patients and families. ECMO clinical teams are available with compassion, professionalism, and understanding, providing clinical and emotional support to families during these difficult times and working collaboratively with existing care teams providing seamless clinical continuity.",
+      "contactDescription": "For more information about our ECMO service or to make a booking, please contact our team.",
+      "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to prevent discomfort and maintain ECMO therapy during transport.",
+      "personalisedServiceDescription": "Our clinical teams are healthcare professionals, providing comprehensive patient care plans personalised and comprehensive support tailored during these challenging times."
     },
     "mentalHealth": {
       "title": "Mental Health Service",
@@ -181,25 +218,79 @@
     },
     "nepts": {
       "title": "Non Emergency Patient Transport Service (NEPTS)",
-      "description": "At BEARS, we specialise in providing reliable and compassionate non-emergency Patient Transport (NEPT) services across the UK."
+      "description": "At BEARS, we specialise in providing reliable and compassionate non-emergency Patient Transport (NEPT) services across the UK.",
+      "imageAlt": "NEPTS Service Team",
+      "intro": "At BEARS, we understand that every patient requires specialised care and support. Our compassionate and professional team is dedicated to providing excellent care and patient advocacy throughout each journey, ensuring individual needs are identified and catered for when required.",
+      "whatIsTitle": "What is Non-Emergency Patient Transport?",
+      "whatIsDescription": "Non-Emergency Patient Transport refers to the movement of patients who require medical supervision during transport but do not need emergency care. This service is designed to safely transport patients providing safe and reliable transportation, whilst maintaining the highest levels of care and comfort.",
+      "ourServiceTitle": "Our NEPT Service",
+      "ourServiceDescription": "Our NEPT service is delivered by teams of experienced professionals, including qualified ambulance technicians, trained crew members, and qualified healthcare support workers. Our service is always delivered with compassion and dignity.",
+      "equipmentTitle": "Specialised Vehicles and Equipment",
+      "equipmentDescription": "We utilise specially equipped modern emergency ambulances with lifesaving interventions readily available should the patient require this level of care. The vehicles are equipped with comfortable seating, climate control, and a full range of basic medical equipment for safe transport ensuring clinical needs are met whilst providing comfort wherever possible.",
+      "personalisedCareTitle": "Personalised Care and Support",
+      "personalisedCareDescription": "We believe in person-centred care where each patient's specific needs are our priority. We work closely with healthcare providers and patients to understand their medical history, any specific mobility requirements or conditions, as required, maintaining the dignity and comfort of each individual. Our comprehensive care plans ensure healthcare needs of patients are understood and they receive compassionate, attentive care during transport.",
+      "reliabilityDescription": "We pride ourselves on punctuality and reliability, ensuring timely and efficient transportation for all our patients.",
+      "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to provide a comfortable and stress-free environment for patients and their families.",
+      "personalisedServiceDescription": "We work closely with healthcare providers, patients, and their families to create personalised care plans that meet the unique needs of each individual."
     },
     "bariatric": {
       "title": "Bariatric Service",
-      "description": "We understand the unique challenges and specialised care required for the transportation of bariatric patients."
+      "description": "We understand the unique challenges and specialised care required for the transportation of bariatric patients.",
+      "imageAlt": "Bariatric Service Team",
+      "whatIsTitle": "What is Bariatric Transport?",
+      "whatIsDescription": "Bariatric transport refers to the safe transport of patients who may require additional support due to their weight, mobility issues, or medical conditions. Our service ensures dignity, comfort, and safety during transportation.",
+      "ourServiceTitle": "Our Bariatric Service",
+      "ourServiceDescription": "Our Bariatric Service is delivered by a team of experienced professionals, including qualified ambulance technicians, trained crew members, and registered nurses where required. Our vehicles are specially equipped to accommodate bariatric patients with dignity and comfort.",
+      "equipmentTitle": "Specialised Vehicles and Equipment",
+      "equipmentDescription": "Our bariatric ambulances feature specialist equipment including wide-access doors, reinforced floors, heavy-duty stretchers, and lifting equipment. Our vehicles are equipped with state-of-the-art medical equipment and comfortable seating areas to ensure patient comfort throughout the journey.",
+      "personalisedCareTitle": "Personalised Care and Support",
+      "personalisedCareDescription": "Our dedicated team works closely with patients, their families, and healthcare providers to ensure personalised care before, during, and after transport. We prioritise patient dignity while providing comprehensive support and maintaining the highest clinical care standards."
     },
     "paramedic": {
       "title": "Paramedic Service",
-      "description": "At BEARS, we understand that some patients require specialised care and support during transportation."
+      "description": "At BEARS, we understand that some patients require specialised care and support during transportation.",
+      "imageAlt": "Paramedic Service Team",
+      "intro": "At BEARS, we understand that some patients require specialised care and support during transportation. Our experienced and professional team is dedicated to identifying individual needs and catering for medical and care requirements whilst also ensuring a safe and comfortable journey.",
+      "whatIsTitle": "What is Paramedic Transport?",
+      "whatIsDescription": "Paramedic transport involves the safe movement of patients and clinical intervention by qualified Paramedics. Our experienced crew provide advanced care and life support to critically ill patients. Our paramedics provide emergency care and advanced procedures, delivering interventions and monitoring throughout transport, ensuring continued care is provided.",
+      "commitmentTitle": "Our Commitment to Safety and Care",
+      "commitmentDescription": "We take pride in ensuring the safety and comfort of patients during their transport. Our qualified paramedics are experienced with advanced life support care, critical care medicine, and emergency interventions. We are equipped to provide continuous care, monitoring vital signs and providing medication or equipment as needed.",
+      "careImageAlt": "Paramedic providing care",
+      "equipmentTitle": "Specialised Vehicles and Equipment",
+      "equipmentDescription": "We utilise specialist emergency equipped with advanced medical equipment and facilities to ensure the highest standards of care during transport. Our equipment is contemporary and represents the highest standard of medical technology and our paramedics have advanced level training with continuous professional development to provide the most complex interventions.",
+      "carePlansTitle": "Personalised Care Plans",
+      "carePlansDescription": "Each transport begins with comprehensive care planning and collaboration with the patient and their healthcare team including family members. Our qualified paramedics work with patients and families to identify individual health care needs to provide personalised care during transport and improve patients' overall experience during their journey.",
+      "reliabilityDescription": "We pride ourselves on punctuality and reliability, ensuring timely and efficient transportation for all our patients.",
+      "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to provide a comfortable and stress-free environment for patients and their families.",
+      "personalisedServiceDescription": "We work closely with healthcare providers and their families to create personalised care plans that meet the unique needs of each individual."
     },
     "neonatal": {
-      "title": "Neonatal and Paediatric Intensive care transfer service",
+      "title": "Neonatal and Paediatric intensive care transfer service",
       "description": "At BEARS we recognize the critical nature of neonatal transportation for newborn and neonate patients requiring urgent care and specialist support."
     },
     "clinicalHelpline": {
       "title": "BEARS Clinical Helpline",
       "description": "At BEARS, we strive to support our staff and provide 24/7 access to clinical support through our on-call clinical and specialist staff."
-    },
-    "learnMore": "Learn more"
+    }
+  },
+  "serviceDetails": {
+    "whyChooseUs": "Why Choose Us?",
+    "safety": "Safety:",
+    "safetyDescription": "Our team of experienced professionals are trained in high dependency care, ensuring your loved ones are in safe, fully capable hands.",
+    "reliability": "Reliability:",
+    "reliabilityDescription": "All service provision is punctual and reliable, ensuring seamless patient experience during their time with us.",
+    "comfort": "Comfort:",
+    "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to prevent discomfort and maintain patient care during transport.",
+    "personalisedService": "Personalised Service:",
+    "personalisedServiceDescription": "Our clinical teams are healthcare professionals, working collaboratively with patients and their families to ensure personalised care plans that meet your individual care needs throughout the journey.",
+    "contactUs": "Contact Us",
+    "contactDescription": "For more information about our services or to make a booking, please contact our team.",
+    "phone": "Phone:",
+    "email": "Email:",
+    "getInTouch": "Get in touch",
+    "ourServices": "Our Services",
+    "expertise": "Expertise:",
+    "expertiseDescription": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish."
   },
   "languageSelector": {
     "label": "Change language",
@@ -280,5 +371,53 @@
     "address": "Address:",
     "companyAddress": "London, United Kingdom",
     "contactForMoreInfo": "Contact us for more information"
+  },
+  "neonatal": {
+    "title": "Neonatal and Paediatric intensive care transfer service",
+    "intro": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and paediatric patients requiring urgent care and specialised support.",
+    "description": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and paediatric patients requiring urgent care and specialised support. Our Neonatal Transport Service is committed to ensuring the safe transfer of critically ill newborns, infants, and young children to specialised paediatric and neonatal intensive care units, where they can receive the expert care they require.",
+    "availability": {
+      "title": "24/7 Availability",
+      "description": "Medical emergencies for newborns and paediatric patients can arise at any time. Our team of highly trained medical professionals is available 24 hours a day, seven days a week, ensuring that critical emergencies are responded to promptly with our experienced medical staff available to provide assistance during critical times."
+    },
+    "teamImageAlt": "Neonatal Transport Team",
+    "equipment": {
+      "title": "Advanced Critical Care Support Equipment",
+      "description": "Equipment and technology are crucial to the safe and effective transportation of critically ill newborns and children. Our neonatal and paediatric intensive care ambulances are designed to function as mobile intensive care units, equipped with state-of-the-art medical monitoring, life support systems and specialized paediatric and neonatal equipment."
+    },
+    "guidance": {
+      "title": "Experienced Clinical Guidance",
+      "description": "Our team consists of dedicated neonatal and paediatric healthcare professionals, including neonatal nurses, paediatric nurses, and medical specialists. From neonatal resuscitation to complex cardiac support, our experienced and qualified team is trained to provide comprehensive care."
+    },
+    "compassionate": {
+      "title": "Personalised and Compassionate Care",
+      "description": "We understand the emotional and physical challenges that families face during these critical moments. Our team is committed to providing not only expert medical care but also emotional support and clear communication throughout the transportation process, providing caring, professional service to families."
+    },
+    "vehicleImageAlt": "Neonatal Transport Vehicle",
+    "reliable": {
+      "title": "Reliable and Trustworthy Service",
+      "description": "In critical situations, every moment counts. Our commitment to reliability means that families can trust us to provide rapid response times and safe, efficient transportation. We understand the urgency of neonatal and paediatric emergencies and are committed to providing transportation solutions that families can rely on during the most challenging times."
+    },
+    "whyChoose": {
+      "title": "Why Choose Us?",
+      "expertise": {
+        "title": "Expertise:",
+        "description": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe and capable hands."
+      },
+      "equipment": {
+        "title": "Advanced Equipment:",
+        "description": "State-of-the-art medical technology and specialised neonatal transport equipment ensure the highest standards of care during transport."
+      },
+      "compassion": {
+        "title": "Compassion:",
+        "description": "We understand the emotional challenges families face and provide compassionate support throughout the journey."
+      },
+      "reliability": {
+        "title": "Reliability:",
+        "description": "Our round-the-clock availability and rapid response times ensure that critical care is delivered when it's needed most."
+      }
+    },
+    "sideImageAlt": "Neonatal Transport",
+    "contactDescription": "For more information about our Neonatal and Paediatric Intensive Care Transfer service or to arrange a transfer, please contact our operations team. Our expert advisors are here to assist you with all your emergency transport needs."
   }
 }
