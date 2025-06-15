@@ -1,6 +1,4 @@
 
-"use client"
-
 import React, { createContext, useContext, useState, useEffect } from 'react'
 import { locales, defaultLocale, type Locale } from '../i18n.config'
 
