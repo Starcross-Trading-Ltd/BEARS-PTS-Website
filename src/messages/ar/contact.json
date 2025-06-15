@@ -1,15 +1,16 @@
 
 {
-  "contactUsTitle": "اتصل بنا",
-  "getInTouchTitle": "تواصل معنا",
-  "getInTouchDescription": "نحن هنا للإجابة على أي أسئلة حول خدماتنا. تواصل معنا وسنرد عليك في أقرب وقت ممكن.",
-  "phoneTitle": "الهاتف",
+  "contactUsTitle": "تواصل معنا",
+  "getInTouchTitle": "اتصل بنا",
+  "getInTouchDescription": "نحن هنا للرد على أي استفسارات حول خدماتنا. تواصل معنا وسنرد عليك في أقرب فرصة.",
+  "phoneTitle": "هاتف",
   "emailTitle": "البريد الإلكتروني",
   "addressTitle": "العنوان",
+  "bearsAddress": "خدمة نقل المرضى BEARS",
   "sendMessageTitle": "أرسل لنا رسالة",
   "nameLabel": "الاسم",
   "emailLabel": "البريد الإلكتروني",
   "phoneLabel": "الهاتف",
-  "messageLabel": "الرسالة",
-  "sendMessage": "أرسل الرسالة"
+  "messageLabel": "رسالتك",
+  "sendMessage": "إرسال"
 }
