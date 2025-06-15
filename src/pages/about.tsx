@@ -2,7 +2,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../components/language-provider'
-import AboutSidebar from '../../components/about-sidebar'
 
 export default function AboutPage() {
   const { t } = useLanguage()
@@ -12,17 +11,10 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="relative bg-[#0a2240] text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-start">
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("aboutPage.aboutBearsTitle", "About BEARS")}</h1>
-              <p className="text-xl text-gray-300 max-w-3xl">
-                {t("aboutPage.aboutBearsDescription", "BEARS Patient Transport Service was established to provide high-quality ambulance services with a focus on patient care, comfort, and safety.")}
-              </p>
-            </div>
-            <div className="mt-4">
-              <AboutSidebar />
-            </div>
-          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("aboutPage.aboutBearsTitle", "About BEARS")}</h1>
+          <p className="text-xl text-gray-300 max-w-3xl">
+            {t("aboutPage.aboutBearsDescription", "BEARS Patient Transport Service was established to provide high-quality ambulance services with a focus on patient care, comfort, and safety.")}
+          </p>
         </div>
       </section>
 

@@ -1,19 +1,30 @@
 
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { useLanguage } from './language-provider'
 import LanguageSelector from './language-selector'
 import { ROUTES, SERVICE_ROUTES } from '../config/constants'
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false)
   const { t } = useLanguage()
   const location = useLocation()
 
   const navigationItems = [
     { label: t("navigation.home", "Home"), href: ROUTES.home },
-    { label: t("navigation.about", "About"), href: ROUTES.about },
+    { 
+      label: t("navigation.about", "About"), 
+      href: ROUTES.about,
+      submenu: [
+        { label: "Meet the Team", href: "/team" },
+        { label: "Meet the Cubs", href: "/cubs" },
+        { label: "Our Values", href: "/our-values" },
+        { label: "Our Fleet", href: "/fleet" },
+        { label: "BEARS in Numbers", href: "/bears-in-numbers" }
+      ]
+    },
     { 
       label: t("navigation.services", "Services"), 
       href: ROUTES.services,
@@ -63,18 +74,23 @@ const Header: React.FC = () => {
           <div className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item) => (
               <div key={item.href} className="relative group">
-                <Link
-                  to={item.href}
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-                    isActive(item.href)
-                      ? 'text-[#4285f4] bg-blue-50'
-                      : 'text-gray-700 hover:text-[#4285f4] hover:bg-gray-50'
-                  }`}
-                >
-                  {item.label}
-                </Link>
+                <div className="flex items-center">
+                  <Link
+                    to={item.href}
+                    className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                      isActive(item.href)
+                        ? 'text-[#4285f4] bg-blue-50'
+                        : 'text-gray-700 hover:text-[#4285f4] hover:bg-gray-50'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                  {item.submenu && (
+                    <ChevronDown className="ml-1 h-4 w-4 text-gray-400 group-hover:text-[#4285f4] transition-colors" />
+                  )}
+                </div>
                 
-                {/* Submenu for Services */}
+                {/* Submenu */}
                 {item.submenu && (
                   <div className="absolute left-0 mt-1 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                     <div className="py-2">
@@ -115,21 +131,40 @@ const Header: React.FC = () => {
             <div className="flex flex-col space-y-2">
               {navigationItems.map((item) => (
                 <div key={item.href}>
-                  <Link
-                    to={item.href}
-                    onClick={toggleMenu}
-                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                      isActive(item.href)
-                        ? 'text-[#4285f4] bg-blue-50'
-                        : 'text-gray-700 hover:text-[#4285f4] hover:bg-gray-50'
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
+                  <div className="flex items-center justify-between">
+                    <Link
+                      to={item.href}
+                      onClick={item.submenu ? undefined : toggleMenu}
+                      className={`block px-3 py-2 rounded-md text-base font-medium transition-colors flex-1 ${
+                        isActive(item.href)
+                          ? 'text-[#4285f4] bg-blue-50'
+                          : 'text-gray-700 hover:text-[#4285f4] hover:bg-gray-50'
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                    {item.submenu && (
+                      <button
+                        onClick={() => {
+                          if (item.label === 'About') {
+                            setIsAboutDropdownOpen(!isAboutDropdownOpen)
+                          }
+                        }}
+                        className="p-2 text-gray-600"
+                      >
+                        <ChevronDown className={`h-4 w-4 transition-transform ${
+                          (item.label === 'About' && isAboutDropdownOpen) ? 'rotate-180' : ''
+                        }`} />
+                      </button>
+                    )}
+                  </div>
                   
-                  {/* Mobile submenu for Services */}
-                  {item.submenu && isActive(item.href) && (
-                    <div className="ml-4 mt-2 space-y-1">
+                  {/* Mobile submenu */}
+                  {item.submenu && (
+                    <div className={`ml-4 mt-2 space-y-1 ${
+                      item.label === 'About' ? (isAboutDropdownOpen ? 'block' : 'hidden') : 
+                      (isActive(item.href) ? 'block' : 'hidden')
+                    }`}>
                       {item.submenu.map((subItem) => (
                         <Link
                           key={subItem.href}
