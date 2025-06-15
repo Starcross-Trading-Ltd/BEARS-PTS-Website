@@ -1,262 +1,155 @@
 
-import React, { useState, useRef, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import React, { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import { Menu, X } from 'lucide-react'
 import { useLanguage } from './language-provider'
 import LanguageSelector from './language-selector'
+import { ROUTES, SERVICE_ROUTES } from '../config/constants'
 
-export default function Header() {
+const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isServicesOpen, setIsServicesOpen] = useState(false)
-  const [isAboutOpen, setIsAboutOpen] = useState(false)
   const { t } = useLanguage()
-  
-  const servicesRef = useRef<HTMLDivElement>(null)
-  const aboutRef = useRef<HTMLDivElement>(null)
+  const location = useLocation()
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
-
-  const toggleServicesDropdown = () => {
-    setIsServicesOpen(!isServicesOpen)
-    setIsAboutOpen(false)
-  }
-
-  const toggleAboutDropdown = () => {
-    setIsAboutOpen(!isAboutOpen)
-    setIsServicesOpen(false)
-  }
-
-  const closeDropdowns = () => {
-    setIsServicesOpen(false)
-    setIsAboutOpen(false)
-  }
-
-  // Close dropdowns when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        servicesRef.current && 
-        !servicesRef.current.contains(event.target as Node) &&
-        aboutRef.current && 
-        !aboutRef.current.contains(event.target as Node)
-      ) {
-        closeDropdowns()
-      }
-    }
-
-    document.addEventListener('mousedown', handleClickOutside)
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside)
-    }
-  }, [])
-
-  const services = [
-    { title: t("serviceNames.nepts", "NEPTS"), link: "/services/nepts" },
-    { title: t("serviceNames.paramedic", "Paramedic Service"), link: "/services/paramedic" },
-    { title: t("serviceNames.bariatric", "Bariatric Service"), link: "/services/bariatric" },
-    { title: t("serviceNames.specialistCritical", "Specialist Critical Retrieval Response Service"), link: "/services/critical-retrieval" },
-    { title: t("serviceNames.ecmo", "ECMO Service"), link: "/services/ecmo" },
-    { title: t("serviceNames.highDependance", "High Dependance"), link: "/services/high-dependance" },
-    { title: t("serviceNames.mentalHealth", "Mental Health Service"), link: "/services/mental-health" },
-    { title: t("serviceNames.neonatal", "Neonatal Transport"), link: "/services/neonatal" }
+  const navigationItems = [
+    { label: t("navigation.home", "Home"), href: ROUTES.home },
+    { label: t("navigation.about", "About"), href: ROUTES.about },
+    { 
+      label: t("navigation.services", "Services"), 
+      href: ROUTES.services,
+      submenu: [
+        { label: t("services.nepts.title", "NEPTS"), href: SERVICE_ROUTES.nepts },
+        { label: t("services.paramedic.title", "Paramedic Service"), href: SERVICE_ROUTES.paramedic },
+        { label: t("services.bariatric.title", "Bariatric Service"), href: SERVICE_ROUTES.bariatric },
+        { label: t("services.criticalRetrieval.title", "Critical Care Retrieval"), href: SERVICE_ROUTES.criticalRetrieval },
+        { label: t("services.ecmo.title", "ECMO Service"), href: SERVICE_ROUTES.ecmo },
+        { label: t("services.highDependance.title", "High Dependance"), href: SERVICE_ROUTES.highDependance },
+        { label: t("services.mentalHealth.title", "Mental Health Transport"), href: SERVICE_ROUTES.mentalHealth },
+        { label: t("services.neonatal.title", "Neonatal Transport"), href: SERVICE_ROUTES.neonatal }
+      ]
+    },
+    { label: t("navigation.contact", "Contact"), href: ROUTES.contact },
+    { label: t("navigation.careers", "Careers"), href: ROUTES.careers },
+    { label: t("navigation.news", "News"), href: ROUTES.news }
   ]
 
-  const aboutPages = [
-    { title: t("navigation.aboutUs", "About Us"), link: "/about" },
-    { title: t("about.meetTeam", "Meet the Team"), link: "/team" },
-    { title: t("about.meetCubs", "Meet the Cubs"), link: "/cubs" },
-    { title: t("about.ourFleet", "Our Fleet"), link: "/fleet" }
-  ]
+  const isActive = (href: string) => {
+    if (href === '/' && location.pathname === '/') return true
+    if (href !== '/' && location.pathname.startsWith(href)) return true
+    return false
+  }
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen)
 
   return (
-    <header className="bg-white shadow-md">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center">
-            <img src="/images/bears-logo.png" alt="BEARS Logo" className="h-12 w-auto" />
+    <header className="bg-white shadow-md sticky top-0 z-50" role="banner">
+      <nav className="container mx-auto px-4" role="navigation" aria-label="Main navigation">
+        <div className="flex items-center justify-between h-16">
+          {/* Logo */}
+          <Link 
+            to="/" 
+            className="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded"
+            aria-label="BEARS - Home"
+          >
+            <img 
+              src="/images/bears-logo.png" 
+              alt="BEARS Logo" 
+              className="h-10 w-auto"
+            />
+            <span className="text-xl font-bold text-[#0a2240]">BEARS</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              {t("navigation.home", "Home")}
-            </Link>
-            
-            {/* Services Dropdown */}
-            <div className="relative" ref={servicesRef}>
-              <button 
-                className="flex items-center text-gray-700 hover:text-[#0a2240] font-medium focus:outline-none"
-                onClick={toggleServicesDropdown}
-                aria-expanded={isServicesOpen}
-                aria-haspopup="true"
-              >
-                {t("navigation.services", "Our Services")} <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-white shadow-lg rounded-md z-50 border">
-                  <div className="py-2">
-                    <Link 
-                      to="/services" 
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
-                      onClick={closeDropdowns}
-                    >
-                      {t("navigation.allServices", "All Services")}
-                    </Link>
-                    {services.map((service, index) => (
-                      <Link 
-                        key={index}
-                        to={service.link} 
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
-                        onClick={closeDropdowns}
-                      >
-                        {service.title}
-                      </Link>
-                    ))}
+          <div className="hidden md:flex items-center space-x-8">
+            {navigationItems.map((item) => (
+              <div key={item.href} className="relative group">
+                <Link
+                  to={item.href}
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    isActive(item.href)
+                      ? 'text-[#4285f4] bg-blue-50'
+                      : 'text-gray-700 hover:text-[#4285f4] hover:bg-gray-50'
+                  }`}
+                >
+                  {item.label}
+                </Link>
+                
+                {/* Submenu for Services */}
+                {item.submenu && (
+                  <div className="absolute left-0 mt-1 w-64 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="py-2">
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.href}
+                          to={subItem.href}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#4285f4] transition-colors"
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
-            </div>
-
-            <Link to="/careers" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              {t("navigation.joinUs", "Join Us")}
-            </Link>
-            
-            {/* About Us Dropdown */}
-            <div className="relative" ref={aboutRef}>
-              <button 
-                className="flex items-center text-gray-700 hover:text-[#0a2240] font-medium focus:outline-none"
-                onClick={toggleAboutDropdown}
-                aria-expanded={isAboutOpen}
-                aria-haspopup="true"
-              >
-                {t("navigation.aboutUs", "About Us")} <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              {isAboutOpen && (
-                <div className="absolute top-full left-0 mt-1 w-48 bg-white shadow-lg rounded-md z-50 border">
-                  <div className="py-2">
-                    {aboutPages.map((page, index) => (
-                      <Link 
-                        key={index}
-                        to={page.link} 
-                        className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
-                        onClick={closeDropdowns}
-                      >
-                        {page.title}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-
-            <Link to="/compliments" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              {t("navigation.compliments", "Compliments")}
-            </Link>
-            <Link to="/news" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              {t("navigation.news", "News")}
-            </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-[#0a2240] font-medium">
-              {t("navigation.contact", "Contact Us")}
-            </Link>
-          </nav>
-
-          <div className="hidden md:flex items-center space-x-4">
+                )}
+              </div>
+            ))}
             <LanguageSelector />
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-gray-700 hover:text-[#0a2240]"
-            onClick={toggleMenu}
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center space-x-4">
+            <LanguageSelector />
+            <button
+              onClick={toggleMenu}
+              className="p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              aria-expanded={isMenuOpen}
+              aria-label="Toggle navigation menu"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-4">
-              <Link
-                to="/"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("navigation.home", "Home")}
-              </Link>
-              <Link
-                to="/services"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("navigation.services", "Our Services")}
-              </Link>
-              <Link
-                to="/careers"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("navigation.joinUs", "Join Us")}
-              </Link>
-              <Link
-                to="/about"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("navigation.about", "About")}
-              </Link>
-              <Link
-                to="/team"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("about.meetTeam", "Meet the Team")}
-              </Link>
-              <Link
-                to="/cubs"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("about.meetCubs", "Meet the Cubs")}
-              </Link>
-              <Link
-                to="/fleet"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("about.ourFleet", "Our Fleet")}
-              </Link>
-              <Link
-                to="/compliments"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("navigation.compliments", "Compliments")}
-              </Link>
-              <Link
-                to="/news"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("navigation.news", "News")}
-              </Link>
-              <Link
-                to="/contact"
-                className="text-gray-700 hover:text-[#0a2240] font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {t("navigation.contact", "Contact")}
-              </Link>
-              <div className="pt-2">
-                <LanguageSelector />
-              </div>
+          <div className="md:hidden py-4 border-t">
+            <div className="flex flex-col space-y-2">
+              {navigationItems.map((item) => (
+                <div key={item.href}>
+                  <Link
+                    to={item.href}
+                    onClick={toggleMenu}
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                      isActive(item.href)
+                        ? 'text-[#4285f4] bg-blue-50'
+                        : 'text-gray-700 hover:text-[#4285f4] hover:bg-gray-50'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                  
+                  {/* Mobile submenu for Services */}
+                  {item.submenu && isActive(item.href) && (
+                    <div className="ml-4 mt-2 space-y-1">
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.href}
+                          to={subItem.href}
+                          onClick={toggleMenu}
+                          className="block px-3 py-2 text-sm text-gray-600 hover:text-[#4285f4] hover:bg-gray-50 rounded-md"
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
-          </nav>
+          </div>
         )}
-      </div>
+      </nav>
     </header>
   )
 }
+
+export default Header

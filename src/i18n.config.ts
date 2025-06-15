@@ -1,23 +1,25 @@
 
-export const defaultLocale = "en" as const
-export const locales = ["en", "ar", "ru"] as const
-export type Locale = (typeof locales)[number]
+export const locales = ['en', 'ar'] as const
+export type Locale = typeof locales[number]
+export const defaultLocale: Locale = 'en'
 
-// Language configuration with proper RTL support
-export const languageConfig = {
+export const languageConfig: Record<Locale, { name: string; nativeName: string; dir: 'ltr' | 'rtl' }> = {
   en: {
-    name: "English",
-    nativeName: "English",
-    dir: "ltr" as const,
+    name: 'English',
+    nativeName: 'English',
+    dir: 'ltr'
   },
   ar: {
-    name: "Arabic", 
-    nativeName: "العربية",
-    dir: "rtl" as const,
-  },
-  ru: {
-    name: "Russian",
-    nativeName: "Русский", 
-    dir: "ltr" as const,
-  },
-} as const
+    name: 'Arabic',
+    nativeName: 'العربية',
+    dir: 'rtl'
+  }
+}
+
+export function getLanguageDirection(locale: Locale): 'ltr' | 'rtl' {
+  return languageConfig[locale]?.dir || 'ltr'
+}
+
+export function isValidLocale(locale: string): locale is Locale {
+  return locales.includes(locale as Locale)
+}

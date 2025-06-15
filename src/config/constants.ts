@@ -1,29 +1,36 @@
 
 export const CONTACT_INFO = {
-  phone: "+44 123 456 7890",
-  email: "info@bearsambulance.com",
-  address: {
-    line1: "BEARS Patient Transport Service",
-    line2: "Healthcare House",
-    line3: "London, UK"
-  }
+  phone: '+44 123 456 7890',
+  email: 'info@bearsambulance.com'
 } as const
 
 export const COMPANY_INFO = {
-  name: "BEARS Patient Transport Service",
-  established: 2009,
-  tagline: "Safety, Comfort and Care"
+  name: 'BEARS Patient Transport Service Ltd',
+  companyNumber: '4269 3936',
+  location: 'London, United Kingdom'
 } as const
 
 export const ROUTES = {
-  home: "/",
-  about: "/about",
-  services: "/services",
-  contact: "/contact",
-  careers: "/careers",
-  news: "/news",
-  compliments: "/compliments",
-  team: "/team",
-  cubs: "/cubs",
-  fleet: "/fleet"
+  home: '/',
+  about: '/about',
+  services: '/services',
+  contact: '/contact',
+  careers: '/careers',
+  news: '/news',
+  team: '/team',
+  cubs: '/cubs',
+  fleet: '/fleet',
+  compliments: '/compliments'
+} as const
+
+export const SERVICE_ROUTES = {
+  nepts: '/services/nepts',
+  paramedic: '/services/paramedic',
+  bariatric: '/services/bariatric',
+  criticalRetrieval: '/services/critical-retrieval',
+  ecmo: '/services/ecmo',
+  highDependance: '/services/high-dependance',
+  mentalHealth: '/services/mental-health',
+  neonatal: '/services/neonatal',
+  clinicalHelpline: '/services/clinical-helpline'
 } as const
