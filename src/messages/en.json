@@ -33,7 +33,19 @@
     "contactDescription": "For more information about our services or to make a booking, please contact our team.",
     "phone": "Phone:",
     "email": "Email:",
-    "getInTouch": "Get in touch"
+    "getInTouch": "Get in touch",
+    "whyChooseUs": "Why Choose Us?",
+    "safety": "Safety:",
+    "safetyDescription": "Our team of experienced professionals are trained in high dependency care, ensuring your loved ones are in safe, fully capable hands.",
+    "reliability": "Reliability:",
+    "reliabilityDescription": "All service provision is punctual and reliable, ensuring seamless patient experience during their time with us.",
+    "comfort": "Comfort:",
+    "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to prevent discomfort and maintain patient care during transport.",
+    "personalisedService": "Personalised Service:",
+    "personalisedServiceDescription": "Our clinical teams are healthcare professionals, working collaboratively with patients and their families to ensure personalised care plans that meet your individual care needs throughout the journey.",
+    "ourServices": "Our Services",
+    "expertise": "Expertise:",
+    "expertiseDescription": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish."
   },
   "home": {
     "hero": {
@@ -197,6 +209,23 @@
     "ourServicesTitle": "Our Services",
     "servicesDescription": "We provide comprehensive patient transport services across the UK, specializing in critical care, emergency response, and specialized medical transport.",
     "learnMore": "Learn more",
+    "nepts": {
+      "title": "Non Emergency Patient Transport Service (NEPTS)",
+      "description": "At BEARS, we specialise in providing reliable and compassionate non-emergency Patient Transport (NEPT) services across the UK.",
+      "imageAlt": "NEPTS Service Team",
+      "intro": "At BEARS, we understand that every patient requires specialised care and support. Our compassionate and professional team is dedicated to providing excellent care and patient advocacy throughout each journey, ensuring individual needs are identified and catered for when required.",
+      "whatIsTitle": "What is Non-Emergency Patient Transport?",
+      "whatIsDescription": "Non-Emergency Patient Transport refers to the movement of patients who require medical supervision during transport but do not need emergency care. This service is designed to safely transport patients providing safe and reliable transportation, whilst maintaining the highest levels of care and comfort.",
+      "ourServiceTitle": "Our NEPT Service",
+      "ourServiceDescription": "Our NEPT service is delivered by teams of experienced professionals, including qualified ambulance technicians, trained crew members, and qualified healthcare support workers. Our service is always delivered with compassion and dignity.",
+      "equipmentTitle": "Specialised Vehicles and Equipment",
+      "equipmentDescription": "We utilise specially equipped modern emergency ambulances with lifesaving interventions readily available should the patient require this level of care. The vehicles are equipped with comfortable seating, climate control, and a full range of basic medical equipment for safe transport ensuring clinical needs are met whilst providing comfort wherever possible.",
+      "personalisedCareTitle": "Personalised Care and Support",
+      "personalisedCareDescription": "We believe in person-centred care where each patient's specific needs are our priority. We work closely with healthcare providers and patients to understand their medical history, any specific mobility requirements or conditions, as required, maintaining the dignity and comfort of each individual. Our comprehensive care plans ensure healthcare needs of patients are understood and they receive compassionate, attentive care during transport.",
+      "reliabilityDescription": "We pride ourselves on punctuality and reliability, ensuring timely and efficient transportation for all our patients.",
+      "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to provide a comfortable and stress-free environment for patients and their families.",
+      "personalisedServiceDescription": "We work closely with healthcare providers, patients, and their families to create personalised care plans that meet the unique needs of each individual."
+    },
     "highDependance": {
       "title": "High Dependance",
       "description": "We provide specialised high-dependency care services designed for adult patients requiring complex care during transport.",
@@ -244,23 +273,6 @@
       "title": "Mental Health Service",
       "description": "We understand that mental health conditions require specialised care and support for individuals, ensuring they receive mental and non-emergency transport."
     },
-    "nepts": {
-      "title": "Non Emergency Patient Transport Service (NEPTS)",
-      "description": "At BEARS, we specialise in providing reliable and compassionate non-emergency Patient Transport (NEPT) services across the UK.",
-      "imageAlt": "NEPTS Service Team",
-      "intro": "At BEARS, we understand that every patient requires specialised care and support. Our compassionate and professional team is dedicated to providing excellent care and patient advocacy throughout each journey, ensuring individual needs are identified and catered for when required.",
-      "whatIsTitle": "What is Non-Emergency Patient Transport?",
-      "whatIsDescription": "Non-Emergency Patient Transport refers to the movement of patients who require medical supervision during transport but do not need emergency care. This service is designed to safely transport patients providing safe and reliable transportation, whilst maintaining the highest levels of care and comfort.",
-      "ourServiceTitle": "Our NEPT Service",
-      "ourServiceDescription": "Our NEPT service is delivered by teams of experienced professionals, including qualified ambulance technicians, trained crew members, and qualified healthcare support workers. Our service is always delivered with compassion and dignity.",
-      "equipmentTitle": "Specialised Vehicles and Equipment",
-      "equipmentDescription": "We utilise specially equipped modern emergency ambulances with lifesaving interventions readily available should the patient require this level of care. The vehicles are equipped with comfortable seating, climate control, and a full range of basic medical equipment for safe transport ensuring clinical needs are met whilst providing comfort wherever possible.",
-      "personalisedCareTitle": "Personalised Care and Support",
-      "personalisedCareDescription": "We believe in person-centred care where each patient's specific needs are our priority. We work closely with healthcare providers and patients to understand their medical history, any specific mobility requirements or conditions, as required, maintaining the dignity and comfort of each individual. Our comprehensive care plans ensure healthcare needs of patients are understood and they receive compassionate, attentive care during transport.",
-      "reliabilityDescription": "We pride ourselves on punctuality and reliability, ensuring timely and efficient transportation for all our patients.",
-      "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to provide a comfortable and stress-free environment for patients and their families.",
-      "personalisedServiceDescription": "We work closely with healthcare providers, patients, and their families to create personalised care plans that meet the unique needs of each individual."
-    },
     "bariatric": {
       "title": "Bariatric Service",
       "description": "We understand the unique challenges and specialised care required for the transportation of bariatric patients.",
@@ -300,25 +312,6 @@
       "title": "BEARS Clinical Helpline",
       "description": "At BEARS, we strive to support our staff and provide 24/7 access to clinical support through our on-call clinical and specialist staff."
     }
-  },
-  "serviceDetails": {
-    "whyChooseUs": "Why Choose Us?",
-    "safety": "Safety:",
-    "safetyDescription": "Our team of experienced professionals are trained in high dependency care, ensuring your loved ones are in safe, fully capable hands.",
-    "reliability": "Reliability:",
-    "reliabilityDescription": "All service provision is punctual and reliable, ensuring seamless patient experience during their time with us.",
-    "comfort": "Comfort:",
-    "comfortDescription": "We understand the importance of comfort during medical transport. Our vehicles are designed to prevent discomfort and maintain patient care during transport.",
-    "personalisedService": "Personalised Service:",
-    "personalisedServiceDescription": "Our clinical teams are healthcare professionals, working collaboratively with patients and their families to ensure personalised care plans that meet your individual care needs throughout the journey.",
-    "contactUs": "Contact Us",
-    "contactDescription": "For more information about our services or to make a booking, please contact our team.",
-    "phone": "Phone:",
-    "email": "Email:",
-    "getInTouch": "Get in touch",
-    "ourServices": "Our Services",
-    "expertise": "Expertise:",
-    "expertiseDescription": "Our team of medical professionals are trained in high dependency care, ensuring your loved ones are in safe hands from start to finish."
   },
   "languageSelector": {
     "label": "Change language",
@@ -424,7 +417,7 @@
     "vehicleImageAlt": "Neonatal Transport Vehicle",
     "reliable": {
       "title": "Reliable and Trustworthy Service",
-      "description": "In critical situations, every moment counts. Our commitment to reliability means that families can trust us to provide rapid response times and safe, efficient transportation. We understand the urgency of neonatal and paediatric emergencies and are committed to providing transportation solutions that families can rely on during the most challenging times."
+      "description": "In critical situations, every moment counts.  Our commitment to reliability means that families can trust us to provide rapid response times and safe, efficient transportation. We understand the urgency of neonatal and paediatric emergencies and are committed to providing transportation solutions that families can rely on during the most challenging times."
     },
     "whyChoose": {
       "title": "Why Choose Us?",
