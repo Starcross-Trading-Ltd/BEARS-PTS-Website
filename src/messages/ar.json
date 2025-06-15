@@ -1,5 +1,5 @@
 {
-  "meta": {
+  "metadata": {
     "title": "خدمات نقل المرضى BEARS",
     "description": "خدمات نقل المرضى المهنية في المملكة المتحدة"
   },
@@ -343,8 +343,5 @@
       }
     },
     "sideImageAlt": "نقل حديثي الولادة"
-  },
-  "fleet": {
-    "companyDetailsTitle": "تفاصيل الشركة"
   }
 }
