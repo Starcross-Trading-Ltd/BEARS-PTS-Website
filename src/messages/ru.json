@@ -1,4 +1,3 @@
-
 {
   "metadata": {
     "title": "Служба транспортировки пациентов BEARS",
@@ -101,9 +100,7 @@
     "seamlessService": "Предоставление бесперебойного обслуживания для наших пациентов",
     "innovativePractices": "BEARS постоянно стремится находить способы повышения эффективности и инновационных практик.",
     "viewAllServices": "Просмотреть все услуги",
-    "title": "Добро пожаловать в службу транспортиров
-
-ки пациентов BEARS",
+    "title": "Добро пожаловать в службу транспортировки пациентов BEARS",
     "description": "Мы предоставляем профессиональные услуги по транспортировке пациентов по всей Великобритании."
   },
   "testimonials": {
@@ -226,5 +223,46 @@
     "personalisedServiceDescription": "Мы тесно работаем с поставщиками медицинских услуг, пациентами и их семьями для создания персонализированных планов ухода, которые отвечают уникальным потребностям каждого человека.",
     "expertise": "Экспертиза:",
     "expertiseDescription": "Наша команда медицинских профессионалов обучена высокозависимой помощи, гарантируя, что ваши близкие находятся в безопасных руках от начала до конца."
+  },
+  "bearsNumbers": {
+    "pageTitle": "BEARS в цифрах",
+    "heroTitle": "BEARS в цифрах",
+    "heroDescription": "Цифры, которые отражают наше влияние и приверженность качественному уходу за пациентами",
+    "patientsTransported": "Перевезено пациентов",
+    "patientsTransportedValue": "250,000+",
+    "patientsTransportedDescription": "С момента основания в 2009 году",
+    "milesCompleted": "Пройдено миль",
+    "milesCompletedValue": "8.5 млн",
+    "milesCompletedDescription": "Обеспечение безопасности на каждой миле",
+    "teamMembers": "Члены команды",
+    "teamMembersValue": "500+",
+    "teamMembersDescription": "Преданные профессионалы во всех наших регионах",
+    "vehicleFleet": "Автопарк",
+    "vehicleFleetValue": "80+",
+    "vehicleFleetDescription": "Современные, полностью оборудованные машины скорой помощи",
+    "hospitalPartners": "Партнеры больниц",
+    "hospitalPartnersValue": "50+",
+    "hospitalPartnersDescription": "Больницы NHS по всей Великобритании",
+    "responseTime": "Время отклика",
+    "responseTimeValue": "15 мин",
+    "responseTimeDescription": "Среднее время отклика для критических перевозок",
+    "safetyRecord": "Запись безопасности",
+    "safetyRecordValue": "99.8%",
+    "safetyRecordDescription": "Показатель безопасности - наш главный приоритет",
+    "customerSatisfaction": "Удовлетворенность клиентов",
+    "customerSatisfactionValue": "98%",
+    "customerSatisfactionDescription": "Оценка удовлетворенности пациентов и их семей",
+    "yearsExperience": "Лет опыта",
+    "yearsExperienceValue": "15+",
+    "yearsExperienceDescription": "Обслуживание NHS и пациентов",
+    "specialistServices": "Специализированные услуги",
+    "specialistServicesValue": "9",
+    "specialistServicesDescription": "От NEPTS до критической помощи ЭКМО",
+    "trainingHours": "Часы обучения",
+    "trainingHoursValue": "10,000+",
+    "trainingHoursDescription": "Часы обучения, завершенные ежегодно нашей командой",
+    "emergencyResponse": "Экстренное реагирование",
+    "emergencyResponseValue": "24/7",
+    "emergencyResponseDescription": "Круглосуточное покрытие для критических случаев"
   }
 }
