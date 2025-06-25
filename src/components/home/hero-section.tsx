@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../language-provider'
@@ -7,14 +6,14 @@ export default function HeroSection() {
   const { t } = useLanguage()
 
   return (
-    <section className="relative bg-white py-16">
+    <section className="bg-white py-20 sm:py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl lg:text-5xl font-bold text-[#0a2240] mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-[#0a2240] mb-6">
               {t("home.hero.title")}
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="text-xl text-gray-900 mb-8 max-w-3xl mx-aut">
               {t("home.hero.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -34,7 +33,7 @@ export default function HeroSection() {
           </div>
           <div>
             <img 
-              src="/images/team-photo.jpg" 
+              src="/images/Home_one.png" 
               alt={t("home.hero.imageAlt")}
               className="w-full h-auto rounded-lg"
             />
