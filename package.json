@@ -46,6 +46,7 @@
     "cmdk": "1.0.4",
     "date-fns": "3.1.0",
     "embla-carousel-react": "8.5.1",
+    "framer-motion": "^12.19.1",
     "input-otp": "1.4.1",
     "js-cookie": "3.0.5",
     "lovable-tagger": "1.1.8",
@@ -81,6 +82,6 @@
     "vite": "^5.4.19"
   },
   "overrides": {
-      "esbuild": "^0.25.0"
-    }
+    "esbuild": "^0.25.0"
+  }
 }

@@ -1,6 +1,6 @@
-
 import React from 'react'
 import { useLanguage } from '../components/language-provider'
+import HeroSection from '../components/common/hero-section'
 
 export default function TeamPage() {
   const { t } = useLanguage()
@@ -47,42 +47,32 @@ export default function TeamPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-[#0a2240] text-white py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl font-bold mb-6">{t('team.meetTheBearsTitle')}</h1>
-            </div>
-            <div>
-              <img 
-                src="/images/team-photo.jpg" 
-                alt="BEARS team photo"
-                className="w-full max-w-md mx-auto rounded-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title={t('team.meetTheBearsTitle')}
+        image="/images/team-photo.jpg"
+        imageAlt="BEARS team photo"
+        imagePosition="right"
+      />
 
       {/* Senior Management Team */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-[#0a2240] mb-8">{t('team.seniorManagementTitle')}</h2>
           
-          <div className="space-y-8">
+          <div className="space-y-10">
             {seniorTeam.map((member, index) => (
-              <div key={index} className="flex flex-col md:flex-row gap-6 bg-white p-6 rounded-lg shadow-lg">
-                <div className="md:w-32 md:h-32 w-24 h-24 mx-auto md:mx-0 flex-shrink-0">
+              <div key={index} className="flex flex-col md:flex-row gap-8 bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                <div className="md:w-40 md:h-40 w-28 h-28 mx-auto md:mx-0 flex-shrink-0">
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-full h-full object-cover rounded-lg"
+                    className="w-full h-full object-cover rounded-xl border-4 border-white shadow"
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl font-bold text-[#0a2240] mb-2">{member.name}</h3>
+                  <h3 className="text-2xl font-bold text-[#0a2240] mb-2">{member.name}</h3>
                   <p className="text-[#4285f4] font-medium mb-3">{member.title}</p>
-                  <p className="text-gray-600">{member.description}</p>
+                  <p className="text-gray-600 text-lg">{member.description}</p>
                 </div>
               </div>
             ))}

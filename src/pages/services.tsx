@@ -1,8 +1,8 @@
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import { useLanguage } from '../components/language-provider'
+import HeroSection from '../components/common/hero-section'
 
 export default function ServicesPage() {
   const { t } = useLanguage()
@@ -88,32 +88,27 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-[#0a2240] text-white py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("services.ourServicesTitle", "Our Services")}</h1>
-          <div className="mb-8">
-            <img 
-              src="/images/patient-transport.jpg" 
-              alt="Patient Transport Service"
-              className="w-32 h-32 mx-auto rounded-lg object-cover"
-            />
-          </div>
-        </div>
-      </section>
+      <HeroSection
+        title={t("services.ourServicesTitle", "Our Services")}
+        subtitle={t("services.ourServicesDescription", "Explore our full range of patient transport and specialist care services.")}
+        image="/images/service-header.jpg"
+        imageAlt="BEARS Services"
+        imagePosition="right"
+      />
 
       {/* Services Grid */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {services.map((service, index) => (
-              <div key={index} className={`bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow ${getColorClasses(service.color)}`}>
-                <h3 className="text-lg font-bold text-[#0a2240] mb-3">{service.title}</h3>
-                <p className="text-gray-600 mb-4 text-sm">{service.description}</p>
+              <div key={index} className={`bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow duration-300 ${getColorClasses(service.color)}`}>
+                <h3 className="text-2xl font-bold text-[#0a2240] mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-6 text-base">{service.description}</p>
                 <Link 
                   to={service.link}
-                  className="inline-flex items-center text-[#4285f4] hover:underline text-sm"
+                  className="inline-flex items-center px-6 py-3 bg-[#4285f4] text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition text-lg"
                 >
-                  {t("services.learnMore", "Learn more")} <ArrowRight className="ml-1 h-4 w-4" />
+                  {t("services.learnMore", "Learn more")} <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </div>
             ))}

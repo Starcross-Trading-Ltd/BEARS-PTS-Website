@@ -1,28 +1,26 @@
-
 import React from 'react'
 import { useLanguage } from '../../components/language-provider'
 import ContactInfo from '../../components/contact-info'
 import ServicesList from '../../components/services-list'
+import HeroSection from '../../components/common/hero-section'
 
 const MentalHealthPage: React.FC = () => {
   const { t } = useLanguage()
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-blue-50 py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2">
-              <header>
-                <h1 className="text-4xl md:text-5xl font-bold text-[#0a2240] mb-6">
-                  {t("services.mentalHealth.title", "Mental Health Service")}
-                </h1>
-                <p className="text-lg text-gray-700 mb-8">
-                  {t("services.mentalHealth.description", "We understand that mental health conditions require specialised care and support for individuals, ensuring they receive mental and non-emergency transport.")}
-                </p>
-              </header>
+      <HeroSection
+        title={t("services.mentalHealth.title", "Mental Health Service")}
+        subtitle={t("services.mentalHealth.description", "Compassionate and secure transport for mental health patients.")}
+        image="/images/mental-health.jpg"
+        imageAlt={t("services.mentalHealth.imageAlt", "Mental Health Vehicle")}
+        imagePosition="right"
+      />
 
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2">
+            <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="space-y-8">
                 <section>
                   <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
@@ -57,19 +55,16 @@ const MentalHealthPage: React.FC = () => {
                 </section>
               </div>
             </div>
-
-            <aside className="lg:col-span-1">
-              <ContactInfo showGetInTouchButton={true} className="mb-8" />
-              
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <ServicesList 
-                  title={t("serviceDetails.ourServices", "Our Services")}
-                />
-              </div>
-            </aside>
           </div>
+
+          <aside className="lg:col-span-1 space-y-8">
+            <ContactInfo showGetInTouchButton={true} />
+            <ServicesList 
+              title={t("serviceDetails.ourServices", "Our Services")}
+            />
+          </aside>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

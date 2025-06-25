@@ -4,6 +4,7 @@ import { useToast } from '../hooks/use-toast'
 import { Button } from '../../components/ui/button'
 import { Input } from '../../components/ui/input'
 import { Textarea } from '../../components/ui/textarea'
+import HeroSection from '../components/common/hero-section'
 
 export default function ContactPage() {
   const { t } = useLanguage()
@@ -73,21 +74,18 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen py-16">
+    <div className="min-h-screen">
+      <HeroSection
+        title={t("contact.contactUsTitle", "Contact Us")}
+        subtitle={t("contact.getInTouchDescription", "We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.")}
+      />
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#0a2240] mb-8">
-          {t("contact.contactUsTitle", "Contact Us")}
-        </h1>
-        <p className="text-lg text-gray-700 mb-8">
-          {t("contact.getInTouchDescription", "We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.")}
-        </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="bg-white rounded-2xl shadow-xl p-8">
             <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
               {t("contact.getInTouchTitle", "Get in Touch")}
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 text-lg">
               <div>
                 <h3 className="font-medium text-gray-900">{t("contact.phoneTitle", "Phone")}</h3>
                 <p className="text-gray-700">+44 123 456 7890</p>
@@ -102,8 +100,7 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
-          
-          <div>
+          <div className="bg-white rounded-2xl shadow-xl p-8">
             <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
               {t("contact.sendMessageTitle", "Send us a Message")}
             </h2>
@@ -150,7 +147,7 @@ export default function ContactPage() {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-[#00855a] hover:bg-[#006e4a] text-white"
+                className="bg-[#00855a] hover:bg-[#006e4a] text-white text-lg px-8 py-3 rounded-lg shadow"
               >
                 {isSubmitting ? "Sending..." : t("contact.sendMessage", "Send Message")}
               </Button>

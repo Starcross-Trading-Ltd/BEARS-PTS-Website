@@ -16,7 +16,7 @@ export default function ValuesSection() {
             <img 
               src="/images/Home_two.png" 
               alt={t("home.values.imageAlt")}
-              className="w-full h-auto rounded-lg"
+              className="w-full h-auto rounded-xl border-4 border-white shadow-xl"
             />
           </div>
           <div>
@@ -32,13 +32,13 @@ export default function ValuesSection() {
             <p className="text-lg text-[#334155] mb-6">
               we ensure:
             </p>
-            <ul className="space-y-3 text-[#334155] mb-6">
+            <ul className="space-y-5 text-[#334155] mb-8">
               {valuesItems.map((item: string, index: number) => (
-                <li key={index} className="flex items-start">
-                  <span className="mt-1 mr-3">
-                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
-                      <circle cx="12" cy="12" r="12" fill="#3b82f6" />
-                      <path d="M7 13l3 3 7-7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <li key={index} className="flex items-start text-lg">
+                  <span className="mt-1 mr-4">
+                    <svg width="32" height="32" fill="none" viewBox="0 0 32 32">
+                      <circle cx="16" cy="16" r="16" fill="#3b82f6" />
+                      <path d="M10 18l4 4 8-8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
                   </span>
                   <span>{item.trim()}</span>
@@ -47,11 +47,11 @@ export default function ValuesSection() {
             </ul>
             <a
               href="/our-values"
-              className="inline-flex items-center text-[#3b82f6] font-medium hover:underline transition"
+              className="inline-flex items-center px-6 py-3 bg-[#3b82f6] text-white font-semibold rounded-lg shadow hover:bg-[#2563eb] transition text-lg"
             >
               More about our core values
               <svg className="ml-2" width="20" height="20" fill="none" viewBox="0 0 24 24">
-                <path d="M9 5l7 7-7 7" stroke="#3b82f6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M9 5l7 7-7 7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </a>
           </div>

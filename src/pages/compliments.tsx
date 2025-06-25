@@ -1,7 +1,7 @@
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../components/language-provider'
+import HeroSection from '../components/common/hero-section'
 
 export default function ComplimentsPage() {
   const { t } = useLanguage()
@@ -36,22 +36,22 @@ export default function ComplimentsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-[#0a2240] text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">{t("compliments.complimentsTitle", "Compliments")}</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
-            {t("compliments.complimentsDescription", "Read what our patients and healthcare partners say about our services.")}
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title={t("compliments.complimentsTitle", "Compliments")}
+        subtitle={t("compliments.complimentsDescription", "Read what our patients and healthcare partners say about our services.")}
+        image="/images/ambulance.png"
+        imageAlt="Ambulance"
+        imagePosition="right"
+        bgColor="#388e6c"
+      />
 
       {/* Compliments Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {compliments.map((compliment, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg border hover:shadow-xl transition-shadow">
-                <p className="text-gray-700 mb-4 italic">"{compliment.text}"</p>
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-xl border hover:shadow-2xl transition-shadow">
+                <p className="text-gray-700 mb-4 italic text-lg">"{compliment.text}"</p>
                 <div className="border-t pt-4">
                   <p className="font-semibold text-[#0a2240]">{compliment.source}</p>
                 </div>
@@ -70,7 +70,7 @@ export default function ComplimentsPage() {
           </p>
           <Link 
             to="/contact"
-            className="inline-block px-8 py-3 bg-[#00855a] text-white font-medium rounded hover:bg-[#006e4a] transition-colors"
+            className="inline-block px-10 py-4 bg-[#00855a] text-white text-xl font-semibold rounded-lg shadow hover:bg-[#006e4a] transition-colors"
           >
             {t("compliments.contactUsToday", "Contact Us Today")}
           </Link>

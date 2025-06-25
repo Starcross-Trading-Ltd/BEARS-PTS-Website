@@ -1,24 +1,26 @@
-
 import React from 'react'
 import { useLanguage } from '../../components/language-provider'
 import ContactInfo from '../../components/contact-info'
 import ServicesList from '../../components/common/services-list'
+import HeroSection from '../../components/common/hero-section'
 
 export default function HighDependancePage() {
   const { t } = useLanguage()
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="lg:col-span-2">
-              <h1 className="text-4xl md:text-5xl font-bold text-[#0a2240] mb-6">{t("services.highDependance.title", "High Dependance")}</h1>
-              <p className="text-lg text-gray-700 mb-8">
-                {t("services.highDependance.description", "We provide specialised high-dependency care services designed for adult patients requiring complex care during transport.")}
-              </p>
+      <HeroSection
+        title={t("services.highDependance.title", "High Dependence Service")}
+        subtitle={t("services.highDependance.description", "Safe and reliable transport for high-dependency patients.")}
+        image="/images/high-dependance.jpg"
+        imageAlt={t("services.highDependance.imageAlt", "High Dependence Team")}
+        imagePosition="right"
+      />
 
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2">
+            <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="space-y-8">
                 <div>
                   <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("services.highDependance.ourServiceTitle", "Our High Dependency Service")}</h2>
@@ -50,21 +52,18 @@ export default function HighDependancePage() {
                 </div>
               </div>
             </div>
-
-            {/* Sidebar */}
-            <aside className="lg:col-span-1">
-              <ContactInfo showGetInTouchButton={true} className="mb-8" />
-              
-              <div className="bg-white p-6 rounded-lg shadow-lg">
-                <ServicesList 
-                  title={t("serviceDetails.ourServices", "Our Services")}
-                  excludeService="high-dependance"
-                />
-              </div>
-            </aside>
           </div>
+
+          {/* Sidebar */}
+          <aside className="lg:col-span-1 space-y-8">
+            <ContactInfo showGetInTouchButton={true} />
+            <ServicesList 
+              title={t("serviceDetails.ourServices", "Our Services")}
+              excludeService="high-dependance"
+            />
+          </aside>
         </div>
-      </section>
+      </div>
     </div>
   )
 }

@@ -1,60 +1,83 @@
-
 import React from 'react'
 import { useLanguage } from '../components/language-provider'
+import HeroSection from '../components/common/hero-section'
+
+const values = [
+  {
+    key: 'safety',
+    title: 'Safety',
+    image: '/images/cubs/safety-1.jpg',
+    desc: [
+      'We always put safety first, with robust oversight at all key registered locations.',
+      'Our vehicles and systems are designed for 100% safety, with continuous monitoring and auditing.',
+      'Our team adopts a comprehensive approach to safety through education and experience.'
+    ]
+  },
+  {
+    key: 'comfort',
+    title: 'Comfort',
+    image: '/images/cubs/comfort-1.jpg',
+    desc: [
+      'We provide consistent comfort and guidance, using state-of-the-art equipment and compassionate care.',
+      'We create individualized plans to ensure our service supports each patient and their family.'
+    ]
+  },
+  {
+    key: 'care',
+    title: 'Care',
+    image: '/images/cubs/care-1.jpg',
+    desc: [
+      'We strive for continuous improvement, raising standards for all communities we serve.',
+      'Our leadership promotes clinical excellence and timely access to quality care.'
+    ]
+  }
+]
 
 export default function OurValuesPage() {
   const { t } = useLanguage()
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="relative bg-[#0a2240] text-white py-16">
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-6">{t("about.ourValues", "Our Values")}</h1>
-          <p className="text-xl text-gray-300 max-w-3xl">
-            {t("about.valuesDescription", "BEARS values underpin everything we do, guiding our decisions and ensuring we provide exceptional care and service to all our patients and healthcare partners throughout their journey with us.")}
-          </p>
-        </div>
-      </section>
+      <HeroSection
+        title={t('about.ourValues', 'Our Values')}
+        subtitle={t('about.valuesDescription', 'BEARS values underpin everything we do, guiding our decisions and ensuring we provide exceptional care and service to all our patients and healthcare partners throughout their journey with us.')}
+        image="/images/values-logo.png"
+        imageAlt="BEARS Values Logo"
+        imagePosition="left"
+      />
 
       {/* Values Section */}
-      <section className="py-16">
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#4285f4] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">S</span>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {values.map((value) => (
+              <div
+                key={value.key}
+                className="group bg-white rounded-2xl shadow-xl p-8 flex flex-col items-center text-center transition-transform duration-200 hover:-translate-y-2 hover:shadow-2xl border-t-8 border-[#3b82f6]"
+              >
+                <div className="w-24 h-24 rounded-full overflow-hidden shadow mb-6 border-4 border-[#3b82f6]">
+                  <img src={value.image} alt={value.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-200" />
+                </div>
+                <h3 className="text-2xl font-bold text-[#0a2240] mb-4">{t(`about.${value.key}`, value.title)}</h3>
+                <ul className="text-gray-700 space-y-3 text-lg text-left list-disc list-inside">
+                  {value.desc.map((d, i) => (
+                    <li key={i}>{t(`about.${value.key}Description${i+1}`, d)}</li>
+                  ))}
+                </ul>
               </div>
-              <h3 className="text-xl font-bold text-[#0a2240] mb-3">{t("about.safety", "Safety")}</h3>
-              <div className="text-gray-700 space-y-3">
-                <p>{t("about.safetyDescription1", "We always put safety first in everything we do, designed and built service levels with robust oversight at all key registered locations.")}</p>
-                <p>{t("about.safetyDescription2", "Our vehicles maintain robust and healthy levels of monitoring including systems, our safety systems are designed to be 100% safe, and the emergency services.")}</p>
-                <p>{t("about.safetyDescription3", "Our safety drivers adopt comprehensive approach to administering safety in monitoring and auditing covering that experience and through education.")}</p>
-              </div>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#4285f4] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">C</span>
-              </div>
-              <h3 className="text-xl font-bold text-[#0a2240] mb-3">{t("about.comfort", "Comfort")}</h3>
-              <div className="text-gray-700 space-y-3">
-                <p>{t("about.comfortDescription1", "Consistent comfort and guidance through understanding and state of the art equipment drivers efficient clinical treatment and improvement opportunities to support local healthcare.")}</p>
-                <p>{t("about.comfortDescription2", "Enabling patients at family can take to make properly individualized plans with us by following appropriate emergency or direct support ensuring our service offering is right for them and supports their health.")}</p>
-              </div>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-[#4285f4] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">C</span>
-              </div>
-              <h3 className="text-xl font-bold text-[#0a2240] mb-3">{t("about.care", "Care")}</h3>
-              <div className="text-gray-700 space-y-3">
-                <p>{t("about.careDescription1", "BEARS Improvement project which enables us to understand what each person will understand in considering improvement and making work programmes to a higher standards where there is opportunity to improvement for long-term and improvement to include all communities and continue to achieve the greatest.")}</p>
-                <p>{t("about.careDescription2", "Our patients have taken and professionals guidance whilst providing timely and prompt access to these additional supports for clinical quality for the appropriate clinical.")}</p>
-                <p>{t("about.careDescription3", "We believe that our leadership strategy that could live precondition that we promote the clinical tool advice over medical care through direct and guidance medical improvement.")}</p>
-              </div>
-            </div>
+            ))}
+          </div>
+          <div className="flex justify-center mt-16">
+            <a
+              href="/bears-in-numbers"
+              className="inline-flex items-center px-8 py-4 bg-[#3b82f6] text-white font-semibold rounded-lg shadow hover:bg-[#2563eb] transition text-xl"
+            >
+              Discover the BEARS Difference
+              <svg className="ml-3" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
