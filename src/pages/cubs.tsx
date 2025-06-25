@@ -11,7 +11,7 @@ export default function CubsPage() {
       <HeroSection
         title={t("cubs.cubsTitle", "BEARS Cubs")}
         subtitle={t("cubs.cubsDescription", "Supporting our youngest patients and their families with care and compassion.")}
-        image="/images/cubs/appreciation-1.jpg"
+        image="/images/cubs_one.png"
         imageAlt="BEARS Cubs"
         imagePosition="right"
       />
@@ -33,17 +33,17 @@ export default function CubsPage() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <img 
-              src="/images/cubs/culture-1.jpg" 
+              src="/images/cubs_two_one.png" 
               alt="Team culture"
               className="w-full h-40 object-cover rounded-xl shadow"
             />
             <img 
-              src="/images/cubs/culture-2.jpg" 
+              src="/images/cubs_two_two.png" 
               alt="Team culture"
               className="w-full h-40 object-cover rounded-xl shadow"
             />
             <img 
-              src="/images/cubs/culture-3.jpg" 
+              src="/images/cubs_two_three.png" 
               alt="Team culture"
               className="w-full h-40 object-cover rounded-xl shadow"
             />

@@ -7,7 +7,6 @@ interface HeroSectionProps {
   imageAlt?: string;
   imagePosition?: 'left' | 'right' | 'top';
   bgColor?: string; // e.g. '#0a2240' or '#388e6c'
-  overlayImage?: string;
   children?: React.ReactNode;
 }
 
@@ -18,7 +17,6 @@ export default function HeroSection({
   imageAlt,
   imagePosition = 'right',
   bgColor = '#0a2240',
-  overlayImage = "/images/world-map-dots.png",
   children,
 }: HeroSectionProps) {
   // Layout logic
@@ -30,9 +28,21 @@ export default function HeroSection({
       className={`relative text-white py-20 overflow-hidden`}
       style={{ backgroundColor: bgColor }}
     >
-      {overlayImage && (
-        <div className="absolute inset-0 opacity-10 bg-cover bg-center pointer-events-none" style={{ backgroundImage: `url('${overlayImage}')` }} />
-      )}
+      {/* Subtle abstract wave SVG overlay at the bottom, full viewport width */}
+      <div className="absolute left-0 right-0 bottom-0 w-screen z-0 pointer-events-none" style={{ height: '120px', minWidth: '100vw' }} aria-hidden="true">
+        <svg width="100%" height="100%" viewBox="0 0 1920 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full" preserveAspectRatio="none">
+          <path
+            d="M0,60 C480,140 1440,0 1920,80 L1920,120 L0,120 Z"
+            fill="#fff"
+            fillOpacity="0.10"
+          />
+          <path
+            d="M0,100 C533,60 1387,180 1920,40 L1920,120 L0,120 Z"
+            fill="#fff"
+            fillOpacity="0.07"
+          />
+        </svg>
+      </div>
       <div className="container mx-auto px-4 relative z-10">
         <div
           className={`flex flex-col ${
