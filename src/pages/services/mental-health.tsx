@@ -15,6 +15,7 @@ const MentalHealthPage: React.FC = () => {
         image="/images/mental-health.jpg"
         imageAlt={t("services.mentalHealth.imageAlt", "Mental Health Vehicle")}
         imagePosition="right"
+        bgColor="rgba(34,197,94,0.85)"
       />
 
       <div className="container mx-auto px-4 py-16">

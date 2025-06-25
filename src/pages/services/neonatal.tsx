@@ -15,6 +15,7 @@ export default function NeonatalPage() {
         image="/images/neonatal.jpg"
         imageAlt={t("services.neonatal.imageAlt", "Neonatal Team")}
         imagePosition="right"
+        bgColor="rgba(236,72,153,0.85)"
       />
 
       <div className="container mx-auto px-4 py-16">

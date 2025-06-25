@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../language-provider'
@@ -22,7 +21,7 @@ export default function TestimonialsSection() {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-[#0a2240] mb-8">
-          {t("testimonials.whatPeopleSay")}
+          {t("news.testimonials.title")}
         </h2>
         <Link to="/compliments" className="text-[#4285f4] hover:underline mb-8 inline-block">
           {t("testimonials.readMoreCompliments")}

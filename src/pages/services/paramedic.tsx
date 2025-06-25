@@ -15,6 +15,7 @@ export default function ParamedicServicePage() {
         image="/images/paramedic.jpg"
         imageAlt={t("services.paramedic.imageAlt", "Paramedic Team")}
         imagePosition="right"
+        bgColor="rgba(239,68,68,0.85)"
       />
 
       <div className="container mx-auto px-4 py-8">

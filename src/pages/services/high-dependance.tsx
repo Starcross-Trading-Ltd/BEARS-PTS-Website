@@ -15,6 +15,7 @@ export default function HighDependancePage() {
         image="/images/high-dependance.jpg"
         imageAlt={t("services.highDependance.imageAlt", "High Dependence Team")}
         imagePosition="right"
+        bgColor="rgba(59,130,246,0.85)"
       />
 
       <div className="container mx-auto px-4 py-16">

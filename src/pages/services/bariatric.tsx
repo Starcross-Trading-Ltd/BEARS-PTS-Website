@@ -16,6 +16,7 @@ export default function BariatricServicePage() {
         image="/images/bariatric.jpg"
         imageAlt={t("services.bariatric.imageAlt", "Bariatric Service Team")}
         imagePosition="right"
+        bgColor="rgba(251,146,60,0.85)"
       />
 
       <div className="container mx-auto px-4 py-8">

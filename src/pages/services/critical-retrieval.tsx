@@ -15,6 +15,7 @@ export default function CriticalRetrievalPage() {
         image="/images/critical-retrieval.jpg"
         imageAlt={t("services.criticalRetrieval.imageAlt", "Critical Retrieval Team")}
         imagePosition="right"
+        bgColor="rgba(59,130,246,0.85)"
       />
 
       <div className="container mx-auto px-4 py-8">

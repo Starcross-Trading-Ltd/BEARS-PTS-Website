@@ -15,6 +15,7 @@ export default function ECMOServicePage() {
         image="/images/ecmo-service.jpg"
         imageAlt={t("services.ecmo.imageAlt", "ECMO Service Team")}
         imagePosition="right"
+        bgColor="rgba(167,139,250,0.85)"
       />
 
       <div className="container mx-auto px-4 py-8">
