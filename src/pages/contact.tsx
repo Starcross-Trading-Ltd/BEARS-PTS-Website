@@ -5,6 +5,7 @@ import { Button } from '../../components/ui/button'
 import { Input } from '../../components/ui/input'
 import { Textarea } from '../../components/ui/textarea'
 import HeroSection from '../components/common/hero-section'
+import { Phone, Mail, MapPin, Smile } from 'lucide-react'
 
 export default function ContactPage() {
   const { t } = useLanguage()
@@ -74,33 +75,61 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen">
-      <HeroSection
-        title={t("contact.contactUsTitle", "Contact Us")}
-        subtitle={t("contact.getInTouchDescription", "We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.")}
-      />
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section with subtle wave */}
+      <section className="relative py-20 bg-gradient-to-br from-[#0a2240] to-[#3b82f6] text-white text-center overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
+            {t("contact.contactUsTitle", "Contact Us")}
+          </h1>
+          <p className="text-2xl text-blue-100 max-w-2xl mx-auto mb-8 drop-shadow-md">
+            {t("contact.getInTouchDescription", "We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.")}
+          </p>
+        </div>
+        {/* Subtle abstract wave at the bottom for continuity */}
+        <div className="absolute left-0 right-0 bottom-0 w-screen z-0 pointer-events-none" style={{ height: '120px', minWidth: '100vw' }} aria-hidden="true">
+          <svg width="100%" height="100%" viewBox="0 0 1920 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full" preserveAspectRatio="none">
+            <path d="M0,60 C480,140 1440,0 1920,80 L1920,120 L0,120 Z" fill="#fff" fillOpacity="0.10" />
+            <path d="M0,100 C533,60 1387,180 1920,40 L1920,120 L0,120 Z" fill="#fff" fillOpacity="0.07" />
+          </svg>
+        </div>
+      </section>
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 py-16">
+          {/* Vertical divider on desktop */}
+          <div className="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-transparent via-blue-200 to-transparent z-10" style={{transform: 'translateX(-50%)'}} />
+          {/* Contact Info Card */}
+          <div className="bg-white rounded-2xl shadow-xl p-8 animate-fade-in-up flex flex-col justify-center relative z-20">
+            <h2 className="text-2xl font-bold text-[#0a2240] mb-6 flex items-center gap-2 justify-center">
+              <Smile className="w-7 h-7 text-[#3b82f6]" />
               {t("contact.getInTouchTitle", "Get in Touch")}
             </h2>
-            <div className="space-y-4 text-lg">
-              <div>
-                <h3 className="font-medium text-gray-900">{t("contact.phoneTitle", "Phone")}</h3>
-                <p className="text-gray-700">+44 123 456 7890</p>
+            <div className="space-y-6 text-lg">
+              <div className="flex items-start gap-4">
+                <Phone className="w-6 h-6 text-[#3b82f6] mt-1" />
+                <div>
+                  <h3 className="font-medium text-gray-900">{t("contact.phoneTitle", "Phone")}</h3>
+                  <a href="tel:+441234567890" className="text-gray-700 hover:text-[#3b82f6] transition-colors">+44 123 456 7890</a>
+                </div>
               </div>
-              <div>
-                <h3 className="font-medium text-gray-900">{t("contact.emailTitle", "Email")}</h3>
-                <p className="text-gray-700">info@bearsambulance.com</p>
+              <div className="flex items-start gap-4">
+                <Mail className="w-6 h-6 text-[#3b82f6] mt-1" />
+                <div>
+                  <h3 className="font-medium text-gray-900">{t("contact.emailTitle", "Email")}</h3>
+                  <a href="mailto:info@bearsambulance.com" className="text-gray-700 hover:text-[#3b82f6] transition-colors">info@bearsambulance.com</a>
+                </div>
               </div>
-              <div>
-                <h3 className="font-medium text-gray-900">{t("contact.addressTitle", "Address")}</h3>
-                <p className="text-gray-700">{t("contact.bearsAddress", "BEARS Patient Transport Service")}<br />London, UK</p>
+              <div className="flex items-start gap-4">
+                <MapPin className="w-6 h-6 text-[#3b82f6] mt-1" />
+                <div>
+                  <h3 className="font-medium text-gray-900">{t("contact.addressTitle", "Address")}</h3>
+                  <p className="text-gray-700">{t("contact.bearsAddress", "BEARS Patient Transport Service")}<br />London, UK</p>
+                </div>
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-2xl shadow-xl p-8">
+          {/* Form Card */}
+          <div className="bg-white rounded-2xl shadow-xl p-8 animate-fade-in-up flex flex-col justify-center relative z-20">
             <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
               {t("contact.sendMessageTitle", "Send us a Message")}
             </h2>
@@ -152,6 +181,13 @@ export default function ContactPage() {
                 {isSubmitting ? "Sending..." : t("contact.sendMessage", "Send Message")}
               </Button>
             </form>
+          </div>
+        </div>
+        {/* Friendly footer call-to-action */}
+        <div className="mt-16 mb-8 text-center animate-fade-in-up">
+          <div className="inline-flex items-center gap-3 bg-white rounded-full px-6 py-4 shadow-lg border border-blue-100">
+            <Smile className="w-7 h-7 text-[#3b82f6]" />
+            <span className="text-lg text-[#0a2240] font-medium">We respond to all messages within 24 hours. Prefer to call? We're available 24/7!</span>
           </div>
         </div>
       </div>
