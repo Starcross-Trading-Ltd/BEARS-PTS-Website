@@ -238,28 +238,28 @@ export default function BearsInNumbersPage() {
   const { t } = useLanguage()
 
   const stats = [
-    {
+    { 
       number: 22770,
       label: t('bearsInNumbers.stats.0.label', 'Bariatric Trips'),
       description: t('bearsInNumbers.stats.0.description', 'Specialist journeys for those who need extra care.'),
       link: '/services/bariatric',
       icon: <Hospital className="w-12 h-12 text-[#3b82f6] mb-2" />,
     },
-    {
+    { 
       number: 258875,
       label: t('bearsInNumbers.stats.1.label', 'NEPTS Trips'),
       description: t('bearsInNumbers.stats.1.description', 'Non-Emergency Patient Transport Services.'),
       link: '/services/nepts',
       icon: <Bus className="w-12 h-12 text-[#3b82f6] mb-2" />,
     },
-    {
+    { 
       number: 33591,
       label: t('bearsInNumbers.stats.2.label', 'Mental Health Trips'),
       description: t('bearsInNumbers.stats.2.description', 'Supporting mental health journeys with compassion.'),
       link: '/services/mental-health',
       icon: <HeartPulse className="w-12 h-12 text-[#3b82f6] mb-2" />,
     },
-    {
+    { 
       number: 484159,
       label: t('bearsInNumbers.stats.3.label', 'HDU/Para Trips'),
       description: t('bearsInNumbers.stats.3.description', 'High Dependency & Paramedic journeys.'),

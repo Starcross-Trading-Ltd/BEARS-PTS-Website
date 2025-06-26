@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useLanguage } from '../components/language-provider'
 import { useToast } from '../hooks/use-toast'
-import { Button } from '../../components/ui/button'
-import { Input } from '../../components/ui/input'
-import { Textarea } from '../../components/ui/textarea'
+import { Button } from '../components/ui/button'
+import { Input } from '../components/ui/input'
+import { Textarea } from '../components/ui/textarea'
 import HeroSection from '../components/common/hero-section'
 import { Phone, Mail, MapPin, Smile } from 'lucide-react'
 

@@ -56,11 +56,11 @@ const Header: React.FC = () => {
     <header className="bg-white/90 backdrop-blur shadow-sm sticky top-0 z-50 border-b border-gray-100" role="banner">
       <nav className="container mx-auto px-4 flex items-center h-20" role="navigation" aria-label="Main navigation">
         {/* Logo on the left */}
-        <Link 
-          to="/" 
+          <Link 
+            to="/" 
           className="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded mt-6"
-          aria-label="BEARS - Home"
-        >
+            aria-label="BEARS - Home"
+          >
           <div className="bg-white rounded-full shadow-xl flex items-center justify-center w-28 h-28 border-4 border-white mt-2">
             <img 
               src="/images/bears-pts logo.jpg" 
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               className="w-24 h-24 object-contain rounded-full"
             />
           </div>
-        </Link>
+          </Link>
         {/* Navigation */}
         <div className="flex-1 flex items-center justify-center h-full">
           <div className="hidden md:flex items-center space-x-8">
@@ -110,75 +110,75 @@ const Header: React.FC = () => {
             <LanguageSelector />
           </div>
         </div>
-        {/* Mobile menu button */}
-        <div className="md:hidden flex items-center space-x-4">
-          <LanguageSelector />
-          <button
-            onClick={toggleMenu}
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center space-x-4">
+            <LanguageSelector />
+            <button
+              onClick={toggleMenu}
             className="p-2 rounded-lg text-gray-600 hover:text-[#388e6c] hover:bg-green-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-            aria-expanded={isMenuOpen}
-            aria-label="Toggle navigation menu"
-          >
+              aria-expanded={isMenuOpen}
+              aria-label="Toggle navigation menu"
+            >
             {isMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
-          </button>
+            </button>
         </div>
       </nav>
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
+        {/* Mobile Navigation */}
+        {isMenuOpen && (
         <div className="md:hidden py-4 border-t bg-white/95 shadow-lg rounded-b-xl animate-fade-in-down">
-          <div className="flex flex-col space-y-2">
-            {navigationItems.map((item) => (
-              <div key={item.href}>
-                <div className="flex items-center justify-between">
-                  <Link
-                    to={item.href}
-                    onClick={item.submenu ? undefined : toggleMenu}
+            <div className="flex flex-col space-y-2">
+              {navigationItems.map((item) => (
+                <div key={item.href}>
+                  <div className="flex items-center justify-between">
+                    <Link
+                      to={item.href}
+                      onClick={item.submenu ? undefined : toggleMenu}
                     className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all flex-1 ${
-                      isActive(item.href)
+                        isActive(item.href)
                         ? 'text-[#388e6c] bg-green-50 shadow-sm'
                         : 'text-gray-700 hover:text-[#388e6c] hover:bg-green-50/60'
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                  {item.submenu && (
-                    <button
-                      onClick={() => {
-                        if (item.label === 'About') {
-                          setIsAboutDropdownOpen(!isAboutDropdownOpen)
-                        }
-                      }}
-                      className="p-2 text-gray-600"
+                      }`}
                     >
-                      <ChevronDown className={`h-4 w-4 transition-transform ${
-                        (item.label === 'About' && isAboutDropdownOpen) ? 'rotate-180' : ''
-                      }`} />
-                    </button>
+                      {item.label}
+                    </Link>
+                    {item.submenu && (
+                      <button
+                        onClick={() => {
+                          if (item.label === 'About') {
+                            setIsAboutDropdownOpen(!isAboutDropdownOpen)
+                          }
+                        }}
+                        className="p-2 text-gray-600"
+                      >
+                        <ChevronDown className={`h-4 w-4 transition-transform ${
+                          (item.label === 'About' && isAboutDropdownOpen) ? 'rotate-180' : ''
+                        }`} />
+                      </button>
+                    )}
+                  </div>
+                  {/* Mobile submenu */}
+                  {item.submenu && (
+                    <div className={`ml-4 mt-2 space-y-1 ${
+                      item.label === 'About' ? (isAboutDropdownOpen ? 'block' : 'hidden') : 
+                      (isActive(item.href) ? 'block' : 'hidden')
+                    }`}>
+                      {item.submenu.map((subItem) => (
+                        <Link
+                          key={subItem.href}
+                          to={subItem.href}
+                          onClick={toggleMenu}
+                        className="block px-4 py-2 text-base text-gray-600 hover:text-[#388e6c] hover:bg-green-50 rounded-lg transition-all"
+                        >
+                          {subItem.label}
+                        </Link>
+                      ))}
+                    </div>
                   )}
                 </div>
-                {/* Mobile submenu */}
-                {item.submenu && (
-                  <div className={`ml-4 mt-2 space-y-1 ${
-                    item.label === 'About' ? (isAboutDropdownOpen ? 'block' : 'hidden') : 
-                    (isActive(item.href) ? 'block' : 'hidden')
-                  }`}>
-                    {item.submenu.map((subItem) => (
-                      <Link
-                        key={subItem.href}
-                        to={subItem.href}
-                        onClick={toggleMenu}
-                        className="block px-4 py-2 text-base text-gray-600 hover:text-[#388e6c] hover:bg-green-50 rounded-lg transition-all"
-                      >
-                        {subItem.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )}
     </header>
   )
 }
