@@ -1,10 +1,11 @@
-
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { ChevronDown } from 'lucide-react'
+import { useLanguage } from '../src/components/language-provider'
 
 export default function AboutSidebar() {
   const [isOpen, setIsOpen] = useState(false)
+  const { t } = useLanguage()
 
   const toggleDropdown = () => setIsOpen(!isOpen)
 
@@ -18,7 +19,7 @@ export default function AboutSidebar() {
           aria-expanded={isOpen}
           aria-haspopup="true"
         >
-          About Us
+          {t('navigation.about', 'About Us')}
           <ChevronDown className={`-mr-1 h-5 w-5 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} aria-hidden="true" />
         </button>
       </div>
@@ -31,35 +32,35 @@ export default function AboutSidebar() {
               className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               onClick={() => setIsOpen(false)}
             >
-              Meet the Team
+              {t('navigation.meetTheTeam', 'Meet the Team')}
             </Link>
             <Link 
               to="/cubs" 
               className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               onClick={() => setIsOpen(false)}
             >
-              Meet the Cubs
+              {t('navigation.meetTheCubs', 'Meet the Cubs')}
             </Link>
             <Link 
               to="/our-values" 
               className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               onClick={() => setIsOpen(false)}
             >
-              Our Values
+              {t('navigation.ourValues', 'Our Values')}
             </Link>
             <Link 
               to="/fleet" 
               className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               onClick={() => setIsOpen(false)}
             >
-              Our Fleet
+              {t('navigation.ourFleet', 'Our Fleet')}
             </Link>
             <Link 
               to="/bears-in-numbers" 
               className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900"
               onClick={() => setIsOpen(false)}
             >
-              BEARS in Numbers
+              {t('navigation.bearsInNumbers', 'BEARS in Numbers')}
             </Link>
           </div>
         </div>

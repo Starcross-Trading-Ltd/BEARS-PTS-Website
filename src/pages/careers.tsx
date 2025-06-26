@@ -26,80 +26,18 @@ export default function CareersPage() {
   ]
 
   // Example vacancies
-  const vacancies = [
-    {
-      title: "Patient Transport Driver (Full Time)",
-      location: "London, UK",
-      description: "Join our team as a Patient Transport Driver and make a real difference in the lives of patients. You will be responsible for the safe and comfortable transport of patients to and from medical appointments, working as part of a supportive and professional team.",
-      requirements: [
-        "Full UK driving license",
-        "Excellent communication skills",
-        "Compassionate and patient-focused",
-        "Previous experience in patient transport or healthcare (preferred)"
-      ],
-      cta: "Apply Now"
-    },
-    {
-      title: "Paramedic (Full Time)",
-      location: "London, UK",
-      description: "We are seeking a qualified Paramedic to join our growing team. You will provide high-quality care and support to patients during transport, working closely with other healthcare professionals.",
-      requirements: [
-        "HCPC registered Paramedic",
-        "Strong clinical skills",
-        "Team player with a positive attitude",
-        "Willingness to work flexible shifts"
-      ],
-      cta: "Apply Now"
-    },
-    {
-      title: "Fleet Manager",
-      location: "London, UK",
-      description: "Oversee the management and maintenance of our ambulance fleet. Ensure all vehicles are compliant, safe, and ready for service. Lead a team of drivers and support staff.",
-      requirements: [
-        "Experience in fleet management",
-        "Strong organizational skills",
-        "Knowledge of vehicle compliance and safety",
-        "Leadership experience"
-      ],
-      cta: "Apply Now"
-    },
-    {
-      title: "Control Room Operator",
-      location: "London, UK",
-      description: "Coordinate patient journeys and support our operations team. You will be the first point of contact for patients and staff, ensuring smooth communication and scheduling.",
-      requirements: [
-        "Excellent communication skills",
-        "Experience in a control room or dispatch environment (preferred)",
-        "Calm under pressure",
-        "Attention to detail"
-      ],
-      cta: "Apply Now"
-    },
-    {
-      title: "HR Assistant",
-      location: "London, UK",
-      description: "Support our HR team with recruitment, onboarding, and staff welfare. Help us build a positive, caring workplace culture.",
-      requirements: [
-        "Experience in HR or administration",
-        "Strong people skills",
-        "Organized and proactive",
-        "Discreet and trustworthy"
-      ],
-      cta: "Apply Now"
-    },
-    {
-      title: "Patient Liaison Officer",
-      location: "London, UK",
-      description: "Act as a key point of contact for patients and families, ensuring their needs are met and feedback is heard. Help us deliver a truly patient-centered service.",
-      requirements: [
-        "Excellent interpersonal skills",
-        "Empathy and compassion",
-        "Experience in healthcare or customer service",
-        "Problem-solving ability"
-      ],
-      cta: "Apply Now"
-    }
-  ]
+  const vacancies = Array.from({ length: 6 }).map((_, idx) => ({
+    title: t(`careers.vacancies.${idx}.title`),
+    location: t(`careers.vacancies.${idx}.location`),
+    description: t(`careers.vacancies.${idx}.description`),
+    requirements: [
+      t(`careers.vacancies.${idx}.requirements.0`),
+      t(`careers.vacancies.${idx}.requirements.1`),
+      t(`careers.vacancies.${idx}.requirements.2`),
+      t(`careers.vacancies.${idx}.requirements.3`)
+    ],
+    cta: t(`careers.vacancies.${idx}.cta`)
+  }))
 
   return (
     <div className="min-h-screen bg-gray-50">

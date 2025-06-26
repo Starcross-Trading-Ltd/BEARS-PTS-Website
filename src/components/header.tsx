@@ -17,11 +17,11 @@ const Header: React.FC = () => {
       label: t("navigation.about", "About"), 
       href: ROUTES.about,
       submenu: [
-        { label: "Meet the Team", href: "/team" },
-        { label: "Meet the Cubs", href: "/cubs" },
-        { label: "Our Values", href: "/our-values" },
-        { label: "Our Fleet", href: "/fleet" },
-        { label: "BEARS in Numbers", href: "/bears-in-numbers" }
+        { label: t("navigation.meetTheTeam", "Meet the Team"), href: "/team" },
+        { label: t("navigation.meetTheCubs", "Meet the Cubs"), href: "/cubs" },
+        { label: t("navigation.ourValues", "Our Values"), href: "/our-values" },
+        { label: t("navigation.ourFleet", "Our Fleet"), href: "/fleet" },
+        { label: t("navigation.bearsInNumbers", "BEARS in Numbers"), href: "/bears-in-numbers" }
       ]
     },
     { 

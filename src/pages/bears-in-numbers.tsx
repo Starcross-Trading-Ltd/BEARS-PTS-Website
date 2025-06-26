@@ -4,39 +4,6 @@ import HeroSection from '../components/common/hero-section'
 import { Link } from 'react-router-dom'
 import { Hospital, Bus, HeartPulse, Stethoscope } from 'lucide-react'
 
-  const stats = [
-    { 
-    number: 22770,
-    label: 'Bariatric Trips',
-    description: 'Specialist journeys for those who need extra care.',
-    link: '/services/bariatric',
-    icon: <Hospital className="w-12 h-12 text-[#3b82f6] mb-2" />,
-  },
-  {
-    number: 258875,
-    label: 'NEPTS Trips',
-    description: 'Non-Emergency Patient Transport Services.',
-    link: '/services/nepts',
-    icon: <Bus className="w-12 h-12 text-[#3b82f6] mb-2" />,
-  },
-  {
-    number: 33591,
-    label: 'Mental Health Trips',
-    description: 'Supporting mental health journeys with compassion.',
-    link: '/services/mental-health',
-    icon: <HeartPulse className="w-12 h-12 text-[#3b82f6] mb-2" />,
-  },
-  {
-    number: 484159,
-    label: 'HDU/Para Trips',
-    description: 'High Dependency & Paramedic journeys.',
-    link: '/services/paramedic',
-    icon: <Stethoscope className="w-12 h-12 text-[#3b82f6] mb-2" />,
-  },
-]
-
-const milesDriven = 5058454
-
 // Toggle this to 'y' for Y-axis (horizontal) flip, 'x' for X-axis (vertical) flip
 const FLIP_AXIS: 'y' | 'x' = 'y'
 
@@ -110,7 +77,7 @@ function MilesProgress({ value, max = 5058454 }: { value: number, max?: number }
   )
 }
 
-function FlipCard({ number, label, description, link, icon, delay }: { number: number, label: string, description: string, link: string, icon: React.ReactNode, delay: number }) {
+function FlipCard({ number, label, description, link, icon, delay, t }: { number: number, label: string, description: string, link: string, icon: React.ReactNode, delay: number, t: Function }) {
   return (
     <Link
       to={link}
@@ -127,14 +94,14 @@ function FlipCard({ number, label, description, link, icon, delay }: { number: n
         </div>
         <div className="flip-card-back flex flex-col items-center justify-center bg-[#3b82f6] text-white p-10 rounded-2xl shadow-2xl border-t-8 border-[#0a2240] h-full">
           <div className="text-lg font-semibold mb-4 text-center">{description}</div>
-          <span className="mt-4 px-6 py-2 bg-white text-[#3b82f6] font-bold rounded-lg shadow hover:bg-[#e0e7ef] transition-colors text-base">Learn more</span>
+          <span className="mt-4 px-6 py-2 bg-white text-[#3b82f6] font-bold rounded-lg shadow hover:bg-[#e0e7ef] transition-colors text-base">{t('bearsInNumbers.learnMore', 'Learn more')}</span>
         </div>
       </div>
     </Link>
   )
 }
 
-function MilesDrivenCreative() {
+function MilesDrivenCreative({ t }: { t: Function }) {
   // Odometer animation for the number
   const [display, setDisplay] = useState(0)
   React.useEffect(() => {
@@ -246,7 +213,7 @@ function MilesDrivenCreative() {
             </svg>
             {/* 203+ badge, floating and bobbing */}
             <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 bg-[#3b82f6] text-white px-6 py-2 rounded-full shadow-lg text-xl font-bold border-4 border-white animate-bob z-20">
-              203+ times around the world
+              {t('bearsInNumbers.timesAroundWorld', '203+ times around the world')}
             </div>
           </div>
           {/* Huge Odometer Number */}
@@ -270,6 +237,39 @@ function MilesDrivenCreative() {
 export default function BearsInNumbersPage() {
   const { t } = useLanguage()
 
+  const stats = [
+    {
+      number: 22770,
+      label: t('bearsInNumbers.stats.0.label', 'Bariatric Trips'),
+      description: t('bearsInNumbers.stats.0.description', 'Specialist journeys for those who need extra care.'),
+      link: '/services/bariatric',
+      icon: <Hospital className="w-12 h-12 text-[#3b82f6] mb-2" />,
+    },
+    {
+      number: 258875,
+      label: t('bearsInNumbers.stats.1.label', 'NEPTS Trips'),
+      description: t('bearsInNumbers.stats.1.description', 'Non-Emergency Patient Transport Services.'),
+      link: '/services/nepts',
+      icon: <Bus className="w-12 h-12 text-[#3b82f6] mb-2" />,
+    },
+    {
+      number: 33591,
+      label: t('bearsInNumbers.stats.2.label', 'Mental Health Trips'),
+      description: t('bearsInNumbers.stats.2.description', 'Supporting mental health journeys with compassion.'),
+      link: '/services/mental-health',
+      icon: <HeartPulse className="w-12 h-12 text-[#3b82f6] mb-2" />,
+    },
+    {
+      number: 484159,
+      label: t('bearsInNumbers.stats.3.label', 'HDU/Para Trips'),
+      description: t('bearsInNumbers.stats.3.description', 'High Dependency & Paramedic journeys.'),
+      link: '/services/paramedic',
+      icon: <Stethoscope className="w-12 h-12 text-[#3b82f6] mb-2" />,
+    },
+  ]
+
+  const milesDriven = 5058454
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Dramatic Hero Section (no bg image) */}
@@ -289,11 +289,11 @@ export default function BearsInNumbersPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             {stats.map((stat, index) => (
-              <FlipCard key={stat.label} {...stat} delay={index * 0.2 + 0.2} />
+              <FlipCard key={stat.label} {...stat} delay={index * 0.2 + 0.2} t={t} />
             ))}
           </div>
           {/* Miles Driven with dramatic, creative section */}
-          <MilesDrivenCreative />
+          <MilesDrivenCreative t={t} />
         </div>
       </section>
 

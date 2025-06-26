@@ -21,7 +21,7 @@
     "specialistCritical": "Specialist Critical Retrieval Response Service",
     "ecmo": "ECMO - Extracorporeal Membrane Oxygenation",
     "mentalHealth": "Mental Health Service",
-    "nepts": "Non Emergency Patient Transport Service",
+    "nepts": "Non Emergency Patient Transport Service (NEPTS)",
     "bariatric": "Bariatric Service",
     "paramedic": "Paramedic Service",
     "neonatal": "Neonatal and Paediatric intensive care transfer service",
@@ -48,7 +48,7 @@
   },
   "home": {
     "hero": {
-      "title": "Providing Safety, Comfort and Care",
+      "title": "Providing Safety,<br />Comfort and<br />Care",
       "description": "We provide a high quality ambulance service taking great care and pride in our work with the highest priority on transporting patients with SAFETY, COMFORT and CARE.",
       "imageAlt": "BEARS team member smiling",
       "cta": {
@@ -58,9 +58,11 @@
     },
     "values": {
       "title": "Our Core Values",
-      "description": "BEARS core values are safety, comfort, and care, we ensure:",
+      "description": "BEARS core values are <span class=\"font-bold text-[#0a2240]\">safety</span>, <span class=\"font-bold text-[#0a2240]\">comfort</span>, and <span class=\"font-bold text-[#0a2240]\">care</span>,",
+      "weEnsure": "we ensure:",
       "imageAlt": "BEARS ambulance in London",
-      "items": "High-quality patient transport services,Professional and compassionate care,Safe and comfortable transportation,Excellence in emergency medical services"
+      "items": "High-quality patient transport services,Professional and compassionate care,Safe and comfortable transportation,Excellence in emergency medical services",
+      "cta": "More about our core values"
     },
     "services": {
       "title": "Our Services",
@@ -84,7 +86,7 @@
     "articles": {
       "title": "Latest News",
       "readMore": "Read more",
-      "items": "Christmas @ BEARS Ambulance|'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took...,The Pulse Clinical Newsletter #4|ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is a narrow tube that is...,The Pulse Clinical Newsletter #3|ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked..."
+      "items": "Christmas @ BEARS Ambulance|'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took...,The Pulse Clinical Newsletter #4|ISSUE 4 – September 2024 Transportation of patients with chest drains What is a chest drain? A chest drain is...,The Pulse Clinical Newsletter #3|ISSUE 3 – July 2024 Transportation of Children & Young People It is likely that in the course of your duties, you will be asked..."
     }
   },
   "testimonials": {
@@ -125,30 +127,114 @@
         "title": "Care",
         "description": "Join a team that genuinely cares about making a difference in patients' lives every day."
       }
-    }
+    },
+    "vacancies": [
+      {
+        "title": "Patient Transport Driver (Full Time)",
+        "location": "London, UK",
+        "description": "Join our team as a Patient Transport Driver and make a real difference in the lives of patients. You will be responsible for the safe and comfortable transport of patients to and from medical appointments, working as part of a supportive and professional team.",
+        "requirements": [
+          "Full UK driving license",
+          "Excellent communication skills",
+          "Compassionate and patient-focused",
+          "Previous experience in patient transport or healthcare (preferred)"
+        ],
+        "cta": "Apply Now"
+      },
+      {
+        "title": "Paramedic (Full Time)",
+        "location": "London, UK",
+        "description": "We are seeking a qualified Paramedic to join our growing team. You will provide high-quality care and support to patients during transport, working closely with other healthcare professionals.",
+        "requirements": [
+          "HCPC registered Paramedic",
+          "Strong clinical skills",
+          "Team player with a positive attitude",
+          "Willingness to work flexible shifts"
+        ],
+        "cta": "Apply Now"
+      },
+      {
+        "title": "Fleet Manager",
+        "location": "London, UK",
+        "description": "Oversee the management and maintenance of our ambulance fleet. Ensure all vehicles are compliant, safe, and ready for service. Lead a team of drivers and support staff.",
+        "requirements": [
+          "Experience in fleet management",
+          "Strong organizational skills",
+          "Knowledge of vehicle compliance and safety",
+          "Leadership experience"
+        ],
+        "cta": "Apply Now"
+      },
+      {
+        "title": "Control Room Operator",
+        "location": "London, UK",
+        "description": "Coordinate patient journeys and support our operations team. You will be the first point of contact for patients and staff, ensuring smooth communication and scheduling.",
+        "requirements": [
+          "Excellent communication skills",
+          "Experience in a control room or dispatch environment (preferred)",
+          "Calm under pressure",
+          "Attention to detail"
+        ],
+        "cta": "Apply Now"
+      },
+      {
+        "title": "HR Assistant",
+        "location": "London, UK",
+        "description": "Support our HR team with recruitment, onboarding, and staff welfare. Help us build a positive, caring workplace culture.",
+        "requirements": [
+          "Experience in HR or administration",
+          "Strong people skills",
+          "Organized and proactive",
+          "Discreet and trustworthy"
+        ],
+        "cta": "Apply Now"
+      },
+      {
+        "title": "Patient Liaison Officer",
+        "location": "London, UK",
+        "description": "Act as a key point of contact for patients and families, ensuring their needs are met and feedback is heard. Help us deliver a truly patient-centered service.",
+        "requirements": [
+          "Excellent interpersonal skills",
+          "Empathy and compassion",
+          "Experience in healthcare or customer service",
+          "Problem-solving ability"
+        ],
+        "cta": "Apply Now"
+      }
+    ]
   },
   "aboutPage": {
     "aboutBearsTitle": "About BEARS",
     "aboutBearsDescription": "BEARS Patient Transport Service was established to provide high-quality ambulance services with a focus on patient care, comfort, and safety.",
     "ourStoryTitle": "Our Story",
-    "ourStoryContent1": "BEARS was established in 2009, on the principles of Safety, Comfort and Care. We specialise in hospital logistics patient transport service.",
-    "ourStoryContent2": "Supporting the NHS with paramedic, paediatric and neonatal, critical care, high dependency, bariatric, mental health and ECMO transfers alongside regular patient transport services.",
-    "ourStoryContent3": "At every level, BEARS focuses on quality, which defines the company and differentiates it from its peers. Our emphasis remains to provide high quality service, training, and generous package to our staff as well as providing them with appropriate tools, to enable them to deliver the highest standards of patient care."
+    "newContent1": "BEARS, established 2009, on the principles of Safety, Comfort and Care, specialises in Paramedic, Paediatric and Neonatal, Critical Care, High Dependency, Bariatric, Mental Health and ECMO transfers alongside regular Patient Transport Services.",
+    "ourCoreValues": "Our Core Values",
+    "value1": "Getting our service quality right the first time.",
+    "value2": "Being efficient with a passion for patient care.",
+    "value3": "Ensuring the best value for money.",
+    "newContent2": "BEARS is constantly driven to find ways of developing efficiencies and innovative practices.",
+    "theMumTest": "The 'Mum Test'",
+    "newContent3": "All staff at the start of their employment with BEARS are told that every patient is our \"mum\" (or \"child\"), and every patient journey deserves the maximum respect, dignity, and excellence in care. We call this our \"Mum Test\" and it is our company culture.",
+    "newContent4": "BEARS is committed in delivering a seamless service for our patients, our robust eligibility process and medically trained Business Intelligence-Control team are experienced in planning and allocating our patient journeys.",
+    "newContent5": "Every journey is vital all patients, and our teams ensure patients are treated with kindness, empathy and provide a first-class service from home/clinic and back again with professionalism, worry free on time service and maintaining the highest levels of safeguarding, privacy, and dignity at all times.",
+    "meetOurTeam": "Meet Our Dedicated Team",
+    "learnMoreAboutBears": "Our professionals are the heart of our service. Get to know the people who make BEARS a trusted name in patient transport.",
+    "meetTheTeamButton": "Meet The Team"
   },
   "about": {
     "ourValues": "Our Values",
     "valuesDescription": "BEARS values underpin everything we do, guiding our decisions and ensuring we provide exceptional care and service to all our patients and healthcare partners throughout their journey with us.",
     "safety": "Safety",
-    "safetyDescription1": "We always put safety first in everything we do, designed and built service levels with robust oversight at all key registered locations.",
-    "safetyDescription2": "Our vehicles maintain robust and healthy levels of monitoring including systems, our safety systems are designed to be 100% safe, and the emergency services.",
-    "safetyDescription3": "Our safety drivers adopt comprehensive approach to administering safety in monitoring and auditing covering that experience and through education.",
+    "safetyDescription1": "Our Rapid Response vehicles are custom-designed to safely transport clinical teams and all necessary equipment.",
+    "safetyDescription2": "We ensure reliable communication with two-way, hands-free radios in all vehicles, contributing to our record of 100% KPI achievement.",
+    "safetyDescription3": "Rigorous onboarding, including shadowing and continuous assessment, ensures our staff meet the highest safety standards for everyone.",
     "comfort": "Comfort",
-    "comfortDescription1": "Consistent comfort and guidance through understanding and state of the art equipment drivers efficient clinical treatment and improvement opportunities to support local healthcare.",
-    "comfortDescription2": "Enabling patients at family can take to make properly individualized plans with us by following appropriate emergency or direct support ensuring our service offering is right for them and supports their health.",
+    "comfortDescription1": "Before every journey, our crews ensure patients are safe and comfortable, setting up state-of-the-art medical equipment for continuous monitoring.",
+    "comfortDescription2": "For home arrivals, we go the extra mile to ensure patient well-being, coordinating with care providers and ensuring essentials are within reach.",
     "care": "Care",
-    "careDescription1": "BEARS Improvement project which enables us to understand what each person will understand in considering improvement and making work programmes to a higher standards where there is opportunity to improvement for long-term and improvement to include all communities and continue to achieve the greatest.",
-    "careDescription2": "Our patients have taken and professionals guidance whilst providing timely and prompt access to these additional supports for clinical quality for the appropriate clinical.",
-    "careDescription3": "We believe that our leadership strategy that could live precondition that we promote the clinical tool advice over medical care through direct and guidance medical improvement.",
+    "careDescription1": "Our operational leads collaborate seamlessly with Trust partners, even assisting on wards to prioritize patient care.",
+    "careDescription2": "We foster a safe and open environment where our teams and multidisciplinary partners work together for effective patient outcomes.",
+    "careDescription3": "Our commitment to care begins at recruitment, where only candidates who share our passion for dignity and meet our gold standard are selected.",
     "bearsInNumbers": "BEARS in Numbers",
     "bearsInNumbersDescription": "Our commitment to excellence is reflected in our track record of successful patient transports and healthcare partnerships.",
     "yearsOfService": "Years of Service",
@@ -195,7 +281,16 @@
     "messageLabel": "Message",
     "sendMessage": "Send Message",
     "phoneNumber": "+44 123 456 7890",
-    "emailAddress": "info@bearsambulance.com"
+    "emailAddress": "info@bearsambulance.com",
+    "sending": "Sending...",
+    "footerCta": "We respond to all messages within 24 hours. Prefer to call? We're available 24/7!",
+    "toast": {
+      "errorTitle": "Error",
+      "fillFields": "Please fill in all fields",
+      "successTitle": "Success!",
+      "successMessage": "Your message has been sent successfully. We'll get back to you soon!",
+      "errorMessage": "Failed to send your message. Please try again or contact us directly."
+    }
   },
   "compliments": {
     "complimentsTitle": "Compliments",
@@ -312,7 +407,8 @@
     },
     "neonatal": {
       "title": "Neonatal and Paediatric intensive care transfer service",
-      "description": "At BEARS we recognize the critical nature of neonatal transportation for newborn and neonate patients requiring urgent care and specialist support."
+      "description": "At BEARS we recognize the critical nature of neonatal transportation for newborn and neonate patients requiring urgent care and specialist support.",
+      "contactDescription": "For more information about our Neonatal and Paediatric Intensive Care Transfer service or to arrange a transfer, please contact our operations team. Our expert advisors are here to assist you with all your emergency transport needs."
     },
     "clinicalHelpline": {
       "title": "BEARS Clinical Helpline",
@@ -324,11 +420,24 @@
     "selectLanguage": "Select Language"
   },
   "footer": {
+    "ourStory": "Our Story",
+    "ourTeam": "Our Team",
+    "coreValues": "Core Values",
+    "menu": "Menu",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "cookiePolicy": "Cookie Policy",
+    "modernSlaveryPolicy": "Modern Slavery Policy",
+    "enquiries": "Enquiries",
+    "contactForm": "Contact Form",
+    "allRightsReserved": "All rights reserved.",
     "quickLinks": "Quick Links",
     "contactInfo": "Contact Info",
     "phone": "Phone",
     "email": "Email",
-    "allRightsReserved": "All rights reserved."
+    "facebook": "Facebook",
+    "twitter": "Twitter"
   },
   "partners": {
     "title": "Our Partners"
@@ -336,35 +445,65 @@
   "team": {
     "meetTheBearsTitle": "Meet the BEARS",
     "seniorManagementTitle": "Senior Management Team",
-    "mohammedAliHashim": {
-      "name": "Mohammed Ali Hashim",
-      "title": "Chief Executive Officer",
-      "description": "Mohammed has over 20 years of experience in healthcare management and emergency medical services. He founded BEARS with a vision to provide exceptional patient transport services across the UK."
+    "mohamedAliHashim": {
+      "name": "Mohamed Ali Hashim",
+      "title": "Chief Financial Officer/Director",
+      "description": "Ali is the founder of BEARS Ambulance Service and has built the company's culture of Safety, Comfort, and Care from inception. He is a compassionate leader, dedicated to delivering the highest levels of patient care. Outside of work, Ali enjoys cooking for family and friends and supports community enterprise initiatives in developing countries."
     },
     "shabnamUndre": {
       "name": "Shabnam Undre",
-      "title": "Clinical Director",
-      "description": "Shabnam brings extensive clinical expertise and ensures all our services meet the highest medical standards. She oversees clinical governance and staff training programs."
+      "title": "Medical Director",
+      "description": "Appointed as Medical Director for BEARS in March 2017, Shabnam oversees governance, safety, training, and compliance. She is a Consultant Urological Surgeon with a special interest in Paediatric Urology at East and North Herts NHS Trust and is affiliated with several private hospitals."
     },
     "nosaIdahosa": {
       "name": "Nosa Idahosa",
-      "title": "Operations Director",
-      "description": "Nosa manages our day-to-day operations ensuring efficient service delivery. With a background in logistics and emergency services, he optimizes our operational processes."
+      "title": "Head of People and Operations",
+      "description": "Nosa brings over 13 years of NHS experience to BEARS. He is committed to equity and fairness, fostering a caring company culture, and promoting diversity. Nosa is passionate about staff and patient care, and enjoys spending time with his daughter, family, and music."
     },
     "winstonFlemming": {
       "name": "Winston Flemming",
-      "title": "Fleet Manager",
-      "description": "Winston oversees our vehicle fleet, ensuring all ambulances are maintained to the highest standards and equipped with the latest medical technology."
+      "title": "Director of Operations",
+      "description": "With 35 years' experience in logistics and 24 years in patient transport, Winston has managed ambulance crews at major London hospitals. He is a motivational leader focused on team well-being and operational excellence. Winston enjoys spending time with his grandchild and playing football."
     },
     "amechiOkaoye": {
       "name": "Amechi Okaoye",
-      "title": "Quality Assurance Manager",
-      "description": "Amechi leads our quality assurance programs, monitoring service delivery and implementing continuous improvement initiatives across all our services."
+      "title": "Head of Operations",
+      "description": "Amechi is experienced in staff mentoring, health and safety, and accident management. He is dedicated to staff development and patient service, and is committed to upholding BEARS' values. Amechi enjoys reading, podcasts, and family time."
     },
     "osmanSadiq": {
       "name": "Osman Sadiq",
-      "title": "Training Director",
-      "description": "Osman develops and delivers comprehensive training programs for our staff, ensuring they are equipped with the latest skills and knowledge in patient care."
+      "title": "Head of Business Intelligence",
+      "description": "With over 18 years' experience in NEPTS, Osman leads BEARS' business intelligence unit. He is passionate about patient transport systems and transformational projects, ensuring BEARS delivers on its commitment to Safety, Comfort, and Care."
+    },
+    "michaelOkae": {
+      "name": "Michael Okae",
+      "title": "Head of Compliance & Support Services",
+      "description": "Michael is dedicated to ensuring a safe and efficient environment for staff and clients. He values collaboration and effective service delivery, and enjoys reading, podcasts, and family time."
+    },
+    "claireLawrence": {
+      "name": "Claire Lawrence",
+      "title": "Business Intelligence Control Room Manager",
+      "description": "Claire has over 16 years' experience in emergency and non-emergency patient transport. She is committed to exceptional customer service and training new team members. Outside of work, Claire enjoys baking, singing, and spending time with friends and family."
+    },
+    "jonardCartagena": {
+      "name": "Jonard Cartagena",
+      "title": "Head of Fleet Operations",
+      "description": "Jonard has over 15 years' experience in ambulance care and fleet management. He is passionate about vehicle compliance and staff training, and has helped reduce accident rates at BEARS."
+    },
+    "katherineCrossman": {
+      "name": "Katherine Crossman, BSc, MCPara",
+      "title": "Head of Paramedic Operations",
+      "description": "Katherine is a HCPC registered paramedic with extensive experience in paramedic operations and clinical governance. She manages BEARS' clinical advice line, providing 24/7 support to crews."
+    },
+    "rossStevenson": {
+      "name": "Ross Stevenson, DipHE MCPara",
+      "title": "Paramedic and BEARS Training Lead",
+      "description": "Ross is a registered paramedic and educator with over a decade of experience. He leads the BEARS Training Academy, empowering staff to provide the highest levels of patient care and supporting their career development."
+    },
+    "warrenHazelton": {
+      "name": "Warren Hazelton",
+      "title": "Team Leader Special Contracts",
+      "description": "Warren is an enthusiastic team leader and one of BEARS' rising stars."
     }
   },
   "cubs": {
@@ -401,8 +540,8 @@
   },
   "neonatal": {
     "title": "Neonatal and Paediatric intensive care transfer service",
-    "intro": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and neonate patients requiring urgent care and specialised support.",
-    "description": "At BEARS we recognise the critical nature of neonatal transportation, for newborn and neonate patients requiring urgent care and specialised support. Our Neonatal Transport Service is committed to ensuring the safe transfer of critically ill newborns, infants, and young children to specialised paediatric and neonatal intensive care units, where they can receive the expert care they require.",
+    "intro": "At BEARS we recognize the critical nature of neonatal transportation, for newborn and neonate patients requiring urgent care and specialised support.",
+    "description": "At BEARS we recognize the critical nature of neonatal transportation, for newborn and neonate patients requiring urgent care and specialised support. Our Neonatal Transport Service is committed to ensuring the safe transfer of critically ill newborns, infants, and young children to specialised paediatric and neonatal intensive care units, where they can receive the expert care they require.",
     "availability": {
       "title": "24/7 Availability",
       "description": "Medical emergencies for newborns and paediatric patients can arise at any time. Our team of highly trained medical professionals is available 24 hours a day, seven days a week, ensuring that critical emergencies are responded to promptly with our experienced medical staff available to provide assistance during critical times."
@@ -446,5 +585,45 @@
     },
     "sideImageAlt": "Neonatal Transport",
     "contactDescription": "For more information about our Neonatal and Paediatric Intensive Care Transfer service or to arrange a transfer, please contact our operations team. Our expert advisors are here to assist you with all your emergency transport needs."
+  },
+  "values": {
+    "safetyValue": "Safety",
+    "comfortValue": "Comfort",
+    "careValue": "Care",
+    "safetyDescription1": "We understand a focus on patient safety is continuously required as the BEARS clinical team with secure storage of all the equipment required.",
+    "safetyDescription2": "We provide time with checks for all vehicles and safety. A commitment to the highest standards of safety is at the core of everything we do. Our vehicles are equipped with the latest in safety technology and our staff are trained to the highest standards to ensure we never compromise safety.",
+    "safetyDescription3": "We take pride in our monitoring process, undertaking monitoring and assessment with continuous improvement. Ensuring that processes are continuously being kept updated with the latest standards of care to ensure the optimal level of safety is achieved for the patient and staff.",
+    "comfortDescription1": "Our crews ensure we provide the most comfortable ride with a dedicated approach to patient planning the journey. They will be an understanding of the patient's needs and requirements to ensure the journey is as comfortable as possible.",
+    "comfortDescription2": "A positive patient journey starts with a comfortable environment for our staff. We believe that when our staff are comfortable in their surroundings, it enables them to provide the highest level of patient care.",
+    "careDescription1": "BEARS Operational crews will work collaboratively with the Trust, working alongside the highest levels of care to provide families. This will ensure that all patients are treated with dignity and respect at all times.",
+    "careDescription2": "We provide care that is tailored to the patient's needs whilst ensuring a safe, comfortable journey. Our crews will work as a team to ensure that all patients are able to contribute openly to the journey.",
+    "careDescription3": "We ensure that the attention to detail that staff will demonstrate with our patients will be present at all times. Our crews will make our great customer service a priority and will always be available to answer any questions."
+  },
+  "bearsInNumbers": {
+    "stats": [
+      {
+        "label": "Bariatric Trips",
+        "description": "Specialist journeys for those who need extra care."
+      },
+      {
+        "label": "NEPTS Trips",
+        "description": "Non-Emergency Patient Transport Services."
+      },
+      {
+        "label": "Mental Health Trips",
+        "description": "Supporting mental health journeys with compassion."
+      },
+      {
+        "label": "HDU/Para Trips",
+        "description": "High Dependency & Paramedic journeys."
+      }
+    ],
+    "learnMore": "Learn more",
+    "timesAroundWorld": "203+ times around the world"
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "description": "We apologize for the inconvenience. Please refresh the page or try again later.",
+    "refresh": "Refresh Page"
   }
 }

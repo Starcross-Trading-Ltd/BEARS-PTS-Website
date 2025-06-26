@@ -30,8 +30,8 @@ export default function ContactPage() {
     
     if (!formData.name || !formData.email || !formData.message) {
       toast({
-        title: "Error",
-        description: "Please fill in all fields",
+        title: t("contact.toast.errorTitle", "Error"),
+        description: t("contact.toast.fillFields", "Please fill in all fields"),
         variant: "destructive",
       })
       return
@@ -55,8 +55,8 @@ export default function ContactPage() {
 
       if (response.ok) {
         toast({
-          title: "Success!",
-          description: "Your message has been sent successfully. We'll get back to you soon!",
+          title: t("contact.toast.successTitle", "Success!"),
+          description: t("contact.toast.successMessage", "Your message has been sent successfully. We'll get back to you soon!"),
         })
         setFormData({ name: '', email: '', message: '' })
       } else {
@@ -65,8 +65,8 @@ export default function ContactPage() {
     } catch (error) {
       console.error('Form submission error:', error)
       toast({
-        title: "Error",
-        description: "Failed to send your message. Please try again or contact us directly.",
+        title: t("contact.toast.errorTitle", "Error"),
+        description: t("contact.toast.errorMessage", "Failed to send your message. Please try again or contact us directly."),
         variant: "destructive",
       })
     } finally {
@@ -109,14 +109,14 @@ export default function ContactPage() {
                 <Phone className="w-6 h-6 text-[#3b82f6] mt-1" />
                 <div>
                   <h3 className="font-medium text-gray-900">{t("contact.phoneTitle", "Phone")}</h3>
-                  <a href="tel:+441234567890" className="text-gray-700 hover:text-[#3b82f6] transition-colors">+44 123 456 7890</a>
+                  <a href={`tel:${t("contact.phoneNumber")}`} className="text-gray-700 hover:text-[#3b82f6] transition-colors">{t("contact.phoneNumber", "+44 123 456 7890")}</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-[#3b82f6] mt-1" />
                 <div>
                   <h3 className="font-medium text-gray-900">{t("contact.emailTitle", "Email")}</h3>
-                  <a href="mailto:info@bearsambulance.com" className="text-gray-700 hover:text-[#3b82f6] transition-colors">info@bearsambulance.com</a>
+                  <a href={`mailto:${t("contact.emailAddress")}`} className="text-gray-700 hover:text-[#3b82f6] transition-colors">{t("contact.emailAddress", "info@bearsambulance.com")}</a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -178,7 +178,7 @@ export default function ContactPage() {
                 disabled={isSubmitting}
                 className="bg-[#00855a] hover:bg-[#006e4a] text-white text-lg px-8 py-3 rounded-lg shadow"
               >
-                {isSubmitting ? "Sending..." : t("contact.sendMessage", "Send Message")}
+                {isSubmitting ? t("contact.sending", "Sending...") : t("contact.sendMessage", "Send Message")}
               </Button>
             </form>
           </div>
@@ -187,7 +187,7 @@ export default function ContactPage() {
         <div className="mt-16 mb-8 text-center animate-fade-in-up">
           <div className="inline-flex items-center gap-3 bg-white rounded-full px-6 py-4 shadow-lg border border-blue-100">
             <Smile className="w-7 h-7 text-[#3b82f6]" />
-            <span className="text-lg text-[#0a2240] font-medium">We respond to all messages within 24 hours. Prefer to call? We're available 24/7!</span>
+            <span className="text-lg text-[#0a2240] font-medium">{t("contact.footerCta", "We respond to all messages within 24 hours. Prefer to call? We're available 24/7!")}</span>
           </div>
         </div>
       </div>

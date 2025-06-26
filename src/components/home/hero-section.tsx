@@ -10,26 +10,24 @@ export default function HeroSection() {
       <div className="container mx-auto px-4">
         <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full min-h-[500px] lg:pr-0">
           <div className="z-10">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-[#0a2240] mb-10 leading-tight drop-shadow-md">
-              Providing Safety,<br />
-              Comfort and<br />
-              Care
-            </h1>
+            <h1 className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-[#0a2240] mb-10 leading-tight drop-shadow-md"
+              dangerouslySetInnerHTML={{ __html: t("home.hero.title", "Providing Safety,<br />Comfort and<br />Care") }}
+            />
             <p className="text-2xl text-[#334155] mb-12 max-w-2xl drop-shadow-sm">
-              We provide a high quality ambulance service taking great care and pride in our work with the highest priority on transporting patients with SAFETY, COMFORT and CARE.
+              {t("home.hero.description", "We provide a high quality ambulance service taking great care and pride in our work with the highest priority on transporting patients with SAFETY, COMFORT and CARE.")}
             </p>
             <div className="flex flex-col sm:flex-row gap-8">
               <Link 
                 to="/contact"
                 className="inline-block px-10 py-4 bg-[#388e6c] text-white text-xl font-semibold rounded-lg shadow hover:bg-[#2e7358] transition-colors text-center"
               >
-                Get in touch
+                {t("home.hero.cta.primary", "Get in touch")}
               </Link>
               <Link 
                 to="/about"
                 className="inline-block px-10 py-4 border-2 border-[#3b82f6] text-[#3b82f6] text-xl font-semibold rounded-lg shadow hover:bg-[#3b82f6] hover:text-white transition-colors text-center"
               >
-                Learn more
+                {t("home.hero.cta.secondary", "Learn more")}
               </Link>
             </div>
           </div>

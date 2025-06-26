@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { LanguageProvider } from './components/language-provider'
@@ -25,12 +24,14 @@ import EcmoPage from './pages/services/ecmo'
 import HighDependancePage from './pages/services/high-dependance'
 import MentalHealthPage from './pages/services/mental-health'
 import NeonatalPage from './pages/services/neonatal'
+import ScrollToTop from './components/common/ScrollToTop'
 
 function App() {
   return (
     <ErrorBoundary>
       <LanguageProvider>
         <Router>
+          <ScrollToTop />
           <div className="min-h-screen bg-white">
             <Header />
             <main>

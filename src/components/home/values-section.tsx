@@ -23,14 +23,11 @@ export default function ValuesSection() {
             <h2 className="text-5xl md:text-6xl lg:text-5xl font-bold text-[#0a2240] mb-6">
               {t("home.values.title")}
             </h2>
-            <p className="text-lg text-[#334155] mb-2">
-              BEARS core values are{" "}
-              <span className="font-bold text-[#0a2240]">safety</span>,{" "}
-              <span className="font-bold text-[#0a2240]">comfort</span>, and{" "}
-              <span className="font-bold text-[#0a2240]">care</span>,
-            </p>
+            <p className="text-lg text-[#334155] mb-2"
+              dangerouslySetInnerHTML={{ __html: t("home.values.description", 'BEARS core values are <span className="font-bold text-[#0a2240]">safety</span>, <span className="font-bold text-[#0a2240]">comfort</span>, and <span className="font-bold text-[#0a2240]">care</span>,') }}
+            />
             <p className="text-lg text-[#334155] mb-6">
-              we ensure:
+              {t("home.values.weEnsure", "we ensure:")}
             </p>
             <ul className="space-y-5 text-[#334155] mb-8">
               {valuesItems.map((item: string, index: number) => (
@@ -49,7 +46,7 @@ export default function ValuesSection() {
               href="/our-values"
               className="inline-flex items-center px-6 py-3 bg-[#3b82f6] text-white font-semibold rounded-lg shadow hover:bg-[#2563eb] transition text-lg"
             >
-              More about our core values
+              {t("home.values.cta", "More about our core values")}
               <svg className="ml-2" width="20" height="20" fill="none" viewBox="0 0 24 24">
                 <path d="M9 5l7 7-7 7" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
