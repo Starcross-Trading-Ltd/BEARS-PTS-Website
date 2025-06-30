@@ -25,6 +25,9 @@ import HighDependancePage from './pages/services/high-dependance'
 import MentalHealthPage from './pages/services/mental-health'
 import NeonatalPage from './pages/services/neonatal'
 import ScrollToTop from './components/common/ScrollToTop'
+import TermsAndConditionsPage from './pages/terms-and-conditions'
+import CarbonReductionPlanPage from './pages/carbon-reduction-plan'
+import PatientSurveyPage from './pages/patient-survey'
 
 function App() {
   return (
@@ -57,6 +60,9 @@ function App() {
                   <Route path="/fleet" element={<FleetPage />} />
                   <Route path="/our-values" element={<OurValuesPage />} />
                   <Route path="/bears-in-numbers" element={<BearsInNumbersPage />} />
+                  <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
+                  <Route path="/carbon-reduction-plan" element={<CarbonReductionPlanPage />} />
+                  <Route path="/patient-survey" element={<PatientSurveyPage />} />
                 </Routes>
               </ErrorBoundary>
             </main>
