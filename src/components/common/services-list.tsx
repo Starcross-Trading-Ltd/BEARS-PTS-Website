@@ -1,8 +1,8 @@
-
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../language-provider'
 import { SERVICE_ROUTES } from '../../config/constants'
+import { ChevronRight } from 'lucide-react'
 
 interface ServicesListProps {
   title?: string
@@ -24,20 +24,41 @@ export default function ServicesList({ title, className, excludeService }: Servi
     { key: 'paramedic', route: SERVICE_ROUTES.paramedic, titleKey: 'services.paramedic.title' }
   ].filter(service => service.key !== excludeService)
 
+  const serviceColors: Record<string, string> = {
+    nepts: 'bg-green-500',
+    bariatric: 'bg-orange-500',
+    'critical-retrieval': 'bg-blue-500',
+    ecmo: 'bg-purple-500',
+    'high-dependance': 'bg-blue-700',
+    'mental-health': 'bg-green-700',
+    neonatal: 'bg-pink-500',
+    paramedic: 'bg-red-500',
+    'clinical-helpline': 'bg-gray-500',
+  }
+
   return (
     <div className={className}>
       {title && (
         <h3 className="text-lg font-bold text-[#0a2240] mb-4">{title}</h3>
       )}
-      <ul className="space-y-2 text-sm">
-        {services.map((service) => (
-          <li key={service.key}>
-            <Link to={service.route} className="text-[#4285f4] hover:underline">
-              {t(service.titleKey, service.key)}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <nav aria-label="Service navigation">
+        <ul className="space-y-1">
+          {services.map((service) => (
+            <li key={service.key}>
+              <Link
+                to={service.route}
+                className={
+                  `group flex items-center justify-between px-4 py-3 rounded-lg bg-white border border-gray-100 hover:bg-blue-50 transition-colors text-base font-medium text-[#0a2240] focus:outline-none focus:ring-2 focus:ring-primary relative`
+                }
+              >
+                <span className={`absolute left-0 top-0 h-full w-1.5 rounded-l ${serviceColors[service.key] || 'bg-blue-500'}`}></span>
+                <span className="pl-4 flex-1">{t(service.titleKey, service.key)}</span>
+                <ChevronRight className="ml-2 h-5 w-5 text-gray-400 group-hover:text-primary transition" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   )
 }

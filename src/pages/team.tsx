@@ -69,7 +69,7 @@ export default function TeamPage() {
       {/* Senior Management Team */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-[#0a2240] mb-8">{t('team.seniorManagementTitle')}</h2>
+          <h2 className="text-3xl font-bold text-primary mb-8">{t('team.seniorManagementTitle')}</h2>
           
           <div className="space-y-10">
             {seniorTeam.map((member, index) => (
@@ -82,7 +82,7 @@ export default function TeamPage() {
                   />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold text-[#0a2240] mb-2">{t(`team.${member.key}.name`)}</h3>
+                  <h3 className="text-2xl font-bold text-primary mb-2">{t(`team.${member.key}.name`)}</h3>
                   <p className="text-[#4285f4] font-medium mb-3">{t(`team.${member.key}.title`)}</p>
                   <p className="text-gray-600 text-lg">{t(`team.${member.key}.description`)}</p>
                 </div>

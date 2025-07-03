@@ -16,7 +16,7 @@ export default function HeroSection({
   image,
   imageAlt,
   imagePosition = 'right',
-  bgColor = '#0a2240',
+  bgColor = '#7DA779',
   children,
 }: HeroSectionProps) {
   // Layout logic

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss"
 
 const config: Config = {
@@ -13,7 +12,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#0a2240",
+        primary: "#00855a",
+        "primary-dark": "#013220",
         secondary: "#00855a",
         accent: "#e63946",
         background: "hsl(var(--background))",

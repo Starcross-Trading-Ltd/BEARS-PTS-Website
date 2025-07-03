@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
   ]
 
   return (
-    <footer className="bg-[#0a2240] text-white py-12 border-t border-blue-900/20" role="contentinfo">
+    <footer className="bg-blue-900 text-white py-12 border-t border-green-900/20" role="contentinfo">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
                   <li key={href}>
                     <Link 
                       to={href} 
-                      className="text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0a2240] rounded text-base"
+                      className="text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-dark rounded text-base"
                     >
                       {label}
                     </Link>
@@ -59,14 +59,14 @@ const Footer: React.FC = () => {
                         href={href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0a2240] rounded text-base"
+                        className="text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-dark rounded text-base"
                       >
                         {label}
                       </a>
                     ) : (
                       <Link
                         to={href}
-                        className="text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0a2240] rounded text-base"
+                        className="text-gray-300 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-dark rounded text-base"
                       >
                         {label}
                       </Link>
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
                 {t("footer.phone", "Phone")}: 
                 <a 
                   href={`tel:${CONTACT_INFO.phone}`}
-                  className="ml-1 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0a2240] rounded"
+                  className="ml-1 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-dark rounded"
                 >
                   {CONTACT_INFO.phone}
                 </a>
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
                 {t("footer.email", "Email")}: 
                 <a 
                   href={`mailto:${CONTACT_INFO.email}`}
-                  className="ml-1 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0a2240] rounded"
+                  className="ml-1 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-dark rounded"
                 >
                   {CONTACT_INFO.email}
                 </a>
@@ -100,7 +100,10 @@ const Footer: React.FC = () => {
             </address>
           </div>
         </div>
-        <div className="border-t border-blue-900/30 mt-12 pt-8 text-center">
+        <div className="border-t border-green-900/30 mt-12 pt-8 text-center">
+          <p className="text-2xl md:text-3xl font-extrabold text-white mb-4" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.3)' }}>
+            Protecting our future, one patient at a time.
+          </p>
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} {COMPANY_INFO.name}. {t("footer.allRightsReserved", "All rights reserved.")}
           </p>

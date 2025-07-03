@@ -37,42 +37,42 @@ export default function NeonatalPage() {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("neonatal.availability.title", "24/7 Availability")}</h2>
+                  <h2 className="text-2xl font-bold text-primary mb-4">{t("neonatal.availability.title", "24/7 Availability")}</h2>
                   <p className="text-gray-700 mb-4">
                     {t("neonatal.availability.description", "Medical emergencies for newborns and paediatric patients can arise at any time. Our team of highly trained medical professionals is available 24 hours a day, seven days a week, ensuring that critical emergencies are responded to promptly with our experienced medical staff available to provide assistance during critical times.")}
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("neonatal.equipment.title", "Advanced Critical Care Support Equipment")}</h2>
+                  <h2 className="text-2xl font-bold text-primary mb-4">{t("neonatal.equipment.title", "Advanced Critical Care Support Equipment")}</h2>
                   <p className="text-gray-700 mb-4">
                     {t("neonatal.equipment.description", "Equipment and technology are crucial to the safe and effective transportation of critically ill newborns and children. Our neonatal and paediatric intensive care ambulances are designed to function as mobile intensive care units, equipped with state-of-the-art medical monitoring, life support systems and specialized paediatric and neonatal equipment.")}
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("neonatal.guidance.title", "Experienced Clinical Guidance")}</h2>
+                  <h2 className="text-2xl font-bold text-primary mb-4">{t("neonatal.guidance.title", "Experienced Clinical Guidance")}</h2>
                   <p className="text-gray-700 mb-4">
                     {t("neonatal.guidance.description", "Our team consists of dedicated neonatal and paediatric healthcare professionals, including neonatal nurses, paediatric nurses, and medical specialists. From neonatal resuscitation to complex cardiac support, our experienced and qualified team is trained to provide comprehensive care.")}
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("neonatal.compassionate.title", "Personalised and Compassionate Care")}</h2>
+                  <h2 className="text-2xl font-bold text-primary mb-4">{t("neonatal.compassionate.title", "Personalised and Compassionate Care")}</h2>
                   <p className="text-gray-700 mb-4">
                     {t("neonatal.compassionate.description", "We understand the emotional and physical challenges that families face during these critical moments. Our team is committed to providing not only expert medical care but also emotional support and clear communication throughout the transportation process, providing caring, professional service to families.")}
                   </p>
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">{t("neonatal.reliable.title", "Reliable and Trustworthy Service")}</h2>
+                  <h2 className="text-2xl font-bold text-primary mb-4">{t("neonatal.reliable.title", "Reliable and Trustworthy Service")}</h2>
                   <p className="text-gray-700 mb-4">
                     {t("neonatal.reliable.description", "In critical situations, every moment counts. Our commitment to reliability means that families can trust us to provide rapid response times and safe, efficient transportation. We understand the urgency of neonatal and paediatric emergencies and are committed to providing transportation solutions that families can rely on during the most challenging times.")}
                   </p>
                 </div>
 
                 <div className="bg-pink-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-bold text-[#0a2240] mb-4">{t("neonatal.whyChoose.title", "Why Choose Us?")}</h3>
+                  <h3 className="text-xl font-bold text-primary mb-4">{t("neonatal.whyChoose.title", "Why Choose Us?")}</h3>
                   <div className="space-y-3">
                     <div>
                       <h4 className="font-semibold text-gray-900">{t("neonatal.whyChoose.expertise.title", "Expertise:")}</h4>

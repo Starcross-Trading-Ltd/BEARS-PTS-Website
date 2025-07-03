@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { cn } from '@/lib/utils'
 
@@ -13,7 +12,7 @@ const Section = React.forwardRef<HTMLElement, SectionProps>(
     const variants = {
       default: 'bg-white',
       gray: 'bg-gray-50',
-      dark: 'bg-[#0a2240] text-white'
+      dark: 'bg-primary-dark text-white'
     }
 
     const sizes = {

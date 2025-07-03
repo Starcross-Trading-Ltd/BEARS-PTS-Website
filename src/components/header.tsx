@@ -58,7 +58,7 @@ const Header: React.FC = () => {
         {/* Logo on the left */}
           <Link 
             to="/" 
-          className="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded mt-6"
+          className="flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-primary rounded mt-6"
             aria-label="BEARS - Home"
           >
           <div className="bg-white rounded-full shadow-xl flex items-center justify-center w-28 h-28 border-4 border-white mt-2">
@@ -77,16 +77,16 @@ const Header: React.FC = () => {
                 <div className="flex items-center">
                   <Link
                     to={item.href}
-                    className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+                    className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary ${
                       isActive(item.href)
-                        ? 'text-[#388e6c] bg-green-50 shadow-sm'
-                        : 'text-gray-700 hover:text-[#388e6c] hover:bg-green-50/60'
+                        ? 'text-primary bg-green-50 shadow-sm'
+                        : 'text-gray-700 hover:text-primary hover:bg-green-50/60'
                     }`}
                   >
                     {item.label}
                   </Link>
                   {item.submenu && (
-                    <ChevronDown className="ml-1 h-4 w-4 text-gray-400 group-hover:text-[#388e6c] transition-colors" />
+                    <ChevronDown className="ml-1 h-4 w-4 text-gray-400 group-hover:text-primary transition-colors" />
                   )}
                 </div>
                 {/* Submenu */}
@@ -97,7 +97,7 @@ const Header: React.FC = () => {
                         <Link
                           key={subItem.href}
                           to={subItem.href}
-                          className="block px-4 py-2 text-base text-gray-700 hover:bg-green-50 hover:text-[#388e6c] rounded-lg transition-all"
+                          className="block px-4 py-2 text-base text-gray-700 hover:bg-green-50 hover:text-primary rounded-lg transition-all"
                         >
                           {subItem.label}
                         </Link>
@@ -115,7 +115,7 @@ const Header: React.FC = () => {
             <LanguageSelector />
             <button
               onClick={toggleMenu}
-            className="p-2 rounded-lg text-gray-600 hover:text-[#388e6c] hover:bg-green-50 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+            className="p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-green-50 focus:outline-none focus:ring-2 focus:ring-primary transition-all"
               aria-expanded={isMenuOpen}
               aria-label="Toggle navigation menu"
             >
@@ -135,8 +135,8 @@ const Header: React.FC = () => {
                       onClick={item.submenu ? undefined : toggleMenu}
                     className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all flex-1 ${
                         isActive(item.href)
-                        ? 'text-[#388e6c] bg-green-50 shadow-sm'
-                        : 'text-gray-700 hover:text-[#388e6c] hover:bg-green-50/60'
+                        ? 'text-primary bg-green-50 shadow-sm'
+                        : 'text-gray-700 hover:text-primary hover:bg-green-50/60'
                       }`}
                     >
                       {item.label}
@@ -167,7 +167,7 @@ const Header: React.FC = () => {
                           key={subItem.href}
                           to={subItem.href}
                           onClick={toggleMenu}
-                        className="block px-4 py-2 text-base text-gray-600 hover:text-[#388e6c] hover:bg-green-50 rounded-lg transition-all"
+                        className="block px-4 py-2 text-base text-gray-600 hover:text-primary hover:bg-green-50 rounded-lg transition-all"
                         >
                           {subItem.label}
                         </Link>

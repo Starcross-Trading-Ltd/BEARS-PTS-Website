@@ -16,7 +16,7 @@ export default function ServicesPreview() {
         </p>
         <Link 
           to="/services"
-          className="inline-block px-10 py-4 bg-[#4285f4] text-white text-xl font-semibold rounded-lg shadow hover:bg-blue-700 transition-colors"
+          className="inline-block px-10 py-4 bg-primary text-white text-xl font-semibold rounded-lg shadow hover:bg-primary-dark transition-colors"
         >
           {t("home.services.cta")}
         </Link>

@@ -31,12 +31,12 @@ export default function AboutPage() {
               
               {/* Our Story Section */}
               <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <h2 className="text-3xl lg:text-4xl font-bold text-[#0a2240] mb-6">{t("aboutPage.ourStoryTitle", "Our Story")}</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-6">{t("aboutPage.ourStoryTitle", "Our Story")}</h2>
                 <div className="space-y-6 text-base text-gray-700">
                   <p>{t("aboutPage.newContent1", "BEARS, established 2009, on the principles of Safety, Comfort and Care, specialises in Paramedic, Paediatric and Neonatal, Critical Care, High Dependency, Bariatric, Mental Health and ECMO transfers alongside regular Patient Transport Services.")}</p>
                   
                   <div>
-                    <h3 className="text-xl font-bold text-[#0a2240] mb-3">{t("aboutPage.ourCoreValues", "Our Core Values")}</h3>
+                    <h3 className="text-xl font-bold text-primary mb-3">{t("aboutPage.ourCoreValues", "Our Core Values")}</h3>
                     <ul className="list-disc list-inside space-y-2 text-gray-700">
                       <li>{t("aboutPage.value1", "Getting our service quality right the first time.")}</li>
                       <li>{t("aboutPage.value2", "Being efficient with a passion for patient care.")}</li>
@@ -46,8 +46,8 @@ export default function AboutPage() {
                   </div>
 
                   <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg">
-                    <h3 className="text-xl font-bold text-[#0a2240] mb-2">{t("aboutPage.theMumTest", "The 'Mum Test'")}</h3>
-                    <p>{t("aboutPage.newContent3", 'All staff at the start of their employment with BEARS are told that every patient is our “mum” (or “child”), and every patient journey deserves the maximum respect, dignity, and excellence in care. We call this our “Mum Test” and it is our company culture.')}</p>
+                    <h3 className="text-xl font-bold text-primary mb-2">{t("aboutPage.theMumTest", "The 'Mum Test'")}</h3>
+                    <p>{t("aboutPage.newContent3", 'All staff at the start of their employment with BEARS are told that every patient is our "mum" (or "child"), and every patient journey deserves the maximum respect, dignity, and excellence in care. We call this our "Mum Test" and it is our company culture.')}</p>
                   </div>
                   
                   <p>{t("aboutPage.newContent4", "BEARS is committed in delivering a seamless service for our patients, our robust eligibility process and medically trained Business Intelligence-Control team are experienced in planning and allocating our patient journeys.")}</p>
@@ -62,7 +62,7 @@ export default function AboutPage() {
       {/* Call to Action Section */}
       <section className="bg-white py-16 sm:py-24">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold text-[#0a2240] mb-4">{t("aboutPage.meetOurTeam", "Meet Our Dedicated Team")}</h2>
+          <h2 className="text-3xl lg:text-4xl font-bold text-primary mb-4">{t("aboutPage.meetOurTeam", "Meet Our Dedicated Team")}</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
             {t("aboutPage.learnMoreAboutBears", "Our professionals are the heart of our service. Get to know the people who make BEARS a trusted name in patient transport.")}
           </p>

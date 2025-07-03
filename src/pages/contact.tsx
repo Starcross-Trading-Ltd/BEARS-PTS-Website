@@ -6,6 +6,8 @@ import { Input } from '../components/ui/input'
 import { Textarea } from '../components/ui/textarea'
 import HeroSection from '../components/common/hero-section'
 import { Phone, Mail, MapPin, Smile } from 'lucide-react'
+import { Container } from '@/components/ui/container'
+import { Section } from '@/components/ui/section'
 
 export default function ContactPage() {
   const { t } = useLanguage()
@@ -76,15 +78,10 @@ export default function ContactPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero Section with subtle wave */}
-      <section className="relative py-20 bg-gradient-to-br from-[#0a2240] to-[#3b82f6] text-white text-center overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-primary-dark to-primary text-white text-center overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-            {t("contact.contactUsTitle", "Contact Us")}
-          </h1>
-          <p className="text-2xl text-blue-100 max-w-2xl mx-auto mb-8 drop-shadow-md">
-            {t("contact.getInTouchDescription", "We're here to answer any questions you may have about our services. Reach out to us and we'll respond as soon as we can.")}
-          </p>
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-4">{t("contact.ctaTitle", "Get in Touch")}</h2>
+          <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">{t("contact.ctaSubtitle", "We are available 24/7 to answer your questions and provide support.")}</p>
         </div>
         {/* Subtle abstract wave at the bottom for continuity */}
         <div className="absolute left-0 right-0 bottom-0 w-screen z-0 pointer-events-none" style={{ height: '120px', minWidth: '100vw' }} aria-hidden="true">
@@ -94,103 +91,57 @@ export default function ContactPage() {
           </svg>
         </div>
       </section>
-      <div className="container mx-auto px-4">
-        <div className="relative grid grid-cols-1 md:grid-cols-2 gap-12 py-16">
-          {/* Vertical divider on desktop */}
-          <div className="hidden md:block absolute left-1/2 top-0 h-full w-px bg-gradient-to-b from-transparent via-blue-200 to-transparent z-10" style={{transform: 'translateX(-50%)'}} />
-          {/* Contact Info Card */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 animate-fade-in-up flex flex-col justify-center relative z-20">
-            <h2 className="text-2xl font-bold text-[#0a2240] mb-6 flex items-center gap-2 justify-center">
-              <Smile className="w-7 h-7 text-[#3b82f6]" />
-              {t("contact.getInTouchTitle", "Get in Touch")}
+      <Section>
+        <Container>
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold text-primary mb-6 flex items-center gap-2 justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              {t("contact.formTitle", "Send us a Message")}
             </h2>
-            <div className="space-y-6 text-lg">
-              <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-[#3b82f6] mt-1" />
-                <div>
-                  <h3 className="font-medium text-gray-900">{t("contact.phoneTitle", "Phone")}</h3>
-                  <a href={`tel:${t("contact.phoneNumber")}`} className="text-gray-700 hover:text-[#3b82f6] transition-colors">{t("contact.phoneNumber", "+44 123 456 7890")}</a>
-                </div>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <input type="text" placeholder={t("contact.namePlaceholder", "Your Name")} className="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition" />
+                <input type="email" placeholder={t("contact.emailPlaceholder", "Your Email")} className="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition" />
               </div>
-              <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 text-[#3b82f6] mt-1" />
-                <div>
-                  <h3 className="font-medium text-gray-900">{t("contact.emailTitle", "Email")}</h3>
-                  <a href={`mailto:${t("contact.emailAddress")}`} className="text-gray-700 hover:text-[#3b82f6] transition-colors">{t("contact.emailAddress", "info@bearsambulance.com")}</a>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-[#3b82f6] mt-1" />
-                <div>
-                  <h3 className="font-medium text-gray-900">{t("contact.addressTitle", "Address")}</h3>
-                  <p className="text-gray-700">{t("contact.bearsAddress", "BEARS Patient Transport Service")}<br />London, UK</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* Form Card */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 animate-fade-in-up flex flex-col justify-center relative z-20">
-            <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
-              {t("contact.sendMessageTitle", "Send us a Message")}
-            </h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t("contact.nameLabel", "Name")}
-                </label>
-                <Input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  disabled={isSubmitting}
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t("contact.emailLabel", "Email")}
-                </label>
-                <Input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                  required
-                  disabled={isSubmitting}
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t("contact.messageLabel", "Message")}
-                </label>
-                <Textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  rows={4}
-                  required
-                  disabled={isSubmitting}
-                />
-              </div>
-              <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="bg-[#00855a] hover:bg-[#006e4a] text-white text-lg px-8 py-3 rounded-lg shadow"
-              >
-                {isSubmitting ? t("contact.sending", "Sending...") : t("contact.sendMessage", "Send Message")}
-              </Button>
+              <textarea placeholder={t("contact.messagePlaceholder", "Your Message")} rows={6} className="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition"></textarea>
+              <button type="submit" className="w-full bg-secondary text-white py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
+                {t("contact.sendMessageButton", "Send Message")}
+              </button>
             </form>
           </div>
-        </div>
-        {/* Friendly footer call-to-action */}
-        <div className="mt-16 mb-8 text-center animate-fade-in-up">
-          <div className="inline-flex items-center gap-3 bg-white rounded-full px-6 py-4 shadow-lg border border-blue-100">
-            <Smile className="w-7 h-7 text-[#3b82f6]" />
-            <span className="text-lg text-[#0a2240] font-medium">{t("contact.footerCta", "We respond to all messages within 24 hours. Prefer to call? We're available 24/7!")}</span>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container>
+          <div className="bg-gray-100 p-8 rounded-lg text-center">
+            <h2 className="text-2xl font-bold text-primary mb-4">
+              {t("contact.alternativeContactTitle", "Other Ways to Reach Us")}
+            </h2>
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+              {t("contact.alternativeContactText", "If you prefer not to use the form, you can also contact us by phone or email. Our team is ready to assist you around the clock.")}
+            </p>
+            <div className="flex justify-center gap-8">
+              <a href="tel:+442082025160" className="flex items-center gap-2 text-primary hover:text-secondary transition">
+                <Phone />
+                <span>{t("contact.callUs", "Call Us")}</span>
+              </a>
+              <a href="mailto:info@bearspts.co.uk" className="flex items-center gap-2 text-primary hover:text-secondary transition">
+                <Mail />
+                <span>{t("contact.emailUs", "Email Us")}</span>
+              </a>
+              </div>
+            <div className="mt-8 text-center">
+              <p className="text-lg text-gray-600">
+                <span className="text-lg text-primary font-medium">{t("contact.footerCta", "We respond to all messages within 24 hours. Prefer to call? We're available 24/7!")}</span>
+              </p>
+              </div>
           </div>
-        </div>
-      </div>
+        </Container>
+      </Section>
     </div>
   )
 }

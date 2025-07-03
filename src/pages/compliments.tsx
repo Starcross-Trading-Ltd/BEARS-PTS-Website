@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../components/language-provider'
 import HeroSection from '../components/common/hero-section'
+import { Container } from '@/components/ui/container'
 
 export default function ComplimentsPage() {
   const { t } = useLanguage()
@@ -51,9 +52,11 @@ export default function ComplimentsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {compliments.map((compliment, index) => (
               <div key={index} className="bg-white p-8 rounded-2xl shadow-xl border hover:shadow-2xl transition-shadow">
-                <p className="text-gray-700 mb-4 italic text-lg">"{compliment.text}"</p>
-                <div className="border-t pt-4">
-                  <p className="font-semibold text-[#0a2240]">{compliment.source}</p>
+                <div className="text-left">
+                  <p className="text-lg text-gray-700 italic">"{compliment.text}"</p>
+                  <div className="mt-4 text-right">
+                    <p className="font-semibold text-primary">{compliment.source}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -63,18 +66,20 @@ export default function ComplimentsPage() {
 
       {/* CTA Section */}
       <section className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-[#0a2240] mb-6">{t("compliments.experienceServiceTitle", "Experience Our Service")}</h2>
-          <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-            {t("compliments.experienceServiceDescription", "Join the many healthcare providers and patients who trust BEARS for their transport needs.")}
-          </p>
-          <Link 
-            to="/contact"
-            className="inline-block px-10 py-4 bg-[#00855a] text-white text-xl font-semibold rounded-lg shadow hover:bg-[#006e4a] transition-colors"
-          >
-            {t("compliments.contactUsToday", "Contact Us Today")}
-          </Link>
-        </div>
+        <Container>
+          <div className="text-center">
+            <h2 className="text-3xl font-bold text-primary mb-6">{t("compliments.experienceServiceTitle", "Experience Our Service")}</h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+              {t("compliments.experienceServiceDescription", "We are proud of the positive feedback we receive from our patients and partners. If you would like to experience our high-quality service, please get in touch.")}
+            </p>
+            <Link 
+              to="/contact"
+              className="inline-block px-10 py-4 bg-[#00855a] text-white text-xl font-semibold rounded-lg shadow hover:bg-[#006e4a] transition-colors"
+            >
+              {t("compliments.contactUsToday", "Contact Us Today")}
+            </Link>
+          </div>
+        </Container>
       </section>
     </div>
   )

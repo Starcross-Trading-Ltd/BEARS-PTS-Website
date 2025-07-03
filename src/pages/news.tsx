@@ -3,6 +3,8 @@ import { useLanguage } from '../components/language-provider'
 import TestimonialsSection from '../components/news/testimonials-section'
 import NewsGrid from '../components/news/news-grid'
 import HeroSection from '../components/common/hero-section'
+import { Section } from "@/components/ui/section";
+import { Container } from "@/components/ui/container";
 
 export default function NewsPage() {
   const { t } = useLanguage()
@@ -10,7 +12,7 @@ export default function NewsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Dramatic News Hero Section with animated badge and floating icons */}
-      <section className="relative py-20 bg-gradient-to-br from-[#0a2240] to-[#3b82f6] text-white text-center overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-primary-dark to-primary text-white text-center overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col items-center justify-center">
             <span className="inline-block px-6 py-2 bg-[#3b82f6] text-white rounded-full shadow-lg text-lg font-bold border-4 border-white animate-bob mb-6">
@@ -36,7 +38,7 @@ export default function NewsPage() {
       {/* Section intro with CTA */}
       <section className="py-8 text-center animate-fade-in-up">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0a2240] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             {t('news.articles.title')}
           </h2>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
@@ -57,6 +59,19 @@ export default function NewsPage() {
       <NewsGrid />
         </div>
       </div>
+
+      <Section>
+        <Container>
+          <div className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              {t("news.latestNewsTitle", "Latest News")}
+            </h2>
+            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              {t("news.latestNewsDescription", "Stay up-to-date with the latest news and announcements from BEARS.")}
+            </p>
+          </div>
+        </Container>
+      </Section>
     </div>
   )
 }

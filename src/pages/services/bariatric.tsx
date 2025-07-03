@@ -33,7 +33,7 @@ export default function BariatricServicePage() {
               </div>
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
+                  <h2 className="text-2xl font-bold text-primary mb-4">
                     {t("services.bariatric.whatIsTitle", "What is Bariatric Transport?")}
                   </h2>
                   <p className="text-gray-700 mb-4">
@@ -44,7 +44,7 @@ export default function BariatricServicePage() {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
+                  <h2 className="text-2xl font-bold text-primary mb-4">
                     {t("services.bariatric.ourServiceTitle", "Our Bariatric Service")}
                   </h2>
                   <p className="text-gray-700 mb-4">
@@ -55,7 +55,7 @@ export default function BariatricServicePage() {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
+                  <h2 className="text-2xl font-bold text-primary mb-4">
                     {t("services.bariatric.equipmentTitle", "Specialised Vehicles and Equipment")}
                   </h2>
                   <p className="text-gray-700 mb-4">
@@ -66,7 +66,7 @@ export default function BariatricServicePage() {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
+                  <h2 className="text-2xl font-bold text-primary mb-4">
                     {t("services.bariatric.personalisedCareTitle", "Personalised Care and Support")}
                   </h2>
                   <p className="text-gray-700 mb-4">
@@ -77,12 +77,12 @@ export default function BariatricServicePage() {
                 </div>
 
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0a2240] mb-4">
+                  <h2 className="text-2xl font-bold text-primary mb-4">
                     {t("serviceDetails.whyChooseUs", "Why Choose Us?")}
                   </h2>
                   <div className="space-y-3">
                     <div>
-                      <h3 className="font-semibold text-[#0a2240]">
+                      <h3 className="font-semibold text-primary">
                         {t("serviceDetails.safety", "Safety:")}
                       </h3>
                       <p className="text-gray-700">
@@ -90,7 +90,7 @@ export default function BariatricServicePage() {
                       </p>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#0a2240]">
+                      <h3 className="font-semibold text-primary">
                         {t("serviceDetails.reliability", "Reliability:")}
                       </h3>
                       <p className="text-gray-700">
@@ -98,7 +98,7 @@ export default function BariatricServicePage() {
                       </p>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#0a2240]">
+                      <h3 className="font-semibold text-primary">
                         {t("serviceDetails.comfort", "Comfort:")}
                       </h3>
                       <p className="text-gray-700">
@@ -106,7 +106,7 @@ export default function BariatricServicePage() {
                       </p>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-[#0a2240]">
+                      <h3 className="font-semibold text-primary">
                         {t("serviceDetails.personalisedService", "Personalised Service:")}
                       </h3>
                       <p className="text-gray-700">
