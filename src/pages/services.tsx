@@ -55,12 +55,6 @@ export default function ServicesPage() {
       description: t("services.neonatal.description", "At BEARS we recognize the critical nature of neonatal transportation for newborn and neonate patients requiring urgent care and specialist support."),
       link: "/services/neonatal",
       color: "pink"
-    },
-    {
-      title: t("services.clinicalHelpline.title", "BEARS Clinical Helpline"),
-      description: t("services.clinicalHelpline.description", "At BEARS, we strive to support our staff and provide 24/7 access to clinical support through our on-call clinical and specialist staff."),
-      link: "/services/clinical-helpline",
-      color: "gray"
     }
   ]
 

@@ -29,6 +29,11 @@ import ScrollToTop from './components/common/ScrollToTop'
 import TermsAndConditionsPage from './pages/terms-and-conditions'
 import CarbonReductionPlanPage from './pages/carbon-reduction-plan'
 import PatientSurveyPage from './pages/patient-survey'
+import AmbulanceCareAssistantSecure from './pages/vacancies/ambulance-care-assistant-secure'
+import FirstLineManager from './pages/vacancies/first-line-manager'
+import NeptsBusinessIntelligenceControlTeamManager from './pages/vacancies/nepts-business-intelligence-control-team-manager'
+import ParamedicVacancy from './pages/vacancies/paramedic'
+import ShiftManager from './pages/vacancies/shift-manager'
 
 function App() {
   return (
@@ -61,6 +66,11 @@ function App() {
               <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
               <Route path="/carbon-reduction-plan" element={<CarbonReductionPlanPage />} />
               <Route path="/patient-survey" element={<PatientSurveyPage />} />
+              <Route path="/vacancies/ambulance-care-assistant-secure" element={<AmbulanceCareAssistantSecure />} />
+              <Route path="/vacancies/first-line-manager" element={<FirstLineManager />} />
+              <Route path="/vacancies/nepts-business-intelligence-control-team-manager" element={<NeptsBusinessIntelligenceControlTeamManager />} />
+              <Route path="/vacancies/paramedic" element={<ParamedicVacancy />} />
+              <Route path="/vacancies/shift-manager" element={<ShiftManager />} />
             </Routes>
           </PageLayout>
         </Router>

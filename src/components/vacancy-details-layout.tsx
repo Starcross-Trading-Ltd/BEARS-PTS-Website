@@ -16,6 +16,7 @@ interface VacancyDetailsLayoutProps {
   aboutUs: React.ReactNode
   staffBenefits: React.ReactNode
   children?: React.ReactNode
+  applicationForm?: React.ReactNode
 }
 
 export default function VacancyDetailsLayout({
@@ -26,6 +27,7 @@ export default function VacancyDetailsLayout({
   aboutUs,
   staffBenefits,
   children,
+  applicationForm,
 }: VacancyDetailsLayoutProps) {
   return (
     <div className="bg-white min-h-screen py-10 px-2 md:px-0">
@@ -50,6 +52,11 @@ export default function VacancyDetailsLayout({
             <h2 className="text-2xl font-semibold mb-2">Staff Benefits</h2>
             <div className="text-gray-700 text-lg">{staffBenefits}</div>
           </section>
+          {applicationForm && (
+            <section id="apply" className="mb-8">
+              {applicationForm}
+            </section>
+          )}
         </div>
         {/* Sidebar */}
         <aside className="bg-gray-50 rounded-xl shadow p-6 h-fit flex flex-col gap-4">

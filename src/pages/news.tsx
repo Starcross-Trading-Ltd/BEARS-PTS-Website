@@ -1,6 +1,5 @@
 import React from 'react'
 import { useLanguage } from '../components/language-provider'
-import TestimonialsSection from '../components/news/testimonials-section'
 import NewsGrid from '../components/news/news-grid'
 import HeroSection from '../components/common/hero-section'
 import { Section } from "@/components/ui/section";
@@ -44,20 +43,12 @@ export default function NewsPage() {
           <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
             {t('news.hero.description')}
           </p>
-          <a href="/compliments" className="inline-block px-8 py-3 bg-[#3b82f6] text-white text-lg font-semibold rounded-lg shadow hover:bg-[#2563eb] transition-colors">
-            {t('testimonials.readMoreCompliments')}
-          </a>
         </div>
       </section>
 
       {/* Staggered fade-in for testimonials and news grid */}
-      <div className="space-y-24">
-        <div className="animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-      <TestimonialsSection />
-        </div>
-        <div className="animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-      <NewsGrid />
-        </div>
+      <div className="animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+        <NewsGrid />
       </div>
 
       <Section>

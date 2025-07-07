@@ -1,6 +1,5 @@
-
 export const CONTACT_INFO = {
-  phone: '+44 123 456 7890',
+  phone: '020 8202 5160',
   email: 'info@bearsambulance.com'
 } as const
 
