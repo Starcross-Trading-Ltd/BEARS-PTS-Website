@@ -7,8 +7,12 @@ const values = [
     key: 'safety',
     title: 'Safety',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-white">
-        <path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" fill="currentColor"/>
+      // Shield SVG for Safety (red)
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+        <path d="M24 4L8 10v10c0 10.5 7.25 20.25 16 24 8.75-3.75 16-13.5 16-24V10L24 4z" fill="#e53935"/>
+        <path d="M24 4v40c-8.75-3.75-16-13.5-16-24V10l16-6z" fill="#f44336" fillOpacity=".7"/>
+        <path d="M24 24v-8" stroke="#fff" strokeWidth="3" strokeLinecap="round"/>
+        <circle cx="24" cy="30" r="2.5" fill="#fff"/>
       </svg>
     ),
     color: 'bg-[#e53935] text-white',
@@ -22,8 +26,10 @@ const values = [
     key: 'comfort',
     title: 'Comfort',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-white">
-        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+      // Heart SVG for Comfort (orange/yellow)
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+        <path d="M24 42s-13-8.35-13-18.5C11 14.5 16.5 10 24 16c7.5-6 13 1.5 13 7.5C37 33.65 24 42 24 42z" fill="#f9a825"/>
+        <path d="M24 42s-13-8.35-13-18.5C11 14.5 16.5 10 24 16v26z" fill="#ffd54f" fillOpacity=".7"/>
       </svg>
     ),
     color: 'bg-[#f9a825] text-white',
@@ -36,8 +42,12 @@ const values = [
     key: 'care',
     title: 'Care',
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-white">
-        <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z" fill="currentColor"/>
+      // Helping hands SVG for Care (purple)
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
+        <path d="M24 44c-6-6-12-10-12-16 0-4.5 3.5-8 8-8 2.5 0 4.5 1.5 6 3.5C27.5 21.5 29.5 20 32 20c4.5 0 8 3.5 8 8 0 6-6 10-12 16z" fill="#6c3483"/>
+        <path d="M24 44c-6-6-12-10-12-16 0-4.5 3.5-8 8-8 2.5 0 4.5 1.5 6 3.5V44z" fill="#a569bd" fillOpacity=".7"/>
+        <path d="M24 28v-4" stroke="#fff" strokeWidth="3" strokeLinecap="round"/>
+        <circle cx="24" cy="32" r="2.5" fill="#fff"/>
       </svg>
     ),
     color: 'bg-[#6c3483] text-white',

@@ -12,7 +12,7 @@ export default function ECMOServicePage() {
       <HeroSection
         title={t("services.ecmo.title", "ECMO Service")}
         subtitle={t("services.ecmo.description", "Specialist transport for patients requiring extracorporeal membrane oxygenation (ECMO).")}
-        image="/images/ecmo-service.jpg"
+        image="/images/ambulance.png"
         imageAlt={t("services.ecmo.imageAlt", "ECMO Service Team")}
         imagePosition="right"
         bgColor="rgba(167,139,250,0.85)"
@@ -25,7 +25,7 @@ export default function ECMOServicePage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <img 
-                  src="/images/ecmo-service.jpg" 
+                  src="/images/ecmo_1.png" 
                   alt={t("services.ecmo.imageAlt", "ECMO Service Vehicle")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />
@@ -47,7 +47,7 @@ export default function ECMOServicePage() {
 
                 <div className="mb-8">
                   <img 
-                    src="/images/ecmo-team.jpg" 
+                    src="/images/nepts_1.png" 
                     alt={t("services.ecmo.teamImageAlt", "ECMO Team")}
                     className="w-full h-64 object-cover rounded-lg"
                   />

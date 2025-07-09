@@ -12,7 +12,7 @@ export default function HighDependancePage() {
       <HeroSection
         title={t("services.highDependance.title", "High Dependence Service")}
         subtitle={t("services.highDependance.description", "Safe and reliable transport for high-dependency patients.")}
-        image="/images/high-dependance.jpg"
+        image="/images/hd_1.png"
         imageAlt={t("services.highDependance.imageAlt", "High Dependence Team")}
         imagePosition="right"
         bgColor="rgba(59,130,246,0.85)"

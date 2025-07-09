@@ -13,7 +13,7 @@ export default function BariatricServicePage() {
       <HeroSection
         title={t("services.bariatric.title", "Bariatric Service")}
         subtitle={t("services.bariatric.description", "We understand the unique challenges and specialised care required for the transportation of bariatric patients.")}
-        image="/images/bariatric.jpg"
+        image="/images/para_2.png"
         imageAlt={t("services.bariatric.imageAlt", "Bariatric Service Team")}
         imagePosition="right"
         bgColor="rgba(251,146,60,0.85)"
@@ -26,7 +26,7 @@ export default function BariatricServicePage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <img 
-                  src="/images/bariatric.jpg" 
+                  src="/images/nepts_1.png" 
                   alt={t("services.bariatric.imageAlt", "Bariatric Service Team")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />

@@ -12,7 +12,7 @@ export default function FleetPage() {
       <HeroSection
         title={t('fleet.ourFleetTitle')}
         subtitle={t('fleet.fleetDescription')}
-        image="/images/fleet/ambulance-main.jpg"
+        image="/images/ambulance.png"
         imageAlt="BEARS ambulance"
         imagePosition="right"
       />
@@ -28,8 +28,8 @@ export default function FleetPage() {
                 </p>
                 <div className="mb-8">
                   <img 
-                    src="/images/fleet/ambulance-lineup.jpg" 
-                    alt="BEARS ambulance fleet"
+                    src="/images/fleet_five.png" 
+                    alt="BEARS ambulance fleet - five vehicles"
                     className="w-full h-64 object-cover rounded-xl shadow border-4 border-white"
                   />
                 </div>
@@ -41,23 +41,28 @@ export default function FleetPage() {
                 </p>
                 <div className="grid grid-cols-2 gap-4 mb-8">
                   <img 
-                    src="/images/fleet/driver-1.jpg" 
-                    alt="BEARS driver"
+                    src="/images/fleet_four.png" 
+                    alt="BEARS ambulance fleet - four vehicles"
                     className="w-full h-32 object-cover rounded-xl shadow"
                   />
                   <img 
-                    src="/images/fleet/driver-2.jpg" 
-                    alt="BEARS driver"
+                    src="/images/fleet_one.png" 
+                    alt="BEARS ambulance fleet - one vehicle"
                     className="w-full h-32 object-cover rounded-xl shadow"
                   />
                   <img 
-                    src="/images/fleet/driver-3.jpg" 
-                    alt="BEARS driver"
+                    src="/images/fleet_six.png" 
+                    alt="BEARS ambulance fleet - six vehicles"
                     className="w-full h-32 object-cover rounded-xl shadow"
                   />
                   <img 
-                    src="/images/fleet/driver-4.jpg" 
-                    alt="BEARS driver"
+                    src="/images/fleet_three.png" 
+                    alt="BEARS ambulance fleet - three vehicles"
+                    className="w-full h-32 object-cover rounded-xl shadow"
+                  />
+                  <img 
+                    src="/images/fleet_two.png" 
+                    alt="BEARS ambulance fleet - two vehicles"
                     className="w-full h-32 object-cover rounded-xl shadow"
                   />
                 </div>

@@ -12,7 +12,7 @@ const MentalHealthPage: React.FC = () => {
       <HeroSection
         title={t("services.mentalHealth.title", "Mental Health Service")}
         subtitle={t("services.mentalHealth.description", "Compassionate and secure transport for mental health patients.")}
-        image="/images/mental-health.jpg"
+        image="/images/mh_1.png"
         imageAlt={t("services.mentalHealth.imageAlt", "Mental Health Vehicle")}
         imagePosition="right"
         bgColor="rgba(34,197,94,0.85)"
@@ -41,7 +41,7 @@ const MentalHealthPage: React.FC = () => {
               </section>
               <div className="flex justify-center my-8">
                 <img
-                  src="/images/mental-health-vehicle-1.jpg"
+                  src="/images/mh_2.png"
                   alt="BEARS Mental Health Transport Vehicle"
                   className="rounded-xl shadow-lg w-full max-w-md object-cover"
                 />

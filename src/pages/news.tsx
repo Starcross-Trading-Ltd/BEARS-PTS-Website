@@ -48,7 +48,7 @@ export default function NewsPage() {
 
       {/* Staggered fade-in for testimonials and news grid */}
       <div className="animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-        <NewsGrid />
+      <NewsGrid />
       </div>
 
       <Section>

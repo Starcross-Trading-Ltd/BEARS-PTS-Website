@@ -12,7 +12,7 @@ export default function NeonatalPage() {
       <HeroSection
         title={t("services.neonatal.title", "Neonatal Service")}
         subtitle={t("services.neonatal.description", "Specialist neonatal transport with advanced care and equipment.")}
-        image="/images/neonatal.jpg"
+        image="/images/neo_1.png"
         imageAlt={t("services.neonatal.imageAlt", "Neonatal Team")}
         imagePosition="right"
         bgColor="rgba(236,72,153,0.85)"
@@ -24,7 +24,7 @@ export default function NeonatalPage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="my-8">
                 <img 
-                  src="/images/neonatal-team.jpg" 
+                  src="/images/neo_2.png" 
                   alt={t("neonatal.teamImageAlt", "Neonatal Transport Team")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />
@@ -95,7 +95,7 @@ export default function NeonatalPage() {
               </div>
               <div className="my-8">
                 <img 
-                  src="/images/neonatal-vehicle.jpg" 
+                  src="/images/neo_3.png" 
                   alt={t("neonatal.vehicleImageAlt", "Neonatal Transport Vehicle")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />

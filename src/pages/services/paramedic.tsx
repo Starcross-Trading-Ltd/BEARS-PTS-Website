@@ -12,7 +12,7 @@ export default function ParamedicServicePage() {
       <HeroSection
         title={t("services.paramedic.title", "Paramedic Service")}
         subtitle={t("services.paramedic.description", "Professional paramedic transport for urgent and planned care.")}
-        image="/images/paramedic.jpg"
+        image="/images/ambulance.png"
         imageAlt={t("services.paramedic.imageAlt", "Paramedic Team")}
         imagePosition="right"
         bgColor="rgba(239,68,68,0.85)"
@@ -25,7 +25,7 @@ export default function ParamedicServicePage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <img 
-                  src="/images/paramedic-service.jpg" 
+                  src="/images/para_1.png" 
                   alt={t("services.paramedic.imageAlt", "Paramedic Service Team")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />
@@ -89,7 +89,7 @@ export default function ParamedicServicePage() {
               </div>
               <div className="mb-8">
                 <img 
-                  src="/images/paramedic-care.jpg" 
+                  src="/images/para_2.png" 
                   alt={t("services.paramedic.careImageAlt", "Paramedic providing care")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />

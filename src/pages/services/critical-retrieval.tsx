@@ -12,7 +12,7 @@ export default function CriticalRetrievalPage() {
       <HeroSection
         title={t("services.criticalRetrieval.title", "Critical Retrieval Service")}
         subtitle={t("services.criticalRetrieval.description", "Expert care and rapid response for critically ill patients requiring urgent transfer.")}
-        image="/images/critical-retrieval.jpg"
+        image="/images/spec_1.png"
         imageAlt={t("services.criticalRetrieval.imageAlt", "Critical Retrieval Team")}
         imagePosition="right"
         bgColor="rgba(59,130,246,0.85)"
@@ -25,7 +25,7 @@ export default function CriticalRetrievalPage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <img 
-                  src="/images/critical-retrieval.jpg" 
+                  src="/images/spec_2.png" 
                   alt={t("services.criticalRetrieval.imageAlt", "Critical Retrieval Vehicle")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />
@@ -47,7 +47,7 @@ export default function CriticalRetrievalPage() {
 
                 <div className="mb-8">
                   <img 
-                    src="/images/critical-vehicles.jpg" 
+                    src="/images/ambulance.png" 
                     alt={t("services.criticalRetrieval.vehiclesImageAlt", "Critical Care Vehicles")}
                     className="w-full h-64 object-cover rounded-lg"
                   />

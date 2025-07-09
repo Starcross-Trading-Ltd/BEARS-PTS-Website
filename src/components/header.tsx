@@ -107,12 +107,12 @@ const Header: React.FC = () => {
                 )}
               </div>
             ))}
-            <LanguageSelector />
+            {/* <LanguageSelector /> */}
           </div>
         </div>
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-4">
-            <LanguageSelector />
+            {/* <LanguageSelector /> */}
             <button
               onClick={toggleMenu}
             className="p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-green-50 focus:outline-none focus:ring-2 focus:ring-primary transition-all"

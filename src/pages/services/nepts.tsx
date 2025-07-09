@@ -12,7 +12,7 @@ export default function NEPTSServicePage() {
       <HeroSection
         title={t("services.nepts.title", "NEPTS Service")}
         subtitle={t("services.nepts.description", "Non-emergency patient transport with care and comfort.")}
-        image="/images/nepts.jpg"
+        image="/images/nepts_1.png"
         imageAlt={t("services.nepts.imageAlt", "NEPTS Vehicle")}
         imagePosition="right"
         bgColor="rgba(34,197,94,0.85)"
@@ -25,7 +25,7 @@ export default function NEPTSServicePage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <img 
-                  src="/images/nepts.jpg" 
+                  src="/images/ambulance.png" 
                   alt={t("services.nepts.imageAlt", "NEPTS Service Team")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />
