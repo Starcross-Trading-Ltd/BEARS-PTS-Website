@@ -40,6 +40,7 @@ const Header: React.FC = () => {
     },
     { label: t("navigation.compliments", "Compliments"), href: "/compliments" },
     { label: t("navigation.contact", "Contact"), href: ROUTES.contact },
+    { label: t("navigation.book", "Book"), href: "/bookings" },
     { label: t("navigation.careers", "Careers"), href: ROUTES.careers },
     { label: t("navigation.news", "News"), href: ROUTES.news }
   ]
@@ -78,7 +79,9 @@ const Header: React.FC = () => {
                   <Link
                     to={item.href}
                     className={`px-4 py-2 rounded-lg text-base font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary ${
-                      isActive(item.href)
+                      item.label === t("navigation.book", "Book")
+                        ? 'bg-[#388e6c] text-white shadow-lg hover:bg-[#2e7358] focus:ring-[#388e6c] px-6 py-2.5 text-lg'
+                        : isActive(item.href)
                         ? 'text-primary bg-green-50 shadow-sm'
                         : 'text-gray-700 hover:text-primary hover:bg-green-50/60'
                     }`}
@@ -133,10 +136,12 @@ const Header: React.FC = () => {
                     <Link
                       to={item.href}
                       onClick={item.submenu ? undefined : toggleMenu}
-                    className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all flex-1 ${
-                        isActive(item.href)
-                        ? 'text-primary bg-green-50 shadow-sm'
-                        : 'text-gray-700 hover:text-primary hover:bg-green-50/60'
+                      className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all flex-1 ${
+                        item.label === t("navigation.book", "Book")
+                          ? 'bg-[#388e6c] text-white shadow-lg hover:bg-[#2e7358] focus:ring-[#388e6c] px-7 py-4 text-xl'
+                          : isActive(item.href)
+                          ? 'text-primary bg-green-50 shadow-sm'
+                          : 'text-gray-700 hover:text-primary hover:bg-green-50/60'
                       }`}
                     >
                       {item.label}

@@ -6,8 +6,9 @@ import { useLanguage } from '../language-provider'
 const icons = [
   <svg key="cross" width="32" height="32" viewBox="0 0 32 32" className="text-blue-500"><rect x="13" y="5" width="6" height="22" rx="3" fill="currentColor"/><rect x="5" y="13" width="22" height="6" rx="3" fill="currentColor"/></svg>,
   // Floating bear image
-  <img key="bear-waving" src="/images/Bear_waving-1.png" alt="Waving Bear" width={96} height={96} className="object-contain -translate-y-6" />,
-  <svg key="stethoscope" width="32" height="32" viewBox="0 0 32 32" className="text-green-500"><circle cx="24" cy="24" r="4" fill="currentColor"/><path d="M8 6v8a8 8 0 0 0 16 0V6" stroke="currentColor" strokeWidth="2" fill="none"/><path d="M16 22v4" stroke="currentColor" strokeWidth="2"/></svg>,
+  <img key="bear-waving" src="/images/Bear_waving-1.png" alt="Waving Bear" width={96} height={96} className="object-contain -translate-y-6" />, 
+  // Replace stethoscope icon with SVG from stethoscope-svgrepo-com.svg
+  <svg key="stethoscope" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-red-500"><g id="SVGRepo_iconCarrier"> <path d="M5 4H4C3.44772 4 3 4.44772 3 5V9C3 11.7614 5.23858 14 8 14V14C10.7614 14 13 11.7614 13 9V5C13 4.44772 12.5523 4 12 4H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M8 14V15.5C8 18.5376 10.4624 21 13.5 21V21C16.5376 21 19 18.5376 19 15.5V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M10 3V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <path d="M6 3V5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> <circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </g></svg>
 ]
 
 export default function HeroSection() {

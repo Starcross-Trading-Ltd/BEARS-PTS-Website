@@ -34,6 +34,7 @@ import FirstLineManager from './pages/vacancies/first-line-manager'
 import NeptsBusinessIntelligenceControlTeamManager from './pages/vacancies/nepts-business-intelligence-control-team-manager'
 import ParamedicVacancy from './pages/vacancies/paramedic'
 import ShiftManager from './pages/vacancies/shift-manager'
+import BookingsPage from './pages/bookings'
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function App() {
               <Route path="/vacancies/nepts-business-intelligence-control-team-manager" element={<NeptsBusinessIntelligenceControlTeamManager />} />
               <Route path="/vacancies/paramedic" element={<ParamedicVacancy />} />
               <Route path="/vacancies/shift-manager" element={<ShiftManager />} />
+              <Route path="/bookings" element={<BookingsPage />} />
             </Routes>
           </PageLayout>
         </Router>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useLanguage } from '../components/language-provider'
 import { Link } from 'react-router-dom'
 import { Hospital, Bus, HeartPulse, Stethoscope } from 'lucide-react'
@@ -7,23 +7,24 @@ import { Hospital, Bus, HeartPulse, Stethoscope } from 'lucide-react'
 const FLIP_AXIS: 'y' | 'x' = 'y'
 
 // Odometer/ticker animation for numbers
-function Odometer({ value, duration = 1200 }: { value: number, duration?: number }) {
+function Odometer({ value, duration = 1200, start = true }: { value: number, duration?: number, start?: boolean }) {
   const [display, setDisplay] = React.useState('0')
-  React.useEffect(() => {
-    let start = 0
+  useEffect(() => {
+    if (!start) return setDisplay('0')
+    let startVal = 0
     const end = value
     const startTime = performance.now()
     function animate(now: number) {
       const elapsed = now - startTime
       const progress = Math.min(elapsed / duration, 1)
-      const current = Math.floor(start + (end - start) * progress)
+      const current = Math.floor(startVal + (end - startVal) * progress)
       setDisplay(current.toLocaleString())
       if (progress < 1) {
         requestAnimationFrame(animate)
       }
     }
     requestAnimationFrame(animate)
-  }, [value, duration])
+  }, [value, duration, start])
   return (
     <span className="odometer text-6xl font-extrabold text-primary tracking-tight">
       {display}
@@ -31,7 +32,7 @@ function Odometer({ value, duration = 1200 }: { value: number, duration?: number
   )
 }
 
-function FlipCard({ number, label, description, link, icon, delay, t }: { number: number, label: string, description: string, link: string, icon: React.ReactNode, delay: number, t: Function }) {
+function FlipCard({ number, label, description, link, icon, delay, t, start }: { number: number, label: string, description: string, link: string, icon: React.ReactNode, delay: number, t: Function, start: boolean }) {
   return (
     <Link
       to={link}
@@ -43,7 +44,7 @@ function FlipCard({ number, label, description, link, icon, delay, t }: { number
       <div className={`flip-card-inner flip-${FLIP_AXIS}`}>
         <div className="flip-card-front flex flex-col items-center justify-center bg-white p-10 rounded-2xl shadow-2xl border-t-8 border-primary h-full">
           {icon}
-          <Odometer value={number} />
+          <Odometer value={number} start={start} />
           <h3 className="text-2xl font-bold text-primary mb-2 uppercase tracking-wide mt-4">{label}</h3>
         </div>
         <div className="flip-card-back flex flex-col items-center justify-center bg-primary text-white p-10 rounded-2xl shadow-2xl border-t-8 border-primary h-full">
@@ -58,11 +59,24 @@ function FlipCard({ number, label, description, link, icon, delay, t }: { number
 export default function BearsInNumbersPage() {
   const { t } = useLanguage()
 
+  const [showEarth, setShowEarth] = useState(true)
+  const [showContent, setShowContent] = useState(false)
   const [milesDisplay, setMilesDisplay] = useState(0)
-  React.useEffect(() => {
+
+  // Earth fade-in, then content fade-in and count
+  useEffect(() => {
+    const earthTimeout = setTimeout(() => {
+      setShowContent(true)
+    }, 1800) // 1.8s for earth fade, then show content
+    return () => clearTimeout(earthTimeout)
+  }, [])
+
+  // Only start count when content is visible
+  useEffect(() => {
+    if (!showContent) return
     let start = 0
     const end = 5058454
-    const duration = 2000 // A bit slower for effect
+    const duration = 6000
     const startTime = performance.now()
     function animate(now: number) {
       const elapsed = now - startTime
@@ -74,7 +88,7 @@ export default function BearsInNumbersPage() {
       }
     }
     requestAnimationFrame(animate)
-  }, [])
+  }, [showContent])
 
   const stats = [
     { 
@@ -113,7 +127,7 @@ export default function BearsInNumbersPage() {
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-green-50 to-white" />
         <div
-          className="absolute inset-0 flex items-center justify-center pointer-events-none"
+          className={`absolute inset-0 flex items-center justify-center pointer-events-none transition-opacity duration-1000 ${showEarth ? 'opacity-100' : 'opacity-100'}`}
           style={{ zIndex: 2 }}
         >
           <img
@@ -132,7 +146,7 @@ export default function BearsInNumbersPage() {
       </div>
 
       {/* Main content container with a z-index to ensure it's on top */}
-      <div className="relative z-10">
+      <div className={`relative z-10 transition-opacity duration-1000 ${showContent ? 'opacity-100' : 'opacity-0 pointer-events-none select-none'}`}>
 
         {/* Merged Hero and Miles Driven Section */}
         <section className="pt-32 pb-20 text-center">
@@ -163,7 +177,7 @@ export default function BearsInNumbersPage() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
               {stats.map((stat, index) => (
-                <FlipCard key={stat.label} {...stat} delay={index * 0.2 + 0.2} t={t} />
+                <FlipCard key={stat.label} {...stat} delay={index * 0.2 + 0.2} t={t} start={showContent} />
               ))}
             </div>
           </div>

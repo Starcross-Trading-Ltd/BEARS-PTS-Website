@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Header from './header';
 import Footer from './footer';
+import Banner from './banner';
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -18,6 +19,7 @@ const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
     <div className={`min-h-screen ${backgroundClass}`}>
       <Header />
       <main>{children}</main>
+      <Banner />
       <Footer />
     </div>
   );
