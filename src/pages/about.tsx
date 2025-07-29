@@ -60,7 +60,7 @@ const values = [
     key: 'comfort',
     title: 'Comfort',
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12"><path d="M24 42s-13-8.35-13-18.5C11 14.5 16.5 10 24 16c7.5-6 13 1.5 13 7.5C37 33.65 24 42 24 42z" fill="#f9a825"/><path d="M24 42s-13-8.35-13-18.5C11 14.5 16.5 10 24 16v26z" fill="#ffd54f" fillOpacity=".7"/></svg>
+      <img src="/images/values/comfort.svg" alt="Comfort" className="w-12 h-12" />
     ),
     desc: 'State-of-the-art equipment and extra-mile service for every patient journey.'
   },
@@ -68,7 +68,7 @@ const values = [
     key: 'care',
     title: 'Care',
     icon: (
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-12 h-12"><path d="M24 44c-6-6-12-10-12-16 0-4.5 3.5-8 8-8 2.5 0 4.5 1.5 6 3.5C27.5 21.5 29.5 20 32 20c4.5 0 8 3.5 8 8 0 6-6 10-12 16z" fill="#6c3483"/><path d="M24 44c-6-6-12-10-12-16 0-4.5 3.5-8 8-8 2.5 0 4.5 1.5 6 3.5V44z" fill="#a569bd" fillOpacity=".7"/><path d="M24 28v-4" stroke="#fff" strokeWidth="3" strokeLinecap="round"/><circle cx="24" cy="32" r="2.5" fill="#fff"/></svg>
+      <img src="/images/values/care_svg.svg" alt="Care" className="w-12 h-12" />
     ),
     desc: 'Collaboration, empathy, and a gold-standard team for every patient.'
   }
@@ -99,7 +99,7 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="flex-1 flex justify-center animate-fade-in-up delay-300">
-            <img src="/images/about.png" alt="BEARS Team" className="rounded-3xl shadow-2xl w-full max-w-lg object-cover border-4 border-white" />
+            <img src="/images/about.JPG" alt="BEARS Team" className="rounded-3xl shadow-2xl w-full max-w-lg object-cover border-4 border-white" />
           </div>
         </div>
       </section>
@@ -151,7 +151,7 @@ export default function AboutPage() {
           <blockquote className="text-2xl md:text-3xl font-semibold text-primary italic mb-6 animate-fade-in-up">
             “At BEARS, every journey is a promise of safety, comfort, and care. Our team is dedicated to treating every patient as family, every time.”
           </blockquote>
-          <div className="text-lg font-bold text-gray-700 animate-fade-in-up delay-100">— BEARS Leadership Team</div>
+          <div className="text-lg font-bold text-gray-700 animate-fade-in-up delay-100">— BEARS Senior Management Team</div>
         </div>
       </section>
 

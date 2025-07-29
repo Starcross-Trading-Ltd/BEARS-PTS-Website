@@ -19,6 +19,8 @@ const bannerImages = [
   '/images/banner/spinner_fifteen.png',
   '/images/banner/spinner_sixteen.png',
   '/images/banner/spinner_seventeen.png',
+  '/images/banner/kent_medway.png',
+  '/images/banner/sussex.png',
 ];
 
 const Banner: React.FC = () => {

@@ -8,6 +8,7 @@ interface HeroSectionProps {
   imagePosition?: 'left' | 'right' | 'top';
   bgColor?: string; // e.g. '#0a2240' or '#388e6c'
   children?: React.ReactNode;
+  className?: string; // Allow custom classes for background, etc.
 }
 
 export default function HeroSection({
@@ -18,6 +19,7 @@ export default function HeroSection({
   imagePosition = 'right',
   bgColor = '#7DA779',
   children,
+  className = '',
 }: HeroSectionProps) {
   // Layout logic
   const isImageLeft = imagePosition === 'left';
@@ -25,8 +27,8 @@ export default function HeroSection({
 
   return (
     <section
-      className={`relative text-white py-20 overflow-hidden`}
-      style={{ backgroundColor: bgColor }}
+      className={`relative text-white py-20 overflow-hidden ${className}`}
+      style={{ backgroundColor: !className ? bgColor : undefined }}
     >
       {/* Subtle abstract wave SVG overlay at the bottom, full viewport width */}
       <div className="absolute left-0 right-0 bottom-0 w-screen z-0 pointer-events-none" style={{ height: '120px', minWidth: '100vw' }} aria-hidden="true">

@@ -234,19 +234,16 @@ export default function BearsInNumbersPage() {
         {/* Emotive Meaning Section */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-              <div className="flex items-center justify-center">
-                <div className="w-64 h-64 rounded-full bg-gradient-to-br from-gray-700 to-primary flex items-center justify-center shadow-2xl">
-                  <span className="text-white text-7xl" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>🤝</span>
+            <div className="flex justify-center">
+              <div className="relative rounded-3xl bg-white/90 backdrop-blur-md p-14 shadow-2xl max-w-2xl w-full text-center overflow-hidden border-4 border-transparent" style={{
+                backgroundImage: 'radial-gradient(circle at 80% 20%, #e0f7fa 0%, transparent 60%), radial-gradient(circle at 20% 80%, #c7ffd8 0%, transparent 60%)',
+                borderImage: 'linear-gradient(90deg, #388e6c, #0a2240, #388e6c) 1',
+              }}>
+                <div className="text-4xl md:text-5xl font-extrabold text-primary mb-4 leading-tight" style={{fontFamily: 'inherit', fontStyle: 'normal', textShadow: '0 2px 12px #38bdf833'}}>
+                  Protecting our future, one patient at a time.
                 </div>
-              </div>
-              <div>
-                <div className="rounded-2xl bg-white/80 backdrop-blur-md p-8 shadow-2xl">
-                  <h2 className="text-4xl font-extrabold mb-8 text-[#0a2240]">What These Numbers Mean</h2>
-                  <div className="space-y-8 text-lg text-[#0a2240]">
-                    <p>Every number is a life touched, a family supported, a journey made safer. Behind every statistic is a story of compassion, professionalism, and hope.</p>
-                    <p>Thank you to our dedicated team, our partners, and every patient who has been part of the BEARS journey.</p>
-                  </div>
+                <div className="mt-2 text-base text-[#0a2240]/80 font-semibold tracking-wide">
+                  BEARS Patient Transport
                 </div>
               </div>
             </div>

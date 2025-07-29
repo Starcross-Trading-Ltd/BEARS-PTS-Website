@@ -26,11 +26,7 @@ const values = [
     key: 'comfort',
     title: 'Comfort',
     icon: (
-      // Heart SVG for Comfort (orange/yellow)
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-        <path d="M24 42s-13-8.35-13-18.5C11 14.5 16.5 10 24 16c7.5-6 13 1.5 13 7.5C37 33.65 24 42 24 42z" fill="#f9a825"/>
-        <path d="M24 42s-13-8.35-13-18.5C11 14.5 16.5 10 24 16v26z" fill="#ffd54f" fillOpacity=".7"/>
-      </svg>
+      <img src="/images/values/comfort_old.svg" alt="Comfort" className="w-full h-full" />
     ),
     color: 'bg-[#f9a825] text-white',
     desc: [
@@ -42,13 +38,7 @@ const values = [
     key: 'care',
     title: 'Care',
     icon: (
-      // Helping hands SVG for Care (purple)
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-        <path d="M24 44c-6-6-12-10-12-16 0-4.5 3.5-8 8-8 2.5 0 4.5 1.5 6 3.5C27.5 21.5 29.5 20 32 20c4.5 0 8 3.5 8 8 0 6-6 10-12 16z" fill="#6c3483"/>
-        <path d="M24 44c-6-6-12-10-12-16 0-4.5 3.5-8 8-8 2.5 0 4.5 1.5 6 3.5V44z" fill="#a569bd" fillOpacity=".7"/>
-        <path d="M24 28v-4" stroke="#fff" strokeWidth="3" strokeLinecap="round"/>
-        <circle cx="24" cy="32" r="2.5" fill="#fff"/>
-      </svg>
+      <img src="/images/values/care_svg.svg" alt="Care" className="w-full h-full" />
     ),
     color: 'bg-[#6c3483] text-white',
     desc: [

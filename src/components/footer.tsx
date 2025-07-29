@@ -30,6 +30,11 @@ const Footer: React.FC = () => {
             <p className="text-gray-300 text-base mb-2">
               {t("home.heroTitle", "Providing Safety, Comfort and Care in patient transport services.")}
             </p>
+            <img 
+              src="/CQC Cert.png" 
+              alt="CQC Certificate" 
+              className="ml-7 mt-4 mb-2 max-w-[180px] w-full h-auto rounded shadow-lg bg-white/80 p-2"
+            />
           </div>
           <div>
             <h3 className="text-xl font-extrabold mb-4 tracking-tight">{t("footer.quickLinks", "Quick Links")}</h3>
