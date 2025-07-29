@@ -192,6 +192,13 @@ export default function CubsPage() {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-blue-500/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </a>
             <a
+              href="/autumn-ball"
+              className="group px-8 py-4 bg-amber-500 text-white font-semibold rounded-xl shadow-lg hover:bg-amber-600 transition-all duration-300 transform hover:scale-105 relative overflow-hidden"
+            >
+              <span className="relative z-10">Autumn Ball Gallery</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-amber-600/20 to-orange-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+            </a>
+            <a
               href="/contact"
               className="group px-8 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105 relative overflow-hidden"
             >

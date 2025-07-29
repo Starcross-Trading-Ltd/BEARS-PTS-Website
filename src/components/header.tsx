@@ -70,7 +70,7 @@ const Header: React.FC = () => {
                 className="w-10 h-10 object-contain rounded-full"
               />
             </div>
-            <span className="ml-3 text-xl font-bold text-gray-900">BEARS</span>
+            <span className="ml-3 text-xl font-bold text-gray-900">BEARS PTS</span>
           </Link>
           
           {/* Desktop Navigation */}

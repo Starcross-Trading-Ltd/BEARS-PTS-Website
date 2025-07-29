@@ -35,25 +35,18 @@ export default function TeamPage() {
       image: "/images/meet_bears_seven.jpg",
     },
     {
-      key: "claireLawrence",
-      image: "/images/meet_bears_eight.png",
-    },
-    {
       key: "jonardCartagena",
       image: "/images/meet_bears_nine.jpg",
     },
     {
-      key: "katherineCrossman",
-      image: "/images/meet_bears_ten.png",
+      key: "adrian",
+      image: "/images/2025_BEARS_027.jpg",
     },
     {
-      key: "rossStevenson",
-      image: "/images/meet_bears_eleven.png",
+      key: "ojo",
+      image: "/images/2025_BEARS_496.jpg",
     },
-    {
-      key: "warrenHazelton",
-      image: "/images/meet_bears_twelve.png",
-    },
+
   ]
 
   return (
@@ -102,6 +95,8 @@ export default function TeamPage() {
                                   member.key === "nosaIdahosa" ? 'center 40%' :
                                   member.key === "osmanSadiq" ? 'center 10%' :
                                   member.key === "michaelOkae" ? 'center 10%' :
+                                  member.key === "adrian" ? 'center 35%' :
+                                  member.key === "ojo" ? 'center 4%' :
                                   'center 20%'
                     }}
                   />

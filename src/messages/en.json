@@ -480,30 +480,21 @@
       "title": "Head of Compliance & Support Services",
       "description": "Michael is dedicated to ensuring a safe and efficient environment for staff and clients. He values collaboration and effective service delivery, and enjoys reading, podcasts, and family time."
     },
-    "claireLawrence": {
-      "name": "Claire Lawrence",
-      "title": "Business Intelligence Control Room Manager",
-      "description": "Claire has over 16 years' experience in emergency and non-emergency patient transport. She is committed to exceptional customer service and training new team members. Outside of work, Claire enjoys baking, singing, and spending time with friends and family."
-    },
+
     "jonardCartagena": {
       "name": "Jonard Cartagena",
       "title": "Head of Fleet Operations",
       "description": "Jonard has over 15 years' experience in ambulance care and fleet management. He is passionate about vehicle compliance and staff training, and has helped reduce accident rates at BEARS."
     },
-    "katherineCrossman": {
-      "name": "Katherine Crossman, BSc, MCPara",
-      "title": "Head of Paramedic Operations",
-      "description": "Katherine is a HCPC registered paramedic with extensive experience in paramedic operations and clinical governance. She manages BEARS' clinical advice line, providing 24/7 support to crews."
+    "adrian": {
+      "name": "Adrian",
+      "title": "Team Member",
+      "description": "Adrian is a dedicated member of the BEARS team, committed to providing exceptional patient care and transport services."
     },
-    "rossStevenson": {
-      "name": "Ross Stevenson, DipHE MCPara",
-      "title": "Paramedic and BEARS Training Lead",
-      "description": "Ross is a registered paramedic and educator with over a decade of experience. He leads the BEARS Training Academy, empowering staff to provide the highest levels of patient care and supporting their career development."
-    },
-    "warrenHazelton": {
-      "name": "Warren Hazelton",
-      "title": "Team Leader Special Contracts",
-      "description": "Warren is an enthusiastic team leader and one of BEARS' rising stars."
+    "ojo": {
+      "name": "Ojo",
+      "title": "Team Member",
+      "description": "Ojo is a valued member of the BEARS team, dedicated to ensuring safe and comfortable patient transport services."
     }
   },
   "cubs": {

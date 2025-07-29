@@ -23,9 +23,9 @@ export default function ServicesPage() {
       description: t("services.criticalRetrieval.description", "24/7 availability providing critical care services all of whom are received with high standards in response care units."),
       link: "/services/critical-retrieval", 
       icon: Heart,
-      color: "from-red-500 to-red-600",
-      bgColor: "bg-red-50",
-      borderColor: "border-red-200"
+      color: "from-blue-300 to-blue-400",
+      bgColor: "bg-blue-50",
+      borderColor: "border-blue-300"
     },
     {
       title: t("services.ecmo.title", "ECMO - Extracorporeal Membrane Oxygenation"),

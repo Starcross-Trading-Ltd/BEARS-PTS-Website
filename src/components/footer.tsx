@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-blue-900 text-white py-12 border-t border-green-900/20" role="contentinfo">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12">
           <div>
             <h3 className="text-xl font-extrabold mb-4 tracking-tight">{COMPANY_INFO.name}</h3>
             <p className="text-gray-300 text-base mb-2">
@@ -80,6 +80,19 @@ const Footer: React.FC = () => {
                 ))}
               </ul>
             </nav>
+          </div>
+          <div>
+            <h3 className="text-xl font-extrabold mb-4 tracking-tight">Company Details</h3>
+            <div className="space-y-2 text-gray-300 text-base">
+              <div>
+                <span className="font-medium">Trading Number:</span><br />
+                <span>12345678</span>
+              </div>
+              <div>
+                <span className="font-medium">Address:</span><br />
+                <span>London, United Kingdom</span>
+              </div>
+            </div>
           </div>
           <div>
             <h3 className="text-xl font-extrabold mb-4 tracking-tight">{t("footer.contactInfo", "Contact Info")}</h3>

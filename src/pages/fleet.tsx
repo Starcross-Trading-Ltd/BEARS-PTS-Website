@@ -174,45 +174,24 @@ export default function FleetPage() {
         </div>
       </section>
 
-      {/* Company Information */}
+      {/* Contact Us Section */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-blue-500/5"></div>
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
-          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-l-4 border-primary">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-bold text-primary mb-6">{t('fleet.companyDetailsTitle', 'Company Details')}</h3>
-                <div className="space-y-4 text-gray-700">
-                  <div>
-                    <strong className="text-gray-800">{t('fleet.companyTradingNumber', 'Trading Number')}:</strong>
-                    <br />
-                    <span className="text-lg">{t('fleet.tradingNumber', '12345678')}</span>
-                  </div>
-                  <div>
-                    <strong className="text-gray-800">{t('fleet.address', 'Address')}:</strong>
-                    <br />
-                    <span className="text-lg">{t('fleet.companyAddress', '123 Fleet Street, London, UK')}</span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col justify-center">
-                <div className="bg-gradient-to-br from-primary/10 to-blue-500/10 rounded-xl p-6">
-                  <h4 className="text-xl font-semibold text-primary mb-4">Need More Information?</h4>
-                  <p className="text-gray-600 mb-6">
-                    Contact our team to learn more about our fleet capabilities and how we can serve your needs.
-                  </p>
-                  <Link 
-                    to="/contact"
-                    className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300"
-                  >
-                    {t('fleet.contactForMoreInfo', 'Contact Us')}
-                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
+          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border-l-4 border-primary text-center">
+            <h3 className="text-3xl font-bold text-primary mb-6">Get in Touch</h3>
+            <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+              Ready to experience our exceptional fleet and services? Contact our team to learn more about our capabilities and how we can serve your needs.
+            </p>
+            <Link 
+              to="/contact"
+              className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors duration-300 text-lg"
+            >
+              Contact Us
+              <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
           </div>
         </div>
       </section>
