@@ -460,6 +460,11 @@
       "title": "Head of People and Operations",
       "description": "Nosa brings over 13 years of NHS experience to BEARS. He is committed to equity and fairness, fostering a caring company culture, and promoting diversity. Nosa is passionate about staff and patient care, and enjoys spending time with his daughter, family, and music."
     },
+    "beulah": {
+      "name": "Beulah",
+      "title": "Chief Transformation Officer",
+      "description": "Beulah leads BEARS' transformation initiatives, driving strategic change and innovation across the organization. She is dedicated to modernizing our services and ensuring we remain at the forefront of patient transport excellence."
+    },
     "winstonFlemming": {
       "name": "Winston Flemming",
       "title": "Director of Operations",
@@ -487,14 +492,29 @@
       "description": "Jonard has over 15 years' experience in ambulance care and fleet management. He is passionate about vehicle compliance and staff training, and has helped reduce accident rates at BEARS."
     },
     "adrian": {
-      "name": "Adrian",
-      "title": "Team Member",
-      "description": "Adrian is a dedicated member of the BEARS team, committed to providing exceptional patient care and transport services."
+      "name": "Adrian Baicoianu",
+      "title": "Front Line Manager",
+      "description": "Adrian is a dedicated Front Line Manager at BEARS, committed to providing exceptional patient care and transport services. He leads by example and ensures the highest standards of safety, comfort, and care are maintained across all operations."
     },
     "ojo": {
-      "name": "Ojo",
-      "title": "Team Member",
-      "description": "Ojo is a valued member of the BEARS team, dedicated to ensuring safe and comfortable patient transport services."
+      "name": "Ojo Olu Olaiya",
+      "title": "Front Line Manager",
+      "description": "Ojo is a valued Front Line Manager at BEARS, dedicated to ensuring safe and comfortable patient transport services. He brings strong leadership skills and a commitment to operational excellence to our team."
+    },
+    "dominiqueGratwick": {
+      "name": "Dominique Gratwick",
+      "title": "Clinical Lead",
+      "description": "Dominique is the Clinical Lead at BEARS, responsible for overseeing clinical standards and ensuring the highest quality of patient care across all services. She brings extensive clinical experience and a passion for maintaining excellence in healthcare delivery."
+    },
+    "gregoryEtukudo": {
+      "name": "Gregory Etukudo",
+      "title": "Head of Quality, Compliance and CQC",
+      "description": "Gregory leads BEARS' quality assurance and compliance initiatives, ensuring we meet and exceed all regulatory standards including CQC requirements. He is dedicated to maintaining the highest standards of safety and quality across all operations."
+    },
+    "omofenwaShajuyigbe": {
+      "name": "Omofenwa Shajuyigbe",
+      "title": "Frontline Manager",
+      "description": "Omofenwa is a dedicated Frontline Manager at BEARS, committed to ensuring exceptional patient care and transport services. She brings strong leadership skills and a passion for maintaining the highest standards of safety, comfort, and care across all operations."
     }
   },
   "cubs": {

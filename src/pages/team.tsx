@@ -19,24 +19,20 @@ export default function TeamPage() {
       image: "/images/meet_bears_three.jpg",
     },
     {
-      key: "winstonFlemming",
-      image: "/images/meet_bears_four.jpg",
+      key: "beulah",
+      image: "/images/2025_BEARS_001.jpg",
     },
     {
-      key: "amechiOkaoye",
-      image: "/images/meet_bears_five.png",
+      key: "gregoryEtukudo",
+      image: "/images/2025_BEARS_478.jpg",
     },
     {
       key: "osmanSadiq",
       image: "/images/meet_bears_six.jpg",
     },
     {
-      key: "michaelOkae",
-      image: "/images/meet_bears_seven.jpg",
-    },
-    {
-      key: "jonardCartagena",
-      image: "/images/meet_bears_nine.jpg",
+      key: "winstonFlemming",
+      image: "/images/meet_bears_four.jpg",
     },
     {
       key: "adrian",
@@ -46,7 +42,26 @@ export default function TeamPage() {
       key: "ojo",
       image: "/images/2025_BEARS_496.jpg",
     },
-
+    {
+      key: "omofenwaShajuyigbe",
+      image: "/images/2025_BEARS_360.jpg",
+    },
+    {
+      key: "dominiqueGratwick",
+      image: "/images/2025_BEARS_504.jpg",
+    },
+    {
+      key: "michaelOkae",
+      image: "/images/meet_bears_seven.jpg",
+    },
+    {
+      key: "amechiOkaoye",
+      image: "/images/meet_bears_five.png",
+    },
+    {
+      key: "jonardCartagena",
+      image: "/images/meet_bears_nine.jpg",
+    },
   ]
 
   return (
@@ -97,6 +112,10 @@ export default function TeamPage() {
                                   member.key === "michaelOkae" ? 'center 10%' :
                                   member.key === "adrian" ? 'center 35%' :
                                   member.key === "ojo" ? 'center 4%' :
+                                  member.key === "dominiqueGratwick" ? 'center 15%' :
+                                  member.key === "gregoryEtukudo" ? 'center 15%' :
+                                  member.key === "omofenwaShajuyigbe" ? 'center 5%' :
+                                  member.key === "beulah" ? 'center 30%' :
                                   'center 20%'
                     }}
                   />
