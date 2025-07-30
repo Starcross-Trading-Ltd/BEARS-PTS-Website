@@ -1,68 +1,141 @@
 import React from 'react'
 import { useLanguage } from '../components/language-provider'
 import NewsGrid from '../components/news/news-grid'
-import HeroSection from '../components/common/hero-section'
-import { Section } from "@/components/ui/section";
-import { Container } from "@/components/ui/container";
+import { motion } from 'framer-motion'
 
 export default function NewsPage() {
   const { t } = useLanguage()
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Dramatic News Hero Section with animated badge and floating icons */}
-      <section className="relative py-20 bg-gradient-to-br from-primary-dark to-primary text-white text-center overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-col items-center justify-center">
-            <span className="inline-block px-6 py-2 bg-[#3b82f6] text-white rounded-full shadow-lg text-lg font-bold border-4 border-white animate-bob mb-6">
-              {t('news.hero.title')}
-            </span>
-            <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-              {t('navigation.news')}
-            </h1>
-            <p className="text-2xl text-blue-100 max-w-2xl mx-auto mb-8 drop-shadow-md">
-              {t('news.hero.description')}
-            </p>
-          </div>
+    <>
+      {/* Compact Redesigned Hero Section */}
+      <section className="relative min-h-[50vh] bg-gradient-to-br from-primary via-blue-600 to-purple-700 overflow-hidden">
+        {/* Subtle Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-16 left-8 w-20 h-20 bg-white/5 rounded-full blur-lg animate-pulse"></div>
+          <div className="absolute bottom-16 right-8 w-24 h-24 bg-white/3 rounded-full blur-xl animate-pulse delay-1000"></div>
+          <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-white/4 rounded-full blur-md animate-pulse delay-500"></div>
         </div>
-        {/* Subtle abstract wave at the bottom for continuity */}
-        <div className="absolute left-0 right-0 bottom-0 w-screen z-0 pointer-events-none" style={{ height: '120px', minWidth: '100vw' }} aria-hidden="true">
-          <svg width="100%" height="100%" viewBox="0 0 1920 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full" preserveAspectRatio="none">
-            <path d="M0,60 C480,140 1440,0 1920,80 L1920,120 L0,120 Z" fill="#fff" fillOpacity="0.10" />
-            <path d="M0,100 C533,60 1387,180 1920,40 L1920,120 L0,120 Z" fill="#fff" fillOpacity="0.07" />
+        
+        {/* Subtle Pattern Overlay */}
+        <div className="absolute inset-0 opacity-5">
+          <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <defs>
+              <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" strokeWidth="0.2"/>
+              </pattern>
+            </defs>
+            <rect width="100" height="100" fill="url(#grid)" />
           </svg>
         </div>
-      </section>
 
-      {/* Section intro with CTA */}
-      <section className="py-8 text-center animate-fade-in-up">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            {t('news.articles.title')}
-          </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-6">
-            {t('news.hero.description')}
-          </p>
+        {/* Floating Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Removed all floating elements for cleaner design */}
+        </div>
+
+        <div className="relative z-10 container mx-auto px-4 py-16">
+          <div className="text-center text-white">
+            {/* Compact Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-8"
+            >
+              <div className="w-1.5 h-1.5 bg-green-400 rounded-full mr-2 animate-pulse"></div>
+              <span className="text-xs font-medium">Latest Updates</span>
+            </motion.div>
+
+            {/* Compact Title */}
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-4xl md:text-6xl font-bold mb-6 tracking-tight"
+            >
+              <span className="bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent">
+                Latest News
+              </span>
+            </motion.h1>
+
+            {/* Compact Subtitle */}
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-12 leading-relaxed"
+            >
+              Stay updated with the latest developments, achievements, and stories from BEARS Ambulance Service
+            </motion.p>
+
+            {/* Compact Stats Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
+            >
+              <motion.div 
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-white/30 transition-all duration-300"
+                whileHover={{ scale: 1.02, y: -2 }}
+              >
+                <div className="text-3xl font-bold mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">10+</div>
+                <div className="text-blue-100 font-medium">Latest Articles</div>
+              </motion.div>
+              <motion.div 
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-white/30 transition-all duration-300"
+                whileHover={{ scale: 1.02, y: -2 }}
+              >
+                <div className="text-3xl font-bold mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">24/7</div>
+                <div className="text-blue-100 font-medium">Service Updates</div>
+              </motion.div>
+              <motion.div 
+                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-white/30 transition-all duration-300"
+                whileHover={{ scale: 1.02, y: -2 }}
+              >
+                <div className="text-3xl font-bold mb-2 bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">100%</div>
+                <div className="text-blue-100 font-medium">Professional Care</div>
+              </motion.div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
-      {/* Staggered fade-in for testimonials and news grid */}
-      <div className="animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-      <NewsGrid />
-      </div>
-
-      <Section>
-        <Container>
-          <div className="text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-              {t("news.latestNewsTitle", "Latest News")}
+      {/* Enhanced News Grid Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+        <div className="container mx-auto px-4">
+          {/* Compact Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="text-center mb-12"
+          >
+            <div className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6">
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Latest Updates
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Our Latest Stories
             </h2>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              {t("news.latestNewsDescription", "Stay up-to-date with the latest news and announcements from BEARS.")}
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Discover the latest news, achievements, and developments from BEARS Ambulance Service
             </p>
-          </div>
-        </Container>
-      </Section>
-    </div>
+          </motion.div>
+
+          {/* News Grid */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1.0 }}
+          >
+            <NewsGrid />
+          </motion.div>
+        </div>
+      </section>
+    </>
   )
 }

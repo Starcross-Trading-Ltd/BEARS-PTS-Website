@@ -47,7 +47,7 @@ export default function CriticalRetrievalPage() {
 
                 <div className="mb-8">
                   <img 
-                    src="/images/ambulance.png" 
+                    src="/images/2025_BEARS_062.jpg" 
                     alt={t("services.criticalRetrieval.vehiclesImageAlt", "Critical Care Vehicles")}
                     className="w-full h-64 object-cover rounded-lg"
                   />

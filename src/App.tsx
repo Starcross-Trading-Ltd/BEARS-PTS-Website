@@ -11,6 +11,16 @@ import ServicesPage from './pages/services'
 import ContactPage from './pages/contact'
 import ComplimentsPage from './pages/compliments'
 import NewsPage from './pages/news'
+import ChristmasNewsPage from './pages/news/christmas'
+import Pulse4NewsPage from './pages/news/pulse-4'
+import Pulse3NewsPage from './pages/news/pulse-3'
+import ForsNewsPage from './pages/news/fors'
+import FritwellFundraisingNewsPage from './pages/news/fritwell-fundraising'
+import WhitchurchStemNewsPage from './pages/news/whitchurch-stem'
+import AmericanSchoolFairNewsPage from './pages/news/american-school-fair'
+import EcmoAmbulanceLaunchNewsPage from './pages/news/ecmo-ambulance-launch'
+import Pulse2NewsPage from './pages/news/pulse-2'
+import HaloBodyCamsNewsPage from './pages/news/halo-body-cams'
 import CareersPage from './pages/careers'
 import TeamPage from './pages/team'
 import CubsPage from './pages/cubs'
@@ -59,6 +69,16 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/compliments" element={<ComplimentsPage />} />
               <Route path="/news" element={<NewsPage />} />
+              <Route path="/news/christmas" element={<ChristmasNewsPage />} />
+              <Route path="/news/pulse-4" element={<Pulse4NewsPage />} />
+              <Route path="/news/pulse-3" element={<Pulse3NewsPage />} />
+              <Route path="/news/fors" element={<ForsNewsPage />} />
+              <Route path="/news/fritwell-fundraising" element={<FritwellFundraisingNewsPage />} />
+              <Route path="/news/whitchurch-stem" element={<WhitchurchStemNewsPage />} />
+              <Route path="/news/american-school-fair" element={<AmericanSchoolFairNewsPage />} />
+              <Route path="/news/ecmo-ambulance-launch" element={<EcmoAmbulanceLaunchNewsPage />} />
+              <Route path="/news/pulse-2" element={<Pulse2NewsPage />} />
+              <Route path="/news/halo-body-cams" element={<HaloBodyCamsNewsPage />} />
               <Route path="/careers" element={<CareersPage />} />
               <Route path="/team" element={<TeamPage />} />
               <Route path="/cubs" element={<CubsPage />} />

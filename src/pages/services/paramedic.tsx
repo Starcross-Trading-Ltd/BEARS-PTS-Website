@@ -25,9 +25,9 @@ export default function ParamedicServicePage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <img 
-                  src="/images/para_1.png" 
+                  src="/images/2025_BEARS_347.jpg" 
                   alt={t("services.paramedic.imageAlt", "Paramedic Service Team")}
-                  className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
+                  className="w-full max-w-2xl h-auto object-cover rounded-xl shadow-lg border-4 border-white mx-auto"
                 />
               </div>
               <div className="space-y-8">

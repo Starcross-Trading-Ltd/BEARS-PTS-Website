@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             <div className="space-y-2 text-gray-300 text-base">
               <div>
                 <span className="font-medium">Trading Number:</span><br />
-                <span>12345678</span>
+                <span>07069657</span>
               </div>
               <div>
                 <span className="font-medium">Address:</span><br />

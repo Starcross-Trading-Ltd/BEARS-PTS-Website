@@ -47,7 +47,7 @@ export default function ECMOServicePage() {
 
                 <div className="mb-8">
                   <img 
-                    src="/images/nepts_1.png" 
+                    src="/images/2025_BEARS_618.jpg" 
                     alt={t("services.ecmo.teamImageAlt", "ECMO Team")}
                     className="w-full h-64 object-cover rounded-lg"
                   />

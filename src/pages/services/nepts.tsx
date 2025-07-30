@@ -25,7 +25,7 @@ export default function NEPTSServicePage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <img 
-                  src="/images/ambulance.png" 
+                  src="/images/2025_BEARS_061.jpg" 
                   alt={t("services.nepts.imageAlt", "NEPTS Service Team")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />

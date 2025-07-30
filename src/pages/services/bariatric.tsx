@@ -26,7 +26,7 @@ export default function BariatricServicePage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="mb-8">
                 <img 
-                  src="/images/nepts_1.png" 
+                  src="/images/2025_BEARS_632.jpg" 
                   alt={t("services.bariatric.imageAlt", "Bariatric Service Team")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />

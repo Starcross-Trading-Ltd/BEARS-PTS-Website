@@ -9,6 +9,7 @@ interface HeroSectionProps {
   bgColor?: string; // e.g. '#0a2240' or '#388e6c'
   children?: React.ReactNode;
   className?: string; // Allow custom classes for background, etc.
+  imageStyle?: React.CSSProperties; // Allow custom styling for the image
 }
 
 export default function HeroSection({
@@ -20,6 +21,7 @@ export default function HeroSection({
   bgColor = '#7DA779',
   children,
   className = '',
+  imageStyle = {},
 }: HeroSectionProps) {
   // Layout logic
   const isImageLeft = imagePosition === 'left';
@@ -60,6 +62,7 @@ export default function HeroSection({
                 src={image}
                 alt={imageAlt || ''}
                 className="w-full max-w-md h-auto object-contain rounded-xl shadow-lg bg-white/10 p-2"
+                style={imageStyle}
               />
             </div>
           )}
@@ -82,6 +85,7 @@ export default function HeroSection({
                 src={image}
                 alt={imageAlt || ''}
                 className="w-full max-w-md h-auto object-contain rounded-xl shadow-lg bg-white/10 p-2"
+                style={imageStyle}
               />
             </div>
           )}

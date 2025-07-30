@@ -24,7 +24,7 @@ export default function NeonatalPage() {
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="my-8">
                 <img 
-                  src="/images/neo_2.png" 
+                  src="/images/2025_BEARS_333.jpg" 
                   alt={t("neonatal.teamImageAlt", "Neonatal Transport Team")}
                   className="w-full h-auto object-cover rounded-xl shadow-lg border-4 border-white"
                 />
