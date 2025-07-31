@@ -29,8 +29,8 @@ jobs:
         run: |
           echo "=== Files in root directory ==="
           ls -la
-          echo "=== Checking if server.js exists ==="
-          ls -la server.js || echo "server.js not found"
+          echo "=== Checking if server.cjs exists ==="
+          ls -la server.cjs || echo "server.cjs not found"
           echo "=== Checking dist directory ==="
           ls -la dist/
 
@@ -40,7 +40,7 @@ jobs:
           name: node-app
           path: |
             ./dist
-            ./server.js
+            ./server.cjs
             ./package.json
             ./package-lock.json
             ./web.config
@@ -59,8 +59,8 @@ jobs:
         run: |
           echo "=== Files in deployment directory ==="
           ls -la
-          echo "=== Checking if server.js exists in deployment ==="
-          ls -la server.js || echo "server.js not found in deployment"
+          echo "=== Checking if server.cjs exists in deployment ==="
+          ls -la server.cjs || echo "server.cjs not found in deployment"
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
