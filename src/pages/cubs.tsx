@@ -31,10 +31,56 @@ const cubsImages = [
   '/images/cubs/2025_BEARS_526.jpg',
 ]
 
+// All remaining cubs images for the gallery
+const allCubsImages = [
+  '/images/cubs/2025_BEARS_036.jpg',
+  '/images/cubs/2025_BEARS_048.jpg',
+  '/images/cubs/2025_BEARS_177.jpg',
+  '/images/cubs/2025_BEARS_189.jpg',
+  '/images/cubs/2025_BEARS_216.jpg',
+  '/images/cubs/2025_BEARS_228.jpg',
+  '/images/cubs/2025_BEARS_234.jpg',
+  '/images/cubs/2025_BEARS_242.jpg',
+  '/images/cubs/2025_BEARS_265.jpg',
+  '/images/cubs/2025_BEARS_267.jpg',
+  '/images/cubs/2025_BEARS_274.jpg',
+  '/images/cubs/2025_BEARS_292.jpg',
+  '/images/cubs/2025_BEARS_304.jpg',
+  '/images/cubs/2025_BEARS_313.jpg',
+  '/images/cubs/2025_BEARS_325.jpg',
+  '/images/cubs/2025_BEARS_334.jpg',
+  '/images/cubs/2025_BEARS_343.jpg',
+  '/images/cubs/2025_BEARS_358.jpg',
+  '/images/cubs/2025_BEARS_364.jpg',
+  '/images/cubs/2025_BEARS_465.jpg',
+  '/images/cubs/2025_BEARS_472.jpg',
+  '/images/cubs/2025_BEARS_478.jpg',
+  '/images/cubs/2025_BEARS_484.jpg',
+  '/images/cubs/2025_BEARS_487.jpg',
+  '/images/cubs/2025_BEARS_532.jpg',
+  '/images/cubs/2025_BEARS_538.jpg',
+  '/images/cubs/2025_BEARS_544.jpg',
+  '/images/cubs/2025_BEARS_550.jpg',
+  '/images/cubs/2025_BEARS_556.jpg',
+  '/images/cubs/2025_BEARS_562.jpg',
+  '/images/cubs/2025_BEARS_565.jpg',
+  '/images/cubs/2025_BEARS_571.jpg',
+  '/images/cubs/2025_BEARS_577.jpg',
+  '/images/cubs/2025_BEARS_583.jpg',
+  '/images/cubs/2025_BEARS_589.jpg',
+  '/images/cubs/2025_BEARS_598.jpg',
+  '/images/cubs/2025_BEARS_601.jpg',
+  '/images/cubs/2025_BEARS_643.jpg',
+  '/images/cubs/2025_BEARS_649.jpg',
+  '/images/cubs/2025_BEARS_654.jpg',
+  '/images/cubs/2025_BEARS_661.jpg',
+]
+
 export default function CubsPage() {
   const { t } = useLanguage()
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
   const [isLoaded, setIsLoaded] = useState(false)
+  const [showGallery, setShowGallery] = useState(false)
 
   useEffect(() => {
     setIsLoaded(true)
@@ -98,21 +144,7 @@ export default function CubsPage() {
                       src={image}
                       alt={`BEARS Cubs Team Member ${index + 1}`}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                      style={{ objectPosition: 'center 20%' }}
-                      loading={index < 8 ? "eager" : "lazy"}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  </div>
-                  
-                  {/* Glowing border effect */}
-                  <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-primary/50 group-hover:shadow-[0_0_30px_rgba(0,133,90,0.5)] transition-all duration-500"></div>
-                  
-                  {/* Floating info overlay */}
-                  <div className="absolute bottom-0 left-0 right-0 p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 bg-gradient-to-t from-black/80 to-transparent">
-                    <div className="text-white text-center">
-                      <div className="text-sm font-semibold">Cubs Specialist</div>
-                      <div className="text-xs text-blue-200">Dedicated Care</div>
-                    </div>
                   </div>
                   
                   {/* Particle effect on hover */}
@@ -191,12 +223,19 @@ export default function CubsPage() {
               <span className="relative z-10">View Careers</span>
               <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-blue-500/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </a>
-            <a
-              href="/autumn-ball"
+            <button
+              onClick={() => setShowGallery(true)}
               className="group px-8 py-4 bg-amber-500 text-white font-semibold rounded-xl shadow-lg hover:bg-amber-600 transition-all duration-300 transform hover:scale-105 relative overflow-hidden"
             >
-              <span className="relative z-10">Autumn Ball Gallery</span>
+              <span className="relative z-10">Meet the Rest of the Cubs</span>
               <div className="absolute inset-0 bg-gradient-to-r from-amber-600/20 to-orange-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+            </button>
+            <a
+              href="/autumn-ball"
+              className="group px-8 py-4 bg-blue-500 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 relative overflow-hidden"
+            >
+              <span className="relative z-10">Autumn Ball Gallery</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </a>
             <a
               href="/contact"
@@ -208,6 +247,47 @@ export default function CubsPage() {
           </div>
         </div>
       </section>
+
+      {/* Cubs Gallery Modal */}
+      {showGallery && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-3xl max-w-7xl w-full max-h-[90vh] overflow-hidden shadow-2xl">
+            {/* Header */}
+            <div className="bg-gradient-to-r from-primary to-blue-600 text-white p-6 flex justify-between items-center">
+              <h3 className="text-2xl font-bold">Meet the Rest of the Cubs</h3>
+              <button
+                onClick={() => setShowGallery(false)}
+                className="text-white hover:text-gray-200 transition-colors duration-200"
+              >
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Gallery Grid */}
+            <div className="p-6 overflow-y-auto max-h-[calc(90vh-120px)]">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+                {allCubsImages.map((image, index) => (
+                  <div
+                    key={index}
+                    className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    <div className="aspect-square overflow-hidden">
+                      <img
+                        src={image}
+                        alt={`BEARS Cubs Team Member ${index + 1}`}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

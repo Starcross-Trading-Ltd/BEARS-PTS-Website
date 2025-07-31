@@ -40,10 +40,10 @@ const timeline = [
 
 // Stats for "By the Numbers"
 const stats = [
-  { number: 22770, label: 'Bariatric Trips', icon: <Hospital className="w-10 h-10 text-primary mb-2" /> },
-  { number: 258875, label: 'NEPTS Trips', icon: <Bus className="w-10 h-10 text-primary mb-2" /> },
+  { number: 24867, label: 'Bariatric Trips', icon: <Hospital className="w-10 h-10 text-primary mb-2" /> },
+  { number: 353595, label: 'NEPTS Trips', icon: <Bus className="w-10 h-10 text-primary mb-2" /> },
   { number: 33591, label: 'Mental Health Trips', icon: <HeartPulse className="w-10 h-10 text-primary mb-2" /> },
-  { number: 484159, label: 'HDU/Para Trips', icon: <Stethoscope className="w-10 h-10 text-primary mb-2" /> },
+  { number: 113166, label: 'HDU/Para Trips', icon: <Stethoscope className="w-10 h-10 text-primary mb-2" /> },
 ]
 
 // Values/Why Choose Us

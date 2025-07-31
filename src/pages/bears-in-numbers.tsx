@@ -75,7 +75,7 @@ export default function BearsInNumbersPage() {
   useEffect(() => {
     if (!showContent) return
     let start = 0
-    const end = 5058454
+    const end = 5581102
     const duration = 6000
     const startTime = performance.now()
     function animate(now: number) {
@@ -92,28 +92,28 @@ export default function BearsInNumbersPage() {
 
   const stats = [
     { 
-      number: 22770,
+      number: 24867,
       label: t('bearsInNumbers.stats.0.label', 'Bariatric Trips'),
       description: t('bearsInNumbers.stats.0.description', 'Specialist journeys for those who need extra care.'),
       link: '/services/bariatric',
       icon: <Hospital className="w-12 h-12 text-primary mb-2" />,
     },
     { 
-      number: 258875,
+      number: 353595,
       label: t('bearsInNumbers.stats.1.label', 'NEPTS Trips'),
       description: t('bearsInNumbers.stats.1.description', 'Non-Emergency Patient Transport Services.'),
       link: '/services/nepts',
       icon: <Bus className="w-12 h-12 text-primary mb-2" />,
     },
     { 
-      number: 33591,
+      number: 40318,
       label: t('bearsInNumbers.stats.2.label', 'Mental Health Trips'),
       description: t('bearsInNumbers.stats.2.description', 'Supporting mental health journeys with compassion.'),
       link: '/services/mental-health',
       icon: <HeartPulse className="w-12 h-12 text-primary mb-2" />,
     },
     { 
-      number: 484159,
+      number: 113166,
       label: t('bearsInNumbers.stats.3.label', 'HDU/Para Trips'),
       description: t('bearsInNumbers.stats.3.description', 'High Dependency & Paramedic journeys.'),
       link: '/services/paramedic',
@@ -166,7 +166,7 @@ export default function BearsInNumbersPage() {
                 {t('bearsInNumbers.milesDriven', 'Miles Driven')}
               </h2>
               <p className="text-lg md:text-xl text-[#0a2240] max-w-md mx-auto">
-                {t('bearsInNumbers.globeCircled', 'Our fleet has driven enough miles to circle the globe over')} <span className="font-bold text-2xl">203</span> {t('bearsInNumbers.times', 'times!')}
+                {t('bearsInNumbers.globeCircled', 'Our fleet has driven enough miles to circle the globe over')} <span className="font-bold text-2xl">224</span> {t('bearsInNumbers.times', 'times!')}
               </p>
             </div>
           </div>
