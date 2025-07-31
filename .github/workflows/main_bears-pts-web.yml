@@ -25,6 +25,15 @@ jobs:
           npm install
           npm run build
 
+      - name: List files before upload
+        run: |
+          echo "=== Files in root directory ==="
+          ls -la
+          echo "=== Checking if server.js exists ==="
+          ls -la server.js || echo "server.js not found"
+          echo "=== Checking dist directory ==="
+          ls -la dist/
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
@@ -45,6 +54,13 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
+
+      - name: List files after download
+        run: |
+          echo "=== Files in deployment directory ==="
+          ls -la
+          echo "=== Checking if server.js exists in deployment ==="
+          ls -la server.js || echo "server.js not found in deployment"
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
