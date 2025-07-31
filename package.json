@@ -7,8 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "build:dev": "vite build --mode development",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "start": "node server.js",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -47,6 +48,7 @@
     "cmdk": "1.0.4",
     "date-fns": "3.1.0",
     "embla-carousel-react": "8.5.1",
+    "express": "^4.18.2",
     "framer-motion": "^12.19.1",
     "input-otp": "1.4.1",
     "js-cookie": "3.0.5",
