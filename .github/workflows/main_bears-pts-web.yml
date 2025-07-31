@@ -53,4 +53,4 @@ jobs:
           app-name: 'bears-pts-web'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_08E27CC354B54757B48EE09E520F9F90 }} 
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_08E27CC354B54757B48EE09E520F9F90 }}
