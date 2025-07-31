@@ -31,8 +31,7 @@ jobs:
           ls -la
           echo "=== Checking if server.cjs exists ==="
           ls -la server.cjs || echo "server.cjs not found"
-          echo "=== Checking if startup.cjs exists ==="
-          ls -la startup.cjs || echo "startup.cjs not found"
+
           echo "=== Checking dist directory ==="
           ls -la dist/
 
@@ -43,7 +42,6 @@ jobs:
           path: |
             ./dist
             ./server.cjs
-            ./startup.cjs
             ./package.json
             ./package-lock.json
             ./web.config
@@ -64,8 +62,7 @@ jobs:
           ls -la
           echo "=== Checking if server.cjs exists in deployment ==="
           ls -la server.cjs || echo "server.cjs not found in deployment"
-          echo "=== Checking if startup.cjs exists in deployment ==="
-          ls -la startup.cjs || echo "startup.cjs not found in deployment"
+
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
