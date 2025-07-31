@@ -20,7 +20,7 @@ export default function TeamPage() {
     },
     {
       key: "beulah",
-      image: "/images/2025_BEARS_001.jpg",
+      image: "/images/beulah.png",
     },
     {
       key: "gregoryEtukudo",
@@ -35,8 +35,8 @@ export default function TeamPage() {
       image: "/images/meet_bears_four.jpg",
     },
     {
-      key: "adrian",
-      image: "/images/2025_BEARS_027.jpg",
+      key: "jonardCartagena",
+      image: "/images/meet_bears_nine.jpg",
     },
     {
       key: "ojo",
@@ -47,20 +47,24 @@ export default function TeamPage() {
       image: "/images/2025_BEARS_360.jpg",
     },
     {
-      key: "dominiqueGratwick",
-      image: "/images/2025_BEARS_504.jpg",
+      key: "adrian",
+      image: "/images/2025_BEARS_027.jpg",
     },
     {
       key: "michaelOkae",
       image: "/images/meet_bears_seven.jpg",
     },
     {
+      key: "ethelJohn",
+      image: "/images/2025_BEARS_141.jpg",
+    },
+    {
       key: "amechiOkaoye",
       image: "/images/meet_bears_five.png",
     },
     {
-      key: "jonardCartagena",
-      image: "/images/meet_bears_nine.jpg",
+      key: "dominiqueGratwick",
+      image: "/images/2025_BEARS_504.jpg",
     },
   ]
 
@@ -115,7 +119,9 @@ export default function TeamPage() {
                                   member.key === "dominiqueGratwick" ? 'center 15%' :
                                   member.key === "gregoryEtukudo" ? 'center 15%' :
                                   member.key === "omofenwaShajuyigbe" ? 'center 5%' :
-                                  member.key === "beulah" ? 'center 30%' :
+                                  member.key === "beulah" ? 'center 10%' :
+                                  member.key === "ethelJohn" ? 'center 40%' :
+                                  member.key === "amechiOkaoye" ? 'center 20%' :
                                   'center 20%'
                     }}
                   />

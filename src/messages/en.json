@@ -463,7 +463,7 @@
     "beulah": {
       "name": "Beulah Adeoye",
       "title": "Chief Transformation Officer",
-      "description": "Beulah leads BEARS' transformation initiatives, driving strategic change and innovation across the organization. She is dedicated to modernizing our services and ensuring we remain at the forefront of patient transport excellence."
+      "description": "Beulah leads BEARS' transformation initiatives, driving strategic change and innovation across the organization. He is dedicated to modernizing our services and ensuring we remain at the forefront of patient transport excellence."
     },
     "winstonFlemming": {
       "name": "Winston Flemming",
@@ -472,7 +472,7 @@
     },
     "amechiOkaoye": {
       "name": "Amechi Okaoye",
-      "title": "Head of Operations",
+      "title": "Facility Manager",
       "description": "Amechi is experienced in staff mentoring, health and safety, and accident management. He is dedicated to staff development and patient service, and is committed to upholding BEARS' values. Amechi enjoys reading, podcasts, and family time."
     },
     "osmanSadiq": {
@@ -498,8 +498,8 @@
     },
     "ojo": {
       "name": "Ojo Olu Olaiya",
-      "title": "Front Line Manager",
-      "description": "Ojo is a valued Front Line Manager at BEARS, dedicated to ensuring safe and comfortable patient transport services. He brings strong leadership skills and a commitment to operational excellence to our team."
+      "title": "Fleet Manager",
+      "description": "Ojo is a valued Fleet Manager at BEARS, dedicated to ensuring safe and comfortable patient transport services. He brings strong leadership skills and a commitment to operational excellence to our team."
     },
     "dominiqueGratwick": {
       "name": "Dominique Gratwick",
@@ -513,8 +513,13 @@
     },
     "omofenwaShajuyigbe": {
       "name": "Omofenwa Shajuyigbe",
-      "title": "Frontline Manager",
-      "description": "Omofenwa is a dedicated Frontline Manager at BEARS, committed to ensuring exceptional patient care and transport services. She brings strong leadership skills and a passion for maintaining the highest standards of safety, comfort, and care across all operations."
+      "title": "Fleet Manager",
+      "description": "Omofenwa is a dedicated Fleet Manager at BEARS, committed to ensuring exceptional patient care and transport services. She brings strong leadership skills and a passion for maintaining the highest standards of safety, comfort, and care across all operations."
+    },
+    "ethelJohn": {
+      "name": "Ethel John",
+      "title": "Facility Manager",
+      "description": "Ethel is a dedicated Facility Manager at BEARS, responsible for overseeing facility operations and ensuring optimal working environments for our team. She brings extensive experience in facility management and is committed to maintaining high standards of safety and efficiency across all our locations."
     }
   },
   "cubs": {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useLanguage } from '../components/language-provider'
 import { useToast } from '../hooks/use-toast'
 import { Button } from '../components/ui/button'
@@ -8,6 +8,7 @@ import HeroSection from '../components/common/hero-section'
 import { Phone, Mail, MapPin, Smile } from 'lucide-react'
 import { Container } from '@/components/ui/container'
 import { Section } from '@/components/ui/section'
+import { initEmailJS, sendContactEmail } from '../lib/emailjs'
 
 export default function ContactPage() {
   const { t } = useLanguage()
@@ -18,6 +19,11 @@ export default function ContactPage() {
     email: '',
     message: ''
   })
+
+  // Initialize EmailJS on component mount
+  useEffect(() => {
+    initEmailJS()
+  }, [])
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -42,20 +48,9 @@ export default function ContactPage() {
     setIsSubmitting(true)
 
     try {
-      const response = await fetch('https://formspree.io/f/xdkovepg', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
-          _subject: `New contact form submission from ${formData.name}`,
-        }),
-      })
+      const result = await sendContactEmail(formData)
 
-      if (response.ok) {
+      if (result.success) {
         toast({
           title: t("contact.toast.successTitle", "Success!"),
           description: t("contact.toast.successMessage", "Your message has been sent successfully. We'll get back to you soon!"),
@@ -103,12 +98,37 @@ export default function ContactPage() {
             </h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <input type="text" placeholder={t("contact.namePlaceholder", "Your Name")} className="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition" />
-                <input type="email" placeholder={t("contact.emailPlaceholder", "Your Email")} className="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition" />
+                <input 
+                  type="text" 
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  placeholder={t("contact.namePlaceholder", "Your Name")} 
+                  className="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition" 
+                />
+                <input 
+                  type="email" 
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  placeholder={t("contact.emailPlaceholder", "Your Email")} 
+                  className="p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition" 
+                />
               </div>
-              <textarea placeholder={t("contact.messagePlaceholder", "Your Message")} rows={6} className="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition"></textarea>
-              <button type="submit" className="w-full bg-secondary text-white py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">
-                {t("contact.sendMessageButton", "Send Message")}
+              <textarea 
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                placeholder={t("contact.messagePlaceholder", "Your Message")} 
+                rows={6} 
+                className="w-full p-4 rounded-lg border border-gray-300 focus:ring-2 focus:ring-secondary focus:border-transparent transition"
+              />
+              <button 
+                type="submit" 
+                disabled={isSubmitting}
+                className="w-full bg-secondary text-white py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmitting ? t("contact.sendingButton", "Sending...") : t("contact.sendMessageButton", "Send Message")}
               </button>
             </form>
           </div>

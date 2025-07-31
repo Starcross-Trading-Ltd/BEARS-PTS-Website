@@ -1,28 +1,28 @@
 import React from 'react'
 import VacancyDetailsLayout from '../../components/vacancy-details-layout'
+import JobApplicationForm from '../../components/job-application-form'
 
 const jobPurpose = (
   <>
-    <p>The first line managers will support the Shift managers to contribute to the safe, timely, effective, and professional running of the operational team.</p>
-    <p className="mt-4">To manage a group of ambulance crews, ensuring that they conduct their roles according to the company policies and guidelines.</p>
-    <p className="mt-4">To respond to day-to-day problems and complaints in a professional and effective manner.</p>
-    <p className="mt-4">The First Manager role has responsibility for the provision of leadership and management of the immediate operational road staff.</p>
-    <p className="mt-4">The post-holder is accountable to the Shift Managers and responsible for the daily management of the</p>
-    <p className="mt-4">They will be responsible for leading a large multi-disciplinary diverse group of staff, nurturing the staff group, to help them develop their knowledge and skills to deliver a first-class patient transport service in line with our values of Safety, Comfort and Care.</p>
+    <p>To lead and manage a team of ambulance care assistants and paramedics, ensuring the delivery of high-quality patient transport services while maintaining operational excellence and team performance.</p>
   </>
 )
 
 const responsibilities = (
   <ul className="list-disc pl-6 space-y-2">
-    <li>Placeholder responsibility 1</li>
-    <li>Placeholder responsibility 2</li>
-    <li>Placeholder responsibility 3</li>
+    <li>Lead and manage a team of healthcare professionals</li>
+    <li>Ensure compliance with all safety and quality standards</li>
+    <li>Coordinate patient transport operations and scheduling</li>
+    <li>Provide training and development for team members</li>
+    <li>Maintain accurate records and documentation</li>
+    <li>Handle customer service and stakeholder relationships</li>
+    <li>Implement and monitor operational procedures</li>
   </ul>
 )
 
 const sidebar = {
-  location: 'Various Sites',
-  contractType: 'Permanent',
+  location: 'London & Nationwide',
+  contractType: 'Full-time',
   salary: 'Competitive',
   reportsTo: 'Senior Manager',
   responsibleTo: '',
@@ -30,7 +30,7 @@ const sidebar = {
 
 const aboutUs = (
   <>
-    <p>BEARS operate an independent ambulance service specialising in higher acuity patient transport (Paramedic, High Dependency, Mental Health, Critical Care and Emergency Retrieval/Response services) for various NHS Trusts in London and nationwide under contract. We are looking for resourceful and enthusiastic Trainee Ambulance Care Assistants to help us achieve our mission to transport patients with the highest standards of Safety, Comfort and Care. Please join us on our innovative and successful journey and be part of our aspirational growth plans.</p>
+    <p>BEARS is seeking experienced First Line Managers to lead our operational teams. We provide patient transport services across London and nationwide, working with NHS Trusts and private healthcare providers. Our managers are crucial to maintaining our high standards of Safety, Comfort and Care.</p>
   </>
 )
 
@@ -58,73 +58,15 @@ export default function FirstLineManager() {
           <section className="mb-8">
             <h2 className="text-xl font-semibold mb-2">View full job description:</h2>
             <a
-              href="/documents/First-Line-Manager-JD.pdf"
+              href="/documents/First-Line-Manager-JD-V2.pdf"
               className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition mb-4"
               download
             >
-              Open File (130 KB)
+              Open File (PDF)
             </a>
           </section>
           <h2 className="text-2xl font-semibold mb-4">Apply here</h2>
-          <form
-            action="https://formspree.io/f/mnqekgqj"
-            method="POST"
-            className="bg-white rounded-xl shadow p-6 grid grid-cols-1 md:grid-cols-2 gap-4"
-          >
-            <div>
-              <label className="block text-sm font-medium mb-1">First Name</label>
-              <input name="firstName" required className="w-full border rounded px-3 py-2" />
-            </div>
-            <div>
-              <label className="block text-sm font-medium mb-1">Last Name</label>
-              <input name="lastName" required className="w-full border rounded px-3 py-2" />
-            </div>
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium mb-1">Email</label>
-              <input name="email" type="email" required className="w-full border rounded px-3 py-2" />
-            </div>
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium mb-1">Phone/Mobile</label>
-              <input name="phone" required className="w-full border rounded px-3 py-2" />
-            </div>
-            <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <label className="block text-sm font-medium mb-1">Address Line 1</label>
-                <input name="address1" required className="w-full border rounded px-3 py-2" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-1">Address Line 2</label>
-                <input name="address2" className="w-full border rounded px-3 py-2" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-1">City</label>
-                <input name="city" required className="w-full border rounded px-3 py-2" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-1">County</label>
-                <input name="county" required className="w-full border rounded px-3 py-2" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-1">Post Code</label>
-                <input name="postcode" required className="w-full border rounded px-3 py-2" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium mb-1">Country</label>
-                <input name="country" required className="w-full border rounded px-3 py-2" />
-              </div>
-            </div>
-            <div className="md:col-span-2">
-              <label className="block text-sm font-medium mb-1">Resume / CV</label>
-              <input name="resume" type="file" required className="w-full border rounded px-3 py-2" />
-            </div>
-            <div className="md:col-span-2 flex items-center gap-2">
-              <input type="checkbox" name="terms" required />
-              <span className="text-sm">I have read and agree to the <a href="/terms-and-conditions" className="underline">Terms and Conditions</a> and <a href="/privacy-policy" className="underline">Privacy Policy</a>.</span>
-            </div>
-            <div className="md:col-span-2">
-              <button type="submit" className="w-full px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition">Apply now</button>
-            </div>
-          </form>
+          <JobApplicationForm position="First Line Manager" />
         </>
       )}
     />

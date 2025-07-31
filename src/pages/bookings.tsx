@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HeroSection from '../components/common/hero-section';
+import { sendBookingEmail } from '../lib/emailjs';
+import { useToast } from '../hooks/use-toast';
+import { useLanguage } from '../components/language-provider';
 
 const initialForm = {
   name: '',
@@ -24,6 +27,8 @@ const services = [
 ];
 
 export default function BookingsPage() {
+  const { t } = useLanguage()
+  const { toast } = useToast()
   const [form, setForm] = useState(initialForm);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -35,12 +40,30 @@ export default function BookingsPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitting(true);
-    // TODO: Replace with your booking endpoint (e.g., Formspree, EmailJS, or backend API)
-    setTimeout(() => {
+
+    try {
+      const result = await sendBookingEmail(form);
+
+      if (result.success) {
+        toast({
+          title: "Booking Request Sent!",
+          description: "Your booking enquiry has been received. Our team will contact you shortly.",
+        });
+        setSubmitted(true);
+        setForm(initialForm);
+      } else {
+        throw new Error('Failed to send booking request');
+      }
+    } catch (error) {
+      console.error('Booking submission error:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send your booking request. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    } finally {
       setSubmitting(false);
-      setSubmitted(true);
-      setForm(initialForm);
-    }, 1200);
+    }
   };
 
   // Scroll to form handler
