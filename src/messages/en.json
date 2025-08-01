@@ -457,7 +457,7 @@
     },
     "nosaIdahosa": {
       "name": "Nosa Idahosa",
-      "title": "Head of People and Operations",
+      "title": "Chief Head of People and Operations",
       "description": "Nosa brings over 13 years of NHS experience to BEARS. She is committed to equity and fairness, fostering a caring company culture, and promoting diversity. Nosa is passionate about staff and patient care, and enjoys spending time with his daughter, family, and music."
     },
     "beulah": {
@@ -472,34 +472,34 @@
     },
     "amechiOkaoye": {
       "name": "Amechi Okaoye",
-      "title": "Facility Manager",
+      "title": "Facilities and Complaince Lead",
       "description": "Amechi is experienced in staff mentoring, health and safety, and accident management. He is dedicated to staff development and patient service, and is committed to upholding BEARS' values. Amechi enjoys reading, podcasts, and family time."
     },
     "osmanSadiq": {
-      "name": "Osman Sadiq",
+      "name": "Osman Shafiq",
       "title": "Head of Business Intelligence",
       "description": "With over 18 years' experience in NEPTS, Osman leads BEARS' business intelligence unit. He is passionate about patient transport systems and transformational projects, ensuring BEARS delivers on its commitment to Safety, Comfort, and Care."
     },
     "michaelOkae": {
       "name": "Michael Okae",
-      "title": "Head of Compliance & Support Services",
+      "title": "Contracts & Patient Experience Lead",
       "description": "Michael is dedicated to ensuring a safe and efficient environment for staff and clients. He values collaboration and effective service delivery, and enjoys reading, podcasts, and family time."
     },
 
     "jonardCartagena": {
       "name": "Jonard Cartagena",
-      "title": "Head of Fleet Operations",
+      "title": "Head of Operations",
       "description": "Jonard has over 15 years' experience in ambulance care and fleet management. He is passionate about vehicle compliance and staff training, and has helped reduce accident rates at BEARS."
     },
     "adrian": {
       "name": "Adrian Baicoianu",
-      "title": "Front Line Manager",
-      "description": "Adrian is a dedicated Front Line Manager at BEARS, committed to providing exceptional patient care and transport services. He leads by example and ensures the highest standards of safety, comfort, and care are maintained across all operations."
+      "title": "First Line Manager",
+      "description": "Adrian is a dedicated Front Line ManagerFirst Line Manager at BEARS, committed to providing exceptional patient care and transport services. He leads by example and ensures the highest standards of safety, comfort, and care are maintained across all operations."
     },
     "ojo": {
       "name": "Ojo Olu Olaiya",
-      "title": "Fleet Manager",
-      "description": "Ojo is a valued Fleet Manager at BEARS, dedicated to ensuring safe and comfortable patient transport services. He brings strong leadership skills and a commitment to operational excellence to our team."
+      "title": "First Line Manager",
+      "description": "Ojo is a valued First Line Manager at BEARS, dedicated to ensuring safe and comfortable patient transport services. He brings strong leadership skills and a commitment to operational excellence to our team."
     },
     "dominiqueGratwick": {
       "name": "Dominique Gratwick",
@@ -513,13 +513,13 @@
     },
     "omofenwaShajuyigbe": {
       "name": "Omofenwa Shajuyigbe",
-      "title": "Fleet Manager",
-      "description": "Omofenwa is a dedicated Fleet Manager at BEARS, committed to ensuring exceptional patient care and transport services. She brings strong leadership skills and a passion for maintaining the highest standards of safety, comfort, and care across all operations."
+      "title": "First Line Manager",
+      "description": "Omofenwa is a dedicated First Line Manager at BEARS, committed to ensuring exceptional patient care and transport services. She brings strong leadership skills and a passion for maintaining the highest standards of safety, comfort, and care across all operations."
     },
     "ethelJohn": {
       "name": "Ethel John",
-      "title": "Facility Manager",
-      "description": "Ethel is a dedicated Facility Manager at BEARS, responsible for overseeing facility operations and ensuring optimal working environments for our team. She brings extensive experience in facility management and is committed to maintaining high standards of safety and efficiency across all our locations."
+      "title": "Facilities and Complaince Lead",
+      "description": "Ethel is a dedicated Facilities and Complaince Lead at BEARS, responsible for overseeing facility operations and ensuring optimal working environments for our team. She brings extensive experience in facility management and is committed to maintaining high standards of safety and efficiency across all our locations."
     }
   },
   "cubs": {
