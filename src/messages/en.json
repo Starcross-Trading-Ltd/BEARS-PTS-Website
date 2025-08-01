@@ -541,7 +541,11 @@
     "careDescription1": "Our team goes above and beyond for every patient.",
     "careDescription2": "We provide care that is tailored to each patient's needs.",
     "staffAppreciationTitle": "Staff Appreciation",
-    "staffAppreciationDescription": "Regular recognition and support programs keep our team motivated."
+    "staffAppreciationDescription": "Regular recognition and support programs keep our team motivated.",
+    "fabCeraldi": {
+      "name": "Fabrizio Ceraldi",
+      "title": "Business Intelligence Controller"
+    }
   },
   "fleet": {
     "ourFleetTitle": "Our Fleet",
