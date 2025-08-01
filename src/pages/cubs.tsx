@@ -28,7 +28,7 @@ const cubsImages = [
   '/images/cubs/2025_BEARS_508.jpg',
   '/images/cubs/2025_BEARS_514.jpg',
   '/images/cubs/2025_BEARS_520.jpg',
-  '/images/cubs/2025_BEARS_526.jpg',
+  '/images/cubs/2025_BEARS_364.jpg',
 ]
 
 // All remaining cubs images for the gallery
