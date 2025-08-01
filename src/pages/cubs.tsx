@@ -7,7 +7,7 @@ const cubsImages = [
   '/images/cubs/2025_BEARS_002.jpg',
   '/images/cubs/2025_BEARS_008.jpg',
   '/images/cubs/2025_BEARS_020.jpg',
-  '/images/cubs/2025_BEARS_030.jpg',
+  '/images/cubs/2025_BEARS_544.jpg',
   '/images/cubs/2025_BEARS_042.jpg',
   '/images/cubs/2025_BEARS_159.jpg',
   '/images/cubs/2025_BEARS_165.jpg',
@@ -23,12 +23,12 @@ const cubsImages = [
   '/images/cubs/2025_BEARS_328.jpg',
   '/images/cubs/2025_BEARS_349.jpg',
   '/images/cubs/2025_BEARS_460.jpg',
-  '/images/cubs/2025_BEARS_496.jpg',
-  '/images/cubs/2025_BEARS_502.jpg',
-  '/images/cubs/2025_BEARS_508.jpg',
+  '/images/cubs/2025_BEARS_358.jpg',
+  '/images/cubs/2025_BEARS_304.jpg',
+  '/images/cubs/2025_BEARS_562.jpg',
   '/images/cubs/2025_BEARS_514.jpg',
   '/images/cubs/2025_BEARS_520.jpg',
-  '/images/cubs/2025_BEARS_364.jpg',
+  '/images/cubs/2025_BEARS_601.jpg',
 ]
 
 // All remaining cubs images for the gallery
