@@ -541,9 +541,107 @@
     "careDescription1": "Our team goes above and beyond for every patient.",
     "careDescription2": "We provide care that is tailored to each patient's needs.",
     "staffAppreciationTitle": "Staff Appreciation",
-    "staffAppreciationDescription": "Regular recognition and support programs keep our team motivated.",
-    "fabCeraldi": {
-      "name": "Fabrizio Ceraldi",
+    "staffAppreciationDescription": "Regular recognition and support programs keep our team motivated."
+  },
+  "cubMembers": {
+    "fabrizoCeraldi": {
+      "name": "Fabrizo Ceraldi",
+      "title": "Business Intelligence Controller"
+    },
+    "mSheriff": {
+      "name": "Mutara Sheriff",
+      "title": "Ambulance Care Assistant"
+    },
+    "lyWilson": {
+      "name": "Lynette Wilson",
+      "title": "Secure Ambulance Care Assistant"
+    },
+    "iCiupag": {
+      "name": "Ionut Ciupag",
+      "title": "Ambulance Care Assistant"
+    },
+    "gKing": {
+      "name": "Gordon King",
+      "title": "ECMO Emergency Care Assistant"
+    },
+     "tPatel": {
+      "name": "Talesh Patel",
+      "title": "ECMO Emergency Care Assistant"
+    },
+    "nHuntely": {
+      "name": "Nadine Huntley",
+      "title": "Ambulance Care Assistant"
+    },
+    "lPasca": {
+      "name": "Liviu Pasca",
+      "title": "Secure Ambulance Care Assistant"
+    },
+    "mTrifan": {
+      "name": "Marius Trifan",
+      "title": "Secure Ambulance Care Assistant"
+    },
+    "vIsac": {
+      "name": "Vasile Isac",
+      "title": "Secure Ambulance Care Assistant"
+    },
+    "gIndo": {
+      "name": "George Indo",
+      "title": "Secure Ambulance Care Assistant"
+    },
+    "tSuch": {
+      "name": "Tony Such",
+      "title": "STRS Ambulance Care Assistant"
+    },
+    "lMarshall": {
+      "name": "Liam Marshall",
+      "title": "Secure Ambulance Care Assistant"
+    },
+    "dKwarteng": {
+      "name": "Desmond Kwarteng",
+      "title": "First Line Fleet Manager"
+    },
+    "dSpence": {
+      "name": "Dahlia Spence",
+      "title": "Ambulance Care Assistant"
+    },
+    "bHollis": {
+      "name": "Barry Hollis",
+      "title": "ECMO Emergency Care Assistant"
+    },
+    "sParis": {
+      "name": "Sheena Paris",
+      "title": "Ambulance Care Assistant"
+    },
+    "lFalvey": {
+      "name": "Louiza Falvey",
+      "title": "Emergency Care Assistant"
+    },
+    "aManzor": {
+      "name": "Abbas Manzor",
+      "title": "Secure Ambulance Care Assistant"
+    },
+    "jFikus": {
+      "name": "Janusz Fikus",
+      "title": "Paramedic"
+    },
+    "sWilliamson": {
+      "name": "Sharna Williamson",
+      "title": "Emergency Care Assistant"
+    },
+    "mAndrew": {
+      "name": "Megan Andrew",
+      "title": "Ambulance Care Assistant"
+    },
+    "eOranu": {
+      "name": "Emmanuel Oranu",
+      "title": "Fleet Controller"
+    },
+    "cNewing": {
+      "name": "Connor Newing",
+      "title": "Emergency Care Assistant"
+    },
+    "iOkeke": {
+      "name": "Ifeoma Okeke",
       "title": "Business Intelligence Controller"
     }
   },
