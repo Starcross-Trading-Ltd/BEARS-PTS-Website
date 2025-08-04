@@ -541,10 +541,108 @@
     "careDescription1": "Our team goes above and beyond for every patient.",
     "careDescription2": "We provide care that is tailored to each patient's needs.",
     "staffAppreciationTitle": "Staff Appreciation",
-    "staffAppreciationDescription": "Regular recognition and support programs keep our team motivated.",
-    "fabCeraldi": {
-      "name": "Fabrizio Ceraldi",
+    "staffAppreciationDescription": "Regular recognition and support programs keep our team motivated."
+  },
+  "cubMembers": {
+    "fabrizoCeraldi": {
+      "name": "Fabrizo Ceraldi",
       "title": "Business Intelligence Controller"
+    },
+    "mSheriff": {
+      "name": "Mutara Sheriff",
+      "title": "Ambulance Care Assistant"
+    },
+    "lyWilson": {
+      "name": "Lynette Wilson",
+      "title": "Secure Ambulance Care Assistant"
+    },
+    "iCiupag": {
+      "name": "Ionut Ciupag",
+      "title": "ECE Driver"
+    },
+    "gKing": {
+      "name": "Gordon King",
+      "title": "ECE Driver"
+    },
+     "tPatel": {
+      "name": "Talesh Patel",
+      "title": "ECE Driver"
+    },
+    "nHuntely": {
+      "name": "Nadine Huntely",
+      "title": "ECE Driver"
+    },
+    "lPasca": {
+      "name": "Liviu Pasca",
+      "title": "ECE Driver"
+    },
+    "mStifiuc": {
+      "name": "Marius Stifiuc",
+      "title": "ECE Driver"
+    },
+    "vIsac": {
+      "name": "Vasile Isac",
+      "title": "ECE Driver"
+    },
+    "gIndo": {
+      "name": "George Indo",
+      "title": "ECE Driver"
+    },
+    "rahulK": {
+      "name": "Rahul Kumar",
+      "title": "ECE Driver"
+    },
+    "lMarshall": {
+      "name": "Liam Marshall",
+      "title": "ECE Driver"
+    },
+    "dKwarteng": {
+      "name": "Desmond Kwarteng",
+      "title": "ECE Driver"
+    },
+    "dSpence": {
+      "name": "Dahlia Spence",
+      "title": "ECE Driver"
+    },
+    "bHollis": {
+      "name": "Barry Hollis",
+      "title": "ECE Driver"
+    },
+    "abbazMan16": {
+      "name": "Abbaz Man 16",
+      "title": "ECE Driver"
+    },
+    "abbazMan17": {
+      "name": "Abbaz Man 17",
+      "title": "ECE Driver"
+    },
+    "abbazMan18": {
+      "name": "Abbaz Man 18",
+      "title": "ECE Driver"
+    },
+    "jFikus": {
+      "name": "Janusz Fikus",
+      "title": "ECE Driver"
+    },
+    "sWilliamson": {
+      "name": "Sharna Williamson",
+      "title": "ECE Driver"
+    },
+    "mAndrew": {
+      "name": "Megan Andrew",
+      "title": "ECE Driver"
+    },
+    "eOranu": {
+      "name": "Emmanuel Oranu",
+      "title": "ECE Driver"
+    },
+    "cNewing": {
+      "name": "Connor Newing",
+      "title": "ECE Driver"
+    },
+    "iOkeke": {
+      "name": "Ifeoma Okeke",
+      "title": "ECE Driver"
     }
   },
   "fleet": {

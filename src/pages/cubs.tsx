@@ -4,31 +4,32 @@ import HeroSection from '../components/common/hero-section'
 
 // Curated selection of Cubs images for better performance
 const cubsImages = [
-  '/images/cubs/2025_BEARS_002.jpg',
-  '/images/cubs/2025_BEARS_008.jpg',
-  '/images/cubs/2025_BEARS_020.jpg',
-  '/images/cubs/2025_BEARS_042.jpg',
-  '/images/cubs/2025_BEARS_159.jpg',
-  '/images/cubs/2025_BEARS_165.jpg',
-  '/images/cubs/2025_BEARS_183.jpg',
-  '/images/cubs/2025_BEARS_189.jpg',
-  '/images/cubs/2025_BEARS_195.jpg',
-  '/images/cubs/2025_BEARS_210.jpg',
-  '/images/cubs/2025_BEARS_222.jpg',
-  '/images/cubs/2025_BEARS_240.jpg',
-  '/images/cubs/2025_BEARS_256.jpg',
-  '/images/cubs/2025_BEARS_280.jpg',
-  '/images/cubs/2025_BEARS_301.jpg',
-  '/images/cubs/2025_BEARS_304.jpg',
-  '/images/cubs/2025_BEARS_328.jpg',
-  '/images/cubs/2025_BEARS_349.jpg',
-  '/images/cubs/2025_BEARS_358.jpg',
-  '/images/cubs/2025_BEARS_460.jpg',
-  '/images/cubs/2025_BEARS_514.jpg',
-  '/images/cubs/2025_BEARS_520.jpg',
-  '/images/cubs/2025_BEARS_562.jpg',
-  '/images/cubs/2025_BEARS_589.jpg',
-  '/images/cubs/2025_BEARS_601.jpg',
+  { key: "fabrizoCeraldi", image: '/images/cubs/2025_BEARS_002.jpg' },
+  { key: "mSheriff", image: '/images/cubs/2025_BEARS_008.jpg' },
+  { key: "lyWilson", image: '/images/cubs/2025_BEARS_020.jpg' },
+  { key: "iCiupag", image: '/images/cubs/2025_BEARS_042.jpg' },
+  { key: "gKing", image: '/images/cubs/2025_BEARS_159.jpg' },
+  { key: "tPatel", image: '/images/cubs/2025_BEARS_165.jpg' },
+  { key: "nHuntely", image: '/images/cubs/2025_BEARS_183.jpg' },
+  { key: "lPasca", image: '/images/cubs/2025_BEARS_189.jpg' },
+  { key: "mStifiuc", image: '/images/cubs/2025_BEARS_195.jpg' },
+  { key: "vIsac", image: '/images/cubs/2025_BEARS_210.jpg' },
+  { key: "gIndo", image: '/images/cubs/2025_BEARS_222.jpg' },
+  { key: "rahulK", image: '/images/cubs/2025_BEARS_240.jpg' },
+  { key: "lMarshall", image: '/images/cubs/2025_BEARS_256.jpg' },
+  { key: "dKwarteng", image: '/images/cubs/2025_BEARS_280.jpg' },
+  { key: "dSpence", image: '/images/cubs/2025_BEARS_301.jpg' },
+  { key: "bHollis", image: '/images/cubs/2025_BEARS_304.jpg' },
+  { key: "abbazMan16", image: '/images/cubs/2025_BEARS_328.jpg' },
+  { key: "abbazMan17", image: '/images/cubs/2025_BEARS_349.jpg' },
+  { key: "abbazMan18", image: '/images/cubs/2025_BEARS_358.jpg' },
+  { key: "jFikus", image: '/images/cubs/2025_BEARS_460.jpg' },
+  { key: "sWilliamson", image: '/images/cubs/2025_BEARS_460.jpg' },
+  { key: "mAndrew", image: '/images/cubs/2025_BEARS_514.jpg' },
+  { key: "eOranu", image: '/images/cubs/2025_BEARS_520.jpg' },
+  { key: "cNewing", image: '/images/cubs/2025_BEARS_562.jpg' },
+  { key: "iOkeke", image: '/images/cubs/2025_BEARS_589.jpg' },
+  { key: "abbazMan25", image: '/images/cubs/2025_BEARS_601.jpg' },
 ]
 
 // All remaining cubs images for the gallery
@@ -124,9 +125,9 @@ export default function CubsPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-blue-500/5"></div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 md:gap-8">
-            {cubsImages.map((image, index) => (
+            {cubsImages.map((member, index) => (
               <div
-                key={index}
+                key={member.key}
                 className={`group relative transform transition-all duration-700 ease-out ${
                   isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
@@ -141,17 +142,23 @@ export default function CubsPage() {
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl group-hover:shadow-[0_20px_50px_rgba(0,133,90,0.3)] transition-all duration-500">
                   <div className="relative aspect-square overflow-hidden">
                     <img
-                      src={image}
-                      alt={`BEARS Cubs Team Member ${index + 1}`}
+                      src={member.image}
+                      alt={t(`cubs.${member.key}.name`, `Cubs Team Member ${index + 1}`)}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                   </div>
-                  
                   {/* Particle effect on hover */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                     <div className="absolute top-2 left-2 w-2 h-2 bg-primary rounded-full animate-ping"></div>
                     <div className="absolute top-4 right-4 w-1 h-1 bg-blue-500 rounded-full animate-ping delay-100"></div>
                     <div className="absolute bottom-4 left-4 w-1.5 h-1.5 bg-amber-500 rounded-full animate-ping delay-200"></div>
+                  </div>
+                  {/* Name and Title overlay */}
+                  <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 via-transparent to-transparent text-white">
+                    <div className="flex flex-col items-start justify-end w-full">
+                      <h3 className="text-[#228c3a] font-medium text-base mb-1">{t(`cubMembers.${member.key}.name`)}</h3>
+                      <p className="text-[#4285f4] font-medium text-sm">{t(`cubMembers.${member.key}.title`)}</p>
+                    </div>
                   </div>
                 </div>
               </div>
