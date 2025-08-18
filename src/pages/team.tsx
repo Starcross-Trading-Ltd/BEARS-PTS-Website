@@ -60,11 +60,11 @@ export default function TeamPage() {
     },
     {
       key: "amechiOkaoye",
-      image: "/images/meet_bears_five.png",
+      image: "/images/amchiImg.png",
     },
     {
-      key: "dominiqueGratwick",
-      image: "/images/2025_BEARS_504.jpg",
+      key: "meritJohn",
+      image: "/images/meritimg.jpg",
     },
   ]
 
@@ -116,7 +116,7 @@ export default function TeamPage() {
                                   member.key === "michaelOkae" ? 'center 10%' :
                                   member.key === "adrian" ? 'center 35%' :
                                   member.key === "ojo" ? 'center 4%' :
-                                  member.key === "dominiqueGratwick" ? 'center 15%' :
+                                  member.key === "meritJohn" ? 'center 15%' :
                                   member.key === "gregoryEtukudo" ? 'center 15%' :
                                   member.key === "omofenwaShajuyigbe" ? 'center 5%' :
                                   member.key === "beulah" ? 'center 10%' :
