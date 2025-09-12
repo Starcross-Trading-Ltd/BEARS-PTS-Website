@@ -149,7 +149,7 @@ export default function ContactPage() {
                 <Phone />
                 <span>{t("contact.callUs", "Call Us")}</span>
               </a>
-              <a href="mailto:info@bearspts.co.uk" className="flex items-center gap-2 text-primary hover:text-secondary transition">
+              <a href="mailto:enquiries@bears-pts.co.uk" className="flex items-center gap-2 text-primary hover:text-secondary transition">
                 <Mail />
                 <span>{t("contact.emailUs", "Email Us")}</span>
               </a>
