@@ -6,6 +6,15 @@ import { motion } from 'framer-motion'
 export default function NewsGrid() {
   const { t } = useLanguage()
 
+  // Dubai card as the first item
+  const DubaiCard = {
+    title: "BEARS in Dubai",
+    description: "We are pleased to announce that a team from BEARS has travelled to Dubai to participate in a feasibility study with Saudi German Hospital, one of the leading healthcare providers across the Middle East and North Africa region.",
+    image: "/images/news/Bears_Dubai/DubaiImg.jpg",
+    link: "/news/bears-dubai",
+    isBlueCard: false,
+  }
+
   // Christmas news card as the first item
   const christmasCard = {
     title: "Christmas @ BEARS Ambulance",
@@ -97,7 +106,7 @@ export default function NewsGrid() {
   }
 
   // Combine all news cards - removing placeholder articles
-  const allArticles = [christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
 
   const containerVariants = {
     hidden: { opacity: 0 },
