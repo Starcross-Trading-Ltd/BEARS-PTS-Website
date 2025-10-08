@@ -105,8 +105,17 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
+  // Swanscombe football team card as the twelveth item
+  const SwanscombeCard = {
+    title: "BEARS Community Support: Swanscombe Tigers FC",
+    description: "At BEARS, community support is at the heart of what we do and we are proud to sponsor Swanscombe Tigers U12 Black, part of one of the area’s most respected community football clubs. Swanscombe Tigers FC provides opportunities for over 300 young players across 30 teams, ranging from U6 to U18, including young girls, adult, and inclusive teams in the Kent, North Kent and Medway Leagues.",
+    image: "/images/news/Swancombe Team/squad.jpg",
+    link: "/news/swanscombe",
+    isBlueCard: false,
+  }
+
   // Combine all news cards - removing placeholder articles
-  const allArticles = [DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
 
   const containerVariants = {
     hidden: { opacity: 0 },
