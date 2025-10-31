@@ -241,7 +241,14 @@ export default function CubsPage() {
               href="/autumn-ball"
               className="group px-8 py-4 bg-blue-500 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 relative overflow-hidden"
             >
-              <span className="relative z-10">Autumn Ball Gallery</span>
+              <span className="relative z-10">Autumn Ball 2024 Gallery</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+            </a>
+            <a
+              href="/autumn-ball2"
+              className="group px-8 py-4 bg-yellow-500 text-white font-semibold rounded-xl shadow-lg hover:bg-blue-600 transition-all duration-300 transform hover:scale-105 relative overflow-hidden"
+            >
+              <span className="relative z-10">Autumn Ball 2025 Gallery</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </a>
             <a
