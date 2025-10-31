@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLanguage } from '../components/language-provider'
 import HeroSection from '../components/common/hero-section'
 
-// Autumn Ball images
+// Autumn Ball images 2024
 const autumnBallImages = [
   '/images/autumn_ball/BEARSAutumnBall-4826.jpg',
   '/images/autumn_ball/BEARSAutumnBall-4827.jpg',
@@ -98,7 +98,7 @@ export default function AutumnBallPage() {
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
       {/* Hero Section */}
       <HeroSection
-        title="BEARS Autumn Ball"
+        title="BEARS Autumn Ball 2024"
         subtitle="Celebrating our team and community with elegance and style"
         image="/images/autumn_ball/BEARSAutumnBall-4835.jpg"
         imageAlt="BEARS Autumn Ball"
@@ -133,7 +133,7 @@ export default function AutumnBallPage() {
           <div className="text-center mb-12">
             <h3 className="text-4xl font-bold text-amber-600 mb-4">Gallery Highlights</h3>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Relive the magical moments from our Autumn Ball celebration
+              Relive the magical moments from our Autumn Ball 2024 celebration
             </p>
           </div>
 
