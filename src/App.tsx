@@ -48,6 +48,7 @@ import ParamedicVacancy from './pages/vacancies/paramedic'
 import ShiftManager from './pages/vacancies/shift-manager'
 import BookingsPage from './pages/bookings'
 import AutumnBallPage from './pages/autumn-ball'
+import AutumnBall2Page from './pages/autumn-ball2'
 
 function App() {
   return (
@@ -99,6 +100,7 @@ function App() {
               <Route path="/vacancies/shift-manager" element={<ShiftManager />} />
               <Route path="/bookings" element={<BookingsPage />} />
               <Route path="/autumn-ball" element={<AutumnBallPage />} />
+              <Route path="/autumn-ball2" element={<AutumnBall2Page />} />
             </Routes>
           </PageLayout>
         </Router>
