@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useLanguage } from '../components/language-provider'
 import HeroSection from '../components/common/hero-section'
 
-// Autumn Ball images 2025
+// Autumn Ball 2025 images
 const autumnBallImages2 = [
   '/images/autumn-ball2/banner.jpg',
   '/images/autumn-ball2/BEARS Invite - DESIGN 2 TRAD - Vers. 2 - Copy.png',
