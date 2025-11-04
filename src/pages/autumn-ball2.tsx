@@ -99,22 +99,22 @@ export default function AutumnBallPage2() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-red-50">
+    <div className="min-h-screen bg-gradient-to-br from-#2a52be-50 via-blue-50 to-navy-50">
       {/* Hero Section */}
       <HeroSection
         title="BEARS Autumn Ball 2025"
         subtitle="Celebrating excellence together"
-        image="/images/autumn-ball2/DanielHousley_2026_10_18_BEARSAmbulance_0088.jpg"
+        image="/images/autumn-ball2/DanielHousley_2026_10_18_BEARSAmbulance_0054.jpg"
         imageAlt="BEARS Autumn Ball 2025"
         imagePosition="right"
-        bgColor="#e45111ff"
+        bgColor="#003399"
       />
 
       {/* Introduction Section */}
       <section className="py-20 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-orange-500/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-#2a52be-500/5 to-#003399-500/5"></div>
         <div className="container mx-auto px-4 max-w-4xl relative z-10 text-center">
-          <h2 className="text-5xl md:text-6xl font-bold text-amber-600 mb-6 animate-fade-in-up">
+          <h2 className="text-5xl md:text-4.5xl font-bold text-blue-600 mb-6 animate-fade-in-up">
             Celebrating Excellence
           </h2>
           <p className="text-xl text-gray-600 mb-8 animate-fade-in-up delay-100 leading-relaxed">
@@ -126,20 +126,20 @@ export default function AutumnBallPage2() {
             It was a night filled with laughter, celebration, and unforgettable memories.
           </p>
           <div className="flex justify-center space-x-4 animate-fade-in-up delay-200">
-            <div className="w-4 h-4 bg-amber-500 rounded-full animate-pulse"></div>
-            <div className="w-4 h-4 bg-orange-500 rounded-full animate-pulse delay-100"></div>
-            <div className="w-4 h-4 bg-red-500 rounded-full animate-pulse delay-200"></div>
+            <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse"></div>
+            <div className="w-4 h-4 bg-cyan-500 rounded-full animate-pulse delay-100"></div>
+            <div className="w-4 h-4 bg-blue-500 rounded-full animate-pulse delay-200"></div>
           </div>
         </div>
       </section>
 
       {/* Main Carousel Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-orange-500/5"></div>
+      <section className="py-20 bg-gradient-to-b from-white to-blue-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-#2a52be-500/5 to-#003399-500/5"></div>
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-amber-600 mb-4">Gallery Highlights</h3>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <h3 className="text-4xl font-bold text-blue-600 mb-4">Gallery Highlights</h3>
+            <p className="text-gray-600 max-w-4xl mx-auto">
               Relive the magical moments from our Autumn Ball 2025 celebration
             </p>
           </div>
@@ -226,41 +226,41 @@ export default function AutumnBallPage2() {
 
       {/* Event Details Section */}
       <section className="py-20 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-orange-500/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-navy-500/5"></div>
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-2xl p-8 border-l-4 border-amber-500 animate-fade-in-up delay-100">
-                <div className="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border-l-4 border-cyan-500 animate-fade-in-up delay-100">
+                <div className="w-16 h-16 bg-cyan-500 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-amber-600 mb-4">Annual Celebration</h3>
+                <h3 className="text-xl font-bold text-cyan-600 mb-4">Annual Celebration</h3>
                 <p className="text-gray-600">A special evening to honor our team's dedication and achievements.</p>
               </div>
             </div>
             
             <div className="text-center group">
-              <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 border-l-4 border-orange-500 animate-fade-in-up delay-200">
-                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="bg-gradient-to-br from-blue-50 to-green-50 rounded-2xl p-8 border-l-4 border-blue-500 animate-fade-in-up delay-200">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-orange-600 mb-4">Team Building</h3>
+                <h3 className="text-xl font-bold text-blue-600 mb-4">Team Building</h3>
                 <p className="text-gray-600">Strengthening bonds and fostering camaraderie among our team.</p>
               </div>
             </div>
             
             <div className="text-center group">
-              <div className="bg-gradient-to-br from-red-50 to-pink-50 rounded-2xl p-8 border-l-4 border-red-500 animate-fade-in-up delay-300">
-                <div className="w-16 h-16 bg-red-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border-l-4 border-purple-500 animate-fade-in-up delay-300">
+                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mb-6 mx-auto">
                   <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-red-600 mb-4">Memories</h3>
+                <h3 className="text-xl font-bold text-purple-600 mb-4">Memories</h3>
                 <p className="text-gray-600">Creating lasting memories and celebrating our shared success.</p>
               </div>
             </div>
@@ -269,7 +269,7 @@ export default function AutumnBallPage2() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-amber-600 to-orange-600">
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-6 animate-fade-in-up">
             Join Our Next Celebration
@@ -280,13 +280,13 @@ export default function AutumnBallPage2() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
             <a 
               href="/careers"
-              className="px-8 py-4 bg-white text-amber-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
+              className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105"
             >
               View Careers
             </a>
             <a 
               href="/contact"
-              className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-amber-600 transition-all duration-300 transform hover:scale-105"
+              className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-all duration-300 transform hover:scale-105"
             >
               Get in Touch
             </a>
