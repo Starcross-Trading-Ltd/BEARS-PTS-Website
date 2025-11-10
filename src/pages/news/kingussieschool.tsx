@@ -137,21 +137,17 @@ export default function KingussieNewsPage() {
             <div className="mb-12">
               <p className="text-xl text-black-700 leading-relaxed mb-8">
                    
-                BEARS proudly participated in the Uniform and Emergency Services Event hosted by Kingussie High School, joining forces with the Army, Navy, Police, and RAF to inspire the next generation of service personnel.
+                 BEARS proudly participated in the Uniform and Emergency Services Event hosted by Kingussie High School, joining forces with the Army, Navy, Police, and RAF to inspire the next generation of service personnel.
                 Our team arrived early to settle in and explore the school grounds. We were warmly welcomed by Chris, Head of Sports, who introduced us to the Head Teacher, Suman Sharma, and event organisers including our host, Deddie Khadi. 
                 The students, full of excitement, expressed a strong interest in learning about BEARS and our work. <br></br> <br></br>
 
                 
-                The event began ahead of schedule, with students arriving in groups to explore our ambulance and indoor stand. Janusz one of our paramedics led outdoor demonstrations, showcasing our equipment and services. Inside, we displayed BEARS materials via laptop, 
-                engaged students with puzzles, and answered thoughtful questions about our operations and opportunities.
-                Students were captivated by role play scenarios and eagerly participated in discussions. They asked insightful questions such as how they could join BEARS, 
-                what BEARS does, how we manage both medical and prestige services, and whether attending this event could help them connect with BEARS in the future. We handed out light-up pens, BEARS teddy bears, 
-                and lapel pins—gifts that delighted students and even fellow service personnel. The Head Teacher expressed deep appreciation and requested to include our photos in the school gallery.<br></br> <br></br>
-
+                The event kicked off ahead of schedule, with students arriving in enthusiastic groups to explore both our ambulance and indoor display. Janusz, one of our experienced paramedics, led engaging demonstrations outside, walking students through the ambulance setup and the 
+                essential equipment we use in our services. Inside the hall, students gathered around our stand where BEARS materials were presented via laptop. They eagerly participated in interactive puzzles and asked thoughtful questions about our operations, showing genuine curiosity 
+                about our dual focus on medical and prestige services. The role play scenarios were a particular highlight, sparking lively discussions and deeper interest in how BEARS operates. Many students expressed a desire to get involved and asked whether attending the event could open future opportunities with BEARS.<br></br> <br></br>
                 
-                Students showed high levels of engagement with the ambulance demonstrations, asking questions and exploring the equipment with enthusiasm. There was strong interest in BEARS through interactive puzzles and video viewing, which helped them understand our services better. 
-                The role play scenarios generated excitement and curiosity, drawing in both students and staff. BEARS gifts, including light-up pens, teddy bears, and lapel pins, were warmly received and appreciated by students and fellow service personnel alike.
-                Representing BEARS at Kingussie High School was an honour. We left with pride, knowing we had inspired future leaders and strengthened our presence among uniformed services. We look forward to more opportunities to share our mission and values.
+                We were proud to share BEARS branded merchandise with attendees, including light-up pens, teddy bears, and lapel pins. These thoughtful giveaways were warmly received by students and fellow service personnel, adding a memorable touch to the day. The Head Teacher expressed heartfelt appreciation for our presence and requested to include our photos in the school’s gallery, a gesture that truly honoured our contribution.<br></br><br></br>
+                Representing BEARS at Kingussie High School was a privilege. We left with a deep sense of pride, knowing we had inspired future leaders and strengthened our presence among uniformed services. We look forward to more opportunities to share our mission, connect with communities, and continue flying the BEARS flag.
 
             </p>
                 <div className="flex justify-center space-x-4 animate-fade-in-up delay-200">
@@ -258,4 +254,5 @@ export default function KingussieNewsPage() {
       </section>
     </div>
   )
+
 } 
