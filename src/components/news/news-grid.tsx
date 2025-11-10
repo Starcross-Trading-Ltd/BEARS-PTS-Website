@@ -15,7 +15,7 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
-  // Christmas news card as the second item
+  // Christmas news card as the first item
   const christmasCard = {
     title: "Christmas @ BEARS Ambulance",
     description: "'Tis the season of giving, and our BEARS Ambulance family came together to celebrate the holidays in true emergency services style. Our dedicated team took a brief pause from saving lives to spread some Christmas cheer, creating memories that remind us all why we're more than just colleagues – we're a family serving our community 24/7, even during the festive season.",
@@ -24,7 +24,7 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
-  // Pulse 4 news card as the third item
+  // Pulse 4 news card as the second item
   const pulse4Card = {
     title: "The Pulse Clinical Newsletter #4",
     description: "September 2024 - Clinical Updates and Safety Information. This edition covers essential clinical topics including chest drains, DNACPR procedures, Mpox awareness, and Ferno chair safety guidelines. Stay informed with the latest clinical protocols and best practices.",
@@ -33,7 +33,7 @@ export default function NewsGrid() {
     isBlueCard: true,
   }
 
-  // Pulse 3 news card as the fourth item
+  // Pulse 3 news card as the third item
   const pulse3Card = {
     title: "The Pulse Clinical Newsletter #3",
     description: "July 2024 - Clinical Updates and Safety Information. This edition covers children & young people transport, staff wellbeing, sickle cell disease awareness, and MSOP recap. Essential reading for all clinical staff.",
@@ -42,7 +42,7 @@ export default function NewsGrid() {
     isBlueCard: true,
   }
 
-  // FORS news card as the fifth item
+  // FORS news card as the fourth item
   const forsCard = {
     title: "Joining FORS: Elevating Standards in Ambulance Services",
     description: "As part of our ongoing commitment to excellence and safety, we are proud to announce that Bears, an esteemed ambulance service provider, has recently become a member of the Fleet Operators Recognition Scheme (FORS). This prestigious accreditation is a testament to our dedication to enhancing operational efficiency, promoting safety measures, and adhering to rigorous industry standards.",
@@ -51,7 +51,7 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
-  // Fritwell fundraising news card as the sixth item
+  // Fritwell fundraising news card as the fifth item
   const fritwellCard = {
     title: "Fundraising Event for Friends of Fritwell Primary Charity",
     description: "We were delighted to attend a fundraising event organized by the Friends of Fritwell Primary Charity at Fritwell Church of England Primary School. For this event, we brought a fully stocked ambulance to ensure we could cater to any first aid requirements throughout the evening.",
@@ -60,7 +60,7 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
-  // Whitchurch STEM news card as the seventh item
+  // Whitchurch STEM news card as the sixth item
   const whitchurchCard = {
     title: "STEM Week at Whitchurch Primary School",
     description: "As part of Year 3 STEM week, we had the opportunity to attend Whitchurch Primary School and contribute to the children's exploration of medical professions. We took an ambulance to the school and conducted three interactive sessions, each accommodating around 18 children.",
@@ -69,7 +69,7 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
-  // American School Fair news card as the eighth item
+  // American School Fair news card as the seventh item
   const americanSchoolCard = {
     title: "American School Fair",
     description: "The event was to provide Paramedic/First Aid cover for the American Community School (ACS) summer fair. The BEARS team on site were on hand to provide medical assistance in the event there are any injuries or incidents during the day along with a front-line Ambulance to ensure a swift response for any members of public/students that require urgent hospital attention.",
@@ -78,7 +78,7 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
-  // ECMO Ambulance Launch news card as the ninth item
+  // ECMO Ambulance Launch news card as the eighth item
   const ecmoAmbulanceCard = {
     title: "BEARS launch brand new ECMO Ambulance with Barts",
     description: "We are excited to announce the launch of a new ECMO ambulance in collaboration with Barts Health, designed to enhance the care and experience of our most critically ill patients. This state-of-the-art vehicle is specifically equipped to transport patients requiring extracorporeal membrane oxygenation (ECMO), a life-support machine that temporarily takes over the function of the heart or lungs, allowing these vital organs time to heal.",
@@ -87,7 +87,7 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
-  // Pulse 2 news card as the tenth item
+  // Pulse 2 news card as the ninth item
   const pulse2Card = {
     title: "The Pulse Clinical Newsletter #2",
     description: "ISSUE 2 – May 2024. Capacity and Consent - Capacity describes the ability to use and understand information to decide, and communicate any decision made. A person lacks capacity if their mind is impaired or disturbed in some way, which means they are unable to decide at that time.",
@@ -96,7 +96,7 @@ export default function NewsGrid() {
     isBlueCard: true,
   }
 
-  // HALO Body Cams news card as the eleventh item
+  // HALO Body Cams news card as the tenth item
   const haloBodyCamsCard = {
     title: "BEARS tests HALO body cams",
     description: "As part of our \"Care\" values, to safeguard patients and our ambulance crews, BEARS management team are looking to invest in body cameras. The body camera will provide additional safety measures, which can be used to manage incidents and also act as a deterrent to some challenging circumstances faced by our crews.",
@@ -105,7 +105,7 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
-  // Swanscombe football team card as the twelveth item
+  // Swanscombe football team card as the eleventh item
   const SwanscombeCard = {
     title: "BEARS Community Support: Swanscombe Tigers FC",
     description: "At BEARS, community support is at the heart of what we do and we are proud to sponsor Swanscombe Tigers U12 Black, part of one of the area’s most respected community football clubs. Swanscombe Tigers FC provides opportunities for over 300 young players across 30 teams, ranging from U6 to U18, including young girls, adult, and inclusive teams in the Kent, North Kent and Medway Leagues.",
@@ -113,9 +113,16 @@ export default function NewsGrid() {
     link: "/news/swanscombe",
     isBlueCard: false,
   }
-
+ // Kingussie Uniform and Emergency Services Event football team card as the eleventh item
+  const KingussieCard = {
+    title: "BEARS at Kingussie High School Uniform and Emergency Services Event",
+    description: "BEARS proudly participated in the Uniform and Emergency Services Event hosted by Kingussie High School, joining forces with the Army, Navy, Police, and RAF to inspire the next generation of service personnel.Our team arrived early to settle in and explore the school grounds. We were warmly welcomed by Chris, Head of Sports, who introduced us to the Head Teacher, Suman Sharma, and event organisers including our host, Deddie Khadi.",
+    image: "/images/news/kingussie/1000006000.jpg",
+    link: "/news/kingussieschool",
+    isBlueCard: false,
+  }
   // Combine all news cards - removing placeholder articles
-  const allArticles = [SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
 
   const containerVariants = {
     hidden: { opacity: 0 },
