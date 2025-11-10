@@ -116,7 +116,7 @@ export default function NewsGrid() {
  // Kingussie Uniform and Emergency Services Event football team card as the eleventh item
   const KingussieCard = {
     title: "BEARS at Kingussie High School Uniform and Emergency Services Event",
-    description: "BEARS proudly participated in the Uniform and Emergency Services Event hosted by Kingussie High School, joining forces with the Army, Navy, Police, and RAF to inspire the next generation of service personnel.Our team arrived early to settle in and explore the school grounds. We were warmly welcomed by Chris, Head of Sports, who introduced us to the Head Teacher, Suman Sharma, and event organisers including our host, Deddie Khadi.",
+    description: "BEARS proudly participated in the Uniform and Emergency Services Event hosted by Kingussie High School, joining forces with the Army, Navy, Police, and RAF to inspire the next generation of service personnel.Our team arrived early to settle in and explore the school grounds. We were warmly welcomed by Chris, Head of Sports, who introduced us to the Head Teacher, Suman Sharma, and event organisers including our host, Deddie Khadi..",
     image: "/images/news/kingussie/1000006000.jpg",
     link: "/news/kingussieschool",
     isBlueCard: false,
