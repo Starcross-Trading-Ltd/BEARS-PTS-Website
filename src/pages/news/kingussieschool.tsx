@@ -23,7 +23,6 @@ const KingussieImages = [
     '/images/news/kingussie/1000005401.jpg',
     '/images/news/kingussie/1000005404.jpg',
     '/images/news/kingussie/1000005407.jpg',
-    '/images/news/kingussie/1000005410.jpg',
     '/images/news/kingussie/1000005413.jpg',
     '/images/news/kingussie/1000005440.jpg',
     '/images/news/kingussie/1000005452.jpg',
@@ -256,3 +255,4 @@ export default function KingussieNewsPage() {
   )
 
 } 
+
