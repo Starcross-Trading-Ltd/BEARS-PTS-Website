@@ -51,6 +51,7 @@ export default function ChristmasNewsPage() {
               <h1 className="text-4xl md:text-5xl font-bold text-primary mb-6">
                 Christmas @ BEARS Ambulance
               </h1>
+              <div className="text-xl text-gray-600 mb-4">December 2024</div>
               <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-green-500 mx-auto mb-8"></div>
             </div>
 
