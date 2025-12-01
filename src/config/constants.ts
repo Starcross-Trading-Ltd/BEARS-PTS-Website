@@ -1,6 +1,7 @@
 export const CONTACT_INFO = {
   phone: '020 8202 5160',
-  email: 'enquiries@bears-pts.co.uk'
+  email: 'enquiries@bears-pts.co.uk',
+  email2: 'operations@bears-pts.co.uk'
 } as const
 
 export const COMPANY_INFO = {
