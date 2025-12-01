@@ -113,6 +113,13 @@ const Footer: React.FC = () => {
                   className="ml-1 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-dark rounded"
                 >
                   {CONTACT_INFO.email}
+                </a><br></br>
+                
+                 <a 
+                  href={`mailto:${CONTACT_INFO.email2}`}
+                  className="ml-1 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-dark rounded"
+                >
+                  {CONTACT_INFO.email2}
                 </a>
               </p>
             </address>
