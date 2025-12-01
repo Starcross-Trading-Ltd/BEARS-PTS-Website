@@ -130,6 +130,7 @@ export default function KingussieNewsPage() {
               <h1 className="text-4xl md:text-4xl font-bold text-primary mb-6">
                 BEARS Inspires Future Heroes at Kingussie High School Uniform and Emergency Services Event
               </h1>
+                <div className="text-xl text-gray-600 mb-4">November 2025</div>
               <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-green-500 mx-auto mb-8"></div>
             </div>
 
@@ -255,4 +256,5 @@ export default function KingussieNewsPage() {
   )
 
 } 
+
 
