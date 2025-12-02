@@ -27,7 +27,7 @@ const cubsImages = [
   { key: "sWilliamson", image: '/images/cubs/2025_BEARS_514.jpg' },
   { key: "mAndrew", image: '/images/cubs/2025_BEARS_520.jpg' },
   { key: "eOranu", image: '/images/cubs/2025_BEARS_562.jpg' },
-  { key: "cNewing", image: '/images/cubs/2025_BEARS_589.jpg' },
+  { key: "jDalangin", image: '/images/cubs/2025_BEARS_550.jpg' },
   { key: "iOkeke", image: '/images/cubs/2025_BEARS_601.jpg' },
   
 ]
@@ -201,11 +201,17 @@ export default function CubsPage() {
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                 </svg>
               </div>
-              <blockquote className="text-2xl md:text-3xl font-medium text-gray-800 mb-6 leading-relaxed">
-                "Crew were brilliant, came on time. Driver was very good and the journey was comfortable. The staff member that stayed in the back, kept me entertained and chatted with me all the way home, putting me at ease. Excellent service, 10/10!"
+              <blockquote className="text-1x2 md:text-2x2 font-medium text-gray-800 mb-6 leading-relaxed">
+                  At BEARS Ambulance Service, we are incredibly proud of our teams and the compassion, professionalism, and dedication they show every single day. Every so often, we receive feedback that truly reminds us why this work matters and recently, one of our colleagues has exemplified this in the most inspiring way.
+
+                  We proudly recognise Alex Price for the extraordinary support he offered to a family navigating a difficult time. His empathy and commitment stood out, and the feedback has been truly exceptional.
+
+                  His actions reflect the very best of BEARS: quiet strength, professionalism, and genuine care. If the past few weeks have proven anything, it’s that not all superheroes wear capes…but some definitely wear green!
+
+                  To Alex – thank you. You have made us proud, and more importantly, you have made a difference
               </blockquote>
               <div className="text-lg font-semibold text-primary">
-                St Bartholomew's Hospital
+                Staff Commendation - November 2025 
               </div>
             </div>
           </div>
