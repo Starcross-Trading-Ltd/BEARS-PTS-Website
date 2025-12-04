@@ -21,6 +21,10 @@ const bannerImages = [
   '/images/banner/spinner_seventeen.png',
   '/images/banner/kent_medway.png',
   '/images/banner/sussex.png',
+  '/images/banner/CardoganClinicLogo.png',
+  '/images/banner/cyberessentialspluslogo.jpg',
+  '/images/banner/londonclinicLogo.png',
+  '/images/banner/SaudiGLogo.png',
 ];
 
 const Banner: React.FC = () => {
