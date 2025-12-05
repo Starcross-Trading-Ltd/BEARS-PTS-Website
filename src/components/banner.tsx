@@ -25,7 +25,7 @@ const bannerImages = [
   '/images/banner/cyberessentialspluslogo.jpg',
   '/images/banner/londonclinicLogo.png',
   '/images/banner/SaudiGLogo.png',
-  '/images/banner/KSS.png',
+  '/images/banner/KSSLogo.png',
 ];
 
 const Banner: React.FC = () => {
