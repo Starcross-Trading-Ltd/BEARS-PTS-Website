@@ -113,23 +113,23 @@ export default function NewsGrid() {
     link: "/news/swanscombe",
     isBlueCard: false,
   }
- // Kingussie Uniform and Emergency Services Event football team card as the eleventh item
+// Kingussie Uniform and Emergency Services Event football team card as the Twelveth item
   const KingussieCard = {
     title: "BEARS at Kingussie High School Uniform and Emergency Services Event",
-    description: "BEARS proudly participated in the Uniform and Emergency Services Event hosted by Kingussie High School, joining forces with the Army, Navy, Police, and RAF to inspire the next generation of service personnel.Our team arrived early to settle in and explore the school grounds. We were warmly welcomed by Chris, Head of Sports, who introduced us to the Head Teacher, Suman Sharma, and event organisers including our host, Deddie Khadi..",
+    description: "BEARS proudly participated in the Uniform and Emergency Services Event hosted by Kingussie High School, joining forces with the Army, Navy, Police, and RAF to inspire the next generation of service personnel.Our team arrived early to settle in and explore the school grounds. We were warmly welcomed by Chris, Head of Sports, who introduced us to the Head Teacher, Suman Sharma, and event organisers including our host, Deddie Khadi.",
     image: "/images/news/kingussie/1000006000.jpg",
     link: "/news/kingussieschool",
     isBlueCard: false,
   }
-   // Pulse 5 news card as the fourteenth item
- const pulse5Card = {
+  // Pulse 5 news card as the thirteenth item
+  const pulse5Card = {
     title: "The Pulse Clinical Newsletter #5",
     description: "November 2025 - Clinical Updates and Safety Information. This edition covers getting the basics right with Patient Care Records (PCRs). It includes a PCR Heatmap highlighting areas of strength and improvement, along with a fun PCR-themed crossword to test your knowledge.",
     image: undefined,
     link: "/news/pulse-5",
     isBlueCard: true,
   }
-   // Pulse 5 news card as the fifteenth item
+   // Pulse 5 news card as the fourteenth item
   const pulse6Card = {
     title: "The Pulse Clinical Newsletter #6",
     description: "December 2025 - Clinical Updates and Safety Information. This edition highlights why consumables matter, how they support patient safety and the importance of using and storing them correctly.",
@@ -137,9 +137,18 @@ export default function NewsGrid() {
     link: "/news/pulse-6",
     isBlueCard: true,
   }
+  // Haberdasher Career's Fair card as the fifteenth item
+  const HaberdasherCard = {
+    title: "BEARS Inspires the Next Generation at Haberdashers’ Knights Academy Career Fair",
+    description: "BEARS was delighted to take part in a recent Careers Fair at a secondary school in Bromley, where we had the fantastic opportunity to introduce students to the world of patient transport and pre-hospital care.",
+    image: "/images/news/haberdashers/3.jpg",
+    link: "/news/haberdashers",
+    isBlueCard: false,
+  }
+
   // Combine all news cards - removing placeholder articles
-  const allArticles = [pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
-  
+  const allArticles = [HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+
    const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
