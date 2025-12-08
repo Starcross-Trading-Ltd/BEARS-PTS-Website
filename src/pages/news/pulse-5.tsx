@@ -60,7 +60,6 @@ export default function Pulse5NewsPage() {
               />
             </div>
 
-            {/* Transportation of patients with chest drains */}
             <div className="mb-12">
               
               <h3 className="text-2xl font-bold text-green-800 mb-4">Why it Matters</h3>
