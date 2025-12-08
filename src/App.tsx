@@ -11,6 +11,7 @@ import ServicesPage from './pages/services'
 import ContactPage from './pages/contact'
 import ComplimentsPage from './pages/compliments'
 import NewsPage from './pages/news'
+import Pulse6NewsPage from './pages/news/pulse-6'
 import Pulse5NewsPage from './pages/news/pulse-5'
 import KingussieNewsPage from './pages/news/kingussieschool'
 import BearsInDubaiNewsPage from './pages/news/bears-dubai'
@@ -74,6 +75,7 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/compliments" element={<ComplimentsPage />} />
               <Route path="/news" element={<NewsPage />} />
+              <Route path="/news/pulse-6" element={<Pulse6NewsPage />} />
               <Route path="/news/pulse-5" element={<Pulse5NewsPage />} />
               <Route path="/news/kingussieschool" element={<KingussieNewsPage />} />
               <Route path="/news/swanscombe" element={<SwanscombeNewsPage />} />
