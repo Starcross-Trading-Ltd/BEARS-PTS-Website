@@ -121,16 +121,24 @@ export default function NewsGrid() {
     link: "/news/kingussieschool",
     isBlueCard: false,
   }
-  // Pulse 5 news card as the thirteenth item
-  const pulse5Card = {
+   // Pulse 5 news card as the fourteenth item
+ const pulse5Card = {
     title: "The Pulse Clinical Newsletter #5",
-    description: "November 2025 - Clinical Updates and Safety Information. This edition covers essential clinical topics including chest drains, DNACPR procedures, Mpox awareness, and Ferno chair safety guidelines. Stay informed with the latest clinical protocols and best practices.",
+    description: "November 2025 - Clinical Updates and Safety Information. This edition covers getting the basics right with Patient Care Records (PCRs). It includes a PCR Heatmap highlighting areas of strength and improvement, along with a fun PCR-themed crossword to test your knowledge.",
     image: undefined,
     link: "/news/pulse-5",
     isBlueCard: true,
   }
+   // Pulse 5 news card as the fifteenth item
+  const pulse6Card = {
+    title: "The Pulse Clinical Newsletter #6",
+    description: "December 2025 - Clinical Updates and Safety Information. This edition highlights why consumables matter, how they support patient safety and the importance of using and storing them correctly.",
+    image: undefined,
+    link: "/news/pulse-6",
+    isBlueCard: true,
+  }
   // Combine all news cards - removing placeholder articles
-  const allArticles = [pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
   
    const containerVariants = {
     hidden: { opacity: 0 },
