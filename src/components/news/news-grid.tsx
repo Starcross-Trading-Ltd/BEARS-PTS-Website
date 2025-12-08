@@ -121,10 +121,18 @@ export default function NewsGrid() {
     link: "/news/kingussieschool",
     isBlueCard: false,
   }
+  // Pulse 5 news card as the thirteenth item
+  const pulse5Card = {
+    title: "The Pulse Clinical Newsletter #5",
+    description: "November 2025 - Clinical Updates and Safety Information. This edition covers essential clinical topics including chest drains, DNACPR procedures, Mpox awareness, and Ferno chair safety guidelines. Stay informed with the latest clinical protocols and best practices.",
+    image: undefined,
+    link: "/news/pulse-5",
+    isBlueCard: true,
+  }
   // Combine all news cards - removing placeholder articles
-  const allArticles = [KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
-
-  const containerVariants = {
+  const allArticles = [pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  
+   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
