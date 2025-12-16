@@ -23,7 +23,7 @@ const bannerImages = [
   '/images/banner/sussex.png',
   '/images/banner/CardoganClinicLogo.png',
   '/images/banner/cyberessentialspluslogo.jpg',
-  '/images/banner/londonclinicLogo.png',
+  '/images/banner/londonclinicLogo2.jpg',
   '/images/banner/SaudiGLogo.png',
   '/images/banner/KSSLogo.png',
 ];
