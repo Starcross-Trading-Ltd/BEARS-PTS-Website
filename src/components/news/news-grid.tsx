@@ -151,6 +151,7 @@ export default function NewsGrid() {
     description: "BEARS Santa brought festive cheer to the children at Evelina Children's Hospital, spreading joy and delivering gifts during the holiday season.",
     image: "/images/news/xmas_in_evelina/banner.jpeg",
     link: "/news/xmas-in-evelina",
+    isBlueCard: false,
   }
 
   // Combine all news cards - removing placeholder articles
