@@ -145,9 +145,16 @@ export default function NewsGrid() {
     link: "/news/haberdashers",
     isBlueCard: false,
   }
+// Evelina Xmas card as the sixteenth item
+  const EvelinaXmasCard = {
+    title: "BEARS Santa Spreads Joy at Evelina Children's Hospital",
+    description: "BEARS Santa brought festive cheer to the children at Evelina Children's Hospital, spreading joy and delivering gifts during the holiday season.",
+    image: "/images/news/xmas_in_evelina/banner.jpeg",
+    link: "/news/xmas-in-evelina",
+  }
 
   // Combine all news cards - removing placeholder articles
-  const allArticles = [HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
 
    const containerVariants = {
     hidden: { opacity: 0 },
