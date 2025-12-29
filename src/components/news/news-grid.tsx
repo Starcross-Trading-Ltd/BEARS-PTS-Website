@@ -145,17 +145,27 @@ export default function NewsGrid() {
     link: "/news/haberdashers",
     isBlueCard: false,
   }
-// Evelina Xmas card as the sixteenth item
+ // Evelina Xmas card as the sixteenth item
   const EvelinaXmasCard = {
     title: "BEARS Santa Spreads Joy at Evelina Children's Hospital",
-    description: "BEARS Santa brought festive cheer to the children at Evelina Children's Hospital, spreading joy and delivering gifts during the holiday season.",
+    description: "To celebrate this festive season, the BEARS Santa team visited Evelina Children’s hospital, sharing gifts, smiles and teddies with all the children spending this Christmas period in hospital.",
     image: "/images/news/xmas_in_evelina/banner.jpeg",
     link: "/news/xmas-in-evelina",
     isBlueCard: false,
   }
 
+     // SONet & SORT Xmas card as the seventeenth item
+  const SonetSortXmasCard = {
+    title: "BEARS Santa Team visits Southampton and Oxford Hospitals (SONeT & SORT)",
+    description: "As Christmas is a season of joy, warmth, and celebration, it was important to celebrate the role these teams play in supporting paediatric and neonatal patient care.",
+    image: "/images/news/xmas_in_sonet_sort/banner.jpg",
+    link: "/news/xmas-in-sonet-sort",
+    isBlueCard: false,
+  }
+
+
   // Combine all news cards - removing placeholder articles
-  const allArticles = [EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [SonetSortXmasCard,EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
 
    const containerVariants = {
     hidden: { opacity: 0 },
