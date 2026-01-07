@@ -77,12 +77,11 @@ function App() {
               <Route path="/services/mental-health" element={<MentalHealthPage />} />
               <Route path="/services/neonatal" element={<NeonatalPage />} />
               <Route path="/contact" element={<ContactPage />} />
-              <Route path="/compliments" element={<ComplimentsPage />} />
-              <Route path="/news/haberdashers" element={<HaberdashersNewsPage />} />
               <Route path="/news" element={<NewsPage />} />
               <Route path="/news/pulse-7" element={<Pulse7NewsPage />} />
               <Route path="/news/xmas-in-sonet-sort" element={<XmasSonetSortNewsPage />} />
               <Route path="/news/xmas-in-evelina" element={<EvelinaXmasNewsPage />} />
+              <Route path="/news/haberdashers" element={<HaberdashersNewsPage />} />
               <Route path="/news/pulse-6" element={<Pulse6NewsPage />} />
               <Route path="/news/pulse-5" element={<Pulse5NewsPage />} />
               <Route path="/news/kingussieschool" element={<KingussieNewsPage />} />
