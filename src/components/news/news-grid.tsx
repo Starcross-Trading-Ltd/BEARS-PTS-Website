@@ -113,7 +113,7 @@ export default function NewsGrid() {
     link: "/news/swanscombe",
     isBlueCard: false,
   }
-// Kingussie Uniform and Emergency Services Event football team card as the Twelveth item
+ // Kingussie Uniform and Emergency Services Event football team card as the Twelveth item
   const KingussieCard = {
     title: "BEARS at Kingussie High School Uniform and Emergency Services Event",
     description: "BEARS proudly participated in the Uniform and Emergency Services Event hosted by Kingussie High School, joining forces with the Army, Navy, Police, and RAF to inspire the next generation of service personnel.Our team arrived early to settle in and explore the school grounds. We were warmly welcomed by Chris, Head of Sports, who introduced us to the Head Teacher, Suman Sharma, and event organisers including our host, Deddie Khadi.",
@@ -129,7 +129,7 @@ export default function NewsGrid() {
     link: "/news/pulse-5",
     isBlueCard: true,
   }
-   // Pulse 5 news card as the fourteenth item
+   // Pulse 6 news card as the fourteenth item
   const pulse6Card = {
     title: "The Pulse Clinical Newsletter #6",
     description: "December 2025 - Clinical Updates and Safety Information. This edition highlights why consumables matter, how they support patient safety and the importance of using and storing them correctly.",
@@ -145,7 +145,8 @@ export default function NewsGrid() {
     link: "/news/haberdashers",
     isBlueCard: false,
   }
- // Evelina Xmas card as the sixteenth item
+
+   // Evelina Xmas card as the sixteenth item
   const EvelinaXmasCard = {
     title: "BEARS Santa Spreads Joy at Evelina Children's Hospital",
     description: "To celebrate this festive season, the BEARS Santa team visited Evelina Children’s hospital, sharing gifts, smiles and teddies with all the children spending this Christmas period in hospital.",
@@ -163,11 +164,20 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
+    // Pulse 7 news card as the eighteenth item
+  const pulse7Card = {
+    title: "The Pulse Clinical Newsletter #7",
+    description: "January 2026 - Clinical Updates and Safety Information. This edition focuses on engine idling – why it matters, where expectations sit, and how small changes in habit can protect our reputation, our contracts, and the communities we serve.",
+    image: undefined,
+    link: "/news/pulse-7",
+    isBlueCard: true,
+  }
+
 
   // Combine all news cards - removing placeholder articles
-  const allArticles = [SonetSortXmasCard,EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [pulse7Card, SonetSortXmasCard,EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
 
-   const containerVariants = {
+  const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
