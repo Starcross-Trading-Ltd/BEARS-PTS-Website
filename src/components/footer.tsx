@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
   const legalLinks = [
     { label: "Terms & Conditions", href: '/terms-and-conditions' },
     { label: "Modern Slavery", href: '/documents/BEARS-Modern-Slavery-Statement.pdf', external: true },
-    { label: "Carbon Reduction Plan", href: '/documents/BEARS_Carbon_Reduction_Plan___03_04_25.pdf', external: true },
+    { label: "Carbon Reduction Plan", href: '/documents/BEARS Carbon Reduction Plan - 2026.pdf', external: true },
     { label: "Patient Survey", href: '/patient-survey' },
   ]
 
