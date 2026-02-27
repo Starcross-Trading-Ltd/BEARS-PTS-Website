@@ -173,9 +173,19 @@ export default function NewsGrid() {
     isBlueCard: true,
   }
 
+// Lumos Nursery Emergency Awareness Day card as the nineteenth item
+  const LumosNurseryCard = {
+    title: "BEARS Visits Little Lumos Nursery for an Engaging Emergency Awareness Day",
+    description: "Little Lumos Nursery School recently welcomed BEARS for an engaging and educational Service Emergency Awareness event. The event was designed to introduce young children to important safety concepts and emergency procedures in a fun and interactive way.",
+    image: "/images/news/lumos/pic3.jpg",
+    link: "/news/lumos-nursery",
+    isBlueCard: false,
+  }
+
 
   // Combine all news cards - removing placeholder articles
-  const allArticles = [pulse7Card, SonetSortXmasCard,EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [LumosNurseryCard, pulse7Card, SonetSortXmasCard,EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
