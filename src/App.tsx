@@ -11,6 +11,7 @@ import ServicesPage from './pages/services'
 import ContactPage from './pages/contact'
 import ComplimentsPage from './pages/compliments'
 import NewsPage from './pages/news'
+import LumosNewsPage from './pages/news/lumos'
 import Pulse7NewsPage from './pages/news/pulse-7'
 import XmasSonetSortNewsPage from './pages/news/xmasinsonetsort'
 import EvelinaXmasNewsPage from './pages/news/xmasinevelina'
@@ -78,6 +79,7 @@ function App() {
               <Route path="/services/neonatal" element={<NeonatalPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/news" element={<NewsPage />} />
+              <Route path="/news/lumos-nursery" element={<LumosNewsPage />} />
               <Route path="/news/pulse-7" element={<Pulse7NewsPage />} />
               <Route path="/news/xmas-in-sonet-sort" element={<XmasSonetSortNewsPage />} />
               <Route path="/news/xmas-in-evelina" element={<EvelinaXmasNewsPage />} />
