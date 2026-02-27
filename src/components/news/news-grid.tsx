@@ -183,7 +183,7 @@ export default function NewsGrid() {
   }
 
 
-  // Combine all news cards - removing placeholder articles
+  // Combine all news cards 
   const allArticles = [LumosNurseryCard, pulse7Card, SonetSortXmasCard,EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
 
 
