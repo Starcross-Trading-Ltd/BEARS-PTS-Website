@@ -11,6 +11,7 @@ export default function LumosNewsPage() {
     '/images/news/lumos/pic1.png',
     '/images/news/lumos/pic2.png',
     '/images/news/lumos/pic3.jpg',
+    '/images/news/lumos/pic5.jpg',
    
   ]
 
