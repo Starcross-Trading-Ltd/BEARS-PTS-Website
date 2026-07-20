@@ -5,7 +5,7 @@ export const CONTACT_INFO = {
 } as const
 
 export const COMPANY_INFO = {
-  name: 'BEARS Patient Transport Service Ltd',
+  name: 'Starcross Trading Limited T/A BEARS',
   companyNumber: '4269 3936',
   location: 'London, United Kingdom'
 } as const
