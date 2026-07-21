@@ -29,35 +29,35 @@ export default function CareersPage() {
   // Static vacancies data
   const vacancies = [
     {
-      title: 'NEPTS Business Intelligence Control Team Manager',
-      location: 'Across site',
-      salary: '£53,000 – 48 hours per week',
-      link: '/vacancies/nepts-business-intelligence-control-team-manager',
+      title: 'Emergency Care Technician ',
+      location: 'Westminster, Oxford, and Southampton',
+      salary: 'Competitive Salary',
+      link: '/vacancies/emergency-care-technician',
     },
-    {
-      title: 'Shift Manager',
-      location: 'Edgware and Maidstone',
-      salary: '£40,000 - £47,000',
-      link: '/vacancies/shift-manager',
-    },
-    {
-      title: 'Paramedic',
-      location: 'Edgware, Greater London',
-      salary: '£50,544',
-      link: '/vacancies/paramedic',
-    },
-    {
-      title: 'First Line Manager',
-      location: 'Edgware, Greater London',
-      salary: '£42,000 p/a',
-      link: '/vacancies/first-line-manager',
-    },
-    {
-      title: 'Ambulance Care Assistant- Secure',
-      location: 'Edgware, Greater London',
-      salary: '£39,936 per annum',
-      link: '/vacancies/ambulance-care-assistant-secure',
-    },
+    // {
+    //   title: 'Shift Manager',
+    //   location: 'Edgware and Maidstone',
+    //   salary: '£40,000 - £47,000',
+    //   link: '/vacancies/shift-manager',
+    // },
+    // {
+    //   title: 'Paramedic',
+    //   location: 'Edgware, Greater London',
+    //   salary: '£50,544',
+    //   link: '/vacancies/paramedic',
+    // },
+    // {
+    //   title: 'First Line Manager',
+    //   location: 'Edgware, Greater London',
+    //   salary: '£42,000 p/a',
+    //   link: '/vacancies/first-line-manager',
+    // },
+    // {
+    //   title: 'Ambulance Care Assistant- Secure',
+    //   location: 'Edgware, Greater London',
+    //   salary: '£39,936 per annum',
+    //   link: '/vacancies/ambulance-care-assistant-secure',
+    // },
   ]
 
   return (
@@ -85,9 +85,9 @@ export default function CareersPage() {
       <section className="py-16 animate-fade-in-up">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-primary mb-8 text-center">Current Openings</h2>
-              <h3 className="text-1xl font-bold text-[#3b82f6] mb-8 text-center">No Current Openings</h3>
+              {/* <h3 className="text-1xl font-bold text-[#3b82f6] mb-8 text-center">No Current Openings</h3> */}
 
-{/*           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {vacancies.map((job, idx) => (
               <Link
                 to={job.link}
@@ -101,7 +101,7 @@ export default function CareersPage() {
                 <span className="inline-block mt-2 text-green-600 font-semibold text-sm group-hover:underline">View details</span>
               </Link>
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
 
