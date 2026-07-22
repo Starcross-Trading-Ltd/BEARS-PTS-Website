@@ -10,6 +10,7 @@ import AboutPage from './pages/about'
 import ServicesPage from './pages/services'
 import ContactPage from './pages/contact'
 import ComplimentsPage from './pages/compliments'
+import HallOfFamePage from './pages/hall-of-fame'
 import NewsPage from './pages/news'
 import LumosNewsPage from './pages/news/lumos'
 import Pulse7NewsPage from './pages/news/pulse-7'
@@ -79,6 +80,8 @@ function App() {
               <Route path="/services/mental-health" element={<MentalHealthPage />} />
               <Route path="/services/neonatal" element={<NeonatalPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/compliments" element={<ComplimentsPage />} />
+              <Route path="/hall-of-fame" element={<HallOfFamePage />} />
               <Route path="/news" element={<NewsPage />} />
               <Route path="/news/lumos-nursery" element={<LumosNewsPage />} />
               <Route path="/news/pulse-7" element={<Pulse7NewsPage />} />
