@@ -14,6 +14,7 @@ export default function JobApplicationForm({ position }: JobApplicationFormProps
   const { toast } = useToast()
   const [currentStep, setCurrentStep] = useState<FormStep>('personal')
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -56,66 +57,105 @@ export default function JobApplicationForm({ position }: JobApplicationFormProps
       setCurrentStep(steps[currentIndex - 1])
     }
   }
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    
-    if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone) {
-      toast({
-        title: "Error",
-        description: "Please fill in all required fields",
-        variant: "destructive",
-      })
-      return
-    }
-
-    setIsSubmitting(true)
-
-    try {
-      const result = await sendJobApplicationEmail({
-        ...formData,
-        position
-      })
-
-      if (result.success) {
-        toast({
-          title: "Application Received!",
-          description: "Thank you for your application. We have received your submission and will be in touch soon. Good luck!",
-        })
-        // Reset form
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          addressLine1: '',
-          addressLine2: '',
-          city: '',
-          county: '',
-          postCode: '',
-          country: '',
-          education: '',
-          experience: '',
-          skills: '',
-          qualifications: '',
-          awards: '',
-          additionalInfo: ''
-        })
-        setCurrentStep('personal')
-      } else {
-        throw new Error('Failed to send application')
-      }
-    } catch (error) {
-      console.error('Application submission error:', error)
-      toast({
-        title: "Error",
-        description: "Failed to send your application. Please try again or contact us directly.",
-        variant: "destructive",
-      })
-    } finally {
-      setIsSubmitting(false)
-    }
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  
+  if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone) {
+    toast({
+      title: "Error",
+      description: "Please fill in all required fields",
+      variant: "destructive",
+    })
+    return
   }
+
+  setIsSubmitting(true)
+
+  try {
+    const result = await sendJobApplicationEmail({
+      ...formData,
+      position
+    })
+
+    if (result.success) {
+      toast({
+        title: "Application Received!",
+        description: "Thank you for applying. We'll be in touch if your profile matches what we're looking for.",
+      })
+      setIsSubmitted(true)
+    } else {
+      throw new Error('Failed to send application')
+    }
+  } catch (error) {
+    console.error('Application submission error:', error)
+    toast({
+      title: "Error",
+      description: "Failed to send your application. Please try again or contact us directly.",
+      variant: "destructive",
+    })
+  } finally {
+    setIsSubmitting(false)
+  }
+}
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault()
+    
+  //   if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone) {
+  //     toast({
+  //       title: "Error",
+  //       description: "Please fill in all required fields",
+  //       variant: "destructive",
+  //     })
+  //     return
+  //   }
+
+  //   setIsSubmitting(true)
+
+  //   try {
+  //     const result = await sendJobApplicationEmail({
+  //       ...formData,
+  //       position
+  //     })
+
+  //     if (result.success) {
+  //       toast({
+  //         title: "Application Received!",
+  //         description: "Thank you for your application. We have received your submission and will be in touch soon. Good luck!",
+  //       })
+  //       // Reset form
+  //       setFormData({
+  //         firstName: '',
+  //         lastName: '',
+  //         email: '',
+  //         phone: '',
+  //         addressLine1: '',
+  //         addressLine2: '',
+  //         city: '',
+  //         county: '',
+  //         postCode: '',
+  //         country: '',
+  //         education: '',
+  //         experience: '',
+  //         skills: '',
+  //         qualifications: '',
+  //         awards: '',
+  //         additionalInfo: ''
+  //       })
+  //       setCurrentStep('personal')
+  //     } else {
+  //       throw new Error('Failed to send application')
+  //     }
+  //   } catch (error) {
+  //     console.error('Application submission error:', error)
+  //     toast({
+  //       title: "Error",
+  //       description: "Failed to send your application. Please try again or contact us directly.",
+  //       variant: "destructive",
+  //     })
+  //   } finally {
+  //     setIsSubmitting(false)
+  //   }
+  // }
 
   const steps = [
     { id: 'personal', title: 'Personal Information', description: 'Basic details' },
@@ -467,45 +507,105 @@ export default function JobApplicationForm({ position }: JobApplicationFormProps
         return renderPersonalInfo()
     }
   }
-
-  return (
-    <div className="max-w-4xl mx-auto">
-      {renderStepIndicator()}
-      
-      <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
-        {renderStepContent()}
-        
-        <div className="flex justify-between items-center mt-8 pt-6 border-t border-gray-200">
-          <button
-            type="button"
-            onClick={prevStep}
-            disabled={currentStep === 'personal'}
-            className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            Previous
-          </button>
-          
-          <div className="flex gap-3">
-            {currentStep === 'review' ? (
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? 'Submitting...' : 'Submit Application'}
-              </button>
-            ) : (
-              <button
-                type="button"
-                onClick={nextStep}
-                className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700"
-              >
-                Next
-              </button>
-            )}
-          </div>
-        </div>
-      </form>
+const renderSuccess = () => (
+  <div className="max-w-2xl mx-auto text-center py-16 px-8 bg-white rounded-lg shadow-sm border border-gray-200">
+    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+      <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+      </svg>
     </div>
-  )
+    <h3 className="text-2xl font-semibold text-gray-900 mb-3">Application Submitted Successfully</h3>
+    <p className="text-gray-600 mb-2">
+      Thank you for applying for the {position} position at BEARS.
+    </p>
+    <p className="text-gray-600 mb-6">
+      If your experience and qualifications match what we're looking for, a member of our team will be in touch
+      to discuss the next stage of the process. In the meantime, feel free to follow our page for company
+      updates and future opportunities.
+    </p>
+  </div>
+)
+  // return (
+  //   <div className="max-w-4xl mx-auto">
+  //     {renderStepIndicator()}
+      
+  //     <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+  //       {renderStepContent()}
+        
+  //       <div className="flex justify-between items-center mt-8 pt-6 border-t border-gray-200">
+  //         <button
+  //           type="button"
+  //           onClick={prevStep}
+  //           disabled={currentStep === 'personal'}
+  //           className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+  //         >
+  //           Previous
+  //         </button>
+          
+  //         <div className="flex gap-3">
+  //           {currentStep === 'review' ? (
+  //             <button
+  //               type="submit"
+  //               disabled={isSubmitting}
+  //               className="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
+  //             >
+  //               {isSubmitting ? 'Submitting...' : 'Submit Application'}
+  //             </button>
+  //           ) : (
+  //             <button
+  //               type="button"
+  //               onClick={nextStep}
+  //               className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700"
+  //             >
+  //               Next
+  //             </button>
+  //           )}
+  //         </div>
+  //       </div>
+  //     </form>
+  //   </div>
+  // )
+  return (
+  <div className="max-w-4xl mx-auto">
+    {isSubmitted ? (
+      renderSuccess()
+    ) : (
+      <>
+        {renderStepIndicator()}
+        <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-sm border border-gray-200 p-8">
+          {renderStepContent()}
+          <div className="flex justify-between items-center mt-8 pt-6 border-t border-gray-200">
+            <button
+              type="button"
+              onClick={prevStep}
+              disabled={currentStep === 'personal'}
+              className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              Previous
+            </button>
+            <div className="flex gap-3">
+              {currentStep === 'review' ? (
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="px-8 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? 'Submitting...' : 'Submit Application'}
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  onClick={nextStep}
+                  className="px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700"
+                >
+                  Next
+                </button>
+              )}
+            </div>
+          </div>
+        </form>
+      </>
+    )}
+  </div>
+)
 } 
