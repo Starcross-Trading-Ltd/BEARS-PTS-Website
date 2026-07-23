@@ -150,7 +150,7 @@ const Header: React.FC = () => {
             
             {/* BEARS PRESTIGE */}
             <a
-              href="https://bearsprestige.com"
+              href="https://bearsprestige.co.uk"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center px-4 py-2 bg-black text-amber-400 rounded-md shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all duration-200"
