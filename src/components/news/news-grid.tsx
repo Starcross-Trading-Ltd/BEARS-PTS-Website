@@ -182,9 +182,18 @@ export default function NewsGrid() {
     isBlueCard: false,
   }
 
+     // Sevenoaks Charity Event Day card as the twentieth item
+  const SevenoaksCard = {
+    title: "BEARS Volunteers at a Charity Event in Sevenoaks",
+    description: "BEARS joined a charity event in Sevenoaks, volunteering to help raise funds and awareness for Leni, a young girl diagnosed with Sanfilippo syndrome — a rare, progressive form of childhood dementia.",
+    image: "/images/news/sevenoaks/img5.JPG",
+    link: "/news/sevenoaks",
+    isBlueCard: false,
+  }
+
 
   // Combine all news cards 
-  const allArticles = [LumosNurseryCard, pulse7Card, SonetSortXmasCard,EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
+  const allArticles = [SevenoaksCard, LumosNurseryCard, pulse7Card, SonetSortXmasCard,EvelinaXmasCard, HaberdasherCard, pulse6Card, pulse5Card, KingussieCard, SwanscombeCard, DubaiCard, christmasCard, pulse4Card, pulse3Card, forsCard, fritwellCard, whitchurchCard, americanSchoolCard, ecmoAmbulanceCard, pulse2Card, haloBodyCamsCard]
 
 
   const containerVariants = {
