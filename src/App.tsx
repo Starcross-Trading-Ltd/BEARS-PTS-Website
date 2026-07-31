@@ -12,6 +12,7 @@ import ContactPage from './pages/contact'
 import ComplimentsPage from './pages/compliments'
 import HallOfFamePage from './pages/hall-of-fame'
 import NewsPage from './pages/news'
+import SevenoaksNewsPage from './pages/news/sevenoaks'
 import LumosNewsPage from './pages/news/lumos'
 import Pulse7NewsPage from './pages/news/pulse-7'
 import XmasSonetSortNewsPage from './pages/news/xmasinsonetsort'
@@ -83,6 +84,7 @@ function App() {
               <Route path="/compliments" element={<ComplimentsPage />} />
               <Route path="/hall-of-fame" element={<HallOfFamePage />} />
               <Route path="/news" element={<NewsPage />} />
+              <Route path="/news/sevenoaks" element={<SevenoaksNewsPage />} />
               <Route path="/news/lumos-nursery" element={<LumosNewsPage />} />
               <Route path="/news/pulse-7" element={<Pulse7NewsPage />} />
               <Route path="/news/xmas-in-sonet-sort" element={<XmasSonetSortNewsPage />} />
