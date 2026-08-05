@@ -189,10 +189,10 @@ export default function HallOfFamePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-green-50 to-white">
       <HeroSection
-        title="Staff Hall of Fame"
+        title="Staff Recognition"
         subtitle="Celebrating the BEARS team members who go above and beyond."
         image="/images/cubs_one.png"
-        imageAlt="BEARS Staff Hall of Fame"
+        imageAlt="BEARS Recognition"
         imagePosition="right"
         bgColor="#388e6c"
       />
