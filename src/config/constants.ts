@@ -6,7 +6,7 @@ export const CONTACT_INFO = {
 
 export const COMPANY_INFO = {
   name: 'Starcross Trading Limited T/A BEARS',
-  companyNumber: '4269 3936',
+  tradingNumber: '07069657',
   location: '2 Old Post Office Lane, Kidbrooke, SE3 9BY, London, United Kingdom'
 } as const
 
