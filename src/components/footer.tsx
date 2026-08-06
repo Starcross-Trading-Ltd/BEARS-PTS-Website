@@ -86,11 +86,11 @@ const Footer: React.FC = () => {
             <div className="space-y-2 text-gray-300 text-base">
               <div>
                 <span className="font-medium">Trading Number:</span><br />
-                <span>07069657</span>
+                <span>{COMPANY_INFO.tradingNumber}</span>
               </div>
               <div>
                 <span className="font-medium">Address:</span><br />
-                <span>London, United Kingdom</span>
+                <span>{COMPANY_INFO.location}</span>
               </div>
             </div>
           </div>
