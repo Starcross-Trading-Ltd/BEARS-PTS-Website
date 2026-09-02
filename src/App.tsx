@@ -53,6 +53,7 @@ import CarbonReductionPlanPage from './pages/carbon-reduction-plan'
 import PatientSurveyPage from './pages/patient-survey'
 import AmbulanceCareAssistantSecure from './pages/vacancies/ambulance-care-assistant-secure'
 import FirstLineManager from './pages/vacancies/first-line-manager'
+import PatientTransportControlRoomManager from './pages/vacancies/control-room-manager'
 import NeptsBusinessIntelligenceControlTeamManager from './pages/vacancies/nepts-business-intelligence-control-team-manager'
 import EmergencyCareTechnician from './pages/vacancies/emergency-care-technician'
 import ParamedicVacancy from './pages/vacancies/paramedic'
@@ -116,6 +117,7 @@ function App() {
               <Route path="/patient-survey" element={<PatientSurveyPage />} />
               <Route path="/vacancies/ambulance-care-assistant-secure" element={<AmbulanceCareAssistantSecure />} />
               <Route path="/vacancies/first-line-manager" element={<FirstLineManager />} />
+              <Route path="/vacancies/control-room-manager" element={<PatientTransportControlRoomManager />} />
               <Route path="/vacancies/nepts-business-intelligence-control-team-manager" element={<NeptsBusinessIntelligenceControlTeamManager />} />
               <Route path="/vacancies/emergency-care-technician" element={<EmergencyCareTechnician />} />
               <Route path="/vacancies/paramedic" element={<ParamedicVacancy />} />
