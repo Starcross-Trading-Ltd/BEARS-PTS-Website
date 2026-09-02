@@ -28,11 +28,17 @@ export default function CareersPage() {
 
   // Static vacancies data
   const vacancies = [
+    // {
+    //   title: 'Emergency Care Technician ',
+    //   location: 'Westminster, Oxford, and Southampton',
+    //   salary: 'Competitive Salary',
+    //   link: '/vacancies/emergency-care-technician',
+    // },
     {
-      title: 'Emergency Care Technician ',
-      location: 'Westminster, Oxford, and Southampton',
-      salary: 'Competitive Salary',
-      link: '/vacancies/emergency-care-technician',
+      title: 'Patient Transport Control Room Manager',
+      location: 'Kidbrooke, London',
+      salary: 'Up to £45,000 per year',
+      link: '/vacancies/control-room-manager',
     },
     // {
     //   title: 'Shift Manager',
